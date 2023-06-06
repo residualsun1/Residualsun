@@ -1,5 +1,5 @@
 ---
-title: 或许是柳暗花明
+title: may-have-hope
 author: 黄国政
 date: '2023-05-31'
 slug: []
