@@ -1,4 +1,4 @@
-baseURL: https://example.com
+baseURL: https://guozheng.netlify.app/
 languageCode: en-us
 title: Residualsun | 黄国政
 theme: "hugo-theme-mini"
@@ -35,7 +35,7 @@ markup:
 # Social links in footer, support github,twitter,stackoverflow,facebook
 social:
   # e.g.
-  github: your-github-link
+  github: https://github.com/residualsun1
   twitter: your-github-link
   stackoverflow: your-github-link
   # facebook: your-facebook-link
