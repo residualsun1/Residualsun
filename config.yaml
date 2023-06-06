@@ -6,6 +6,8 @@ theme: "hugo-theme-mini"
 # Default content language, support en (English) / zh (Chinese) / nl (Dutch) / fr (French) / es (Spanish) / da (Danish), default 'en'
 defaultContentLanguage: zh
 
+preserveTaxonomyNames: true
+
 # !!! exampleSite only, you may need to delete the line: `themesDir: ../../` 
 
 hasCJKLanguage: true
