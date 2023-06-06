@@ -15,7 +15,7 @@ permalinks:
 paginate: 3
 
 googleAnalytics: your-google-analytics-id
-disqusShortname: your-disqus-shortname
+disqusShortname: https-guozheng-netlify-app
 
 # Hugo Configure Markup
 # More info: https://gohugo.io/getting-started/configuration-markup#
