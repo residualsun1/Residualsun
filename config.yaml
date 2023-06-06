@@ -12,7 +12,7 @@ preserveTaxonomyNames: true
 
 hasCJKLanguage: true
 permalinks:
-  posts: /posts/:year/:month/:slug/
+  post: /post/:year/:month/:slug/
 
 paginate: 3
 
