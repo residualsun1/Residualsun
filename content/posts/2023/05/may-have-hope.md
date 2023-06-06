@@ -2,7 +2,7 @@
 title: 或许是柳暗花明
 author: 黄国政
 date: '2023-05-31'
-slug: []
+slug: may-have-hope
 categories:
   - 生活田野
   - 学术田野

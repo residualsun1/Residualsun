@@ -2,7 +2,7 @@
 title: CGSS2021数据录入与清洗
 author: 黄国政
 date: '2023-05-29'
-slug: []
+slug: cgss2021-import
 categories:
   - 学术田野
 tags:

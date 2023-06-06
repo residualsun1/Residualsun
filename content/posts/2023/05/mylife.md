@@ -2,7 +2,7 @@
 author: 黄国政
 date: '2023-05-27'
 description: mytalk
-slug: []
+slug: mylife
 categories:
   - 生活田野
 thumbnail: images/neihaihelanhu.jpg

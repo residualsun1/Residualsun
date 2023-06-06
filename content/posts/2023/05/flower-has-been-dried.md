@@ -2,7 +2,7 @@
 title: 花已开过
 author: 黄国政
 date: '2023-05-27'
-slug: []
+slug: flower-has-been-dried
 categories:
   - 生活田野
 tags:
