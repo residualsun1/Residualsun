@@ -2,7 +2,7 @@
 title: 我所思念的究竟为何物
 author: 黄国政
 date: '2023-06-03'
-slug: []
+slug: miss-what
 categories:
   - 生活田野
 tags:

@@ -2,7 +2,7 @@
 title: 旅行：此地，此刻，浪漫，理想……
 author: 黄国政
 date: '2023-06-02'
-slug: []
+slug: travel-place-time
 categories:
   - 生活田野
 tags:
