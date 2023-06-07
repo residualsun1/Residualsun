@@ -6,7 +6,7 @@ slug: cgss2021-import
 categories:
   - 学术田野
 tags:
-  - R analysis
+  - 数据分析
 ---
 
 > “工欲善其事，必先利其器”
