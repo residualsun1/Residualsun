@@ -1,29 +1,44 @@
 ---
-aliases:
-- about-us
-- about-hugo
-- contact
-author: Hugo Authors
-date: "2019-02-28"
-description: Hugo, the world's fastest framework for building websites
-enableComments: false
-title: About
+author: 黄国政
+title: 关于我
 ---
 
-Written in Go, Hugo is an open source static site generator available under the [Apache Licence 2.0.](https://github.com/gohugoio/hugo/blob/master/LICENSE) Hugo supports TOML, YAML and JSON data file types, Markdown and HTML content files and uses shortcodes to add rich content. Other notable features are taxonomies, multilingual mode, image processing, custom output formats, HTML/CSS/JS minification and support for Sass SCSS workflows.
+---
 
-Hugo makes use of a variety of open source projects including:
+## **基本情况🫣**
 
-* https://github.com/yuin/goldmark
-* https://github.com/alecthomas/chroma
-* https://github.com/muesli/smartcrop
-* https://github.com/spf13/cobra
-* https://github.com/spf13/viper
+* 即将踏入大三的普通大学牲，就读于南方某不知名院校的社会学专业。  
 
-Hugo is ideal for blogs, corporate websites, creative portfolios, online magazines, single page applications or even a website with thousands of pages.
+  * **好音乐**🎵。有时候真觉得音乐是一种电子海洛因，每天起床的时候脑子总会响起最近某首音乐的旋律，走在路上也要时刻塞着耳机。
+  
+  * **对计算机技术有着一点不知从何的兴趣**。准确来说，兴趣源于R语言的学习，在相继接触了ggplot2包、bookdown包和blogdown包之后，对与可视化相关的编程产生了能让自己熬夜捣鼓的兴趣。当然其他因素也很重要，比如统计之都上各位不吝赐教的前辈、解决问题时无法替代的愉悦感。
+  
+  * **敬畏阅读**，相信<mark>阅读是一座随身携带的避难所</mark>，但写得很少，以至于总感觉自己无效阅读。  
+  
+  * **挺喜欢跑步的**。难过的时候会去跑步，相信这是纾解情绪最有效的方式。需要边跑边听音乐，让音乐将所有的情绪调动出来，随着汗水畅快流逝。  
+  
+  * **也相信大学是培养学习能力的地方**，期望在社会学、人类学、统计与编程中发现平凡的自己更多的可能。
 
-Hugo is for people who want to hand code their own website without worrying about setting up complicated runtimes, dependencies and databases.
+---
 
-Websites built with Hugo are extremely fast, secure and can be deployed anywhere including, AWS, GitHub Pages, Heroku, Netlify and any other hosting provider.
+## **建站目的🫡**
 
-Learn more and contribute on [GitHub](https://github.com/gohugoio).
+这是我第三次搭建自己的博客网站。非常感谢益辉大哥，也感谢统计之都中每一位慷慨解答我困惑的前辈们，因为他们，我才得以使用R语言坚持搭建出专属于自己的博客网站。
+
+人生海海，我没有什么远大的目标，对未来是模糊的认知，也不清楚自己是一个怎样的人。搭建博客的目的便是为了记录自己的成长历程，无论是生活上的，还是学术上的。
+
+想恬不知耻地说，看了几本民族志后，我认为历史和记忆是承载一个人情感和“意义”最重要的载体。
+
+当过去有迹可循，我们才能看见当下与未来的美好。
+
+至少，给自己建一所关于过去的精神家园，在任何时空、任何境况下遭遇困苦时都能聊以慰藉。
+
+---
+
+## **写在最后🥳**
+
+欢迎大家到访我的博客，我会坚持在此发布自己的[碎碎念](https://guozheng.netlify.app/posts/)、[学习用R语言做数据分析的心得](https://guozheng.netlify.app/r_and_i/)，以及自己[阅读书籍的感受和思考](https://guozheng.netlify.app/sociology_anthropology/)，也非常欢迎你到我的评论区给我留言。
+
+最后，本博客主题选用主要参考了[nodejh](https://github.com/nodejh/hugo-theme-mini)的开源代码和[yuanfan](https://github.com/earfanfan)的参数设置，感谢他们的无私公开，让我找到了自己心仪并愿意为之持续创作的博客主题！
+
+---
