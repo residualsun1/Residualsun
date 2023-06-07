@@ -6,8 +6,12 @@ slug: flower-has-been-dried
 categories:
   - 生活田野
 tags:
-  - 爱而不得
+  - 深藏心底
 ---
+
+那些深藏心底的话。
+
+<!--more-->
 
 这不是我们最后一次见面，但应该是我最后一次无比期望见到你。  
 

@@ -14,7 +14,7 @@ hasCJKLanguage: true
 permalinks:
   posts: /posts/:year/:month/:slug/
 
-paginate: 6
+paginate: 9
 
 #googleAnalytics: your-google-analytics-id
 #disqusShortname: https-guozheng-netlify-app

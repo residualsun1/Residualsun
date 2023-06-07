@@ -9,7 +9,9 @@ tags:
   - R analysis
 ---
 
-> “A workman must first sharpen his tools if he is to do his work well”
+> “工欲善其事，必先利其器”
+
+<!--more-->
 
 `haven`包可以将许多不同格式的数据导入到R之中，功能十分强大。遗憾的是，部分数据导入之后会带有`haven_labelled`标签。  
 
