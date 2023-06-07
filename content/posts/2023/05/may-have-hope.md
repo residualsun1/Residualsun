@@ -7,7 +7,8 @@ categories:
   - 生活田野
   - 学术田野
 tags:
-  - Blogdown
+  - 生活
+  - 博客配置
 Description: ''
 DisableComments: no
 toc: yes
