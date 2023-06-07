@@ -20,14 +20,3 @@ Hugo ships with several [Built-in Shortcodes](https://gohugo.io/content-manageme
 <br>
 
 ---
-
-## Twitter Simple Shortcode
-
-
-
-<br>
-
----
-
-## Vimeo Simple Shortcode
-
