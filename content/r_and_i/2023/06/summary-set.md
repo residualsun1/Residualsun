@@ -6,7 +6,7 @@ slug: summary-set
 categories:
   - R
 tags:
-  - 博客
+  - 博客配置
 ---
 
 <!--more-->

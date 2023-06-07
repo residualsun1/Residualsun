@@ -6,7 +6,7 @@ slug: make-blogdown
 categories:
   - 学术田野
 tags:
-  - Blogdown
+  - 博客配置
 link-citations: yes
 toc: true
 ---
