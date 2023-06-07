@@ -2,6 +2,8 @@ baseURL: https://guozheng.netlify.app/
 languageCode: zh-CN
 title: Residualsun | 黄国政
 theme: "hugo-theme-mini"
+buildFuture: true
+timeZone: "Etc/GMT-8"    # UTC+08:00 timezone
 
 # Default content language, support en (English) / zh (Chinese) / nl (Dutch) / fr (French) / es (Spanish) / da (Danish), default 'en'
 defaultContentLanguage: zh
