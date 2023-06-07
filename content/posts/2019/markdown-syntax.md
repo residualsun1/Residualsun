@@ -10,10 +10,6 @@ description: Sample article showcasing basic Markdown syntax and formatting for 
   elements.
 series:
 - Themes Guide
-tags:
-- markdown
-- css
-- html
 title: Markdown Syntax Guide
 ---
 
