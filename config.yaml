@@ -16,8 +16,8 @@ permalinks:
 
 paginate: 6
 
-googleAnalytics: your-google-analytics-id
-disqusShortname: https-guozheng-netlify-app
+#googleAnalytics: your-google-analytics-id
+#disqusShortname: https-guozheng-netlify-app
 
 # Hugo Configure Markup
 # More info: https://gohugo.io/getting-started/configuration-markup#
@@ -37,9 +37,9 @@ markup:
 # Social links in footer, support github,twitter,stackoverflow,facebook
 social:
   # e.g.
-  github: https://github.com/residualsun1
-  twitter: your-github-link
-  stackoverflow: your-github-link
+  # github: https://github.com/residualsun1
+  # twitter: your-github-link
+  # stackoverflow: your-github-link
   # facebook: your-facebook-link
 
 
