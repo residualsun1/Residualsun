@@ -40,8 +40,8 @@ markup:
 # Social links in footer, support github,twitter,stackoverflow,facebook
 social:
   # e.g.
-  # github: https://github.com/residualsun1
-  # twitter: your-github-link
+   github: https://github.com/residualsun1
+   twitter: https://twitter.com/Residualsun1
   # stackoverflow: your-github-link
   # facebook: your-facebook-link
 
