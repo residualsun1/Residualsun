@@ -84,7 +84,7 @@ params:
     - name: 社会学-人类学
       path: /sociology_anthropology/
     - name: 我与R
-      path: /r_and_i/
+      path: /r_and_i/index/
       
   # You can put your custom css and js to `static` directory, or use remote css and js files which start with `http://` or `https://`
   customCSS:
