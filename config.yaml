@@ -29,7 +29,7 @@ markup:
     guessSyntax: true
     style: emacs
   tableOfContents:
-    endLevel: 3
+    endLevel: 4
     ordered: false
     startLevel: 2
   # needed to render raw HTML (e.g. <sub>, <sup>, <kbd>, <mark>)
