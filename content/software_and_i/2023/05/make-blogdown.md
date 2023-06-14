@@ -4,7 +4,7 @@ author: 黄国政
 date: '2023-05-29'
 slug: make-blogdown
 categories:
-  - 学术田野
+  - "software"
 tags:
   - 博客配置
 link-citations: yes

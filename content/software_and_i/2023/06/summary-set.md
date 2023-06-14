@@ -4,7 +4,7 @@ author: 黄国政
 date: '2023-06-07'
 slug: summary-set
 categories:
-  - R
+  - "software"
 tags:
   - 博客配置
 ---

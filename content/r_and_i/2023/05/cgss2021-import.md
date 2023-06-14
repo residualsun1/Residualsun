@@ -4,7 +4,7 @@ author: 黄国政
 date: '2023-05-29'
 slug: cgss2021-import
 categories:
-  - 学术田野
+  - R
 tags:
   - 数据分析
 ---
