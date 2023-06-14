@@ -3,10 +3,7 @@ title: CGSS2021数据录入与清洗
 author: 黄国政
 date: '2023-05-29'
 slug: cgss2021-import
-categories:
-  - R
-tags:
-  - 数据分析
+tags: ["R"]
 ---
 
 > “工欲善其事，必先利其器”

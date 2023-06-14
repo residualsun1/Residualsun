@@ -1,7 +1,7 @@
 ---
 author: Hugo Authors
 date: "2019-03-05"
-categories: ["software"]
+tags: ["software"]
 title: Emoji Support
 ---
 

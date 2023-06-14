@@ -81,12 +81,15 @@ params:
     ## e.g.
     # - name: Project
     #   path: /project
+    - name: R and software
+      path: /r-software/
+      weight: 1
     - name: 社会学-人类学
       path: /sociology_anthropology/
-      weight: 1
+      weight: 2
     - name: 田野-故事
       path: /field-story/
-      weight: 2
+      weight: 3
       
   # You can put your custom css and js to `static` directory, or use remote css and js files which start with `http://` or `https://`
   customCSS:

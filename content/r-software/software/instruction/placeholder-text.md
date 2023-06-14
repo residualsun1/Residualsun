@@ -1,7 +1,7 @@
 ---
 author: Hugo Authors
 date: "2019-03-09"
-categories: ["software"]
+tags: ["software"]
 title: Placeholder Text
 ---
 

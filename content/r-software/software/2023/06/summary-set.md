@@ -3,10 +3,7 @@ title: Hugo博客首页设置帖子部分内容显示
 author: 黄国政
 date: '2023-06-07'
 slug: summary-set
-categories:
-  - "software"
-tags:
-  - 博客配置
+tags: ["software"]
 ---
 
 <!--more-->

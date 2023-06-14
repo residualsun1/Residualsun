@@ -3,7 +3,7 @@ author: Test
 date: "2021-03-10"
 description: A brief description of Hugo Shortcodes
 draft: true
-categories: ["software"]
+tags: ["software"]
 title: Code Content
 ---
 

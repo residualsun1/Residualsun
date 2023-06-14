@@ -5,7 +5,7 @@ author: Hugo Authors
 date: "2019-03-11"
 series:
 - Themes Guide
-categories: ["software"]
+tags: ["software"]
 title: Markdown Syntax Guide
 ---
 
