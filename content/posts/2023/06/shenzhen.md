@@ -3,9 +3,7 @@ title: 深圳
 author: 黄国政
 date: '2023-06-09'
 slug: shenzhen
-categories: []
-tags:
-  - 旅行
+tags: [生活]
 ---
 
 <!--more-->

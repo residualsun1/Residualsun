@@ -3,6 +3,7 @@ author: Hugo Authors
 date: "2019-03-08"
 description: A brief guide to setup KaTeX
 math: true
+categories: ["software"]
 title: Math Typesetting
 ---
 

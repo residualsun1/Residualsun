@@ -3,10 +3,7 @@ title: 请继续相信自己的选择
 author: 黄国政
 date: '2023-05-31'
 slug: trust-your-choose
-categories:
-  - 生活田野
-tags: []
-toc: yes
+tags: [碎碎念]
 ---
 
 <!--more-->

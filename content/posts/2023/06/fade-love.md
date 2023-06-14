@@ -3,11 +3,7 @@ title: 淡却
 author: 黄国政
 date: '2023-06-05'
 slug: fade-love
-categories: []
-tags:
-  - 深藏心底
-  - 北海
-  - 旅行
+tags: [深藏心底，北海]
 ---
 
 > 如果我披星戴月地想你，你会愿意见我一面吗？

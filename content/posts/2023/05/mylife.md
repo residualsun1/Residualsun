@@ -1,11 +1,8 @@
 ---
 author: 黄国政
 date: '2023-05-27'
-description: mytalk
 slug: mylife
-categories:
-  - 生活田野
-thumbnail: images/neihaihelanhu.jpg
+tags: [碎碎念]
 title: 我选择的生活
 ---  
 

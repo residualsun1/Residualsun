@@ -4,8 +4,7 @@ author: 黄国政
 date: '2023-06-13'
 slug: final-exam
 categories: []
-tags:
-  - 生活
+tags: [生活]
 ---
 
 <!--more-->

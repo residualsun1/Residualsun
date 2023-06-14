@@ -1,7 +1,7 @@
 ---
 author: Hugo Authors
 date: "2019-03-09"
-description: Lorem Ipsum Dolor Si Amet
+categories: ["software"]
 title: Placeholder Text
 ---
 
