@@ -3,10 +3,7 @@ title: 《努尔人》：我系统阅读的第一本民族志
 author: 黄国政
 date: '2023-06-07'
 slug: read-nuer
-categories: []
-tags:
-  - 人类学
-  - 阅读
+tags: ["阅读"]
 ---
 
 我的人类学世界大门。
