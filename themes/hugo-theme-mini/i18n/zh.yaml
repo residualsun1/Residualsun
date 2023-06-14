@@ -7,6 +7,9 @@ archive:
 tags:
   other: 标签
 
+categories:
+  other: R
+
 subscribe:
   other: 订阅
 
@@ -14,10 +17,10 @@ about:
   other: 关于
 
 404title:
-  other: "404"
+  other: "正在努力码字中✍……"
 
 404subtitle:
-  other: 页面不存在
+  other: 敬请期待
 
 readMore:
   other: 更多内容
