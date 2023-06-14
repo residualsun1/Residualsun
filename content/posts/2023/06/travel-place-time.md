@@ -3,7 +3,7 @@ title: 旅行：此地，此刻，浪漫，理想……
 author: 黄国政
 date: '2023-06-02'
 slug: travel-place-time
-tags: [生活,北海]
+tags: ["生活","北海"]
 ---
 
 这一刻其实就很美好。
