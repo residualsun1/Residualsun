@@ -3,7 +3,15 @@ author: 黄国政
 title: 关于我
 ---
 ---
-## <center>**基本情况**</center>
+
+<style>
+h2 {
+  text-align: center;
+  font-weight: bold;
+}
+</style>
+
+## 基本情况
 
 * 即将踏入大三的普通大学牲，就读于南方某不知名院校。  
 
@@ -17,7 +25,7 @@ title: 关于我
 
 ---
 
-## <center>**建站目的**</center>
+## 建站目的
 
 这是我第三次搭建自己的博客网站。感谢益辉大哥，也感谢统计之都中每一位慷慨解答我困惑的前辈们，因为他们，我才能坚持用R搭建出自己的博客网站。
 
@@ -30,7 +38,7 @@ title: 关于我
 至少，给自己建一所关于过去的精神家园，在任何时空、任何境况下遭遇困苦时或许都能聊以慰藉。
 
 ---
-## <center>**写在最后**</center>
+## 写在最后
 
 欢迎大家到访我的博客，我会坚持在此发布自己的[日志](https://guozheng.netlify.app/posts/)、[学习R的过程](https://guozheng.netlify.app/r_and_i/)，以及自己的[阅读感受](https://guozheng.netlify.app/sociology_anthropology/)，也非常欢迎你到我的评论区给我留言。
 
