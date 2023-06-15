@@ -81,6 +81,8 @@ params:
     ## e.g.
     # - name: Project
     #   path: /project
+    - name: 账单
+      path: /bill/ 
     - name: R and software
       path: /r-software/
       weight: 1
