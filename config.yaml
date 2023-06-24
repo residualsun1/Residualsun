@@ -84,14 +84,14 @@ params:
     - name: 账单
       path: /bill/
       weight: 1
+    - name: 阅读
+      path: /read/
+      weight: 2
+    - name: 影视
+      path: /movie/
+      weight: 3
     - name: R and software
       path: /r-software/
-      weight: 2
-    - name: 社会学-人类学
-      path: /sociology_anthropology/
-      weight: 3
-    - name: 田野-故事
-      path: /field-story/
       weight: 4
       
   # You can put your custom css and js to `static` directory, or use remote css and js files which start with `http://` or `https://`
