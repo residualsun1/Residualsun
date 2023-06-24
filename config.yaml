@@ -81,18 +81,21 @@ params:
     ## e.g.
     # - name: Project
     #   path: /project
+    - name: 待办
+      path: /todo/
+      weight: 1
     - name: 账单
       path: /bill/
-      weight: 1
+      weight: 2
     - name: 阅读
       path: /read/
-      weight: 2
+      weight: 3
     - name: 影视
       path: /movie/
-      weight: 3
-    - name: R and software
-      path: /r-software/
       weight: 4
+    - name: R
+      path: /r_i/
+      weight: 5
       
   # You can put your custom css and js to `static` directory, or use remote css and js files which start with `http://` or `https://`
   customCSS:
