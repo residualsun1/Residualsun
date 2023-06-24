@@ -2,7 +2,7 @@
 title: 6月账单
 author: 黄国政
 date: '2023-06-15'
-slug: June
+slug: June-bill
 categories: []
 tags: []
 ---
