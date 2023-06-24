@@ -1,0 +1,497 @@
+---
+title: 幻灯片忍术1
+author: 黄国政
+date: '2023-06-24'
+slug: xaringan
+categories: []
+tags:
+  - software
+---
+
+<!--more-->
+
+下载`xaringan`包：
+
+```
+if (!requireNamespace("xaringan"))
+  remotes::install_github("yihui/xaringan")
+```
+
+按照益辉的幻灯片指示，下一步是到`File→New File→R Markdown→From Template`中选择`Ninja Presentation(Simplified Chinese)`创建文档。
+
+但这个时候我遇到了模板中没有出现`Ninja Presentation(Simplified Chinese)`的问题。
+
+参考该[解答](https://github.com/yihui/xaringan/issues/2)，题主反应模板中是空白的，益辉首先提出运行以下代码检查系统：
+
+```
+devtools::session_info('xaringan')
+.libPaths()
+find.package('xaringan')
+```
+
+虽然我的模板栏中有其他类型的模板，仅仅是缺少`xaringan`的模板，但是以上代码可以留作以后使用该包出错时检查的方法。
+
+运行之后显示如下信息：
+
+```
+> devtools::session_info('xaringan')
+─ Session info ──────────────────────────────────────────────────────────────────────────────────
+ setting  value
+ version  R version 4.2.3 (2023-03-15 ucrt)
+ os       Windows 10 x64 (build 22621)
+ system   x86_64, mingw32
+ ui       RStudio
+ language (EN)
+ collate  Chinese (Simplified)_China.utf8
+ ctype    Chinese (Simplified)_China.utf8
+ tz       Asia/Taipei
+ date     2023-06-24
+ rstudio  2023.06.0+421 Mountain Hydrangea (desktop)
+ pandoc   NA
+ 
+ ─ Packages ──────────────────────────────────────────────────────────────────────────────────────
+ package     * version date (UTC) lib source
+ base64enc     0.1-3   2015-07-28 [1] CRAN (R 4.2.0)
+ bslib         0.5.0   2023-06-09 [1] CRAN (R 4.2.3)
+ cachem        1.0.8   2023-05-01 [1] CRAN (R 4.2.3)
+ cli           3.6.1   2023-03-23 [1] CRAN (R 4.2.3)
+ digest        0.6.31  2022-12-11 [1] CRAN (R 4.2.2)
+ ellipsis      0.3.2   2021-04-29 [1] CRAN (R 4.2.1)
+ evaluate      0.21    2023-05-05 [1] CRAN (R 4.2.3)
+ fastmap       1.1.1   2023-02-24 [1] CRAN (R 4.2.3)
+ fontawesome   0.5.1   2023-04-18 [1] CRAN (R 4.2.3)
+ fs            1.6.2   2023-04-25 [1] CRAN (R 4.2.3)
+ glue          1.6.2   2022-02-24 [1] CRAN (R 4.2.1)
+ highr         0.10    2022-12-22 [1] CRAN (R 4.2.2)
+ htmltools     0.5.5   2023-03-23 [1] CRAN (R 4.2.3)
+ httpuv        1.6.11  2023-05-11 [1] CRAN (R 4.2.3)
+ jquerylib     0.1.4   2021-04-26 [1] CRAN (R 4.2.1)
+ jsonlite      1.8.5   2023-06-05 [1] CRAN (R 4.2.3)
+ knitr         1.43    2023-05-25 [1] CRAN (R 4.2.3)
+ later         1.3.1   2023-05-02 [1] CRAN (R 4.2.3)
+ lifecycle     1.0.3   2022-10-07 [1] CRAN (R 4.2.1)
+ magrittr      2.0.3   2022-03-30 [1] CRAN (R 4.2.1)
+ memoise       2.0.1   2021-11-26 [1] CRAN (R 4.2.1)
+ mime          0.12    2021-09-28 [1] CRAN (R 4.2.0)
+ promises      1.2.0.1 2021-02-11 [1] CRAN (R 4.2.1)
+ R6            2.5.1   2021-08-19 [1] CRAN (R 4.2.1)
+ rappdirs      0.3.3   2021-01-31 [1] CRAN (R 4.2.1)
+ Rcpp          1.0.10  2023-01-22 [1] CRAN (R 4.2.2)
+ rlang         1.1.1   2023-04-28 [1] CRAN (R 4.2.3)
+ rmarkdown     2.22    2023-06-01 [1] CRAN (R 4.2.3)
+ sass          0.4.6   2023-05-03 [1] CRAN (R 4.2.3)
+ servr         0.27    2023-05-02 [1] CRAN (R 4.2.3)
+ stringi       1.7.12  2023-01-11 [1] CRAN (R 4.2.2)
+ stringr       1.5.0   2022-12-02 [1] CRAN (R 4.2.2)
+ tinytex       0.45    2023-04-18 [1] CRAN (R 4.2.3)
+ vctrs         0.6.3   2023-06-14 [1] CRAN (R 4.2.3)
+ xaringan      0.28.1  2023-06-24 [1] Github (yihui/xaringan@8dcfa3f)
+ xfun          0.39    2023-04-20 [1] CRAN (R 4.2.3)
+ yaml          2.3.7   2023-01-23 [1] CRAN (R 4.2.3)
+
+ [1] D:/StatisticsSoftware/R/R-4.2.3/library
+
+─────────────────────────────────────────────────────────────────────────────────────────────────
+> .libPaths()
+[1] "D:/StatisticsSoftware/R/R-4.2.3/library"
+> find.package('xaringan')
+[1] "D:/StatisticsSoftware/R/R-4.2.3/library/xaringan"
+```
+
+益辉似乎是想查看题主的**R包是否都是最新版本**。接着又提出运行以下代码：
+
+```
+update.packages(ask = FALSE, checkBuilt = TRUE)
+```
+
+我试着运行了一下，发现系统提示可以更新R包。
+
+```
+> update.packages(ask = FALSE, checkBuilt = TRUE)
+
+  有二进制版本的，但源代码版本是后来的:
+        binary source needs_compilation
+emmeans  1.8.6  1.8.7             FALSE
+robust   0.7-1  0.7-2              TRUE
+terra   1.7-37 1.7-39              TRUE
+
+trying URL 'https://mirrors.e-ducation.cn/CRAN/bin/windows/contrib/4.2/BiocManager_1.30.21.zip'
+Content type 'application/zip' length 495312 bytes (483 KB)
+downloaded 483 KB
+
+trying URL 'https://mirrors.e-ducation.cn/CRAN/bin/windows/contrib/4.2/blogdown_1.18.zip'
+Content type 'application/zip' length 326450 bytes (318 KB)
+downloaded 318 KB
+
+trying URL 'https://mirrors.e-ducation.cn/CRAN/bin/windows/contrib/4.2/broom_1.0.5.zip'
+Content type 'application/zip' length 1864108 bytes (1.8 MB)
+downloaded 1.8 MB
+
+trying URL 'https://mirrors.e-ducation.cn/CRAN/bin/windows/contrib/4.2/curl_5.0.1.zip'
+Content type 'application/zip' length 2655352 bytes (2.5 MB)
+downloaded 2.5 MB
+
+trying URL 'https://mirrors.e-ducation.cn/CRAN/bin/windows/contrib/4.2/datawizard_0.8.0.zip'
+Content type 'application/zip' length 1074437 bytes (1.0 MB)
+downloaded 1.0 MB
+
+trying URL 'https://mirrors.e-ducation.cn/CRAN/bin/windows/contrib/4.2/DEoptimR_1.0-14.zip'
+Content type 'application/zip' length 45149 bytes (44 KB)
+downloaded 44 KB
+
+trying URL 'https://mirrors.e-ducation.cn/CRAN/bin/windows/contrib/4.2/devEMF_4.4.zip'
+Content type 'application/zip' length 533702 bytes (521 KB)
+downloaded 521 KB
+
+trying URL 'https://mirrors.e-ducation.cn/CRAN/bin/windows/contrib/4.2/flextable_0.9.2.zip'
+Content type 'application/zip' length 1219015 bytes (1.2 MB)
+downloaded 1.2 MB
+
+trying URL 'https://mirrors.e-ducation.cn/CRAN/bin/windows/contrib/4.2/gargle_1.5.1.zip'
+Content type 'application/zip' length 794621 bytes (775 KB)
+downloaded 775 KB
+
+trying URL 'https://mirrors.e-ducation.cn/CRAN/bin/windows/contrib/4.2/ggeffects_1.2.3.zip'
+Content type 'application/zip' length 629828 bytes (615 KB)
+downloaded 615 KB
+
+trying URL 'https://mirrors.e-ducation.cn/CRAN/bin/windows/contrib/4.2/gifski_1.12.0-1.zip'
+Content type 'application/zip' length 1368348 bytes (1.3 MB)
+downloaded 1.3 MB
+
+trying URL 'https://mirrors.e-ducation.cn/CRAN/bin/windows/contrib/4.2/googledrive_2.1.1.zip'
+Content type 'application/zip' length 1896697 bytes (1.8 MB)
+downloaded 1.8 MB
+
+trying URL 'https://mirrors.e-ducation.cn/CRAN/bin/windows/contrib/4.2/googlesheets4_1.1.1.zip'
+Content type 'application/zip' length 514395 bytes (502 KB)
+downloaded 502 KB
+
+trying URL 'https://mirrors.e-ducation.cn/CRAN/bin/windows/contrib/4.2/gss_2.2-5.zip'
+Content type 'application/zip' length 1694584 bytes (1.6 MB)
+downloaded 1.6 MB
+
+trying URL 'https://mirrors.e-ducation.cn/CRAN/bin/windows/contrib/4.2/igraph_1.5.0.zip'
+Content type 'application/zip' length 6873831 bytes (6.6 MB)
+downloaded 6.6 MB
+
+trying URL 'https://mirrors.e-ducation.cn/CRAN/bin/windows/contrib/4.2/labelled_2.12.0.zip'
+Content type 'application/zip' length 321310 bytes (313 KB)
+downloaded 313 KB
+
+trying URL 'https://mirrors.e-ducation.cn/CRAN/bin/windows/contrib/4.2/MatchIt_4.5.4.zip'
+Content type 'application/zip' length 2224935 bytes (2.1 MB)
+downloaded 2.1 MB
+
+trying URL 'https://mirrors.e-ducation.cn/CRAN/bin/windows/contrib/4.2/multcomp_1.4-25.zip'
+Content type 'application/zip' length 745468 bytes (727 KB)
+downloaded 727 KB
+
+trying URL 'https://mirrors.e-ducation.cn/CRAN/bin/windows/contrib/4.2/mvtnorm_1.2-2.zip'
+Content type 'application/zip' length 752364 bytes (734 KB)
+downloaded 734 KB
+
+trying URL 'https://mirrors.e-ducation.cn/CRAN/bin/windows/contrib/4.2/pkgbuild_1.4.1.zip'
+Content type 'application/zip' length 192572 bytes (188 KB)
+downloaded 188 KB
+
+trying URL 'https://mirrors.e-ducation.cn/CRAN/bin/windows/contrib/4.2/psych_2.3.6.zip'
+Content type 'application/zip' length 3935666 bytes (3.8 MB)
+downloaded 3.8 MB
+
+trying URL 'https://mirrors.e-ducation.cn/CRAN/bin/windows/contrib/4.2/quantmod_0.4.23.zip'
+Content type 'application/zip' length 1041000 bytes (1016 KB)
+downloaded 1016 KB
+
+trying URL 'https://mirrors.e-ducation.cn/CRAN/bin/windows/contrib/4.2/RcppArmadillo_0.12.4.1.0.zip'
+Content type 'application/zip' length 1991778 bytes (1.9 MB)
+downloaded 1.9 MB
+
+trying URL 'https://mirrors.e-ducation.cn/CRAN/bin/windows/contrib/4.2/robustbase_0.99-0.zip'
+Content type 'application/zip' length 3083026 bytes (2.9 MB)
+downloaded 2.9 MB
+
+trying URL 'https://mirrors.e-ducation.cn/CRAN/bin/windows/contrib/4.2/sp_2.0-0.zip'
+Content type 'application/zip' length 1947912 bytes (1.9 MB)
+downloaded 1.9 MB
+
+trying URL 'https://mirrors.e-ducation.cn/CRAN/bin/windows/contrib/4.2/StanHeaders_2.26.27.zip'
+Content type 'application/zip' length 3029573 bytes (2.9 MB)
+downloaded 2.9 MB
+
+trying URL 'https://mirrors.e-ducation.cn/CRAN/bin/windows/contrib/4.2/testthat_3.1.9.zip'
+Content type 'application/zip' length 2212662 bytes (2.1 MB)
+downloaded 2.1 MB
+
+trying URL 'https://mirrors.e-ducation.cn/CRAN/bin/windows/contrib/4.2/tufte_0.13.zip'
+Content type 'application/zip' length 281993 bytes (275 KB)
+downloaded 275 KB
+
+程序包‘BiocManager’打开成功，MD5和检查也通过
+程序包‘blogdown’打开成功，MD5和检查也通过
+程序包‘broom’打开成功，MD5和检查也通过
+程序包‘curl’打开成功，MD5和检查也通过
+Warning: 无法将拆除原来安装的程序包‘curl’
+Warning: 回复了‘curl’
+程序包‘datawizard’打开成功，MD5和检查也通过
+程序包‘DEoptimR’打开成功，MD5和检查也通过
+程序包‘devEMF’打开成功，MD5和检查也通过
+程序包‘flextable’打开成功，MD5和检查也通过
+程序包‘gargle’打开成功，MD5和检查也通过
+程序包‘ggeffects’打开成功，MD5和检查也通过
+程序包‘gifski’打开成功，MD5和检查也通过
+程序包‘googledrive’打开成功，MD5和检查也通过
+程序包‘googlesheets4’打开成功，MD5和检查也通过
+程序包‘gss’打开成功，MD5和检查也通过
+程序包‘igraph’打开成功，MD5和检查也通过
+程序包‘labelled’打开成功，MD5和检查也通过
+程序包‘MatchIt’打开成功，MD5和检查也通过
+程序包‘multcomp’打开成功，MD5和检查也通过
+程序包‘mvtnorm’打开成功，MD5和检查也通过
+程序包‘pkgbuild’打开成功，MD5和检查也通过
+程序包‘psych’打开成功，MD5和检查也通过
+程序包‘quantmod’打开成功，MD5和检查也通过
+程序包‘RcppArmadillo’打开成功，MD5和检查也通过
+程序包‘robustbase’打开成功，MD5和检查也通过
+程序包‘sp’打开成功，MD5和检查也通过
+程序包‘StanHeaders’打开成功，MD5和检查也通过
+程序包‘testthat’打开成功，MD5和检查也通过
+程序包‘tufte’打开成功，MD5和检查也通过
+
+下载的二进制程序包在
+	C:\Users\Sonde\AppData\Local\Temp\RtmpOsZf8d\downloaded_packages里
+```
+
+刚开始的时候有注意到
+
+```
+Warning: 无法将拆除原来安装的程序包‘curl’
+Warning: 回复了‘curl’
+```
+
+但没有往这方面细究（后来证实了这个信息是关键）。接下来是一大串响应。
+
+```
+下载的二进制程序包在
+	C:\Users\Sonde\AppData\Local\Temp\RtmpOsZf8d\downloaded_packages里
+安装源码包‘emmeans’, ‘robust’, ‘terra’
+
+trying URL 'https://mirrors.e-ducation.cn/CRAN/src/contrib/emmeans_1.8.7.tar.gz'
+Content type 'application/x-gzip' length 1476339 bytes (1.4 MB)
+downloaded 1.4 MB
+
+trying URL 'https://mirrors.e-ducation.cn/CRAN/src/contrib/robust_0.7-2.tar.gz'
+Content type 'application/x-gzip' length 236202 bytes (230 KB)
+downloaded 230 KB
+
+trying URL 'https://mirrors.e-ducation.cn/CRAN/src/contrib/terra_1.7-39.tar.gz'
+Content type 'application/x-gzip' length 815403 bytes (796 KB)
+downloaded 796 KB
+
+* installing *source* package 'emmeans' ...
+** package 'emmeans' successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (emmeans)
+* installing *source* package 'robust' ...
+** package 'robust' successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+gcc  -I"D:/StatisticsSoftware/R/R-4.2.3/include" -DNDEBUG     -I"D:/StatisticsSoftware/Rtools/rtools42/x86_64-w64-mingw32.static.posix/include"     -O2 -Wall  -std=gnu99 -mfpmath=sse -msse2 -mstackrealign  -c compatibility.c -o compatibility.o
+gfortran  -fno-optimize-sibling-calls    -O2  -mfpmath=sse -msse2 -mstackrealign  -c gamrob.f -o gamrob.o
+gfortran  -fno-optimize-sibling-calls    -O2  -mfpmath=sse -msse2 -mstackrealign  -c glmrob.f -o glmrob.o
+gfortran  -fno-optimize-sibling-calls    -O2  -mfpmath=sse -msse2 -mstackrealign  -c lmrobbi.f -o lmrobbi.o
+gfortran  -fno-optimize-sibling-calls    -O2  -mfpmath=sse -msse2 -mstackrealign  -c lmrobfs.f -o lmrobfs.o
+gfortran  -fno-optimize-sibling-calls    -O2  -mfpmath=sse -msse2 -mstackrealign  -c lmrobml.f -o lmrobml.o
+gfortran  -fno-optimize-sibling-calls    -O2  -mfpmath=sse -msse2 -mstackrealign  -c lmrobmm.f -o lmrobmm.o
+gcc  -I"D:/StatisticsSoftware/R/R-4.2.3/include" -DNDEBUG     -I"D:/StatisticsSoftware/Rtools/rtools42/x86_64-w64-mingw32.static.posix/include"     -O2 -Wall  -std=gnu99 -mfpmath=sse -msse2 -mstackrealign  -c mmprnt.c -o mmprnt.o
+gcc  -I"D:/StatisticsSoftware/R/R-4.2.3/include" -DNDEBUG     -I"D:/StatisticsSoftware/Rtools/rtools42/x86_64-w64-mingw32.static.posix/include"     -O2 -Wall  -std=gnu99 -mfpmath=sse -msse2 -mstackrealign  -c rb.c -o rb.o
+gfortran  -fno-optimize-sibling-calls    -O2  -mfpmath=sse -msse2 -mstackrealign  -c tdmean.f -o tdmean.o
+gfortran  -fno-optimize-sibling-calls    -O2  -mfpmath=sse -msse2 -mstackrealign  -c tmlfor.f -o tmlfor.o
+gfortran  -fno-optimize-sibling-calls    -O2  -mfpmath=sse -msse2 -mstackrealign  -c wblrob.f -o wblrob.o
+gcc -shared -s -static-libgcc -o robust.dll tmp.def compatibility.o gamrob.o glmrob.o lmrobbi.o lmrobfs.o lmrobml.o lmrobmm.o mmprnt.o rb.o tdmean.o tmlfor.o wblrob.o -LD:/StatisticsSoftware/R/R-4.2.3/bin/x64 -lRlapack -LD:/StatisticsSoftware/R/R-4.2.3/bin/x64 -lRblas -lgfortran -lm -lquadmath -LD:/StatisticsSoftware/Rtools/rtools42/x86_64-w64-mingw32.static.posix/lib/x64 -LD:/StatisticsSoftware/Rtools/rtools42/x86_64-w64-mingw32.static.posix/lib -lgfortran -lm -lquadmath -LD:/StatisticsSoftware/R/R-4.2.3/bin/x64 -lR
+installing to D:/StatisticsSoftware/R/R-4.2.3/library/00LOCK-robust/00new/robust/libs/x64
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (robust)
+* installing *source* package 'terra' ...
+** package 'terra' successfully unpacked and MD5 sums checked
+** using staged installation
+
+   **********************************************
+   WARNING: this package has a configure script
+         It probably needs manual configuration
+   **********************************************
+
+
+** libs
+rm -f terra.dll RcppExports.o RcppFunctions.o RcppModule.o arith.o crs.o distRaster.o distance.o extract.o file_utils.o focal.o gcp.o gdal_algs.o gdal_multidimensional.o gdalio.o geodesic.o geos_methods.o geosphere.o math_utils.o mediancut.o memory.o movingWindow.o ncdf.o ram.o raster_methods.o raster_stats.o rasterize.o read.o read_gdal.o read_ogr.o sample.o sort.o spatBase.o spatDataframe.o spatFactor.o spatRaster.o spatRasterMultiple.o spatSources.o spatTime.o spatVector.o spatVector2.o string_utils.o vecmath.o vecmathse.o vector_methods.o write.o write_gdal.o write_ogr.o
+cp -r "D:/StatisticsSoftware/Rtools/rtools42/x86_64-w64-mingw32.static.posix/share/gdal" ../inst/
+cp -r "D:/StatisticsSoftware/Rtools/rtools42/x86_64-w64-mingw32.static.posix/share/proj" ../inst/
+g++  -std=gnu++17 -I"D:/StatisticsSoftware/R/R-4.2.3/include" -DNDEBUG  -I'D:/StatisticsSoftware/R/R-4.2.3/library/Rcpp/include'   -I"D:/StatisticsSoftware/Rtools/rtools42/x86_64-w64-mingw32.static.posix/include"     -O2 -Wall  -mfpmath=sse -msse2 -mstackrealign  -c RcppExports.cpp -o RcppExports.o
+g++  -std=gnu++17 -I"D:/StatisticsSoftware/R/R-4.2.3/include" -DNDEBUG  -I'D:/StatisticsSoftware/R/R-4.2.3/library/Rcpp/include'   -I"D:/StatisticsSoftware/Rtools/rtools42/x86_64-w64-mingw32.static.posix/include"     -O2 -Wall  -mfpmath=sse -msse2 -mstackrealign  -c RcppFunctions.cpp -o RcppFunctions.o
+g++  -std=gnu++17 -I"D:/StatisticsSoftware/R/R-4.2.3/include" -DNDEBUG  -I'D:/StatisticsSoftware/R/R-4.2.3/library/Rcpp/include'   -I"D:/StatisticsSoftware/Rtools/rtools42/x86_64-w64-mingw32.static.posix/include"     -O2 -Wall  -mfpmath=sse -msse2 -mstackrealign  -c RcppModule.cpp -o RcppModule.o
+g++  -std=gnu++17 -I"D:/StatisticsSoftware/R/R-4.2.3/include" -DNDEBUG  -I'D:/StatisticsSoftware/R/R-4.2.3/library/Rcpp/include'   -I"D:/StatisticsSoftware/Rtools/rtools42/x86_64-w64-mingw32.static.posix/include"     -O2 -Wall  -mfpmath=sse -msse2 -mstackrealign  -c arith.cpp -o arith.o
+g++  -std=gnu++17 -I"D:/StatisticsSoftware/R/R-4.2.3/include" -DNDEBUG  -I'D:/StatisticsSoftware/R/R-4.2.3/library/Rcpp/include'   -I"D:/StatisticsSoftware/Rtools/rtools42/x86_64-w64-mingw32.static.posix/include"     -O2 -Wall  -mfpmath=sse -msse2 -mstackrealign  -c crs.cpp -o crs.o
+g++  -std=gnu++17 -I"D:/StatisticsSoftware/R/R-4.2.3/include" -DNDEBUG  -I'D:/StatisticsSoftware/R/R-4.2.3/library/Rcpp/include'   -I"D:/StatisticsSoftware/Rtools/rtools42/x86_64-w64-mingw32.static.posix/include"     -O2 -Wall  -mfpmath=sse -msse2 -mstackrealign  -c distRaster.cpp -o distRaster.o
+g++  -std=gnu++17 -I"D:/StatisticsSoftware/R/R-4.2.3/include" -DNDEBUG  -I'D:/StatisticsSoftware/R/R-4.2.3/library/Rcpp/include'   -I"D:/StatisticsSoftware/Rtools/rtools42/x86_64-w64-mingw32.static.posix/include"     -O2 -Wall  -mfpmath=sse -msse2 -mstackrealign  -c distance.cpp -o distance.o
+g++  -std=gnu++17 -I"D:/StatisticsSoftware/R/R-4.2.3/include" -DNDEBUG  -I'D:/StatisticsSoftware/R/R-4.2.3/library/Rcpp/include'   -I"D:/StatisticsSoftware/Rtools/rtools42/x86_64-w64-mingw32.static.posix/include"     -O2 -Wall  -mfpmath=sse -msse2 -mstackrealign  -c extract.cpp -o extract.o
+g++  -std=gnu++17 -I"D:/StatisticsSoftware/R/R-4.2.3/include" -DNDEBUG  -I'D:/StatisticsSoftware/R/R-4.2.3/library/Rcpp/include'   -I"D:/StatisticsSoftware/Rtools/rtools42/x86_64-w64-mingw32.static.posix/include"     -O2 -Wall  -mfpmath=sse -msse2 -mstackrealign  -c file_utils.cpp -o file_utils.o
+g++  -std=gnu++17 -I"D:/StatisticsSoftware/R/R-4.2.3/include" -DNDEBUG  -I'D:/StatisticsSoftware/R/R-4.2.3/library/Rcpp/include'   -I"D:/StatisticsSoftware/Rtools/rtools42/x86_64-w64-mingw32.static.posix/include"     -O2 -Wall  -mfpmath=sse -msse2 -mstackrealign  -c focal.cpp -o focal.o
+g++  -std=gnu++17 -I"D:/StatisticsSoftware/R/R-4.2.3/include" -DNDEBUG  -I'D:/StatisticsSoftware/R/R-4.2.3/library/Rcpp/include'   -I"D:/StatisticsSoftware/Rtools/rtools42/x86_64-w64-mingw32.static.posix/include"     -O2 -Wall  -mfpmath=sse -msse2 -mstackrealign  -c gcp.cpp -o gcp.o
+g++  -std=gnu++17 -I"D:/StatisticsSoftware/R/R-4.2.3/include" -DNDEBUG  -I'D:/StatisticsSoftware/R/R-4.2.3/library/Rcpp/include'   -I"D:/StatisticsSoftware/Rtools/rtools42/x86_64-w64-mingw32.static.posix/include"     -O2 -Wall  -mfpmath=sse -msse2 -mstackrealign  -c gdal_algs.cpp -o gdal_algs.o
+g++  -std=gnu++17 -I"D:/StatisticsSoftware/R/R-4.2.3/include" -DNDEBUG  -I'D:/StatisticsSoftware/R/R-4.2.3/library/Rcpp/include'   -I"D:/StatisticsSoftware/Rtools/rtools42/x86_64-w64-mingw32.static.posix/include"     -O2 -Wall  -mfpmath=sse -msse2 -mstackrealign  -c gdal_multidimensional.cpp -o gdal_multidimensional.o
+g++  -std=gnu++17 -I"D:/StatisticsSoftware/R/R-4.2.3/include" -DNDEBUG  -I'D:/StatisticsSoftware/R/R-4.2.3/library/Rcpp/include'   -I"D:/StatisticsSoftware/Rtools/rtools42/x86_64-w64-mingw32.static.posix/include"     -O2 -Wall  -mfpmath=sse -msse2 -mstackrealign  -c gdalio.cpp -o gdalio.o
+gcc  -I"D:/StatisticsSoftware/R/R-4.2.3/include" -DNDEBUG  -I'D:/StatisticsSoftware/R/R-4.2.3/library/Rcpp/include'   -I"D:/StatisticsSoftware/Rtools/rtools42/x86_64-w64-mingw32.static.posix/include"     -O2 -Wall  -std=gnu99 -mfpmath=sse -msse2 -mstackrealign  -c geodesic.c -o geodesic.o
+g++  -std=gnu++17 -I"D:/StatisticsSoftware/R/R-4.2.3/include" -DNDEBUG  -I'D:/StatisticsSoftware/R/R-4.2.3/library/Rcpp/include'   -I"D:/StatisticsSoftware/Rtools/rtools42/x86_64-w64-mingw32.static.posix/include"     -O2 -Wall  -mfpmath=sse -msse2 -mstackrealign  -c geos_methods.cpp -o geos_methods.o
+g++  -std=gnu++17 -I"D:/StatisticsSoftware/R/R-4.2.3/include" -DNDEBUG  -I'D:/StatisticsSoftware/R/R-4.2.3/library/Rcpp/include'   -I"D:/StatisticsSoftware/Rtools/rtools42/x86_64-w64-mingw32.static.posix/include"     -O2 -Wall  -mfpmath=sse -msse2 -mstackrealign  -c geosphere.cpp -o geosphere.o
+g++  -std=gnu++17 -I"D:/StatisticsSoftware/R/R-4.2.3/include" -DNDEBUG  -I'D:/StatisticsSoftware/R/R-4.2.3/library/Rcpp/include'   -I"D:/StatisticsSoftware/Rtools/rtools42/x86_64-w64-mingw32.static.posix/include"     -O2 -Wall  -mfpmath=sse -msse2 -mstackrealign  -c math_utils.cpp -o math_utils.o
+g++  -std=gnu++17 -I"D:/StatisticsSoftware/R/R-4.2.3/include" -DNDEBUG  -I'D:/StatisticsSoftware/R/R-4.2.3/library/Rcpp/include'   -I"D:/StatisticsSoftware/Rtools/rtools42/x86_64-w64-mingw32.static.posix/include"     -O2 -Wall  -mfpmath=sse -msse2 -mstackrealign  -c mediancut.cpp -o mediancut.o
+g++  -std=gnu++17 -I"D:/StatisticsSoftware/R/R-4.2.3/include" -DNDEBUG  -I'D:/StatisticsSoftware/R/R-4.2.3/library/Rcpp/include'   -I"D:/StatisticsSoftware/Rtools/rtools42/x86_64-w64-mingw32.static.posix/include"     -O2 -Wall  -mfpmath=sse -msse2 -mstackrealign  -c memory.cpp -o memory.o
+g++  -std=gnu++17 -I"D:/StatisticsSoftware/R/R-4.2.3/include" -DNDEBUG  -I'D:/StatisticsSoftware/R/R-4.2.3/library/Rcpp/include'   -I"D:/StatisticsSoftware/Rtools/rtools42/x86_64-w64-mingw32.static.posix/include"     -O2 -Wall  -mfpmath=sse -msse2 -mstackrealign  -c movingWindow.cpp -o movingWindow.o
+g++  -std=gnu++17 -I"D:/StatisticsSoftware/R/R-4.2.3/include" -DNDEBUG  -I'D:/StatisticsSoftware/R/R-4.2.3/library/Rcpp/include'   -I"D:/StatisticsSoftware/Rtools/rtools42/x86_64-w64-mingw32.static.posix/include"     -O2 -Wall  -mfpmath=sse -msse2 -mstackrealign  -c ncdf.cpp -o ncdf.o
+g++  -std=gnu++17 -I"D:/StatisticsSoftware/R/R-4.2.3/include" -DNDEBUG  -I'D:/StatisticsSoftware/R/R-4.2.3/library/Rcpp/include'   -I"D:/StatisticsSoftware/Rtools/rtools42/x86_64-w64-mingw32.static.posix/include"     -O2 -Wall  -mfpmath=sse -msse2 -mstackrealign  -c ram.cpp -o ram.o
+g++  -std=gnu++17 -I"D:/StatisticsSoftware/R/R-4.2.3/include" -DNDEBUG  -I'D:/StatisticsSoftware/R/R-4.2.3/library/Rcpp/include'   -I"D:/StatisticsSoftware/Rtools/rtools42/x86_64-w64-mingw32.static.posix/include"     -O2 -Wall  -mfpmath=sse -msse2 -mstackrealign  -c raster_methods.cpp -o raster_methods.o
+g++  -std=gnu++17 -I"D:/StatisticsSoftware/R/R-4.2.3/include" -DNDEBUG  -I'D:/StatisticsSoftware/R/R-4.2.3/library/Rcpp/include'   -I"D:/StatisticsSoftware/Rtools/rtools42/x86_64-w64-mingw32.static.posix/include"     -O2 -Wall  -mfpmath=sse -msse2 -mstackrealign  -c raster_stats.cpp -o raster_stats.o
+g++  -std=gnu++17 -I"D:/StatisticsSoftware/R/R-4.2.3/include" -DNDEBUG  -I'D:/StatisticsSoftware/R/R-4.2.3/library/Rcpp/include'   -I"D:/StatisticsSoftware/Rtools/rtools42/x86_64-w64-mingw32.static.posix/include"     -O2 -Wall  -mfpmath=sse -msse2 -mstackrealign  -c rasterize.cpp -o rasterize.o
+g++  -std=gnu++17 -I"D:/StatisticsSoftware/R/R-4.2.3/include" -DNDEBUG  -I'D:/StatisticsSoftware/R/R-4.2.3/library/Rcpp/include'   -I"D:/StatisticsSoftware/Rtools/rtools42/x86_64-w64-mingw32.static.posix/include"     -O2 -Wall  -mfpmath=sse -msse2 -mstackrealign  -c read.cpp -o read.o
+g++  -std=gnu++17 -I"D:/StatisticsSoftware/R/R-4.2.3/include" -DNDEBUG  -I'D:/StatisticsSoftware/R/R-4.2.3/library/Rcpp/include'   -I"D:/StatisticsSoftware/Rtools/rtools42/x86_64-w64-mingw32.static.posix/include"     -O2 -Wall  -mfpmath=sse -msse2 -mstackrealign  -c read_gdal.cpp -o read_gdal.o
+g++  -std=gnu++17 -I"D:/StatisticsSoftware/R/R-4.2.3/include" -DNDEBUG  -I'D:/StatisticsSoftware/R/R-4.2.3/library/Rcpp/include'   -I"D:/StatisticsSoftware/Rtools/rtools42/x86_64-w64-mingw32.static.posix/include"     -O2 -Wall  -mfpmath=sse -msse2 -mstackrealign  -c read_ogr.cpp -o read_ogr.o
+g++  -std=gnu++17 -I"D:/StatisticsSoftware/R/R-4.2.3/include" -DNDEBUG  -I'D:/StatisticsSoftware/R/R-4.2.3/library/Rcpp/include'   -I"D:/StatisticsSoftware/Rtools/rtools42/x86_64-w64-mingw32.static.posix/include"     -O2 -Wall  -mfpmath=sse -msse2 -mstackrealign  -c sample.cpp -o sample.o
+g++  -std=gnu++17 -I"D:/StatisticsSoftware/R/R-4.2.3/include" -DNDEBUG  -I'D:/StatisticsSoftware/R/R-4.2.3/library/Rcpp/include'   -I"D:/StatisticsSoftware/Rtools/rtools42/x86_64-w64-mingw32.static.posix/include"     -O2 -Wall  -mfpmath=sse -msse2 -mstackrealign  -c sort.cpp -o sort.o
+g++  -std=gnu++17 -I"D:/StatisticsSoftware/R/R-4.2.3/include" -DNDEBUG  -I'D:/StatisticsSoftware/R/R-4.2.3/library/Rcpp/include'   -I"D:/StatisticsSoftware/Rtools/rtools42/x86_64-w64-mingw32.static.posix/include"     -O2 -Wall  -mfpmath=sse -msse2 -mstackrealign  -c spatBase.cpp -o spatBase.o
+g++  -std=gnu++17 -I"D:/StatisticsSoftware/R/R-4.2.3/include" -DNDEBUG  -I'D:/StatisticsSoftware/R/R-4.2.3/library/Rcpp/include'   -I"D:/StatisticsSoftware/Rtools/rtools42/x86_64-w64-mingw32.static.posix/include"     -O2 -Wall  -mfpmath=sse -msse2 -mstackrealign  -c spatDataframe.cpp -o spatDataframe.o
+g++  -std=gnu++17 -I"D:/StatisticsSoftware/R/R-4.2.3/include" -DNDEBUG  -I'D:/StatisticsSoftware/R/R-4.2.3/library/Rcpp/include'   -I"D:/StatisticsSoftware/Rtools/rtools42/x86_64-w64-mingw32.static.posix/include"     -O2 -Wall  -mfpmath=sse -msse2 -mstackrealign  -c spatFactor.cpp -o spatFactor.o
+g++  -std=gnu++17 -I"D:/StatisticsSoftware/R/R-4.2.3/include" -DNDEBUG  -I'D:/StatisticsSoftware/R/R-4.2.3/library/Rcpp/include'   -I"D:/StatisticsSoftware/Rtools/rtools42/x86_64-w64-mingw32.static.posix/include"     -O2 -Wall  -mfpmath=sse -msse2 -mstackrealign  -c spatRaster.cpp -o spatRaster.o
+g++  -std=gnu++17 -I"D:/StatisticsSoftware/R/R-4.2.3/include" -DNDEBUG  -I'D:/StatisticsSoftware/R/R-4.2.3/library/Rcpp/include'   -I"D:/StatisticsSoftware/Rtools/rtools42/x86_64-w64-mingw32.static.posix/include"     -O2 -Wall  -mfpmath=sse -msse2 -mstackrealign  -c spatRasterMultiple.cpp -o spatRasterMultiple.o
+g++  -std=gnu++17 -I"D:/StatisticsSoftware/R/R-4.2.3/include" -DNDEBUG  -I'D:/StatisticsSoftware/R/R-4.2.3/library/Rcpp/include'   -I"D:/StatisticsSoftware/Rtools/rtools42/x86_64-w64-mingw32.static.posix/include"     -O2 -Wall  -mfpmath=sse -msse2 -mstackrealign  -c spatSources.cpp -o spatSources.o
+g++  -std=gnu++17 -I"D:/StatisticsSoftware/R/R-4.2.3/include" -DNDEBUG  -I'D:/StatisticsSoftware/R/R-4.2.3/library/Rcpp/include'   -I"D:/StatisticsSoftware/Rtools/rtools42/x86_64-w64-mingw32.static.posix/include"     -O2 -Wall  -mfpmath=sse -msse2 -mstackrealign  -c spatTime.cpp -o spatTime.o
+g++  -std=gnu++17 -I"D:/StatisticsSoftware/R/R-4.2.3/include" -DNDEBUG  -I'D:/StatisticsSoftware/R/R-4.2.3/library/Rcpp/include'   -I"D:/StatisticsSoftware/Rtools/rtools42/x86_64-w64-mingw32.static.posix/include"     -O2 -Wall  -mfpmath=sse -msse2 -mstackrealign  -c spatVector.cpp -o spatVector.o
+g++  -std=gnu++17 -I"D:/StatisticsSoftware/R/R-4.2.3/include" -DNDEBUG  -I'D:/StatisticsSoftware/R/R-4.2.3/library/Rcpp/include'   -I"D:/StatisticsSoftware/Rtools/rtools42/x86_64-w64-mingw32.static.posix/include"     -O2 -Wall  -mfpmath=sse -msse2 -mstackrealign  -c spatVector2.cpp -o spatVector2.o
+g++  -std=gnu++17 -I"D:/StatisticsSoftware/R/R-4.2.3/include" -DNDEBUG  -I'D:/StatisticsSoftware/R/R-4.2.3/library/Rcpp/include'   -I"D:/StatisticsSoftware/Rtools/rtools42/x86_64-w64-mingw32.static.posix/include"     -O2 -Wall  -mfpmath=sse -msse2 -mstackrealign  -c string_utils.cpp -o string_utils.o
+g++  -std=gnu++17 -I"D:/StatisticsSoftware/R/R-4.2.3/include" -DNDEBUG  -I'D:/StatisticsSoftware/R/R-4.2.3/library/Rcpp/include'   -I"D:/StatisticsSoftware/Rtools/rtools42/x86_64-w64-mingw32.static.posix/include"     -O2 -Wall  -mfpmath=sse -msse2 -mstackrealign  -c vecmath.cpp -o vecmath.o
+g++  -std=gnu++17 -I"D:/StatisticsSoftware/R/R-4.2.3/include" -DNDEBUG  -I'D:/StatisticsSoftware/R/R-4.2.3/library/Rcpp/include'   -I"D:/StatisticsSoftware/Rtools/rtools42/x86_64-w64-mingw32.static.posix/include"     -O2 -Wall  -mfpmath=sse -msse2 -mstackrealign  -c vecmathse.cpp -o vecmathse.o
+g++  -std=gnu++17 -I"D:/StatisticsSoftware/R/R-4.2.3/include" -DNDEBUG  -I'D:/StatisticsSoftware/R/R-4.2.3/library/Rcpp/include'   -I"D:/StatisticsSoftware/Rtools/rtools42/x86_64-w64-mingw32.static.posix/include"     -O2 -Wall  -mfpmath=sse -msse2 -mstackrealign  -c vector_methods.cpp -o vector_methods.o
+g++  -std=gnu++17 -I"D:/StatisticsSoftware/R/R-4.2.3/include" -DNDEBUG  -I'D:/StatisticsSoftware/R/R-4.2.3/library/Rcpp/include'   -I"D:/StatisticsSoftware/Rtools/rtools42/x86_64-w64-mingw32.static.posix/include"     -O2 -Wall  -mfpmath=sse -msse2 -mstackrealign  -c write.cpp -o write.o
+g++  -std=gnu++17 -I"D:/StatisticsSoftware/R/R-4.2.3/include" -DNDEBUG  -I'D:/StatisticsSoftware/R/R-4.2.3/library/Rcpp/include'   -I"D:/StatisticsSoftware/Rtools/rtools42/x86_64-w64-mingw32.static.posix/include"     -O2 -Wall  -mfpmath=sse -msse2 -mstackrealign  -c write_gdal.cpp -o write_gdal.o
+g++  -std=gnu++17 -I"D:/StatisticsSoftware/R/R-4.2.3/include" -DNDEBUG  -I'D:/StatisticsSoftware/R/R-4.2.3/library/Rcpp/include'   -I"D:/StatisticsSoftware/Rtools/rtools42/x86_64-w64-mingw32.static.posix/include"     -O2 -Wall  -mfpmath=sse -msse2 -mstackrealign  -c write_ogr.cpp -o write_ogr.o
+g++ -shared -s -static-libgcc -o terra.dll tmp.def RcppExports.o RcppFunctions.o RcppModule.o arith.o crs.o distRaster.o distance.o extract.o file_utils.o focal.o gcp.o gdal_algs.o gdal_multidimensional.o gdalio.o geodesic.o geos_methods.o geosphere.o math_utils.o mediancut.o memory.o movingWindow.o ncdf.o ram.o raster_methods.o raster_stats.o rasterize.o read.o read_gdal.o read_ogr.o sample.o sort.o spatBase.o spatDataframe.o spatFactor.o spatRaster.o spatRasterMultiple.o spatSources.o spatTime.o spatVector.o spatVector2.o string_utils.o vecmath.o vecmathse.o vector_methods.o write.o write_gdal.o write_ogr.o -fopenmp -lgdal -larmadillo -lopenblas -lgfortran -lquadmath -lpq -lpgcommon -lpgport -lodbc32 -lodbccp32 -lblosc -lkea -lhdf5_cpp -lhdf5 -lpoppler -llcms2 -lfreetype -lharfbuzz -lfreetype -llz4 -lpcre2-8 -lxml2 -lopenjp2 -lnetcdf -lmysqlclient -lspatialite -lgeos_c -lgeos -lminizip -lgeos -ljson-c -lgta -lfreexl -lexpat -lssl -lpsapi -lgif -lmfhdf -lhdf5_hl -lcrypto -lportablexdr -ldf -lhdf5 -lsz -lpng16 -lpng -lpoppler -llcms2 -lfreetype -lharfbuzz -lfreetype -llz4 -lpcre2-8 -lpcre -lcurl -lbcrypt -lrtmp -lssl -lssh2 -lidn2 -lunistring -liconv -lgcrypt -lcrypto -lgpg-error -lws2_32 -ltiff -llzma -ljpeg -lz -lcfitsio -lzstd -lwebpdecoder -lwebp -lsbml-static -lgeotiff -lproj -lsqlite3 -lbz2 -lcrypt32 -lwldap32 -lsecur32 -LD:/StatisticsSoftware/Rtools/rtools42/x86_64-w64-mingw32.static.posix/lib/x64 -LD:/StatisticsSoftware/Rtools/rtools42/x86_64-w64-mingw32.static.posix/lib -LD:/StatisticsSoftware/R/R-4.2.3/bin/x64 -lR
+installing to D:/StatisticsSoftware/R/R-4.2.3/library/00LOCK-terra/00new/terra/libs/x64
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+in method for 'sds' with signature 'x="stars"': no definition for class "stars"
+in method for 'sds' with signature 'x="stars_proxy"': no definition for class "stars_proxy"
+in method for 'svc' with signature 'x="sf"': no definition for class "sf"
+in method for 'coerce' with signature '"stars","SpatRasterDataset"': no definition for class "stars"
+in method for 'coerce' with signature '"ggmap","SpatRaster"': no definition for class "ggmap"
+in method for 'coerce' with signature '"sf","SpatRaster"': no definition for class "sf"
+in method for 'coerce' with signature '"sf","SpatVector"': no definition for class "sf"
+in method for 'coerce' with signature '"sfc","SpatVector"': no definition for class "sfc"
+in method for 'coerce' with signature '"sfg","SpatVector"': no definition for class "sfg"
+in method for 'coerce' with signature '"XY","SpatVector"': no definition for class "XY"
+in method for 'coerce' with signature '"im","SpatRaster"': no definition for class "im"
+in method for 'coerce' with signature '"SpatVector","Spatial"': no definition for class "Spatial"
+in method for 'coerce' with signature '"Spatial","SpatVector"': no definition for class "Spatial"
+in method for 'coerce' with signature '"SpatialGrid","SpatRaster"': no definition for class "SpatialGrid"
+in method for 'coerce' with signature '"SpatialPixels","SpatRaster"': no definition for class "SpatialPixels"
+in method for 'crs' with signature '"sf"': no definition for class "sf"
+Creating a generic function for 'ncol' from package 'base' in package 'terra'
+in method for 'distance' with signature 'x="SpatRaster",y="sf"': no definition for class "sf"
+in method for 'ext' with signature 'x="sf"': no definition for class "sf"
+in method for 'ext' with signature 'x="bbox"': no definition for class "bbox"
+in method for 'ext' with signature 'x="Extent"': no definition for class "Extent"
+in method for 'ext' with signature 'x="Raster"': no definition for class "Raster"
+in method for 'ext' with signature 'x="Spatial"': no definition for class "Spatial"
+in method for 'extract' with signature 'x="SpatRaster",y="sf"': no definition for class "sf"
+in method for 'mask' with signature 'x="SpatRaster",mask="sf"': no definition for class "sf"
+in method for 'points' with signature 'x="sf"': no definition for class "sf"
+in method for 'lines' with signature 'x="sf"': no definition for class "sf"
+in method for 'polys' with signature 'x="sf"': no definition for class "sf"
+in method for 'lines' with signature 'x="leaflet"': no definition for class "leaflet"
+in method for 'points' with signature 'x="leaflet"': no definition for class "leaflet"
+in method for 'rast' with signature 'x="stars"': no definition for class "stars"
+in method for 'rast' with signature 'x="stars_proxy"': no definition for class "stars_proxy"
+in method for 'rasterize' with signature 'x="sf",y="SpatRaster"': no definition for class "sf"
+in method for 'show' with signature '"Rcpp_SpatDataFrame"': no definition for class "Rcpp_SpatDataFrame"
+in method for 'show' with signature '"Rcpp_SpatCategories"': no definition for class "Rcpp_SpatCategories"
+in method for 'geomtype' with signature 'x="Spatial"': no definition for class "Spatial"
+in method for 'vect' with signature 'x="Spatial"': no definition for class "Spatial"
+in method for 'vect' with signature 'x="sf"': no definition for class "sf"
+in method for 'vect' with signature 'x="sfc"': no definition for class "sfc"
+in method for 'vect' with signature 'x="XY"': no definition for class "XY"
+Creating a generic function for 'unserialize' from package 'base' in package 'terra'
+Creating a generic function for 'readRDS' from package 'base' in package 'terra'
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (terra)
+
+下载的程序包在
+	‘C:\Users\Sonde\AppData\Local\Temp\RtmpOsZf8d\downloaded_packages’里
+Warning message:
+In file.copy(savedcopy, lib, recursive = TRUE) :
+  problem copying D:\StatisticsSoftware\R\R-4.2.3\library\00LOCK\curl\libs\x64\curl.dll to D:\StatisticsSoftware\R\R-4.2.3\library\curl\libs\x64\curl.dll: Permission denied
+```
+
+后来就是被`Warning`吸引住了，以为是要手动删除`terra`包，然后手动下载最新版本。
+
+回到问答链接里，感觉益辉在强调关于R包的更新，我也猜测估计是某些R包的缺失或者是版本不够才导致模板没有出现。同时虽然通过在工作台进行代码运行更新，但是也会收到相关的失败反馈，例如
+
+```
+   **********************************************
+   WARNING: this package has a configure script
+         It probably needs manual configuration
+   **********************************************
+```
+
+```
+Warning message:
+In file.copy(savedcopy, lib, recursive = TRUE) :
+  problem copying D:\StatisticsSoftware\R\R-4.2.3\library\00LOCK\curl\libs\x64\curl.dll to D:\StatisticsSoftware\R\R-4.2.3\library\curl\libs\x64\curl.dll: Permission denied
+```
+
+想起之前在论坛[帖子](https://d.cosx.org/d/424434-chuang-jian-blogdownhou-filezhong-zhi-you-rprojwen-jian/5)里也收到过手动删除然后重新下载包的建议，这个方法有时候很奏效。
+
+于是我点击`Tools→Check for Packages Updates`，刚好发现可以下载更新`curl`包。
+
+```
+Restarting R session...
+
+> install.packages("curl")
+trying URL 'https://mirrors.e-ducation.cn/CRAN/bin/windows/contrib/4.2/curl_5.0.1.zip'
+Content type 'application/zip' length 2655352 bytes (2.5 MB)
+downloaded 2.5 MB
+
+程序包‘curl’打开成功，MD5和检查也通过
+
+下载的二进制程序包在
+	C:\Users\Sonde\AppData\Local\Temp\RtmpiGN1hS\downloaded_packages里
+```
+
+这一次下载更新完成以后，再次回到`File -> New File -> R Markdown -> From Template`，发现`Ninja Presentation (Simplified Chinese)`正乖乖地躺在那里。
+
+这一次的记录启示是遇到问题时，比较直接和简单的解决方法是可以试着更新R包，如益辉在[https://twitter.com/o_gonzales/status/803985378562736128](https://twitter.com/o_gonzales/status/803985378562736128)里说的。
