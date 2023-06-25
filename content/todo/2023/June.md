@@ -36,6 +36,6 @@ h2,h3 {
 
 ## 25日  
 
-今天在github瞎逛，发现Hadley Wickham的[《R for Data Science》](https://r4ds.hadley.nz/)竟然出了第二版，还是用Quarto进行写作。Quarto的界面设计很抓眼球，我想可以在暑假连同`bookdown`一起学一学。
+今天在github瞎逛，发现Hadley Wickham的[《R for Data Science》](https://r4ds.hadley.nz/)竟然出了第二版，还是用[Quarto](https://quarto.org/)进行写作。Quarto的界面设计很抓眼球，我想可以在暑假连同`bookdown`一起学一学。
 
 - [ ] **学习Quarto与bookdown**。
