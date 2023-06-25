@@ -1,5 +1,5 @@
 ---
-title: 幻灯片忍术1
+title: 幻灯片忍术（1）
 author: 黄国政
 date: '2023-06-24'
 slug: xaringan
@@ -9,6 +9,8 @@ tags:
 ---
 
 <!--more-->
+
+使用R语言制作幻灯片。
 
 下载`xaringan`包：
 
