@@ -38,6 +38,19 @@ h2 {
 至少，给自己建一所关于过去的精神家园，在任何时空、任何境况下遭遇困苦时或许都能聊以慰藉。
 
 ---
+
+## 小事记
+
+2023年5月28日中午，按照统计之都的帖子成功搭建了自己的第一个博客网站，主题是anatole
+
+2023年6月5日凌晨，更换博客主题hugo-tania
+
+2023年6月6日下午，更换博客主题hugo-theme-mini
+
+或许还会……更换主题？
+
+--- 
+
 ## 写在最后
 
 欢迎大家到访我的博客，我会坚持在此发布自己的[日志](https://guozheng.netlify.app/posts/)、[学习R的过程](https://guozheng.netlify.app/r_and_i/)，以及自己的[阅读感受](https://guozheng.netlify.app/sociology_anthropology/)，也非常欢迎你到我的评论区给我留言。
