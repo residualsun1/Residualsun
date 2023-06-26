@@ -42,10 +42,15 @@ h2,h3 {
 
 - [ ] **学习Quarto与bookdown**。
 
+### 反馈情况
+
 ---
 
 ## 26日
 
 自从用Git上传需要输入认证密码时一直出错，之后干脆删除到系统后删除协议后，就不敢用Git了，传送博文用的都是GitHub Desktop。但是面对的困难不解决，以后还是会找上门来，不如主动迎接。
 
-[Git、Java](https://github.com/michaelliao)、Linux
+### 反馈情况
+
+- [ ] Linux
+- [ ] [Git、Java](https://github.com/michaelliao)

@@ -87,15 +87,12 @@ params:
     - name: 账单
       path: /bill/
       weight: 2
-    - name: 阅读
+    - name: 月读
       path: /read/
       weight: 3
-    - name: 影视
-      path: /movie/
-      weight: 4
     - name: R
       path: /r_i/
-      weight: 5
+      weight: 4
       
   # You can put your custom css and js to `static` directory, or use remote css and js files which start with `http://` or `https://`
   customCSS:
