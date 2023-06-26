@@ -1,0 +1,42 @@
+---
+title: 6月阅读
+author: 黄国政
+date: '2023-06-26'
+slug: read-in-June
+categories: []
+tags: []
+---
+
+<style>
+h2,h3 {
+  text-align: center;
+  font-weight: bold;
+}
+</style>
+
+
+## 26日
+
+### 在读
+
+<img align="right" height="200" width="135" src="https://raw.githubusercontent.com/residualsun1/Images-of-blog/main/2023-06-26-mushroom.jpg" alt="末日松茸">
+
+#### 短评
+
+> “允许缠绕”
+
+每天看几页，这本书读起来确实就像散文+诗歌+小说的结合体（或许是吧？），佩服作者可以把民族志写得那么让人有读下去的冲动。至少每一次翻开都是轻<br/>松的感觉，就好像被她牵着手，引着走向俄勒冈州的森林。这两天加油把它读<br/>完！下一本就可以看《森林如何思考》了。
+
+#### 时间
+
+---
+
+<img align="right" height="200" width="135" src="https://raw.githubusercontent.com/residualsun1/Images-of-blog/main/2023-06-26-labour.jpg">
+
+#### 短评
+
+> 工人阶级子弟为何子继父业？
+
+书看得很慢，基本都是睡前翻一翻。这本书给我的第一感受是访谈文本特别多，<br/>然后就是作者对访谈文本的概括与解析。书本的介绍说这本书也是民族志，如<br/>果和《末日松茸》比起来，我想前者唯一能吸引我的只有访谈文本。且看读完<br/>整本的感受如何吧！
+
+#### 时间
