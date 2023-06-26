@@ -41,3 +41,9 @@ h2,h3 {
 幻灯片和博客制作就没有必要搬家了。不知道更换博客主题之后，域名.rbind.io是否还能保留。
 
 - [ ] **学习Quarto与bookdown**。
+
+---
+
+## 26日
+
+[Git、Java](https://github.com/michaelliao)、Linux
