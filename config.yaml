@@ -97,7 +97,7 @@ params:
   # You can put your custom css and js to `static` directory, or use remote css and js files which start with `http://` or `https://`
   customCSS:
     ## e.g.
-     - css/custom.css # local css in `static/css/custom.css`
+    - css/custom.css # local css in `static/css/custom.css`
     # - https://example.com/custom.css # remote css
   customJS:
     ## e.g.
