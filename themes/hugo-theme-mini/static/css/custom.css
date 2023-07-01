@@ -1,21 +1,9 @@
-@font-face {
-font-family: 'SiYuanSong';
-src: local('Source Han Serif CN'), local('Source Han Serif SC'), /*如果可能，调用本地字体*/
-  url('fonts/Noto_Serif_SC/NotoSerifSC-Regular.otf') format('opentype');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
+body {
+  font-family: Optima, 'Lucida Sans', Calibri, Candara, Arial, 'source-han-serif-sc', 'Source Han Serif SC', 'Source Han Serif CN', 'Source Han Serif TC', 'Source Han Serif TW', 'Source Han Serif', 'Noto Serif CJK SC', 'Songti SC', 'Microsoft YaHei', sans-serif;
 }
-
-@font-face {
-  font-family: 'SiYuanSong';
-  src: local('Source Han Serif CN'), local('Source Han Serif SC'), /*如果可能，调用本地字体*/
-    url('fonts/Noto_Serif_SC/NotoSerifSC-Bold.otf') format('opentype');
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
+code {
+  font-family: "Lucida Console", 'Andale Mono', 'STKaiti', 'KaiTi', 'SimKai', monospace;
 }
-
-body{
-  font-family: 'SiYuanSong', serif;
+pre code {
+  font-family: Consolas, "Lucida Console", Monaco, 'STKaiti', 'KaiTi', 'SimKai', monospace;
 }
