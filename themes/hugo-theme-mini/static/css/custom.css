@@ -1,7 +1,7 @@
 @font-face {
 font-family: 'SiYuanSong';
 src: local('Source Han Serif CN'), local('Source Han Serif SC'), /*如果可能，调用本地字体*/
-  url('fonts/Noto_Serif_SC/NotoSerifSC-Regular.otf') format('opentype');
+  url('Fonts/NotoSerifSC-Regular.otf') format('opentype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -10,7 +10,7 @@ src: local('Source Han Serif CN'), local('Source Han Serif SC'), /*如果可能�
 @font-face {
   font-family: 'SiYuanSong';
   src: local('Source Han Serif CN'), local('Source Han Serif SC'), /*如果可能，调用本地字体*/
-    url('fonts/Noto_Serif_SC/NotoSerifSC-Bold.otf') format('opentype');
+    url('Fonts/NotoSerifSC-Bold.otf') format('opentype');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
