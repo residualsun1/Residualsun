@@ -63,6 +63,8 @@ h2 {
 
 [袁凡](https://yuanfan.rbind.io)：左手小说，右手R；浪漫的遐想与数据。
 
+[Dylanyu](https://dylanyu233.github.io/)：在我的~~嘲讽~~鼓励下建立了自己的博客。
+
 ---
 
 ## 写在最后
