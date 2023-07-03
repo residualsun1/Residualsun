@@ -10,6 +10,8 @@ tags:
 
 <!--more-->
 
+<img src="/images/posts/2023/07/07-03-xueyuanzheng.jpg" align="right" alt="学员证" width="200px" height="350px"/>
+
 研习和想象中的模样并没有很大差别。
 
 坐在浙大农医馆二楼报告厅，看着演讲台上浙大的校徽，有点真实但又倏忽间不完全真实的感觉。
