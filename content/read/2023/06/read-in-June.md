@@ -20,7 +20,7 @@ h2,h3 {
 
 ### 在读
 
-<img align="right" height="200" width="135" src="https://raw.githubusercontent.com/residualsun1/Images-of-blog/main/2023-06-26-mushroom.jpg" alt="末日松茸">
+<img src="/images/read/2023/06/2023-06-26-mushroom.jpg" align="right" height="200" width="135">
 
 #### 短评
 
@@ -32,7 +32,7 @@ h2,h3 {
 
 ---
 
-<img align="right" height="200" width="135" src="https://raw.githubusercontent.com/residualsun1/Images-of-blog/main/2023-06-26-labour.jpg">
+<img src="/images/read/2023/06/2023-06-26-labour.jpg" align="right" width="135" height="200">
 
 #### 短评
 
