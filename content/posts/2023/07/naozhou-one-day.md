@@ -28,11 +28,8 @@ tags:
 
 硇洲岛，我又来了。
 
-|<video src="https://guozheng.rbind.io/video/posts/2023/07/07-16-boat.mp4" style="width: 95%; display: block; margin: 0 auto;" controls></video>|
+|![](/images/posts/2023/07/07-16-boat.jpg)|
 |:-:|
-|我记得婉岚说的，可以站到甲板上看海。|
-
-……
 
 上岛以后，再一看时间是11:20。时间掐得很准，估计也是因为1点停航的压力。我上岛以后，下一班要出岛的人又接着进了船。
 
