@@ -140,3 +140,8 @@ tags:
 
 这份**酸甜炸猪肉**当真深得我心，味道酸甜而不腻，肉质松软又不失嚼劲，就着米饭我可以吃好几碗，比饭店和酒楼做的好吃太多了。唉，明天就轮到我做菜了，压力也上满了。
 
+“酒足饭饱”，和喜欢唱歌的阿用高歌一曲。
+
+|<video src="https://guozheng.rbind.io/video/posts/2023/07/07-16-sing.mp4" style="width: 95%; display: block; margin: 0 auto;" controls></video>|
+|:-:|
+|《风雨夜归人》——李克勤|
