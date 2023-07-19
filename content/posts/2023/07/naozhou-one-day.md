@@ -126,3 +126,8 @@ tags:
 
 阿用告诉我，是我草率了。
 
+|![](/images/posts/2023/07/07-16-meat.jpg)|![](/images/posts/2023/07/07-16-fire-meat.jpg)|
+|:-:|:-:|
+|→|→|
+|![](/images/posts/2023/07/07-16-firing-meat.jpg)|![](/images/posts/2023/07/07-16-miracle.jpg)|
+|→|最后的奇迹……|
