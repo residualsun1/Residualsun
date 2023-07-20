@@ -40,3 +40,10 @@ tags:
 
 不管看几次都觉得很香的煎鱼……
 
+<video src="https://guozheng.rbind.io/video/posts/2023/07/07-17-fish.mp4" style="width: 95%; display: block; margin: 0 auto;" controls></video>
+
+|![](/images/posts/2023/07/07-17-fish.jpg)|
+|:-:|
+|最后的成品|
+
+味道还是很不错的。我们可以永远相信~~阿用~~黑石屿
