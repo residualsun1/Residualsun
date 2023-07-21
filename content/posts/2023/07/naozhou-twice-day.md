@@ -40,7 +40,8 @@ tags:
 
 不管看几次都觉得很香的煎鱼……
 
-<video src="https://guozheng.rbind.io/video/posts/2023/07/07-17-fish.mp4" style="width: 95%; display: block; margin: 0 auto;" controls></video>
+|<video src="https://guozheng.rbind.io/video/posts/2023/07/07-17-fish.mp4" style="width: 95%; display: block; margin: 0 auto;" controls></video>|
+|:-:|
 
 |![](/images/posts/2023/07/07-17-fish.jpg)|
 |:-:|
@@ -63,3 +64,11 @@ tags:
 
 再从房间出来，风声雨声夹在一起。
 
+|<video src="https://guozheng.rbind.io/video/posts/2023/07/07-17-wind.mp4" style="width: 95%; display: block; margin: 0 auto;" controls></video>|
+|:-:|
+
+喜欢台风天，凉快，虽然停电，也没了信号，但是有种在短时间内世界只剩下我一个人的感觉，可以毫无顾虑地发呆和随时准备做自己想做的事情。无论风声多尖利，只要是在房间里，便有股无以伦比的安全感。
+
+我躺在床上看了一晚上的小说。
+
+希望台风可以多驻足几天。
