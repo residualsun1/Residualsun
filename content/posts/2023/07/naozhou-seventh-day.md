@@ -1,5 +1,5 @@
 ---
-title: 硇洲岛日志（七）
+title: 黑石屿记忆（七）
 author: 黄国政
 date: '2023-07-22'
 slug: naozhou-seventh-day

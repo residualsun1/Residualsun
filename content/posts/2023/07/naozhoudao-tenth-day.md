@@ -1,5 +1,5 @@
 ---
-title: 硇洲岛日志（十）
+title: 黑石屿记忆（十）
 author: 黄国政
 date: '2023-07-25'
 slug: naozhoudao-tenth-day

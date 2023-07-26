@@ -1,5 +1,5 @@
 ---
-title: 硇洲岛日志（八）
+title: 黑石屿记忆（八）
 author: 黄国政
 date: '2023-07-23'
 slug: naozhoudao-eighth-day

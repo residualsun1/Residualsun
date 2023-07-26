@@ -1,5 +1,5 @@
 ---
-title: 硇洲岛日志（四）
+title: 黑石屿记忆（四）
 author: 黄国政
 date: '2023-07-19'
 slug: naozhou-fourth-day

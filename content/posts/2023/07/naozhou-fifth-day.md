@@ -1,5 +1,5 @@
 ---
-title: 硇洲岛日志（五）
+title: 黑石屿记忆（五）
 author: 黄国政
 date: '2023-07-20'
 slug: naozhou-fifth-day
