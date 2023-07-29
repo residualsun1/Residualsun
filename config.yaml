@@ -87,6 +87,8 @@ params:
     - name: R
       path: /r_i/
       weight: 2
+    - name: 记录
+      path: /write/
       
   # You can put your custom css and js to `static` directory, or use remote css and js files which start with `http://` or `https://`
   customCSS:
