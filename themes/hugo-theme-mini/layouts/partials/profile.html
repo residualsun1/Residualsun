@@ -11,5 +11,31 @@
     
     {{ with .Site.Params.Bio }}
       <h2>{{ . | markdownify }}</h2>
+
+<!--2023.8.1添加打字机特效-->
+<div id="text">
+
+</div>
+</body>
+<script>
+  let divTyping = document.getElementById('text')
+  let i = 0,
+    timer = 0,
+    str = '我活得特别像我的时候，无论是一分钟，还是一秒钟，都意味着还有更多可能。'
+
+  function typing () {
+    if (i <= str.length) {
+      divTyping.innerHTML = str.slice(0, i++) + '_'
+      timer = setTimeout(typing, 100)
+    }
+    else {
+      divTyping.innerHTML = str//结束打字,移除 _ 光标
+      clearTimeout(timer)
+    }
+  }
+  typing()
+</script>
+<!--2023.8.1添加打字机特效-->
+
     {{ end }}
 </header>
