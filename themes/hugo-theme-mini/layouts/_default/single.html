@@ -52,8 +52,8 @@
     <!-- 2023.8.2添加最后更新时间 -->
     </br>
     <div class="update">
-    <time datetime="{{ .Page.Lastmod.Format "2006-01-02 15:04:05 MST" }}" class="post-date">
-    ✍️<b><u>：文章最后更新于 {{ .Page.Lastmod.Format "2006-01-02 15:04:05" }}</u></b>
+    <time datetime="{{ .Page.Lastmod.Format "2006年1月2日 15:04:05 MST" }}" class="post-date">
+    ✍️<b><u>：文章最后更新于 {{ .Page.Lastmod.Format "2006年1月2日 15:04:05" }}</u></b>
     {{ with .GitInfo }}
     <!--By {{ .AbbreviatedHash }}-->
     {{ end }}
