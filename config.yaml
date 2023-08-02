@@ -18,6 +18,9 @@ permalinks:
 
 paginate: 9
 enableGitInfo: true      # use git commit log to generate lastmod record # 可根据 Git 中的提交生成最近更新记录。
+# 2023.8.2添加最后更新时间
+frontmatter:
+  lastmod: ["lastmod", ":git", "date"]
 
 #googleAnalytics: your-google-analytics-id
 #disqusShortname: https-guozheng-netlify-app
@@ -75,7 +78,7 @@ params:
   hiddenPostSummaryInHomePage: false
   # Website copy write, default: '© Copyright 2021 ❤️ {params.author}'
   copyright: ''
-  #网站统计
+  # 网站统计
   busuanzi:
     enable: true
 
