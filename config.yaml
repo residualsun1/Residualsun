@@ -1,6 +1,6 @@
 baseURL: https://guozheng.rbind.io/
 languageCode: zh-CN
-title: Residualsun | 黄国政
+title: Residualsun | 残日留痕
 theme: "hugo-theme-mini"
 buildFuture: true
 timeZone: "Etc/GMT-8"    # UTC+08:00 timezone
@@ -54,7 +54,7 @@ params:
   # Site Author
   author: 残日留痕
   # Author biography
-  bio: 把种子埋进土里
+  bio: 把种子埋进土里。
   # Site Description, used in HTML meat
   description: My Blog
 

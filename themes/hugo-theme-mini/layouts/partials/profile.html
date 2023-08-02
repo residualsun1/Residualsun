@@ -21,12 +21,12 @@
   let divTyping = document.getElementById('text')
   let i = 0,
     timer = 0,
-    str = '你好哇，欢迎来我的个人自留地(●'◡'●)'
+    str = '你好哇(｡･∀･)ﾉﾞ，我是残日留痕。欢迎来到我的自留地(^^ゞ！'
 
   function typing () {
     if (i <= str.length) {
       divTyping.innerHTML = str.slice(0, i++) + '_'
-      timer = setTimeout(typing, 100)
+      timer = setTimeout(typing, 90)
     }
     else {
       divTyping.innerHTML = str//结束打字,移除 _ 光标
