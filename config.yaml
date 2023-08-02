@@ -1,6 +1,6 @@
 baseURL: https://guozheng.rbind.io/
 languageCode: zh-CN
-title: Residualsun | 残日留痕
+title: Residualsun | 黄国政
 theme: "hugo-theme-mini"
 buildFuture: true
 timeZone: "Etc/GMT-8"    # UTC+08:00 timezone
