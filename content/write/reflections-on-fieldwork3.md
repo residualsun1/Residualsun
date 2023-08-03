@@ -2,7 +2,7 @@
 title: 西埠村田野作业反思（三）
 author: 黄国政
 date: '2023-08-03'
-slug: reflection-on-fieldwork3
+slug: reflections-on-fieldwork3
 categories: []
 tags:
   - 田野调查
