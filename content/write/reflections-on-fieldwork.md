@@ -4,7 +4,8 @@ author: 黄国政
 date: '2023-07-31'
 slug: reflections-on-fieldwork
 categories: []
-tags: []
+tags:
+  - 田野调查
 ---
 
 <!--more-->
