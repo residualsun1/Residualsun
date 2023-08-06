@@ -6,7 +6,7 @@
           {{ if ($value.Name) }}
               <span class="tag">
                   <a href="{{ "tags/" | relURL }}{{ $value.Name | urlize }}">
-                    {{ $value.Name | upper }} <span>({{ $value.Count }})</span>
+                    {{ $value.Name | lower }} <span>({{ $value.Count }})</span>
                 </a>
               </span>
           {{ end }}
