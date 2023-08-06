@@ -1,5 +1,5 @@
 ---
-title: 转：《在小谷围想象世界》
+title: 《在小谷围想象世界》
 author: 黄国政
 date: '2023-08-06'
 slug: image-world-in-xiaoguwei
