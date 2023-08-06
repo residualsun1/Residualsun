@@ -1,8 +1,8 @@
 ---
-title: 西埠村田野作业反思（四）
+title: 西埠村田野作业反思（五）
 author: 黄国政
 date: '2023-08-07'
-slug: reflections-on-filed-work
+slug: reflections-on-filed-work5
 categories: []
 tags: []
 ---
