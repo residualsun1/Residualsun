@@ -87,7 +87,7 @@ params:
     ## e.g.
     # - name: Project
     #   path: /project
-    - name: 读书
+    - name: 随笔
       path: /read/
       weight: 1
     - name: R
