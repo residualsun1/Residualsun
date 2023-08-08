@@ -12,5 +12,5 @@ tags: []
 事实证明，站着唱歌似乎偶尔也能唱上高音。
 
 <audio controls>
-    <source src="https://guozheng.rbind.io/audio/2023/08/我是真的爱上你.mp3" type="audio/mpeg">
+    <source src="https://guozheng.rbind.io/audio/2023/05/我是真的爱上你.mp3" type="audio/mpeg">
 </audio>
