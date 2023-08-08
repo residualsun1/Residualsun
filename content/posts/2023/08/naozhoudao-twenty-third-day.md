@@ -31,9 +31,11 @@ tags: []
 
 ---
 
-在镇上唱了一首歌。
+在镇上唱了一首歌，还是唱不上去。
 
 本着节省手机存储空间的目的，放到博客里应该是合适的选择。
+
+看帖子的人不多，可以随便折腾。
 
 <audio controls>
     <source src="https://guozheng.rbind.io/audio/2023/08/分裂.mp3" type="audio/mpeg">
