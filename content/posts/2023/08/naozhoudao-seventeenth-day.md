@@ -8,3 +8,13 @@ tags: []
 ---
 
 <!--more-->
+
+今天的记忆是在镇上唱了一首歌，但是唱不上去。
+
+或许下次站着唱会好一些？
+
+<!-- 在 chrome 浏览器中已经禁用了 autoplay 属性 -->
+<audio controls>
+    <source src="https://guozheng.rbind.io/audio/2023/08/葡萄成熟时.mp3" type="audio/mpeg">
+</audio>
+
