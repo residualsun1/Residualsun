@@ -31,7 +31,7 @@ tags: []
 
 ---
 
-在镇上唱了一首歌，还是唱不上去。
+今晚在镇上唱了一首歌，但还是唱不上去。
 
 本着节省手机存储空间的目的，放到博客里应该是合适的选择。
 
@@ -39,4 +39,10 @@ tags: []
 
 <audio controls>
     <source src="https://guozheng.rbind.io/audio/2023/08/分裂.mp3" type="audio/mpeg">
+</audio>
+
+阿用说是没找对歌，但刚来的时候唱的歌似乎没有那么高。
+
+<audio controls>
+    <source src="https://guozheng.rbind.io/audio/2023/08/风雨夜归人.mp3" type="audio/mpeg">
 </audio>
