@@ -28,3 +28,11 @@ tags: []
 突然有点遗憾，没有吃上茉老师煮的鱼。
 
 一些人和事，本都淡淡的，平平无奇，现在却似乎在某一些时候变得重要起来。
+
+---
+
+在镇上唱了一首歌。
+
+<audio controls>
+    <source src="https://guozheng.rbind.io/audio/2023/08/分裂.mp3" type="audio/mpeg">
+</audio>
