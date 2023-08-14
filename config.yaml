@@ -54,7 +54,7 @@ params:
   # Site Author
   author: 残日留痕
   # Author biography
-  bio: 把种子埋进土里。
+  bio: 有太多话想说。
   # Site Description, used in HTML meat
   description: My Blog
 
@@ -95,7 +95,7 @@ params:
       weight: 2
     - name: 记录
       path: /write/
-      
+  
   # You can put your custom css and js to `static` directory, or use remote css and js files which start with `http://` or `https://`
   customCSS:
     ## e.g.
