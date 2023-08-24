@@ -1,9 +1,9 @@
 ---
+title: 我选择的生活
 author: 黄国政
 date: '2023-05-27'
 slug: mylife
-tags: ["碎碎念"]
-title: 我选择的生活
+tags: [生活]
 ---  
 
 <!--more-->

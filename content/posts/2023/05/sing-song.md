@@ -4,7 +4,7 @@ author: 黄国政
 date: '2023-05-14'
 slug: sing-song
 categories: []
-tags: []
+tags: [生活]
 ---
 
 <!--more-->
