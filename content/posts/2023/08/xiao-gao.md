@@ -4,7 +4,7 @@ author: 黄国政
 date: '2023-08-08'
 slug: xiao-gao
 categories: []
-tags: []
+tags: [黑石屿]
 ---
 
 小高的小指留着长长的指甲。
