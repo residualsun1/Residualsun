@@ -3,7 +3,7 @@ title: 黑石屿记忆（十九）
 author: 黄国政
 date: '2023-08-03'
 slug: naozhoudao-nighteenth-day
-categories: []
+categories: [黑石屿]
 tags:
   - 
 ---
