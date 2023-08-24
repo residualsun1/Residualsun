@@ -1,12 +1,11 @@
 ---
-title: 硇洲岛随想：不需要意义的结构（未完）
+title: 硇洲岛随想：不需要意义的结构
 author: 黄国政
 date: '2023-06-19'
 slug: do-not-need-meaning
 categories: []
 tags:
-  - 碎碎念
-  - 湛江
+  - 黑石屿
 ---
 
 横向的链条。
