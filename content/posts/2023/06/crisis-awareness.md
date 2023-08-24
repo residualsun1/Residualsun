@@ -5,7 +5,7 @@ date: '2023-06-26'
 slug: crisis-awareness
 categories: []
 tags:
-  - 碎碎念
+  - 生活
 ---
 
 静静和专注。
