@@ -4,7 +4,9 @@ author: 黄国政
 date: '2023-08-04'
 slug: real-education
 categories: []
-tags: []
+tags: 
+  - 想法
+
 ---
 
 <!--more-->

@@ -1,11 +1,11 @@
 ---
-title: 西埠村田野作业反思（一）
+title: 西埠村走访反思（一）
 author: 黄国政
 date: '2023-07-31'
 slug: reflections-on-fieldwork1
 categories: []
 tags:
-  - 田野调查
+  - 黑石屿
 ---
 
 <!--more-->
