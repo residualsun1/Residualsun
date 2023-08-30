@@ -3,7 +3,7 @@ title: 哥哥姐姐
 author: 黄国政
 date: '2023-06-11'
 slug: brothers-and-sisters
-tags: [生活]
+tags: ["生活"]
 ---
 
 > 在哥哥姐姐的眼里，我们也是永远长不大的小孩。
