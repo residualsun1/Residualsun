@@ -4,7 +4,7 @@ author: 黄国政
 date: '2023-08-14'
 slug: interesting-things
 categories: []
-tags: []
+tags: ["生活"]
 ---
 
 <!--more-->

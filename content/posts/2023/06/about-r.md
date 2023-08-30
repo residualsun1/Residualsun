@@ -3,7 +3,7 @@ title: 关于R
 author: 黄国政
 date: '2023-06-13'
 slug: about-r
-tags: ["碎碎念"]
+tags: ["想法"]
 ---
 
 <!--more-->

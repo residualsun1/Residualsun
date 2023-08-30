@@ -1,10 +1,10 @@
 ---
-title: 勉励一则。
+title: 勉励一则
 author: 黄国政
 date: '2023-08-09'
 slug: encouragement
 categories: []
-tags: []
+tags: ["想法"]
 ---
 
 <!--more-->

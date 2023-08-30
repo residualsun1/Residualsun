@@ -4,7 +4,7 @@ author: 黄国政
 date: '2023-07-29'
 slug: story
 categories: []
-tags: []
+tags: ["想法"]
 ---
 
 <!--more-->

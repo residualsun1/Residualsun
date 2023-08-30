@@ -4,7 +4,7 @@ author: 黄国政
 date: '2023-07-24'
 slug: from-the-soil
 categories: []
-tags: []
+tags: ["想法"]
 ---
 
 **<center>2023.7.21——2023.7.24</center>**

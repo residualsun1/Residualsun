@@ -1,11 +1,11 @@
 ---
-title: 《脱轨生活》
+title: 脱轨生活
 author: 黄国政
 date: '2023-07-10'
 slug: free-life
 categories: []
 tags:
-  - 
+  - 生活
   - 
 ---
 

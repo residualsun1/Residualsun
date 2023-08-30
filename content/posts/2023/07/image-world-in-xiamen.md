@@ -5,7 +5,7 @@ date: '2023-07-13'
 slug: image-world-in-xiamen
 categories: []
 tags:
-  - 
+  - 生活
 ---
 
 > *让世界更大*。

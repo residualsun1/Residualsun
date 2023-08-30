@@ -4,7 +4,7 @@ author: 黄国政
 date: '2023-08-16'
 slug: nonfiction-writing
 categories: []
-tags: []
+tags: ["想法"]
 ---
 
 <!--more-->

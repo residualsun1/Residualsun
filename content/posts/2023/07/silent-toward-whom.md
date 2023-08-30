@@ -5,7 +5,7 @@ date: '2023-07-08'
 slug: silent-toward-whom
 categories: []
 tags:
-  - 
+  - 想法
 ---
 
 尚且脆弱的时候，缄默是最好的自我保护

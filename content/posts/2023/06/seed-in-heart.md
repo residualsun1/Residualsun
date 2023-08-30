@@ -3,7 +3,7 @@ title: 把种子埋进心里
 author: 黄国政
 date: '2023-06-09'
 slug: seed-in-heart
-tags: ["碎碎念"]
+tags: ["想法"]
 ---
 
 <!--more-->

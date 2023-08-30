@@ -4,7 +4,7 @@ author: 黄国政
 date: '2023-07-01'
 slug: July-bill
 categories: []
-tags: []
+tags: ["生活"]
 ---
 
 <style>
