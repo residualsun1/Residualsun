@@ -90,6 +90,9 @@ params:
     - name: R
       path: /r/
       weight: 1
+    - name: 胡思乱想
+      path: /see_others/
+      weight: 2
   
   # You can put your custom css and js to `static` directory, or use remote css and js files which start with `http://` or `https://`
   customCSS:
