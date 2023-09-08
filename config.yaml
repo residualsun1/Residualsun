@@ -87,9 +87,9 @@ params:
     ## e.g.
     # - name: Project
     #   path: /project
-    - name: 当下
-      path: /now/
-      weight: 1
+    # - name: 当下
+    #   path: /now/
+    #   weight: 1
     - name: R
       path: /r/
       weight: 2
