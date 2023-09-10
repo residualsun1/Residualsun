@@ -2,7 +2,6 @@
 author: 黄国政
 title: 关于我
 ---
----
 
 <style>
 h2 {
