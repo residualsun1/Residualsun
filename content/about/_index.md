@@ -52,6 +52,6 @@ h2 {
 
 ## 写在最后
 
-欢迎大家到访我的博客，我会坚持在此发布自己的[日志](https://guozheng.netlify.app/posts/)、[学习R的过程](https://guozheng.netlify.app/r_and_i/)，以及自己的[阅读感受](https://guozheng.netlify.app/sociology_anthropology/)，也非常欢迎你到我的评论区给我留言。
+欢迎大家到访我的博客，我会坚持在此发布自己的日志、学习R的过程，以及自己的阅读感受，也非常欢迎你到我的评论区给我留言。
 
 最后，本博客主题选取了[nodejh](https://github.com/nodejh/hugo-theme-mini)的开源代码，并主要参考了[yuanfan](https://github.com/earfanfan)的参数设置，感谢他们的无私公开，让我找到了自己心仪并愿意为之持续创作的博客主题！
