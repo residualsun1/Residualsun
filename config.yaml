@@ -96,9 +96,6 @@ params:
     # - name: 想象
     #   path: /see_others/
     #   weight: 3
-    - name: English
-      path: https://residualsun.blog
-      weight: 4
   
   # You can put your custom css and js to `static` directory, or use remote css and js files which start with `http://` or `https://`
   customCSS:
