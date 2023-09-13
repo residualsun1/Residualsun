@@ -4,7 +4,7 @@ author: 黄国政
 date: '2023-08-07'
 slug: reflections-on-filed-work4
 categories: []
-tags: ["黑石屿"]
+tags: ["想法"]
 ---
 
 ## 概要
