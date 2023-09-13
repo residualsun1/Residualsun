@@ -5,7 +5,7 @@ date: '2023-07-22'
 slug: naozhou-seventh-day
 categories: []
 tags:
-  - 黑石屿
+  - 生活
 ---
 
 > 田野调查反思。
