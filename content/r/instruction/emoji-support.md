@@ -1,7 +1,7 @@
 ---
 author: Hugo Authors
 date: "2019-03-05"
-tags: ["software"]
+tags: ["R"]
 title: Emoji Support
 ---
 

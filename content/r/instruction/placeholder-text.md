@@ -1,7 +1,7 @@
 ---
 author: Hugo Authors
 date: "2019-03-09"
-tags: ["software"]
+tags: ["R"]
 title: Placeholder Text
 ---
 

@@ -3,7 +3,7 @@ author: Hugo Authors
 date: "2019-03-10"
 description: A brief description of Hugo Shortcodes
 draft: no
-tags: ["software"]
+tags: ["R"]
 title: Rich Content
 ---
 
