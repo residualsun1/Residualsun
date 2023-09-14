@@ -5,7 +5,7 @@ date: '2023-06-30'
 slug: siyuansong
 categories: []
 tags:
-  - software
+  - R
 ---
 
 <!--more-->

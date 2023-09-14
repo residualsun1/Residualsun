@@ -3,7 +3,7 @@ title: Hugo博客与markdown使用技巧
 author: 黄国政
 date: '2023-06-07'
 slug: summary-set
-tags: ["software"]
+tags: ["R"]
 ---
 
 <!--more-->
