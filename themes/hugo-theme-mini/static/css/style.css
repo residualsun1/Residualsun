@@ -11,7 +11,7 @@ body {
 }
 
 a {
-  text-decoration: underline;
+  text-decoration: none;
   color: #5badf0;
 }
 
@@ -79,7 +79,7 @@ tr:nth-child(odd)>td {
 h1,
 h2,
 h3 {
-  font-weight: 400;
+  font-weight: 700;
 }
 p {
   margin-block-start: 1.5em;
@@ -114,7 +114,7 @@ h4:hover a {
   overflow-x: auto;
 }
 p code {
-  font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, Courier, monospace;
+  font-family: 'Times New Roman', SFMono-Regular, Consolas, Liberation Mono, Menlo, Courier, monospace;
   font-size: inherit;
   background-color: rgba(0, 0, 0, 0.06);
   padding: 0 2px;
@@ -125,7 +125,7 @@ p code {
   text-indent: 0;
 }
 pre code {
-  font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, Courier, monospace;
+  font-family: 'Times New Roman', SFMono-Regular, Consolas, Liberation Mono, Menlo, Courier, monospace;
 }
 
 
@@ -256,8 +256,8 @@ nav.navigation a.button {
 
 .profile .avatar {
   display: inline-block;
-  width: 80px;
-  height: 80px;
+  width: 90px;
+  height: 90px;
   border-radius: 50%;
 }
 
@@ -358,7 +358,7 @@ nav.navigation a.button {
 #single .title {
   text-align: center;
   font-size: 32px;
-  font-weight: 400;
+  font-weight: 700;
   line-height: 48px;
 }
 
