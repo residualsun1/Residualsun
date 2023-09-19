@@ -11,7 +11,7 @@ src: local('Source Han Serif CN'), local('Source Han Serif SC'), /*如果可能�
 @font-face {
   font-family: 'SiYuanSong';
   src: local('Source Han Serif CN'), local('Source Han Serif SC'), 
-   url('static/css/Fonts/NotoSerifSC-Bold.otf') format('opentype');
+  url('static/css/Fonts/NotoSerifSC-Bold.otf') format('opentype');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
