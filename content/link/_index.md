@@ -22,7 +22,7 @@ h2,h3 {
 
 [叶寻](https://cyrusyip.org)：印象很深刻的是《为自己而活》。
 
-[列驰](https://liechi.rbind.io)：思考成熟稳重。
+[列弛](https://www.liechi.org)：思考成熟稳重。
 
 [袁凡](https://yuanfan.rbind.io)：能边写小说边写与R相关的技术博客，我很佩服
 
