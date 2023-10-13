@@ -43,9 +43,9 @@ markup:
 # Social links in footer, support github,twitter,stackoverflow,facebook
 social:
   # e.g.
-   github: https://github.com/residualsun1
-   twitter: https://twitter.com/Residualsun1
-   stackoverflow: https://stackoverflow.com/users/22065130/residualsun
+  # github: https://github.com/residualsun1
+  # twitter: https://twitter.com/Residualsun1
+  # stackoverflow: https://stackoverflow.com/users/22065130/residualsun
   # facebook: your-facebook-link
 
 
