@@ -40,14 +40,20 @@ h2,h3 {
 
 ### 英文阅读资源（基本来自博客「心的道理」）
 
-[New Yorker](https://www.newyorker.com/)：英语世界最好的文化类杂志之一。
+[New Yorker](https://www.newyorker.com/)
 
-[The Atlantic](https://www.theatlantic.com/world/)：英语世界最好的文化类杂志之一。
+[The Atlantic](https://www.theatlantic.com/world/)
 
-[Virginia Quarterly Review](https://www.vqronline.org/)：英语世界一本很好的文学杂志。
+[Virginia Quarterly Review](https://www.vqronline.org/)
 
-[The Times Literary Supplement](https://www.the-tls.co.uk/)：著名的文学杂志。
+[The Times Literary Supplement](https://www.the-tls.co.uk/)
 
+---
 
+### 通过阅读了解到的人类学家
+
+中国：吴泽霖、费孝通、林惠祥、林耀华、田汝康、黄应贵、张光直、李亦园、朱炳祥、阎云翔、景军、王铭铭、梁永佳、项飙
+
+西方：布罗尼斯拉夫·马林诺夫斯基、阿尔弗雷德·拉德克利夫-布朗、马歇尔·莫斯、玛丽·道格拉斯、埃里克·沃尔夫、迈克尔·陶西格、埃文斯-普理查德、埃德蒙·R. 利奇、阿瑟·克莱曼、大卫·格雷伯、克利福德·格尔茨、马歇尔·萨林斯
 
 

@@ -114,7 +114,7 @@ h4:hover a {
   overflow-x: auto;
 }
 p code {
-  font-family: 'Times New Roman', SFMono-Regular, Consolas, Liberation Mono, Menlo, Courier, monospace;
+  font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, Courier, monospace;
   font-size: inherit;
   background-color: rgba(0, 0, 0, 0.06);
   padding: 0 2px;
