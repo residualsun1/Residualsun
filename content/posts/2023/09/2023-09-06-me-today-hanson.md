@@ -1,5 +1,5 @@
 ---
-title: 我，今天，Hanson
+title: 关于Hanson
 author: 黄国政
 date: '2023-09-06'
 slug: me-today-hanson
