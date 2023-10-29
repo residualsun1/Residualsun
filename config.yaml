@@ -87,9 +87,6 @@ params:
     ## e.g.
     # - name: Project
     #   path: /project
-    - name: 技术
-      path: /r/
-      weight: 1
     #- name: 想象
     #  path: /see_others/
     #  weight: 2
