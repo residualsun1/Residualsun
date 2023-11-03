@@ -5,7 +5,6 @@ date: '2023-10-04'
 slug: little-trouble
 categories: []
 tags:
-  - 生活
   - 想法
 ---
 

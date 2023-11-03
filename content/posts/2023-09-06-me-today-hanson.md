@@ -6,7 +6,6 @@ slug: me-today-hanson
 categories: []
 tags:
   - 生活
-  - 想法
 ---
 
 > Hanson和他的“附近”。
