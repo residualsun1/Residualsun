@@ -46,9 +46,7 @@ tags:
 
 大岭村的祠堂不少，比如柳源堂和显宗祠。我们没有走遍村子，所以我猜想还有其他祠堂的存在，另外，比较遗憾的是没能到道观看一看。在祠堂里面转悠时，我想起了景军写的《神堂记忆》。
 
-<div style="text-align: center">
-<img src="https://guozheng.rbind.io/images/posts/2023/11/11-08-the-temple-of-memories.jpg" alt="景军的哈佛博士论文">
-</div>
+<center><img src="https://guozheng.rbind.io/images/posts/2023/11/11-08-the-temple-of-memories.jpg" alt="景军的哈佛论文"></center>
 
 在这条村子里，村民们是怎么看待宗祠的呢？他们的文化记忆、集体记忆和历史记忆是怎么样的？毕竟一个村子有多个祠堂（在我看来）似乎并不多见。我挺想看《神堂记忆》，但一直没开始，只知道景军研究的是社会记忆。豆瓣上显示的目录和一些引句挺吸引人的。
 
