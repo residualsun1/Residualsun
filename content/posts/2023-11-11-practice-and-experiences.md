@@ -48,4 +48,9 @@ tags:
 
 与生活中具体的人一起参与具体的事件，时不时需要抽离出所谓的学术话语和氛围，去感受与人相处时的伦与节，或者是相处的道理，又或者是相处时应该把握的分寸，不必恐惧可能因摩擦而产生的尴尬，甚至是冲突，这些都是锻炼的经历。
 
-![最后附上一张你画我猜时xy的抽象画作，承包了大家两分钟的笑点](/images/posts/2023/11/11-11-nihuawocai.jpg)
+<center>
+<figure>
+<img src="https://guozheng.rbind.io/images/posts/2023/11/11-11-nihuawocai.jpg" alt="景军的哈佛论文" width=40% height=40%>
+<figcaption>最后附上一张你画我猜时xy的抽象画作，承包了大家两分钟的笑点</figcaption>
+</figure>
+</center>
