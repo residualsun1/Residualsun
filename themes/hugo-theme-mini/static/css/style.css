@@ -5,7 +5,7 @@ html[theme='dark-mode'] {
 body {
   line-height: 1;
   font: normal 15px/1.5em 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  color: #404040;
+  color: black; /*原来是#404040，这个颜色是深灰的，不如黑色本身*/
   line-height: 1.75;
   letter-spacing: 0.008em;
 }
