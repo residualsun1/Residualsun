@@ -24,6 +24,15 @@
 
 <link rel="shortcut icon" href="{{ "/images/favicon.ico" | relURL }}" type="image/x-icon" />
 
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-M5EM5ECKC2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-M5EM5ECKC2');
+</script>
 {{ if .Site.Params.enableGoogleAnalytics }} 
     {{ template "_internal/google_analytics_async.html" . }}
 {{ end }}
