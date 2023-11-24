@@ -2,6 +2,9 @@ home:
   other: 首页
 
 archive:
+  other: 博文
+
+lifestream:
   other: 日志
 
 tags:
@@ -26,7 +29,7 @@ minuteRead:
   other: "{{ .ReadingTime }}分钟"
 
 publishDate:
-  other: '{{ .PublishDate.Format "2006/01/02" }}'
+  other: '{{ .PublishDate.Format "2006-01-02" }}'
 
 publishDateFull:
   other: '{{ .PublishDate.Format "2006年01月02日" }}'
@@ -47,4 +50,4 @@ poweredBy:
     href='https://github.com/nodejh/hugo-theme-mini'>nodejh</a>
 
 publishDateShort:
-  other: '{{ .PublishDate.Format "01/02" }}'
+  other: '{{ .PublishDate.Format "01-02" }}'

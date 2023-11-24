@@ -1,6 +1,6 @@
 baseURL: https://guozheng.rbind.io/
 languageCode: zh-CN
-title: Residualsun | 黄国政
+title: 黄国政
 theme: "hugo-theme-mini"
 buildFuture: true
 timeZone: "Etc/GMT-8"    # UTC+08:00 timezone
@@ -54,7 +54,7 @@ params:
   # Site Author
   author: 残日留痕
   # Author biography
-  bio: 向生活嘶吼
+  bio: 一个人的思想史便是他的阅读史
   # Site Description, used in HTML meat
   description: My Blog
 
@@ -87,12 +87,6 @@ params:
     ## e.g.
     # - name: Project
     #   path: /project
-    #- name: 想象
-    #  path: /see_others/
-    #  weight: 2
-    - name: 链接
-      path: /link/
-      weight: 4
   
   # You can put your custom css and js to `static` directory, or use remote css and js files which start with `http://` or `https://`
   customCSS:

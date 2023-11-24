@@ -17,6 +17,26 @@
 
 </div>
 </body>
+<script>
+  let divTyping = document.getElementById('text')
+  let i = 0,
+    timer = 0,
+    str = '寻找失去的时间。'
+
+  function typing () {
+    if (i <= str.length) {
+      divTyping.innerHTML = str.slice(0, i++) + '_'
+      timer = setTimeout(typing, 90)
+    }
+    else {
+      divTyping.innerHTML = str//结束打字,移除 _ 光标
+      clearTimeout(timer)
+    }
+  }
+  typing()
+</script>
+<br/>
+<!--2023.8.1添加打字机特效-->
 
     {{ end }}
 </header>
