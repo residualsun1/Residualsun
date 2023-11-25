@@ -67,7 +67,7 @@ params:
   # To enable comments, you may need to set `disqusShortname`
   enableComments: true
   # To enable comments, you may need to set `googleAnalytics`
-  enableGoogleAnalytics: true
+  enableGoogleAnalytics: false
   # To enable table of content, you could set `showToc: true`, default is `false`
   showToc: true
   # To hidden powerBy message in the page footer, you could set: `showPowerBy: false`, default is `true`
