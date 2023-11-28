@@ -8,6 +8,7 @@ body {
   color: black; /*哎呀！原来是#404040，这个颜色是深灰的，不如黑色本身，我说为什么字体看起来总是有点微微吃力的感觉！字体由15px/1.5em改成15.5px/1.5em会不会更好？*/
   line-height: 1.80; /*1.75改为1.80*/
   letter-spacing: 0.008em;
+  font-family: 'Times New Roman', 'SiYuanSong';
 }
 
 a {
@@ -125,7 +126,7 @@ p code {
   text-indent: 0;
 }
 pre code {
-  font-family: 'Times New Roman', SFMono-Regular, Consolas, Liberation Mono, Menlo, Courier, monospace;
+  font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, Courier, monospace;
 }
 
 
