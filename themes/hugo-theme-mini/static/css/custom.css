@@ -7,7 +7,7 @@ src: local('Source Han Serif CN'), local('Source Han Serif SC'), /*如果可能�
   font-display: swap;
 }
 
-
+/*
 @font-face {
   font-family: 'SiYuanSong';
   src: local('Source Han Serif CN'), local('Source Han Serif SC'), 
@@ -16,6 +16,7 @@ src: local('Source Han Serif CN'), local('Source Han Serif SC'), /*如果可能�
   font-style: normal;
   font-display: swap;
 }
+*/
 
 body {
   font-family: 'SiYuanSong';
