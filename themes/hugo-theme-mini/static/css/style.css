@@ -5,7 +5,7 @@ html[theme='dark-mode'] {
 body {
   line-height: 1;
   font: normal 15px/1.5em 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  color: black; /*哎呀！原来是#404040，这个颜色是深灰的，不如黑色本身，我说为什么字体看起来总是有点微微吃力的感觉！字体由15px/1.5em改成15.5px/1.5em会不会更好？*/
+  color: #404040; /*哎呀！原来是#404040，这个颜色是深灰的，不如黑色本身，我说为什么字体看起来总是有点微微吃力的感觉！字体由15px/1.5em改成15.5px/1.5em会不会更好？*/
   line-height: 1.80; /*1.75改为1.80*/
   letter-spacing: 0.008em;
 }
