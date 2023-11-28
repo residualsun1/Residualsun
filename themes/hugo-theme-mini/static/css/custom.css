@@ -20,5 +20,5 @@ src: local('Source Han Serif CN'), local('Source Han Serif SC'), /*如果可能�
 
 body {
   font-family: 'Times New Roman', 'SiYuanSong';
-  color: #404040;
+  color: black;
 }
