@@ -38,8 +38,9 @@ h1, h2 {
 
 ### 11.29 🌤
 
-今天把my little airport的《散步之年》循环了好多次。
 <audio controls>
     <source src="https://guozheng.rbind.io/audio/散步之年.mp3" type="audio/mpeg">
-</audio>  
+</audio>    
+
+今天把my little airport的《散步之年》循环了好多次。
 读完了《工作、消费主义与新穷人》，在阅读、写作和音乐里可以找到内在的意义感。
