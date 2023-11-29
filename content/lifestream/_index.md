@@ -35,3 +35,12 @@ h1, h2 {
 ### 11.28 🌤
 
 这两天，我观察到大家的实习有很多摸鱼的时间。尽管要早起坐班到晚上，但办公事务少，大部分的实习岗位无非是整理文件、使用excel等文书般的工作，几乎没有实质性的内容，总体比较清闲。我认为这是学习技能和自我成长最好的时间，必须有所意识，有所追求，有所规划。
+
+### 11.29 🌤
+
+今天把my little airport的《散步之年》循环了好多次。
+<audio controls>
+  <source src="https://guozheng.rbind.io/audio/散步之年.mp3" type="audio/mp3">
+  Your browser does not support the audio tag.
+</audio>
+读完了《工作、消费主义与新穷人》，在阅读、写作和音乐里可以找到内在的意义感。
