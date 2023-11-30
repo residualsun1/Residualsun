@@ -40,10 +40,9 @@ tags:
 
 但我又感到幸运。这份幸运一直都在，但它越发清晰，从陌生到熟悉，从熟悉到亲近，从“一起回岛”，到这一晚在工美港等到大家，大家朝我走过来，为首的饭团喊了一声我的名。这种感觉神奇而玄妙。
 
-![知道我没吃晚饭，大家过来时给我带了一根玉米、两条红薯和一个橙子](/images/posts/2023/11/11-30-yumi.jpg)
 <center>
 <figure>
-<img src="https://guozheng.rbind.io/images/posts/2023/11/11-30-yumi.jpg" height="50%">
+<img src="https://guozheng.rbind.io/images/posts/2023/11/11-30-yumi.jpg" height="50%" width="50%">
 <figcaption>知道我没吃晚饭，大家过来时给我带了一根玉米、两条红薯和一个橙子</figcaption>
 </figure>
 </center>
