@@ -1,5 +1,5 @@
-<p class="markdown-image">
+<figure class="markdown-image">
   <img src="{{ .Destination | safeURL }}" alt="{{ .Text }}" {{ with .Title}} title="{{ . }}"{{ end }} />
-  <pcaption style="color: gray; font-size: 13.5px; font-weight: bold;">{{ .Text }}</pcaption>
-</p>
+  <figcaption style="color: gray; font-size: 13.5px; font-weight: bold;">{{ .Text }}</figcaption>
+</figure>
 

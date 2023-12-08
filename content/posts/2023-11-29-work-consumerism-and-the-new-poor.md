@@ -12,10 +12,7 @@ tags:
 
 <!--more-->
 
-<center>
-<img src="https://guozheng.rbind.io/images/posts/2023/11/11-29-bauman.jpeg" width=90% height=90%>
-<figcaption>齐格蒙特·鲍曼</figcaption>
-</center>
+![齐格蒙特·鲍曼](/images/posts/2023/11/11-29-bauman.jpeg)
 
 ## 前言
 

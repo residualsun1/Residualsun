@@ -11,11 +11,11 @@ tags:
 <!--more-->
 
 <center>
-<img src="https://guozheng.rbind.io/images/posts/2023/11/11-21-linkpark-banner.jpg" width=90% height=90%>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=26165125&auto=1&height=66"></iframe>
 </center>
 
 <center>
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=26165125&auto=1&height=66"></iframe>
+<img src="https://guozheng.rbind.io/images/posts/2023/11/11-21-linkpark-banner.jpg" width=50% height=50%>
 </center>
 
 2023年11月21日，凌晨4：40，新包过一次药的五根右手手指还是在发疼，我再也无法忍受着反反复复的疼痛在迷糊中半睡半醒，决定下床打开电脑写些什么，关于疾病带给我的痛苦、迷茫和不规律生活对我的惩戒。
@@ -46,10 +46,7 @@ tags:
 
 过去跑步的时候喜欢听周杰伦，是感情的小调，《晴天》、《爱情悬崖》和《园游会》等等都已经听过了许多遍，我不知道自己为什么会那么喜欢。但当我回到林肯公园时，我听到了来自生命的嘶吼，听到了一股从心底虎跃而上的嘶吼，听到了灵魂的咆哮和战栗。那是我此时此刻所喜欢和向往的感受，一股淡淡的痞子气，不，更多的是一种生命力，还有不甘、有力量，我好像在查斯特·贝宁顿的嘶吼中找到了一股关于生命的力量，不再是一股简单的酷酷的感觉，而是一种纯粹的怒吼、嘶吼，一种穿透的力量感。
 
-<center>
-<img src="https://guozheng.rbind.io/images/posts/2023/11/11-21-roar.jpg" width=90% height=90%>
-<figcaption>查斯特·贝宁顿</figcaption>
-</center>
+![查斯特·贝宁顿](/images/posts/2023/11/11-21-roar.jpg)
 
 我似乎迷糊了很久，在生活里头，自卑、顾影自怜、矫情和脆弱被刻在心灵深处，但我，和我想象得每一个人，都在等待一股冲破一切的力量。我们需要咆哮，需要怒吼，也需要嘶吼。我们的灵魂动荡不安，但唯有将自己破碎一遍、燃烧一遍，将所有能量狠狠释放出来，才能迎来最后的宁静。
 
