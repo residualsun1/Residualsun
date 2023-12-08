@@ -1,5 +1,5 @@
 ---
-title: 第100篇博客
+title: 第100篇博文
 author: 黄国政
 date: '2023-12-07'
 slug: the-hundredth-blog
