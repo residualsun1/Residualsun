@@ -4,7 +4,15 @@
         {{ partial "social.html" . }}
     {{ end }}
 
-    <div class="copyright">
+<!-- 2023.8.2添加总文章数与总字数 -->
+共 {{ len (where .Site.RegularPages "Section" "posts" ) }} 篇博文
+{{$scratch := newScratch}}
+{{ range (where .Site.Pages "Kind" "page" )}}
+    {{$scratch.Add "total" .WordCount}}
+{{ end }}
+总计 {{$scratch.Get "total" }} 字
+
+<div class="copyright">
     {{ with .Site.Params.copyright }}
         {{ . | markdownify }}
     {{ else }}
@@ -15,15 +23,7 @@
        </span>
        {{ .Site.Params.Author }}
     {{ end }}
-    </div>
-
-<!-- 2023.8.2添加总文章数与总字数 -->
-共 {{ len (where .Site.RegularPages "Section" "posts" ) }} 篇博文
-{{$scratch := newScratch}}
-{{ range (where .Site.Pages "Kind" "page" )}}
-    {{$scratch.Add "total" .WordCount}}
-{{ end }}
-总计 {{$scratch.Get "total" }} 字
+</div>
 
     {{ if ne .Site.Params.showPowerBy false }}
       <div class="powerby">
