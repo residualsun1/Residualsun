@@ -17,21 +17,19 @@
     {{ end }}
     </div>
 
-    {{ if ne .Site.Params.showPowerBy false }}
-      <div class="powerby">
-        {{ i18n "poweredBy" | safeHTML }}
-      </div>
-    {{ end }}
-    
-    <!-- 2023.8.2添加总文章数与总字数 -->
-<!--
-共 {{ len (where .Site.RegularPages "Section" "posts" ) }} 篇日志
+<!-- 2023.8.2添加总文章数与总字数 -->
+共 {{ len (where .Site.RegularPages "Section" "posts" ) }} 篇博文
 {{$scratch := newScratch}}
 {{ range (where .Site.Pages "Kind" "page" )}}
     {{$scratch.Add "total" .WordCount}}
 {{ end }}
 总计 {{$scratch.Get "total" }} 字
--->
+
+    {{ if ne .Site.Params.showPowerBy false }}
+      <div class="powerby">
+        {{ i18n "poweredBy" | safeHTML }}
+      </div>
+    {{ end }}
 
 </footer>
 
