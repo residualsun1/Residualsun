@@ -23,20 +23,6 @@
       </div>
     {{ end }}
     
-    <!-- 2023.8.1添加busuanzi -->
-<!--
-{{ if .Site.Params.busuanzi.enable -}}
-<div class="busuanzi-footer">
-  <span id="busuanzi_container_site_pv">
-    本站总访问量<span id="busuanzi_value_site_pv"></span>次
-  </span>
-  <span id="busuanzi_container_site_uv">
-    本站访客数<span id="busuanzi_value_site_uv"></span>人次
-  </span>
-</div>
-{{ end }}
--->
-
     <!-- 2023.8.2添加总文章数与总字数 -->
 <!--
 共 {{ len (where .Site.RegularPages "Section" "posts" ) }} 篇日志
