@@ -78,10 +78,6 @@ params:
   hiddenPostSummaryInHomePage: false
   # Website copy write, default: '© Copyright 2021 ❤️ {params.author}'
   copyright: '© Copyright 2023 ❤️ [残日留痕](https://github.com/residualsun1)'
-  # 网站统计
-  busuanzi:
-    enable: true
-
   # Extra links in navigation
   links:
     ## e.g.
