@@ -17,21 +17,13 @@
         <span>
           {{ i18n "minuteRead" . }}
         </span>
-        
-<!--2023.08.02增加本文阅读量
-        <span class="split">
-           ·
-        </span>
-        <span>
-          <span id="busuanzi_container_page_pv">本文阅读量<span id="busuanzi_value_page_pv"></span>次</span>
-        </span>
--->
-
     </div>
+
 
     {{ if or .Site.Params.showToc .Params.showToc }}
         {{ partial "toc.html" . }}
     {{ end }}
+
 
     <div class="content">
       {{ .Content }}
@@ -51,17 +43,25 @@
         </div>
     {{ end}}
     
-    <!-- 2023.8.2添加最后更新时间 -->
+    <!-- 2023.8.2添加最后更新时间
     </br>
     <div class="update">
     <time datetime="{{ .Page.Lastmod.Format "2006年1月2日 15:04:05 MST" }}" class="post-date">
-    ✍️<b>上次更新</b>： <u>{{ .Page.Lastmod.Format "2006年1月2日 15:04:05" }}</u>
+    <b>上次更新： {{ .Page.Lastmod.Format "2006年1月2日 15:04:05" }}</b>
     {{ with .GitInfo }}
-    <!--By {{ .AbbreviatedHash }}-->
+    !--By {{ .AbbreviatedHash }}--
     {{ end }}
     </time>
     </div>
     <br/>
+    -->
+    
+     {{ if .Section }}
+    <nav id="post-nav">
+      <span class="nav-prev">{{ with .PrevInSection }}&larr; <a href="{{ .RelPermalink }}">{{ .Title }}</a>{{ end }}</span>
+      <span class="nav-next">{{ with .NextInSection }}<a href="{{ .RelPermalink }}">{{ .Title }}</a> &rarr;{{ end }}</span>
+    </nav>
+    {{ end }}
     
     {{ partial "comments.html" . }}
 </section>

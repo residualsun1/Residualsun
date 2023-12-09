@@ -401,7 +401,6 @@ nav.navigation a.button {
   color: #0366d6;
 }
 
-
 #archive {
   max-width: 580px;
   margin: 0 auto;
@@ -531,4 +530,51 @@ nav.navigation a.button {
   position: relative;
   top: 1px;
   color: #bbb;
+}
+
+/*Transitions*/
+/* Post Navigation */
+
+#post-nav {
+    text-align: center;
+    font-weight: 500;
+    margin: 1em 0;
+}
+
+#post-nav span {
+    -webkit-transition: all 0.1s linear;
+    -moz-transition: all 0.1s linear;
+    -ms-transition: all 0.1s linear;
+    -o-transition: all 0.1s linear;
+    transition: all 0.1s linear;
+    position: relative;
+}
+
+#post-nav span.prev {
+    float: left;
+}
+
+#post-nav span.next {
+    float: right;
+}
+
+#post-nav span .arrow {
+    position: relative;
+    padding: 1px;
+}
+
+#post-nav span.prev:hover .arrow {
+    left: -4px;
+}
+
+#post-nav span.next:hover .arrow {
+    right: -4px;
+}
+
+#post-nav span.prev:hover {
+    left: -3px;
+}
+
+#post-nav span.next:hover {
+    right: -3px;
 }
