@@ -1,5 +1,5 @@
 ---
-title: 修眼镜和社会团结
+title: 修眼镜
 author: 黄国政
 date: '2023-12-10'
 slug: glasses-and-social-solidarity
