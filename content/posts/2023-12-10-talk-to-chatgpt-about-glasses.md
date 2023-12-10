@@ -1,7 +1,7 @@
 ---
 title: 与Chatgpt聊“修眼镜”的写作
 author: 黄国政
-date: '2023-12-10'
+date: '2023-12-10T12:00:00Z'
 slug: talk-to-chatgpt-about-glasses
 categories: []
 tags:
