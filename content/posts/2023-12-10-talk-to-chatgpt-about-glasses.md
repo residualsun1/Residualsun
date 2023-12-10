@@ -5,7 +5,7 @@ date: '2023-12-10T12:00:00Z'
 slug: talk-to-chatgpt-about-glasses
 categories: []
 tags:
-  - 生活
+  - 想法
 ---
 
 <!--more-->

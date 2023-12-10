@@ -2,7 +2,7 @@
 title: 修眼镜
 author: 黄国政
 date: '2023-12-10'
-slug: glasses-and-social-solidarity
+slug: repair-glasses
 categories: []
 tags:
   - 生活
