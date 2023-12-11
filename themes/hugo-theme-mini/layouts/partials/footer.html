@@ -4,6 +4,8 @@
         {{ partial "social.html" . }}
     {{ end }}
 
+{{ partial "music.html" . }}
+
 <!-- 2023.8.2添加总文章数与总字数 -->
 共 {{ len (where .Site.RegularPages "Section" "posts" ) }} 篇博文
 {{$scratch := newScratch}}

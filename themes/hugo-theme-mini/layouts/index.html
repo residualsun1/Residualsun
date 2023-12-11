@@ -1,8 +1,6 @@
 {{ define "main" }}
 {{ partial "profile.html" . }}
 
-{{ partial "music.html" . }}
-
 <div id="list-page">
     {{ $pages := .Site.RegularPages }}
     {{ $paginator := .Paginate ($pages) }}
