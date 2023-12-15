@@ -3,7 +3,7 @@
   src: local('Source Han Serif CN'), local('Source Han Serif SC'),
        local('Source Han Serif TC'), local('Source Han Serif TW'),
        local('Source Han Serif'), local('Noto Serif CJK SC'), local('Songti SC'), local('SimSong'),
-       url('https://cdn.jsdelivr.net/gh/residualsun1/infont/SourceHanSerifCN-Regular.woff2') format('woff2');
+       url('https://cdn.jsdelivr.net/gh/residualsun1/infont/SourceHanSerifCN-Regular-from-yihui.woff2') format('woff2');
 }
 
 /*
