@@ -15,7 +15,7 @@
 body {
   font-family: Palatino, 'Palatino Linotype', 'Palatino LT STD', 'Latin Modern Roman', 'Source Han Serif CN', serif;
 }
-.home blockquote, .cn blockquote, .kai, .cn em, .cn .side, .hash-note, .hide-notes .toggle-notes {
+blockquote {
   font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, FandolKai, serif;
 }
 code {
