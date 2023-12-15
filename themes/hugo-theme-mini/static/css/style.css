@@ -20,7 +20,7 @@ a:hover {
 }
 
 /* markdown content styles */
-blockquote {
+body blockquote {
   /*
   margin-top: 5px;
   margin-bottom: 5px;
@@ -37,7 +37,7 @@ blockquote {
   color: #444/*#757575*/;
 }
 
-blockquote:not(:hover) {
+body blockquote:not(:hover) {
   border-left-color: transparent;
 }
 
