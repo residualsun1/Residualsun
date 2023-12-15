@@ -21,12 +21,24 @@ a:hover {
 
 /* markdown content styles */
 blockquote {
+  /*
   margin-top: 5px;
   margin-bottom: 5px;
   padding-left: 1em;
   margin-left: 0px;
+  */
+  margin: 1em 0;
+  padding: 0 2em;
+  background: none;
+  border-left-width: 3px;
+  /*
   border-left: 3px solid #eee;
-  color: #757575;
+  */
+  color: #444 /*#757575;*/
+}
+
+blockquote:not(:hover) {
+  border-left-color: transparent;
 }
 
 hr {
