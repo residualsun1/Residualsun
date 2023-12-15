@@ -20,7 +20,7 @@ a:hover {
 }
 
 /* markdown content styles */
-body blockquote {
+blockquote {
   /*
   margin-top: 5px;
   margin-bottom: 5px;
