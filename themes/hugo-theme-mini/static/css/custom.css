@@ -1,6 +1,15 @@
 @font-face {
+  font-family: 'Source Han Serif CN';
+  src: local('Source Han Serif CN'), local('Source Han Serif SC'),
+       local('Source Han Serif TC'), local('Source Han Serif TW'),
+       local('Source Han Serif'), local('Noto Serif CJK SC'), local('Songti SC'), local('SimSong'),
+       url('https://cdn.jsdelivr.net/gh/residualsun1/infont/SourceHanSerifCN-Regular.woff2') format('woff2');
+}
+
+/*
+@font-face {
 font-family: 'SiYuanSong';
-src: local('Source Han Serif CN'), local('Source Han Serif SC'), /*如果可能，调用本地字体*/
+src: local('Source Han Serif CN'), local('Source Han Serif SC'), 如果可能，调用本地字体
   url('/static/css/Fonts/SourceHanSerifCN-Regular.otf') format('opentype');
   font-weight: 400;
   font-style: normal;
@@ -16,9 +25,9 @@ src: local('Source Han Serif CN'), local('Source Han Serif SC'), /*如果可能�
   font-style: normal;
   font-display: swap;
 }
-
+*/
 
 body {
-  font-family: 'Times New Roman', 'SiYuanSong' !important;
+  font-family: Palatino, 'Palatino Linotype', 'Palatino LT STD', 'Latin Modern Roman', 'Source Han Serif CN', serif;
   color: black;
 }
