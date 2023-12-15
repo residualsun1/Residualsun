@@ -9,7 +9,7 @@
 @font-face { 
    font-family: 'FandolKai'; 
    src: local('Kaiti'), local('Kaiti SC'), local('STKaiti'), local('楷体'), local('SimKai'), local('AR PL KaitiM GB'), local('DFKai-SB'), local('FandolKai'), 
-        url('https://cdn.jsdelivr.net/gh/yihui/cron/fonts/AR-PL-KaitiM-GB-yihui.woff2') format('woff2'); 
+        url('https://cdn.jsdelivr.net/gh/residualsun1/infont/AR-PL-KaitiM-GB-from-yihui.woff2') format('woff2'); 
  } 
 
 body {
