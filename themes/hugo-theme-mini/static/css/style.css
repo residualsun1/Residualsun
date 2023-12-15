@@ -31,13 +31,11 @@ body blockquote {
   padding: 0 2em;
   background: none;
   border-left-width: 3px;
-  /*
   border-left: 3px solid #eee;
-  */
   color: #444/*#757575*/;
 }
 
-body blockquote:not(:hover) {
+blockquote:not(:hover) {
   border-left-color: transparent;
 }
 
