@@ -1,22 +1,22 @@
 @font-face {
 font-family: 'SiYuanSong';
 src: local('Source Han Serif CN'), local('Source Han Serif SC'), /*如果可能，调用本地字体*/
-  url('static/css/Fonts/NotoSerifSC-Regular.otf') format('opentype');
+  url('/static/css/Fonts/SourceHanSerifCN-Regular.otf') format('opentype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 
-/*
+
 @font-face {
   font-family: 'SiYuanSong';
   src: local('Source Han Serif CN'), local('Source Han Serif SC'), 
-  url('static/css/Fonts/NotoSerifSC-Bold.otf') format('opentype');
-  font-weight: 400;
+  url('static/css/Fonts/SourceHanSerifCN-SemiBold.otf') format('opentype');
+  font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
-*/
+
 
 body {
   font-family: 'Times New Roman', 'SiYuanSong' !important;
