@@ -42,7 +42,7 @@ h1, h2 {
     <source src="https://guozheng.rbind.io/audio/散步之年.mp3" type="audio/mpeg">
 </audio>    
 
-今天把my little airport的《散步之年》循环了好多次。  
+今天把my little airport的《散步之年》循环了好多次（我宣布，*散步之年*是我目前最喜欢的歌曲^_^）。  
 还读完了《工作、消费主义与新穷人》，好像在阅读、写作和音乐里可以找到内在的意义感。
 
 ### 11.30 阴
