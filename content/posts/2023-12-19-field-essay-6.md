@@ -1,8 +1,8 @@
 ---
-title: 语言障碍
+title: 田野随笔6：语言障碍
 author: 黄国政
 date: '2023-12-19'
-slug: language-barrier
+slug: field-essay-6
 categories: []
 tags:
   - 田野随笔
