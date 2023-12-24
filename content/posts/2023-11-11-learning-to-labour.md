@@ -1,5 +1,5 @@
 ---
-title: 保罗·威利斯与《学做工：工人阶级子弟为何继承父业》
+title: 《学做工：工人阶级子弟为何继承父业》——保罗·威利斯
 author: 黄国政
 date: '2023-11-11'
 slug: learning-to-labour
@@ -9,6 +9,11 @@ tags:
 ---
 
 <!--more-->
+
+<center>
+<img src="https://guozheng.rbind.io/images/posts/2023/11/11-11-paul.jpeg" width=50% height=50%>
+<figcaption>保罗·威利斯</figcaption>
+</center>
 
 ## 读书
 

@@ -1,5 +1,5 @@
 ---
-title: 齐格蒙特·鲍曼与《工作、消费主义和新穷人》
+title: 《工作、消费主义和新穷人》——齐格蒙特·鲍曼
 author: 黄国政
 date: '2023-11-29'
 slug: work-consumerism-and-the-new-poor

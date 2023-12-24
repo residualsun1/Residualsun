@@ -1,5 +1,5 @@
 ---
-title: 哈特穆特·罗萨与《新异化的诞生：社会加速批判理论大纲》
+title: 《新异化的诞生：社会加速批判理论大纲》——哈特穆特·罗萨
 author: 黄国政
 date: '2023-11-14'
 slug: beschleunigung-und-entfremdung
@@ -9,6 +9,11 @@ tags:
 ---
 
 <!--more-->
+
+<center>
+<img src="https://guozheng.rbind.io/images/posts/2023/11/11-14-rosa.jpg">
+<figcaption>哈特穆特·罗萨</figcaption>
+</center>
 
 ## 1.前言
 
