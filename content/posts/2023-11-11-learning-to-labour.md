@@ -1,5 +1,5 @@
 ---
-title: 《学做工：工人阶级子弟为何继承父业》——保罗·威利斯
+title: 《学做工：工人阶级子弟为何继承父业》
 author: 黄国政
 date: '2023-11-11'
 slug: learning-to-labour

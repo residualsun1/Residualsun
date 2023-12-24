@@ -1,5 +1,5 @@
 ---
-title: 《中国社会的个体化》——阎云翔
+title: 《中国社会的个体化》
 author: 黄国政
 date: '2023-10-29'
 slug: individualization-of-chinese-society
