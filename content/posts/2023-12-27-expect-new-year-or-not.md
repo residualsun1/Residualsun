@@ -24,7 +24,7 @@ tags:
 
 <center>
 <figure>
-<img src="https://guozheng.rbind.io/images/posts/2023/12/12-27-youth.jpg>
+<img src="https://guozheng.rbind.io/images/posts/2023/12/12-27-youth.jpg">
 </figure>
 </center>
 
