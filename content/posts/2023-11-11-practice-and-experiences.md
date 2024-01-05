@@ -1,7 +1,7 @@
 ---
 title: 需要经历的锻炼
 author: 黄国政
-date: '2023-11-11'
+date: '2023-11-11T12:00:00Z'
 slug: practice-and-experiences
 categories: []
 tags:

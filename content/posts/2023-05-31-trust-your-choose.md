@@ -1,5 +1,5 @@
 ---
-title: 请继续相信自己的选择
+title: 相信自己的选择
 author: 黄国政
 date: '2023-05-31'
 slug: trust-your-choose
