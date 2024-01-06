@@ -1,7 +1,7 @@
 ---
 title: 相信自己的选择
 author: 黄国政
-date: '2023-05-31'T12:00:00Z
+date: '2023-05-31T12:00:00Z'
 slug: trust-your-choose
 tags: [生活]
 ---
