@@ -5,7 +5,7 @@ date: '2023-12-01'
 slug: hard-to-face-cowardice-and-inferiority
 categories: []
 tags:
-  - 生活
+  - 小小说
 ---
 
 <!--more-->
