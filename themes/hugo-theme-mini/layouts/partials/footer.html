@@ -12,7 +12,7 @@
 {{ end }}
 总计 <span style='color: grey; font-size: 15.5px;'>{{$scratch.Get "total" }}</span> 字</strong>
 
-<!-- 添加网站运行时间 -->
+<!-- 
 {{ if .Site.Params.showRunTime }}
     <strong><div id="siteRunTime" style="letter-spacing: 1.5px;"></div></strong>
     <script>
@@ -48,6 +48,7 @@
         });
     </script>
 {{ end }}
+-->
 
 <div class="copyright">
     {{ with .Site.Params.copyright }}
