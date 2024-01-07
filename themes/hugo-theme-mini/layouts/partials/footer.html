@@ -32,13 +32,13 @@
                 var minutes = Math.floor((elapsedTime % (1000 * 60 * 60)) / (1000 * 60));
                 var seconds = Math.floor((elapsedTime % (1000 * 60)) / 1000);
 
-                var runtimeString = "我的文字已在这世上存在了<span style='color: grey;'>" +
-                    "<span style='font-size: 17px;'>" + years + "</span>年" +
-                    "<span style='font-size: 17px;'>" + months + "</span>月" +
-                    "<span style='font-size: 17px;'>" + days + "</span>天" +
-                    "<span style='font-size: 17px;'>" + hours + "</span>小时" +
-                    "<span style='font-size: 17px;'>" + minutes + "</span>分钟" +
-                    "<span style='font-size: 17px;'>" + seconds + "</span>秒</span>";
+                var runtimeString = "<strong>我写下的文字已经在这世上存在了</strong><br>" +
+                    "<strong><span style='font-size: 17px; color: grey;'>" + years + "</span></strong>年" +
+                    "<strong><span style='font-size: 17px; color: grey;'>" + months + "</span></strong>月" +
+                    "<strong><span style='font-size: 17px; color: grey;'>" + days + "</span></strong>天" +
+                    "<strong><span style='font-size: 17px; color: grey;'>" + hours + "</span></strong>小时" +
+                    "<strong><span style='font-size: 17px; color: grey;'>" + minutes + "</span></strong>分钟" +
+                    "<strong><span style='font-size: 17px; color: grey;'>" + seconds + "</span></strong>秒";
                 runtimeElement.innerHTML = runtimeString;
             }
 
