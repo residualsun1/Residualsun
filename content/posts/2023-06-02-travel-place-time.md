@@ -1,5 +1,5 @@
 ---
-title: 旅行：此地，此刻，浪漫，理想……
+title: 旅行这一刻
 author: 黄国政
 date: '2023-06-02'
 slug: travel-place-time
