@@ -5,12 +5,12 @@
     {{ end }}
 
 <!-- 2023.8.2添加总文章数与总字数 -->
-<strong>共 <span style='color: grey; font-size: 17px;'>{{ len (where .Site.RegularPages "Section" "posts" ) }}</span> 篇博文
+<strong>共 <span style='color: grey; font-size: 15.5px;'>{{ len (where .Site.RegularPages "Section" "posts" ) }}</span> 篇博文
 {{$scratch := newScratch}}
 {{ range (where .Site.Pages "Kind" "page" )}}
     {{$scratch.Add "total" .WordCount}}
 {{ end }}
-总计 <span style='color: grey; font-size: 17px;'>{{$scratch.Get "total" }}</span> 字</strong>
+总计 <span style='color: grey; font-size: 15.5px;'>{{$scratch.Get "total" }}</span> 字</strong>
 
 <!-- 添加网站运行时间 -->
 {{ if .Site.Params.showRunTime }}
@@ -33,12 +33,12 @@
                 var seconds = Math.floor((elapsedTime % (1000 * 60)) / 1000);
 
                 var runtimeString = "<strong>我写下的文字已经在这世上存在了</strong><br>" +
-                    "<strong><span style='font-size: 17px; color: grey;'>" + years + "</span></strong>年" +
-                    "<strong><span style='font-size: 17px; color: grey;'>" + months + "</span></strong>月" +
-                    "<strong><span style='font-size: 17px; color: grey;'>" + days + "</span></strong>天" +
-                    "<strong><span style='font-size: 17px; color: grey;'>" + hours + "</span></strong>小时" +
-                    "<strong><span style='font-size: 17px; color: grey;'>" + minutes + "</span></strong>分钟" +
-                    "<strong><span style='font-size: 17px; color: grey;'>" + seconds + "</span></strong>秒";
+                    "<strong><span style='font-size: 15.5px; color: grey;'>" + years + "</span></strong>年" +
+                    "<strong><span style='font-size: 15.5px; color: grey;'>" + months + "</span></strong>月" +
+                    "<strong><span style='font-size: 15.5px; color: grey;'>" + days + "</span></strong>天" +
+                    "<strong><span style='font-size: 15.5px; color: grey;'>" + hours + "</span></strong>小时" +
+                    "<strong><span style='font-size: 15.5px; color: grey;'>" + minutes + "</span></strong>分钟" +
+                    "<strong><span style='font-size: 15.5px; color: grey;'>" + seconds + "</span></strong>秒";
                 runtimeElement.innerHTML = runtimeString;
             }
 
