@@ -5,16 +5,47 @@
     {{ end }}
 
 <!-- 2023.8.2添加总文章数与总字数 -->
-共 {{ len (where .Site.RegularPages "Section" "posts" ) }} 篇博文
+<strong>共 <span style='color: grey;'>{{ len (where .Site.RegularPages "Section" "posts" ) }}</span> 篇博文
 {{$scratch := newScratch}}
 {{ range (where .Site.Pages "Kind" "page" )}}
     {{$scratch.Add "total" .WordCount}}
 {{ end }}
-总计 {{$scratch.Get "total" }} 字
+总计 <span style='color: grey;'>{{$scratch.Get "total" }}</span> 字</strong>
+
+<!-- 添加网站运行时间 -->
+{{ if .Site.Params.showRunTime }}
+    <strong><div id="siteRunTime" style="letter-spacing: 1.5px;"></div></strong>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var runtimeElement = document.getElementById("siteRunTime");
+
+            function updateRunTime() {
+                var startTime = new Date("{{ .Site.Params.startTime }}");
+                var currentTime = new Date();
+                var elapsedTime = currentTime - startTime;
+
+                var years = Math.floor(elapsedTime / (1000 * 60 * 60 * 24 * 365));
+                var days = Math.floor((elapsedTime % (1000 * 60 * 60 * 24 * 365)) / (1000 * 60 * 60 * 24));
+                var months = Math.floor(days / 30); // 使用平均每月30天的估算
+                days %= 30;
+                var hours = Math.floor((elapsedTime % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                var minutes = Math.floor((elapsedTime % (1000 * 60 * 60)) / (1000 * 60));
+                var seconds = Math.floor((elapsedTime % (1000 * 60)) / 1000);
+
+                var runtimeString = "我的文字已在这世上存在了<span style='color: grey;'>" + years + "年" + months + "月" + days + "天" + hours + "小时" + minutes + "分钟" + seconds + "秒</span>";
+                runtimeElement.innerHTML = runtimeString;
+            }
+
+            updateRunTime(); // 初始化显示
+
+            setInterval(updateRunTime, 1000); // 每秒更新
+        });
+    </script>
+{{ end }}
 
 <div class="copyright">
     {{ with .Site.Params.copyright }}
-        {{ . | markdownify }}
+        <strong>{{ . | markdownify }}</strong>
     {{ else }}
        © Copyright 
        {{ now.Format "2006"}} 
@@ -26,9 +57,9 @@
 </div>
 
     {{ if ne .Site.Params.showPowerBy false }}
-      <div class="powerby">
+      <strong><div class="powerby">
         {{ i18n "poweredBy" | safeHTML }}
-      </div>
+      </div></strong>
     {{ end }}
 
  <div>

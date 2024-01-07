@@ -85,6 +85,9 @@ params:
     #   path: /project
     - name: English
       path: https://residualsun.blog/
+  startTime: "2023-05-27T00:00:00Z"
+  showRunTime: true
+
   
   # You can put your custom css and js to `static` directory, or use remote css and js files which start with `http://` or `https://`
   customCSS:
