@@ -401,7 +401,7 @@ nav.navigation a.button {
 
 #single .content a {
   display: inline-block;
-  border-bottom: 1px dashed #5badf0;
+  border-bottom: 0.5px dashed #5badf0;
   transition: transform 0.3s ease, color 0.3s ease; /* 添加过渡效果，包括颜色过渡 */
 }
 
@@ -581,30 +581,8 @@ nav.navigation a.button {
     float: left;
 }
 
-#post-nav span.prev a {
-    display: inline-block;
-    color: #5badf0;
-    transition: transform 0.3s ease; /* 添加过渡效果 */
-}
-
-#post-nav span.prev a:hover {
-    color: #0366d6;
-    transform: translateY(-3px); /* 添加微浮动效果 */
-}
-
 #post-nav span.next {
     float: right;
-}
-
-#post-nav span.next a {
-    display: inline-block;
-    color: #5badf0;
-    transition: transform 0.3s ease; /* 添加过渡效果 */
-}
-
-#post-nav span.next a:hover {
-    color: #0366d6;
-    transform: translateY(-3px); /* 添加微浮动效果 */
 }
 
 #post-nav span .arrow {
