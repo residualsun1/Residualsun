@@ -401,7 +401,8 @@ nav.navigation a.button {
 
 #single .content a {
   display: inline-block;
-  border-bottom: 0.5px dashed #5badf0;
+  border-bottom: 1px dashed #5badf0;
+  margin-bottom: 5px; /* 调整字体和下划虚线的距离，根据需要修改值 */
   transition: transform 0.3s ease, color 0.3s ease; /* 添加过渡效果，包括颜色过渡 */
 }
 
