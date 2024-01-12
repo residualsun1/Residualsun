@@ -457,7 +457,7 @@ nav.navigation a.button {
   display: inline;
 }
 #archive .group .value .title a {
-  display: inline-block; /*需要inline-block才可以实现微浮动效果*/
+  display: inline; /*需要inline-block才可以实现微浮动效果*/
   color:#404040;
   transition: transform 0.3s ease; /* 添加过渡效果 */
 }
