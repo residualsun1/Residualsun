@@ -461,7 +461,7 @@ nav.navigation a.button {
 }
 #archive .group .value .title a:hover {
   color: #0366d6;
-  transform: translateY(-3px); /* 添加微浮动效果 */
+  transform: translateY(-4px); /* 添加微浮动效果 */
 }
 #archive .group .value .tags {
   display: inline;
