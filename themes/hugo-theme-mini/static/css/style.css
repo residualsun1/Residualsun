@@ -453,7 +453,7 @@ nav.navigation a.button {
   min-width: 60px;
 }
 #archive .group .value .title {
-  display: inline;
+  display: block;
 }
 #archive .group .value .title a {
   color:#404040;
@@ -461,7 +461,7 @@ nav.navigation a.button {
 }
 #archive .group .value .title a:hover {
   color: #0366d6;
-  transform: translateY(-2px); /* 添加微浮动效果 */
+  transform: translateY(-3px); /* 添加微浮动效果 */
 }
 #archive .group .value .tags {
   display: inline;
