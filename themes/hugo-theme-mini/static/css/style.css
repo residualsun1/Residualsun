@@ -399,6 +399,14 @@ nav.navigation a.button {
   margin-top: 36px;
 }
 
+#single .content a {
+  border-bottom: 1px dashed #5badf0;
+}
+
+#single .content a:hover {
+  color: #0366d6;
+}
+
 #single .tags {
   margin-top: 24px;
 }
