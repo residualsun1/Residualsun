@@ -453,7 +453,7 @@ nav.navigation a.button {
   min-width: 60px;
 }
 #archive .group .value .title {
-  display: block;
+  display: inline;
 }
 #archive .group .value .title a {
   color:#404040;
