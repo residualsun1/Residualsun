@@ -374,18 +374,6 @@ nav.navigation a.button {
   line-height: 48px;
 }
 
-#single a {
-  text-decoration: none;
-  color: #5badf0;
-  border-bottom: 1px dashed #5badf0;
-  transition: transform 0.3s ease; /* 添加过渡效果 */
-}
-
-#single a:hover {
-  color: #0366d6;
-  transform: translateY(-2px); /* 添加微浮动效果 */
-}
-
 @media (max-width: 700px) {
   #single {
     padding: 0 18px;
