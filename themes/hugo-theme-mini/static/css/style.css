@@ -18,7 +18,6 @@ a {
 
 a:hover {
   color: #0366d6;
-  border-bottom: 1px dashed #0366d6;
   transform: translateY(-2px); /* 添加微浮动效果 */
 }
 
@@ -258,6 +257,18 @@ nav.navigation a.button {
 .main {
   width: 100%;
   margin: 0 auto;
+}
+
+.main a {
+  text-decoration: none;
+  color: #5badf0;
+  border-bottom: 1px dashed #5badf0;
+  transition: transform 0.3s ease; /* 添加过渡效果 */
+}
+
+.main a:hover {
+  color: #0366d6;
+  transform: translateY(-2px); /* 添加微浮动效果 */
 }
 
 /* profile  */
