@@ -18,7 +18,7 @@ a {
 
 a:hover {
   color: #0366d6;
-  transform: translateY(-2px); /* 添加微浮动效果 */
+  transform: translateY(-3px); /* 添加微浮动效果 */
 }
 
 /* markdown content styles */
@@ -408,7 +408,7 @@ nav.navigation a.button {
 #single .content a:hover {
   color: #0366d6;
   border-bottom: 1px dashed #0366d6;
-  transform: translateY(-4px); /* 增加微浮动效果的位移距离 */
+  transform: translateY(-3px); /* 增加微浮动效果的位移距离 */
 }
 
 #single .tags {
