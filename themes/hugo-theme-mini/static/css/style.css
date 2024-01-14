@@ -358,6 +358,11 @@ nav.navigation a.button {
   margin-top: 48px;
 }
 
+#list-page .pagination a {
+  display: inline-block;
+  color: black;
+}
+
 #list-page .pagination .pre {
   float: left;
 }
