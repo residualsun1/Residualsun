@@ -10,9 +10,10 @@
         <section class="item">
           <div>
             <h1 class="title"><a href='{{ .RelPermalink }}'>{{ $title }}</a></h1>
-            <div class ="date">
+            <span class ="date">
                 <time datetime="{{ .PublishDate }}">{{ i18n "publishDate" . }}</time>  
-            </div>
+            </span>
+            <img src="{{ .Params.image }}" >
           </div>
 
           {{ if ne .Site.Params.hiddenPostSummaryInHomePage true }}
@@ -21,7 +22,7 @@
 
         </section>
     {{ end }}
-
+        
     {{ if or ($paginator.HasPrev) ($paginator.HasNext) }}
         <div class="pagination">
           {{ if $paginator.HasPrev }}

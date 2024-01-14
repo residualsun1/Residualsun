@@ -301,20 +301,30 @@ nav.navigation a.button {
 
 #list-page .item {
   margin: 12px 0;
+  position: relative;/*添加*/
+}
+
+#list-page .item img {
+    width: 100%; /* 让图片宽度充满父容器 */
+    max-height: 100%; /* 限制图片最大高度，根据需要调整 */
+    object-fit: cover; /* 保持图片比例并填充整个容器 */
+    margin-top: 8px; /* Adjust as needed */
+    /*border-radius: 8px; /* 可选：添加圆角效果 */
 }
 
 #list-page .title {
-  display: inline-block;
+  display: inline;
   color: #404040;
   font-size: 20px;
-  font-weight: 400;
+  font-weight: 600;
   margin: 0;
-  width: 80%;
+  /*width: 80%;*/
+  width: calc(100% - 16px); /* 考虑图片和标题之间的边距，适配宽度 */
 }
 
 #list-page .title a {
   color: #404040;
-  display: block;
+  display: inline-block;
   transition: transform 0.3s ease; /* 添加过渡效果 */
 }
 
@@ -333,22 +343,13 @@ nav.navigation a.button {
 }
 
 #list-page .summary {
-  color: #757575;
+  color: /*#757575*/black;
+  font-size: 14px;
   margin-top: 12px;
   word-break: normal;
   overflow-wrap: anywhere;
   margin-bottom: 36px;
-}
-
-#list-page .cover {
-  width: 100px;
-  height: 100px;
-  background: #fff;
-}
-
-#list-page .cover img {
-  width: 100%;
-  text-align: center;
+  text-overflow: ellipsis; /* 显示省略号 */
 }
 
 #list-page .pagination {
