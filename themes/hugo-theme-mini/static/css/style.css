@@ -406,14 +406,15 @@ nav.navigation a.button {
 
 #single .content a {
   display: inline-block;
-  border-bottom: 1px dashed #5badf0;
+  color: black;
+  border-bottom: 1px dashed /*#5badf0*/black;
   margin-bottom: 1px; /* 调整字体和下划虚线的距离，根据需要修改值 */
   transition: transform 0.3s ease, color 0.3s ease; /* 添加过渡效果，包括颜色过渡 */
 }
 
 #single .content a:hover {
-  color: #0366d6;
-  border-bottom: 1px dashed #0366d6;
+  color: /*#0366d6*/black;
+  border-bottom: 1px dashed /*#0366d6*/black;
   transform: translateY(-4px); /* 增加微浮动效果的位移距离 */
 }
 
@@ -523,6 +524,20 @@ nav.navigation a.button {
   max-width: 580px;
   margin: 48px auto 0 auto;
   padding: 0 12px;
+}
+
+#section a {
+  display: inline-block;
+  color: black;
+  border-bottom: 1px dashed /*#5badf0*/black;
+  margin-bottom: 1px; /* 调整字体和下划虚线的距离，根据需要修改值 */
+  transition: transform 0.3s ease, color 0.3s ease; /* 添加过渡效果，包括颜色过渡 */
+}
+
+#section a:hover {
+  color: /*#0366d6*/black;
+  border-bottom: 1px dashed /*#0366d6*/black;
+  transform: translateY(-4px); /* 增加微浮动效果的位移距离 */
 }
 
 /* 404 page */
