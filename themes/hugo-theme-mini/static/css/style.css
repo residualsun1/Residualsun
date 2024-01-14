@@ -316,7 +316,7 @@ nav.navigation a.button {
   display: inline;
   color: #404040;
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 400;
   margin: 0;
   /*width: 80%;*/
   width: calc(100% - 16px); /* 考虑图片和标题之间的边距，适配宽度 */
