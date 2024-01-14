@@ -352,6 +352,17 @@ nav.navigation a.button {
   text-overflow: ellipsis; /* 显示省略号 */
 }
 
+#list-page .cover {
+  width: 100px;
+  height: 100px;
+  background: #fff;
+}
+
+#list-page .cover img {
+  width: 100%;
+  text-align: center;
+}
+
 #list-page .pagination {
   margin: 48px 0;
   width: 100%;
