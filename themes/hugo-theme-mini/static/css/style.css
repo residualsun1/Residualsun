@@ -301,9 +301,9 @@ nav.navigation a.button {
 
 #list-page .item {
   margin: 12px 0;
-  position: relative;/*添加*/
 }
 
+/*想用这个，解锁index的<!--<img src="{{ .Params.image }}" >-->*/
 #list-page .item img {
     width: 100%; /* 让图片宽度充满父容器 */
     max-height: 100%; /* 限制图片最大高度，根据需要调整 */
@@ -319,7 +319,6 @@ nav.navigation a.button {
   font-weight: 400;
   margin: 0;
   width: 80%;
-  /*width: calc(100% - 16px); /* 考虑图片和标题之间的边距，适配宽度 */
 }
 
 #list-page .title a {
@@ -344,12 +343,10 @@ nav.navigation a.button {
 
 #list-page .summary {
   color: #757575;
-  font-size: 14px;
   margin-top: 12px;
   word-break: normal;
   overflow-wrap: anywhere;
   margin-bottom: 36px;
-  text-overflow: ellipsis; /* 显示省略号 */
 }
 
 #list-page .cover {
