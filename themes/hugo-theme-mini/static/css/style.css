@@ -156,17 +156,20 @@ nav.navigation a {
   top: 8px;
   right: 6px;
   padding: 8px 12px;
-  color: #5badf0;
+  color: black/*#5badf0*/;
   font-size: 13px;
   line-height: 1.35;
   border-radius: 3px;
+  display: inline-block;
+  transition: transform 0.3s ease; /* 添加过渡效果 */
 }
 nav.navigation a:hover {
-  color: #0366d6;
+  /*color: #0366d6;*/
+  transform: translateY(-3px); /* 添加微浮动效果 */
 }
 
 nav.navigation a.button {
-  background: #5badf0;
+  background: black/*#5badf0*/;
   color: #fff;
   margin-left: 12px;
 }
@@ -312,10 +315,12 @@ nav.navigation a.button {
 #list-page .title a {
   color: #404040;
   display: block;
+  transition: transform 0.3s ease; /* 添加过渡效果 */
 }
 
 #list-page .title a:hover {
-  color: #0366d6;
+  /*color: #0366d6;*/
+  transform: translateY(-3px); /* 添加微浮动效果 */
 }
 
 #list-page .date {
