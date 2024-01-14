@@ -186,7 +186,7 @@ nav.navigation a.button {
     top: 8px;
     right: 6px;
     padding: 8px 8px;
-    color: #5badf0;
+    color: /*#5badf0*/black;
     font-size: 13px;
     line-height: 1.35;
     border-radius: 3px;
@@ -468,7 +468,7 @@ nav.navigation a.button {
   transition: transform 0.3s ease; /* 添加过渡效果 */
 }
 #archive .group .value .title a:hover {
-  color: #0366d6;
+  color: /*#0366d6*/black;
   transform: translateY(-4px); /* 添加微浮动效果 */
 }
 #archive .group .value .tags {
