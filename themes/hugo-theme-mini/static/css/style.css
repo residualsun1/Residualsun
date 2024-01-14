@@ -429,7 +429,7 @@ nav.navigation a.button {
   margin-right: 3px;
 }
 #single .tags a:hover {
-  color: #0366d6;
+  color: /*#0366d6*/black;
 }
 
 #archive {
@@ -483,7 +483,7 @@ nav.navigation a.button {
   margin-right: 3px;
 }
 #archive .group .value .tags a:hover {
-  color: #0366d6;
+  color: /*#0366d6*/black;
 }
 
 /* taxonomy */
@@ -516,7 +516,7 @@ nav.navigation a.button {
   margin-right: 3px;
 }
 #tags .tag a:hover {
-  color: #0366d6;
+  color: /*#0366d6*/black;
 }
 
 /* section page */
@@ -596,6 +596,16 @@ nav.navigation a.button {
     -o-transition: all 0.1s linear;
     transition: all 0.1s linear;
     position: relative;
+}
+
+#post-nav span a {
+  color: black;
+  display: inline-block;
+  transition: transform 0.3s ease /* 添加过渡效果，包括颜色过渡 */
+}
+
+#post-nav span a:hover {
+  transform: translateY(-4px); /* 增加微浮动效果的位移距离 */
 }
 
 #post-nav span.prev {
