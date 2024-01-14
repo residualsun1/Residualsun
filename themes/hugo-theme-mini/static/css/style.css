@@ -313,18 +313,18 @@ nav.navigation a.button {
 }
 
 #list-page .title {
-  display: inline;
+  display: inline-block;
   color: #404040;
   font-size: 20px;
   font-weight: 400;
   margin: 0;
-  /*width: 80%;*/
-  width: calc(100% - 16px); /* 考虑图片和标题之间的边距，适配宽度 */
+  width: 80%;
+  /*width: calc(100% - 16px); /* 考虑图片和标题之间的边距，适配宽度 */
 }
 
 #list-page .title a {
-  color: #404040;
   display: inline-block;
+  color: #404040;
   transition: transform 0.3s ease; /* 添加过渡效果 */
 }
 
