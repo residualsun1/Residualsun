@@ -239,9 +239,27 @@ nav.navigation a.button {
   margin: 20px auto;
   font-size: 15px;
 }
+#footer .copyright a {
+  color: black;
+  display: inline-block;
+  border-bottom: 1px dashed black;
+  transition: transform 0.3s ease;
+}
+#footer .copyright a:hover {
+  transform: translateY(-3px);
+}
 .powerby {
   margin: 20px auto;
   font-size: 13px;
+}
+.powerby a {
+  color: black;
+  display: inline-block;
+  border-bottom: 1px dashed black;
+  transition: transform 0.3s ease; /* 添加过渡效果 */
+}
+.powerby a:hover {
+  transform: translateY(-3px); /* 添加微浮动效果 */
 }
 #footer .split {
   cursor: pointer;

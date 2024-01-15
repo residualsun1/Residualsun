@@ -5,15 +5,15 @@
     {{ end }}
 
 <!-- 2023.8.2添加总文章数与总字数 -->
-<strong>共 <span style='color: grey;'>{{ len (where .Site.RegularPages "Section" "posts" ) }}</span> 篇博文
+共 <span style='color: grey;'>{{ len (where .Site.RegularPages "Section" "posts" ) }}</span> 篇博文
 {{$scratch := newScratch}}
 {{ range (where .Site.Pages "Kind" "page" )}}
     {{$scratch.Add "total" .WordCount}}
 {{ end }}
-总计 <span style='color: grey;'>{{$scratch.Get "total" }}</span> 字</strong>
+总计 <span style='color: grey;'>{{$scratch.Get "total" }}</span> 字
 
 {{ if .Site.Params.showRunTime }}
-    <strong><div id="siteRunTime" style="letter-spacing: 1.5px;"></div></strong>
+    <div id="siteRunTime" style="letter-spacing: 1.5px;"></div>
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             var runtimeElement = document.getElementById("siteRunTime");
@@ -31,13 +31,13 @@
                 var minutes = Math.floor((elapsedTime % (1000 * 60 * 60)) / (1000 * 60));
                 var seconds = Math.floor((elapsedTime % (1000 * 60)) / 1000);
 
-                var runtimeString = "<strong>我写下的文字已在世界上存在了</strong><br>" +
-                    "<strong><span style='color: grey;'>" + years + "</span></strong>年" +
-                    "<strong><span style='color: grey;'>" + months + "</span></strong>月" +
-                    "<strong><span style='color: grey;'>" + days + "</span></strong>天" +
-                    "<strong><span style='color: grey;'>" + hours + "</span></strong>小时" +
-                    "<strong><span style='color: grey;'>" + minutes + "</span></strong>分钟" +
-                    "<strong><span style='color: grey;'>" + seconds + "</span></strong>秒";
+                var runtimeString = "我写下的文字已在世界上存在了<br>" +
+                    "<span style='color: grey;'>" + years + "</span>年" +
+                    "<span style='color: grey;'>" + months + "</span>月" +
+                    "<span style='color: grey;'>" + days + "</span>天" +
+                    "<span style='color: grey;'>" + hours + "</span>小时" +
+                    "<span style='color: grey;'>" + minutes + "</span>分钟" +
+                    "<span style='color: grey;'>" + seconds + "</span>秒";
                 runtimeElement.innerHTML = runtimeString;
             }
 
@@ -50,7 +50,7 @@
 
 <div class="copyright">
     {{ with .Site.Params.copyright }}
-        <strong>{{ . | markdownify }}</strong>
+        {{ . | markdownify }}
     {{ else }}
        © Copyright 
        {{ now.Format "2006"}} 
@@ -62,9 +62,9 @@
 </div>
 
     {{ if ne .Site.Params.showPowerBy false }}
-      <strong><div class="powerby">
+      <div class="powerby">
         {{ i18n "poweredBy" | safeHTML }}
-      </div></strong>
+      </div>
     {{ end }}
 
  <div>
