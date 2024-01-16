@@ -13,10 +13,9 @@ tags:
 > 有人买书放在家里，做装饰。  
 > 有人读书考试拿文凭，也是做装饰  
 > 有人把读过的书放到言谈之中，其实也还是做装饰。  
-> **读书不在多少，内心越读越强大，才算读到心里去了**。  
->                                                                                         &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;——许老心语，20230716-3
-
----
+> **读书不在多少，内心越读越强大，才算读到心里去了**。
+>
+> --- 许老心语，20230716-3
 
 ## 穿透力与敏锐性
 

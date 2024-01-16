@@ -48,12 +48,12 @@ tags:
 
 <center>
 <figure>
-<img src="https://guozheng.rbind.io/images/posts/2023/11/11-08-the-temple-of-memories.jpg" alt="景军的哈佛论文">
+<img src="https://guozheng.rbind.io/images/posts/2023/11/11-08-the-temple-of-memories.jpg" alt="景军的哈佛论文" title="景军的哈佛论文" />
 <figcaption>景军的哈佛论文</figcaption>
 </figure>
 </center>
 
-在这条村子里，村民们是怎么看待宗祠的呢？他们的文化记忆、集体记忆和历史记忆是怎么样的？毕竟一个村子有多个祠堂（在我看来）似乎并不多见。我挺想看《神堂记忆》，但一直没开始，只知道景军研究的是社会记忆。豆瓣上显示的目录和一些引句挺吸引人的。
+在这条村子里，村民们是怎么看待宗祠的呢？他们的文化记忆、集体记忆和历史记忆是怎么样的？毕竟一个村子有多个祠堂（在我看来）似乎并不多见。我挺想看《神堂记忆》，但一直没开始，只知道景军研究的是社会记忆。豆瓣上显示的目录和一些引句还挺吸引人。
 
 > 第一章 社会记忆
 >
