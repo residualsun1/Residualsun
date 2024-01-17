@@ -1,5 +1,5 @@
 ---
-title: 《森林如何思考》
+title: 《森林如何思考：超越人类的人类学》
 author: 黄国政
 date: '2024-01-17'
 slug: how-forest-think
