@@ -16,9 +16,7 @@ tags:
 
 要说伙食，我想我弄的应该是最简单最不起眼的。
 
-|![](/images/posts/2023/07/07-17-breakfast.jpg)|
-|:-:|
-|小庄视角中的云吞菜面|
+![小庄视角中的云吞菜面](/images/posts/2023/07/07-17-breakfast.jpg)
 
 吃早餐的时候饭团告诉我，速冻的云吞不用等解冻后再入锅，水烧开以后直接将云吞和面一起放入即可。
 
@@ -34,18 +32,13 @@ tags:
 
 阿用估计是不放心让我自己一个做，说和我一起煮。实际上，最后是阿用在煮，我在一旁递菜、拍照和记菜谱。
 
-|![](/images/posts/2023/07/07-17-food.jpg)|
-|:-:|
-|阿用挑选的食材|
+![阿用挑选的食材](/images/posts/2023/07/07-17-food.jpg)
 
 不管看几次都觉得很香的煎鱼……
 
-|<video src="https://guozheng.rbind.io/video/posts/2023/07/07-17-fish.mp4" style="width: 95%; display: block; margin: 0 auto;" controls></video>|
-|:-:|
+<video src="https://guozheng.rbind.io/video/posts/2023/07/07-17-fish.mp4" style="width: 95%; display: block; margin: 0 auto;" controls></video>
 
-|![](/images/posts/2023/07/07-17-fish.jpg)|
-|:-:|
-|最后的成品|
+![最后的成品](/images/posts/2023/07/07-17-fish.jpg)
 
 味道还是很不错的。我们可以永远相信~~阿用~~黑石屿。（无论是下厨还是打理内务，阿用估计都是一把手了……）
 
@@ -57,15 +50,14 @@ tags:
 
 最后的午餐成品：
 
-|![](/images/posts/2023/07/07-17-lunch.jpg)|
-|:-:|
+![](/images/posts/2023/07/07-17-lunch.jpg)
 
 吃过午饭以后，风也渐渐大了起来。饭团让阿用三点左右便离开。我没有睡午觉，在房间里看了一个下午的小说，静静地等待台风。
 
 再从房间出来，风声雨声夹在一起。
 
-|<video src="https://guozheng.rbind.io/video/posts/2023/07/07-17-wind.mp4" style="width: 95%; display: block; margin: 0 auto;" controls></video>|
-|:-:|
+<video src="https://guozheng.rbind.io/video/posts/2023/07/07-17-wind.mp4" style="width: 95%; display: block; margin: 0 auto;" controls></video>
+
 
 喜欢台风天，凉快，虽然停电，也没了信号，但是有种在短时间内世界只剩下我一个人的感觉，可以毫无顾虑地发呆和随时准备做自己想做的事情。无论风声多尖利，只要是在房间里，便有股无以伦比的安全感。
 
