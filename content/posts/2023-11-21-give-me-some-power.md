@@ -14,10 +14,6 @@ tags:
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=26165125&auto=1&height=66"></iframe>
 </center>
 
-<center>
-<img src="https://guozheng.rbind.io/images/posts/2023/11/11-21-linkpark-banner.jpg" width=50% height=50%>
-</center>
-
 2023年11月21日，凌晨4：40，新包过一次药的五根右手手指还是在发疼，我再也无法忍受着反反复复的疼痛在迷糊中半睡半醒，决定下床打开电脑写些什么，关于疾病带给我的痛苦、迷茫和不规律生活对我的惩戒。
 
 这一刻是安静的，我的灵魂终于暂时得到了栖息的时刻。在千万个日常里，琐屑的生活充斥着各种各样的杂音，试图占据我生命的空间。它们是门外无数走过的脚步声，让人去想未来的生活在何处，争渡，争渡，我们试图掌握自己的生活，让它在感知中变得高度可控；它们是注意力无法再汇聚一处，当试图静下心来看看某篇文章时，微信、朋友圈与豆瓣随时准备在下一刻掳走关注，我感到一阵恶心，一阵虚浮，伴着手指头的疼痛，我心灵无法安顿；它是我关于左手中指存在明显感染迹象的时时刻刻的忧虑，对必须处理的问题却总感到无法启齿的分裂一般的痛苦——我相信灰指甲的真菌可以在血液中传播，尽管原来只包了七根手指，但剩下的三根手指随时可能被感染。但三天前给我重新包药，态度非常认真的另一位大哥讲出了一系列与态度不负责的大哥截然不同结论，我好不容易对他建立起了信任，但当谈论给左手中指包药，我将价格从500谈到400时，我感到痛苦和迷茫。
@@ -40,7 +36,9 @@ tags:
 
 由于是跟风，不久后我也慢慢淡忘了林肯公园。
 
+<center>
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=30148051&auto=0&height=66"></iframe>
+</center>
 
 这段时间想起了林肯公园，再听时，《In the End》、《What I’ve done》、《Battle Symphony》、《One More Light》、《Numb》、《Leave Out All the Rest》、《Crawling》和《Somewhere I Belong》等等却莫名给了我一股力量。
 

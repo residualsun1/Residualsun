@@ -12,8 +12,6 @@ tags:
 
 less is more，如果可以，我想理解为内容比形式更加重要。当我们并没有非常拘泥于形式的调整时，丰富的内容往往会在简约的形式里与阅读者相互建构出“less is  more”般的效果，比之好看形式的博客更加吸引人.
 
----
-
 最近，我发现了一个界面很抓人眼球的[博客](https://wangyurui.com/)。
 
 ![](/images/posts/2023/10/10-23-attractive-blog.png)
