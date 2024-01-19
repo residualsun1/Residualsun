@@ -32,10 +32,6 @@ tags:
 
 阿用估计是不放心让我自己一个做，说和我一起煮。实际上，最后是阿用在煮，我在一旁递菜、拍照和记菜谱。
 
-不管看几次都觉得很香的煎鱼……
-
-<video src="https://guozheng.rbind.io/video/posts/2023/07/07-17-fish.mp4" style="width: 95%; display: block; margin: 0 auto;" controls></video>
-
 ![最后的成品](/images/posts/2023/07/07-17-fish.jpg)
 
 味道还是很不错的。我们可以永远相信~~阿用~~黑石屿。（无论是下厨还是打理内务，阿用估计都是一把手了……）
