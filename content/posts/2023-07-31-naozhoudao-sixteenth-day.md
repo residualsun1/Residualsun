@@ -8,7 +8,6 @@ tags:
   - 生活
 ---
 
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=443823&auto=1&height=66"></iframe>
 
 抓住七月的尾巴。
 
@@ -40,8 +39,7 @@ tags:
 
 情感是在相互间产生的。
 
-|![](/images/posts/2023/07/07-31-lieche1.gif)|
-|:-:|
+![](/images/posts/2023/07/07-31-lieche1.gif)
 
 像一班开了一个月的列车终于到站，我坐在座位上，看着一张张熟悉的面孔离开。
 
