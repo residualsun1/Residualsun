@@ -48,39 +48,24 @@ tags:
 
 开到半路，一起停下来拍夕阳。
 
-|![](/images/posts/2023/07/07-27-sunset-together.jpg)|
-|:-:|
+![](/images/posts/2023/07/07-27-sunset-together.jpg)
 
 大家一起给阿虾一家拍合影。
 
-|![](/images/posts/2023/07/07-27-axia-familiy.jpg)|
-|:-:|
+![](/images/posts/2023/07/07-27-axia-familiy.jpg)
 
 一起走向灯塔。
 
-|![](/images/posts/2023/07/07-27-walk-lighthouse1.jpg)|
-|:-:|
-
-|![](/images/posts/2023/07/07-27-walk-lighthouse2.jpg)|
-|:-:|
-
-|![](/images/posts/2023/07/07-27-walk-lighthouse3.jpg)|
-|:-:|
+![](/images/posts/2023/07/07-27-walk-lighthouse3.jpg)
 
 我们与蓝色的夜话。
 
-|![](/images/posts/2023/07/07-27-blue-night.jpg)|
-|:-:|
+![](/images/posts/2023/07/07-27-blue-night.jpg)
 
 霸场的成年与老年组碰碰车队。
 
-|![](/images/posts/2023/07/07-27-car1.jpg)|
-|:-:|
-
-|![](/images/posts/2023/07/07-27-car2.jpg)|
-|:-:|
+![](/images/posts/2023/07/07-27-car2.jpg)
 
 回来以后，我们在院子里围起了夜话，一直到将近凌晨一点半。
 
-|![](/images/posts/2023/07/07-27-night-talk.jpg)|
-|:-:|
+![](/images/posts/2023/07/07-27-night-talk.jpg)
