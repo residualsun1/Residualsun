@@ -66,4 +66,4 @@ h2, h3 {
 
 欢迎大家到访我的博客，我会坚持在此发布自己的日志、学习R的过程，以及自己的阅读感受，也非常欢迎你到我的评论区给我留言。
 
-最后，本博客主题选取了[nodejh](https://github.com/nodejh/hugo-theme-mini)的开源代码，主要参考了[yuanfan](https://github.com/earfanfan)和[益辉](https://yihui.org)的参数设置，并得到[叶寻](https://cyrusyip.org)的修改建议。感谢他们的无私公开与帮助，让我找到了自己心仪并愿意为之持续创作的博客主题！
+最后，本博客主题选取了[nodejh](https://github.com/nodejh/hugo-theme-mini)的开源代码，主要参考[袁凡](https://yuanfan.rbind.io)和[益辉](https://yihui.org)的博客参数进行设置，并得到[叶寻](https://cyrusyip.org)的修改建议。感谢他们的无私公开与帮助，让我找到了自己心仪并愿意为之持续创作的博客主题！
