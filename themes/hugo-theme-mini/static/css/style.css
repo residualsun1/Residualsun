@@ -310,23 +310,12 @@ nav.navigation a.button {
 }
 
 #list-page .title {
-  display: inline-block;
   color: #404040;
   font-size: 20px;
   font-weight: 400;
   margin: 0;
   width: 80%;
 }
-
-#list-page .title a {
-  text-decoration: none;
-}
-
-/*
-#list-page .title a:hover {
-  
-}
-*/
 
 #list-page .date {
   width: 20%;
@@ -361,11 +350,6 @@ nav.navigation a.button {
   width: 100%;
   height: 32px;
   margin-top: 48px;
-}
-
-#list-page .pagination a {
-  display: inline-block;
-  color: black;
 }
 
 #list-page .pagination .pre {
@@ -414,20 +398,10 @@ nav.navigation a.button {
   margin-top: 36px;
 }
 
-#single .content a {
-  text-decoration: none;
-  color: black;
-  border-bottom: 1px dashed /*#5badf0*/black;
-}
-
-#single .content :not(.logo)>a:hover {
-    position: relative;
-    inset: 1px 0 0 1px
-}
-
 #single .tags {
   margin-top: 24px;
 }
+
 #single .tags a {
   background: #f2f2f2;
   padding: 4px 7px;
@@ -435,6 +409,7 @@ nav.navigation a.button {
   font-size: 14px;
   margin-right: 3px;
 }
+
 #single .tags a:hover {
   color: /*#0366d6*/black;
 }
@@ -519,6 +494,7 @@ nav.navigation a.button {
   font-size: 14px;
   margin-right: 3px;
 }
+
 #tags .tag a:hover {
   color: /*#0366d6*/black;
 }
@@ -530,25 +506,13 @@ nav.navigation a.button {
   padding: 0 12px;
 }
 
-/*
-#section a {
-  text-decoration: none;
-  color: initial;
-  border-bottom: 1px dashed;
-}
-
-#section :not(.logo)>a:hover {
-    position: relative;
-    inset: 1px 0 0 1px
-}
-*/
-
 /* 404 page */
 #page-404 {
   max-width: 580px;
   margin: 0 auto;
   padding: 0 24px;
 }
+
 #page-404 .item {
   margin: 12px 0 0 0;
 }
