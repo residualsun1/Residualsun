@@ -374,6 +374,17 @@ nav.navigation a.button {
   line-height: 48px;
 }
 
+#single .content a {
+  text-decoration: none;
+  color: initial;
+  border-bottom: 1px dashed;
+}
+
+#single .content :not(.logo)>a:hover {
+    position: relative;
+    inset: 1px 0 0 1px
+}
+
 @media (max-width: 700px) {
   #single {
     padding: 0 18px;
