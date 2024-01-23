@@ -159,13 +159,6 @@ nav.navigation a {
   font-size: 13px;
   line-height: 1.35;
   border-radius: 3px;
-  display: inline-block;
-  transition: transform 0.3s ease; /* 添加过渡效果 */
-}
-
-nav.navigation a:hover {
-  /*color: #0366d6;*/
-  transform: translateY(-3px); /* 添加微浮动效果 */
 }
 
 nav.navigation a.button {
@@ -326,15 +319,14 @@ nav.navigation a.button {
 }
 
 #list-page .title a {
-  display: inline-block;
-  color: #404040;
-  transition: transform 0.3s ease; /* 添加过渡效果 */
+  text-decoration: none;
 }
 
+/*
 #list-page .title a:hover {
-  /*color: #0366d6;*/
-  transform: translateY(-3px); /* 添加微浮动效果 */
+  
 }
+*/
 
 #list-page .date {
   width: 20%;
@@ -538,6 +530,7 @@ nav.navigation a.button {
   padding: 0 12px;
 }
 
+/*
 #section a {
   text-decoration: none;
   color: initial;
@@ -548,6 +541,7 @@ nav.navigation a.button {
     position: relative;
     inset: 1px 0 0 1px
 }
+*/
 
 /* 404 page */
 #page-404 {
@@ -608,13 +602,13 @@ nav.navigation a.button {
 }
 
 #post-nav span a {
-  color: black;
-  display: inline-block;
-  transition: transform 0.3s ease /* 添加过渡效果，包括颜色过渡 */
+  color: initial;
+  text-decoration: none;
 }
 
-#post-nav span a:hover {
-  transform: translateY(-4px); /* 增加微浮动效果的位移距离 */
+#post-nav span:not(.logo)>a:hover {
+  position: relative;
+  inset: 1px 0 0 1px;
 }
 
 #post-nav span.prev {
