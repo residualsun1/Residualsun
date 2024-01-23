@@ -12,13 +12,13 @@ body {
 
 a {
   text-decoration: none;
-  color: #5badf0;
-  transition: transform 0.3s ease; /* 添加过渡效果 */
+  border-bottom: 1px dashed;
+  color: initial;
 }
 
-a:hover {
-  color: #0366d6;
-  transform: translateY(-3px); /* 添加微浮动效果 */
+:not(.logo)>a:hover {
+    position: relative;
+    inset: 1px 0 0 1px
 }
 
 /* markdown content styles */
@@ -437,17 +437,14 @@ nav.navigation a.button {
 }
 
 #single .content a {
-  display: inline-block;
+  text-decoration: none;
   color: black;
   border-bottom: 1px dashed /*#5badf0*/black;
-  margin-bottom: 1px; /* 调整字体和下划虚线的距离，根据需要修改值 */
-  transition: transform 0.3s ease, color 0.3s ease; /* 添加过渡效果，包括颜色过渡 */
 }
 
-#single .content a:hover {
-  color: /*#0366d6*/black;
-  border-bottom: 1px dashed /*#0366d6*/black;
-  transform: translateY(-4px); /* 增加微浮动效果的位移距离 */
+#single .content :not(.logo)>a:hover {
+    position: relative;
+    inset: 1px 0 0 1px
 }
 
 #single .tags {
@@ -559,17 +556,14 @@ nav.navigation a.button {
 }
 
 #section a {
-  display: inline-block;
-  color: black;
-  border-bottom: 1px dashed /*#5badf0*/black;
-  margin-bottom: 1px; /* 调整字体和下划虚线的距离，根据需要修改值 */
-  transition: transform 0.3s ease, color 0.3s ease; /* 添加过渡效果，包括颜色过渡 */
+  text-decoration: none;
+  color: initial;
+  border-bottom: 1px dashed;
 }
 
-#section a:hover {
-  color: /*#0366d6*/black;
-  border-bottom: 1px dashed /*#0366d6*/black;
-  transform: translateY(-4px); /* 增加微浮动效果的位移距离 */
+#section :not(.logo)>a:hover {
+    position: relative;
+    inset: 1px 0 0 1px
 }
 
 /* 404 page */
