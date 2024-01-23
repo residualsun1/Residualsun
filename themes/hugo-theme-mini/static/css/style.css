@@ -234,30 +234,21 @@ nav.navigation a.button {
   color: #bbbbbb;
   font-size: 14px;
 }
+
 #footer .copyright {
   margin: 20px auto;
   font-size: 15px;
 }
-#footer .copyright a {
-  color: black;
-  display: inline-block;
-  border-bottom: 1px dashed black;
-  transition: transform 0.3s ease;
-}
-#footer .copyright a:hover {
-  transform: translateY(-3px);
-}
-.powerby {
+
+#footer .powerby {
   margin: 20px auto;
   font-size: 13px;
-}
-.powerby a {
- text-decoration: none;
 }
 
 #footer .split {
   cursor: pointer;
 }
+
 #footer .split:hover path {
   fill: #ff3356;
   transition: 0.7s ease-out;
