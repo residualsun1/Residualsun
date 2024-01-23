@@ -310,6 +310,7 @@ nav.navigation a.button {
 }
 
 #list-page .title {
+  display: inline-block;
   color: #404040;
   font-size: 20px;
   font-weight: 400;
@@ -504,6 +505,17 @@ nav.navigation a.button {
   max-width: 580px;
   margin: 48px auto 0 auto;
   padding: 0 12px;
+}
+
+#section a {
+  text-decoration: none;
+  color: initial;
+  border-bottom: 1px dashed;
+}
+
+#section :not(.logo)>a:hover {
+    position: relative;
+    inset: 1px 0 0 1px
 }
 
 /* 404 page */
