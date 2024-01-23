@@ -490,15 +490,12 @@ nav.navigation a.button {
 #archive .group .value .title {
   display: inline;
 }
+
 #archive .group .value .title a {
-  display: inline; /*需要inline-block才可以实现微浮动效果*/
-  color:#404040;
-  transition: transform 0.3s ease; /* 添加过渡效果 */
+  text-decoration: none;
+  color: initial;
 }
-#archive .group .value .title a:hover {
-  color: /*#0366d6*/black;
-  transform: translateY(-4px); /* 添加微浮动效果 */
-}
+
 #archive .group .value .tags {
   display: inline;
   margin-left: 7px;
