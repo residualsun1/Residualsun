@@ -15,7 +15,7 @@ a {
   color: initial;
 }
 
-:not(.logo)>a:hover {
+a:hover {
     position: relative;
     inset: 1px 0 0 1px
 }
@@ -380,7 +380,7 @@ nav.navigation a.button {
   border-bottom: 1px dashed;
 }
 
-#single .content :not(.logo)>a:hover {
+#single .content a:hover {
     position: relative;
     inset: 1px 0 0 1px
 }
@@ -524,7 +524,7 @@ nav.navigation a.button {
   border-bottom: 1px dashed;
 }
 
-#section :not(.logo)>a:hover {
+#section a:hover {
     position: relative;
     inset: 1px 0 0 1px
 }
@@ -593,7 +593,7 @@ nav.navigation a.button {
   text-decoration: none;
 }
 
-#post-nav span:not(.logo)>a:hover {
+#post-nav span a:hover {
   position: relative;
   inset: 1px 0 0 1px;
 }
