@@ -22,18 +22,12 @@ a:hover {
 
 /* markdown content styles */
 blockquote {
-  /*
-  margin-top: 5px;
-  margin-bottom: 5px;
-  padding-left: 1em;
-  margin-left: 0px;
-  */
   margin: 1em 0;
   padding: 0 2em;
   background: none;
   border-left-width: 3px;
   border-left: 3px solid #eee;
-  color: #222/*#757575*/;
+  color: #222;
 }
 
 blockquote:not(:hover) {
@@ -152,17 +146,23 @@ nav.navigation {
 }
 
 nav.navigation a {
+  text-decoration: none;
+  color: initial;
   top: 8px;
   right: 6px;
   padding: 8px 12px;
-  color: black/*#5badf0*/;
   font-size: 13px;
   line-height: 1.35;
   border-radius: 3px;
 }
 
+nav.navigation a:hover {
+  position: relative;
+  inset: 1px 0 0 1px;
+}
+
 nav.navigation a.button {
-  background: black/*#5badf0*/;
+  background: black;
   color: #fff;
   margin-left: 12px;
 }
@@ -382,7 +382,7 @@ nav.navigation a.button {
 
 #single .content a:hover {
     position: relative;
-    inset: 1px 0 0 1px
+    inset: 1px 0 0 1px;
 }
 
 @media (max-width: 700px) {
@@ -423,7 +423,7 @@ nav.navigation a.button {
 }
 
 #single .tags a:hover {
-  color: /*#0366d6*/black;
+  color: black;
 }
 
 #archive {
@@ -474,7 +474,7 @@ nav.navigation a.button {
   margin-right: 3px;
 }
 #archive .group .value .tags a:hover {
-  color: /*#0366d6*/black;
+  color: black;
 }
 
 /* taxonomy */
@@ -508,7 +508,7 @@ nav.navigation a.button {
 }
 
 #tags .tag a:hover {
-  color: /*#0366d6*/black;
+  color: black;
 }
 
 /* section page */
@@ -526,7 +526,7 @@ nav.navigation a.button {
 
 #section a:hover {
     position: relative;
-    inset: 1px 0 0 1px
+    inset: 1px 0 0 1px;
 }
 
 /* 404 page */
