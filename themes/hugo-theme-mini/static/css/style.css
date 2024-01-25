@@ -577,6 +577,7 @@ nav.navigation a.button {
 /*Transitions*/
 /* Post Navigation */
 
+/*这是原来的导航栏设置
 #post-nav {
     text-align: center;
     font-weight: 500;
@@ -595,6 +596,7 @@ nav.navigation a.button {
 #post-nav span a {
   color: initial;
   text-decoration: none;
+  font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, FandolKai, serif;;
 }
 
 #post-nav span a:hover {
@@ -629,4 +631,41 @@ nav.navigation a.button {
 
 #post-nav span.next:hover {
     right: -3px;
+}
+*/
+
+/* Post Navigation */
+#post-nav {
+  display: flex; /* 使用 Flexbox 布局 */
+  justify-content: space-between; /* 将项目均匀分布在主轴上 */
+  align-items: center; /* 在交叉轴上居中对齐项目 */
+  text-align: center;
+  font-weight: 500;
+  margin: 3em 0;
+}
+
+#post-nav .nav-prev,
+#post-nav .nav-next {
+  flex: 1; /* 允许导航项目根据可用空间进行伸缩 */
+  position: relative;
+}
+
+#post-nav .nav-prev a,
+#post-nav .nav-next a {
+  display: inline;
+  padding: 10px;
+  font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, FandolKai, serif;
+  position: relative;  /*添加相对定位以定位竖线*/ 
+}
+
+#post-nav .nav-prev {
+  text-align: left;
+  border-left: 1px solid; /* 在左导航栏添加竖线 */
+  padding-left: 0.5em; /* 调整左导航栏左侧留出空间 */
+}
+
+#post-nav .nav-next {
+  text-align: right;
+  border-right: 1px solid; /* 在右导航栏添加竖线 */
+  padding-right: 0.5em; /* 调整右导航栏右侧留出空间 */
 }
