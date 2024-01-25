@@ -175,13 +175,18 @@ nav.navigation a.button {
     z-index: 100;
   }
   nav.navigation a {
+    text-decoration: none;
+    color: initial;
     top: 8px;
     right: 6px;
     padding: 8px 8px;
-    color: /*#5badf0*/black;
     font-size: 13px;
     line-height: 1.35;
     border-radius: 3px;
+  }
+  nav.navigation a:hover{
+    position: relative;
+    inset: 1px 0 0 1px;
   }
 }
 
