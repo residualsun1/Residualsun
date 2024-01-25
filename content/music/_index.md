@@ -18,6 +18,12 @@ h3 {
 
 一切都是为了回忆。
 
+### 2022.07.02 | 李志《关于郑州的记忆》
+
+<audio controls>
+    <source src="https://guozheng.rbind.io/audio/2022-07-02-关于郑州的记忆.mp3" type="audio/mpeg">
+</audio>  
+
 ### 2022.11.27 | 五月天《拥抱》
 
 <audio controls>
@@ -42,6 +48,18 @@ h3 {
     <source src="https://guozheng.rbind.io/audio/2023-07-16-风雨夜归人.mp3" type="audio/mpeg">
 </audio> 
 
+### 2023.07.16 | 谭咏麟《爱与痛的边缘》
+
+<audio controls>
+    <source src="https://guozheng.rbind.io/audio/2023-07-16-爱与痛的边缘.mp3" type="audio/mpeg">
+</audio>
+
+### 2023.07.23 | 李健《父亲写的散文诗》
+
+<audio controls>
+    <source src="https://guozheng.rbind.io/audio/2023-07-23-父亲写的散文诗.mp3" type="audio/mpeg">
+</audio>
+
 ### 2023.08.07 | 周杰伦《分裂》
 
 <audio controls>
@@ -54,3 +72,26 @@ h3 {
     <source src="https://guozheng.rbind.io/audio/2023-08-08-葡萄成熟时.mp3" type="audio/mpeg">
 </audio> 
 
+### 2023.08.24 | 陈慧娴《千千阙歌》
+
+<audio controls>
+    <source src="https://guozheng.rbind.io/audio/2023-08-24-千千阙歌.mp3" type="audio/mpeg">
+</audio>
+
+### 2023.08.24 | 张国荣《风继续吹》
+
+<audio controls>
+    <source src="https://guozheng.rbind.io/audio/2023-08-24-风继续吹.mp3" type="audio/mpeg">
+</audio>
+
+### 2023.08.24 | 张国荣《风再起时》
+
+<audio controls>
+    <source src="https://guozheng.rbind.io/audio/2023-08-24-风再起时.mp3" type="audio/mpeg">
+</audio>
+
+### 2024.01.09 | 张国荣《至少还有你》
+
+<audio controls>
+    <source src="https://guozheng.rbind.io/audio/2024-01-09-至少还有你.mp3" type="audio/mpeg">
+</audio>
