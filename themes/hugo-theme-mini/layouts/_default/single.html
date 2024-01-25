@@ -17,6 +17,16 @@
         <span>
           {{ i18n "minuteRead" . }}
         </span>
+        <span class="split">
+          ·
+        </span>
+        {{ with .Params.tags }}
+        <span class="tags">
+          {{ range . }}
+                <a href="{{ "tags/" | absURL }}{{ . | urlize }}">{{ . }}</a>
+          {{ end }}
+        </span>
+        {{ end }}
     </div>
 
 
@@ -34,15 +44,17 @@
           }
        </style>
     </div>
-
+    
+<!-- 此处是原来单篇文章内标签被设置的位置，位于一篇文章的底部，我调到了标题下方。
     {{ with .Params.tags }}
         <div class="tags">
             {{ range . }}
                 <a href="{{ "tags/" | absURL }}{{ . | urlize }}">{{ . }}</a>
             {{ end }}
         </div>
-    {{ end}}
-    
+    {{ end }}
+--> 
+
     <!-- 2023.8.2添加最后更新时间
     </br>
     <div class="update">
