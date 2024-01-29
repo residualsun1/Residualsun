@@ -1,6 +1,6 @@
 <nav class="navigation">
 	{{ if not .IsHome }}
-		<a href="{{ "/" | relURL }}"> <span class="arrow">←</span>{{ with .Site.Params.home }}{{ . }}{{ else }}{{ i18n "home" }}{{ end }}</a>
+		<a href="{{ "/" | relURL }}"> <!--<span class="arrow">←</span>-->{{ with .Site.Params.home }}{{ . }}{{ else }}{{ i18n "home" }}{{ end }}</a>
 	{{ end }}
 	<a href="{{ "/posts" | relURL }}">{{ with .Site.Params.archive }}{{ . }}{{ else }}{{ i18n "archive" }}{{ end }}</a>
 	<a href="{{ "/lifestream" | relURL }}">{{ with .Site.Params.lifestream }}{{ . }}{{ else }}{{ i18n "lifestream" }}{{ end }}</a>
