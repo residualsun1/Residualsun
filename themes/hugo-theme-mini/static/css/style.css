@@ -657,6 +657,7 @@ nav.navigation a.button {
 
 #post-nav .nav-prev a,
 #post-nav .nav-next a {
+  font-size: 16px/1.5em;
   display: inline;
   padding: 10px;
   font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, FandolKai, serif;
@@ -665,6 +666,8 @@ nav.navigation a.button {
 
 #post-nav .nav-prev {
   text-align: left;
+  /*border-left: 1px solid; 
+  padding-left: 0.3em;*/
 }
 
 #post-nav .nav-next {
