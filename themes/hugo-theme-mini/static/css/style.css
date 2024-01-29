@@ -665,12 +665,8 @@ nav.navigation a.button {
 
 #post-nav .nav-prev {
   text-align: left;
-  border-left: 1px solid; 
-  padding-left: 0.3em;
 }
 
 #post-nav .nav-next {
   text-align: right;
-  border-right: 1px solid; 
-  padding-right: 0.3em; 
 }
