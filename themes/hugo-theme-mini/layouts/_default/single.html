@@ -70,8 +70,8 @@
     
     {{ if .Section }}
      <nav id="post-nav">
-       <span class="nav-prev">{{ with .PrevInSection }}&larr; <a href="{{ .RelPermalink }}">{{ .Title }}</a>{{ end }}</span>
-       <span class="nav-next">{{ with .NextInSection }}<a href="{{ .RelPermalink }}">{{ .Title }}</a> &rarr;{{ end }}</span>
+       <span class="nav-prev">{{ with .PrevInSection }}<a href="{{ .RelPermalink }}">&larr;{{ .Title }}</a>{{ end }}</span>
+       <span class="nav-next">{{ with .NextInSection }}<a href="{{ .RelPermalink }}">{{ .Title }}&rarr;</a>{{ end }}</span>
 </nav>
      {{ end }}
     
