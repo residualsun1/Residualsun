@@ -153,12 +153,16 @@ nav.navigation a {
   font-size: 13px;
   line-height: 1.35;
   border-radius: 3px;
-  margin: .5rem 0 0 .5em;
 }
 
 nav.navigation a:hover {
   position: relative;
   inset: 1px 0 0 1px;
+}
+
+nav.navigation span {
+  display: inline-block;
+  margin: .5rem 0 0 .5em;
 }
 
 nav.navigation a.button {
