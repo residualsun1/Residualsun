@@ -160,11 +160,6 @@ nav.navigation a:hover {
   inset: 1px 0 0 1px;
 }
 
-nav.navigation span {
-  display: inline-block;
-  margin: .5rem 0 0 .5em;
-}
-
 nav.navigation a.button {
   background: black;
   color: #fff;
