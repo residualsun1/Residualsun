@@ -674,7 +674,7 @@ nav.navigation a.button {
   text-align: right;
 }
 
-.side-right {
+.footnotes {
     float: right;
     width: 200px;
     margin-right: calc(-200px - 2em);
@@ -686,7 +686,7 @@ nav.navigation a.button {
     margin-left: 0;
   }
   
-  .side-right {
+  .footnotes {
     float: right;
     clear: right;
     background: none;
@@ -695,7 +695,7 @@ nav.navigation a.button {
     margin-right: calc(var(--text-width) + 2.5rem * 2 - var(--body-width));
   }
   
-  blockquote .side-right {
+  blockquote .footnotes {
     margin-right: calc(var(--text-width) + 2.5rem * 2 - var(--body-width) - 2rem);
   }
 }
