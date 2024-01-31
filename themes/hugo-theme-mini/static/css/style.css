@@ -677,7 +677,7 @@ nav.navigation a.button {
 /*.hash-note, .side { background: lightyellow; }*/
 .bg-number, .note-ref:has(+ .side:hover) {
   background: #0ff;
-  filter: lightyellow;
+  filter: #0ff;
   opacity: .9;
 }
 .bg-number {
