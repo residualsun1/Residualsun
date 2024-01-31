@@ -682,7 +682,7 @@ nav.navigation a.button {
     font-size: .9em;
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1080px) {
    .has-sidenotes .main, .has-sidenotes .fullwidth {
     margin-left: 0;
   }
