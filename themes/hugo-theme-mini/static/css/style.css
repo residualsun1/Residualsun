@@ -684,13 +684,8 @@ nav.navigation a.button {
 
 @media only screen and (min-width: 992px) {
   .side-right {
-    /*width: 200px;
-    margin-right: calc(-200px - 2em);*/
-    float: right;
-    clear: right;
-    background: none;
+    width: 200px;
+    margin-right: calc(-200px - 2em);
     padding: 0 0 1em 0;
-    width: calc(var(--body-width) - var(--text-width) - 2.5rem * 2 - 2rem);
-    margin-right: calc(var(--text-width) + 2.5rem * 2 - var(--body-width));
   }
 }
