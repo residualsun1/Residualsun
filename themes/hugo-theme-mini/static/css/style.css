@@ -696,13 +696,15 @@ nav.navigation a.button {
 .hash-note a { color: inherit; }
 span.hash-note::before { content: "　# "; }
 .hide-notes .hash-note, .unlist { display: none !important; }
-.side { padding: 1em 2em; }
+/*
+.side { padding: 0.5em 0.5em; }
+*/
 .side > p:first-child { margin-top: 0; }
 .side > p:last-child { margin-bottom: 0; }
 .bg-number, .note-ref:has(+ .side:hover) {
-  background: var(--bg-body);
-  filter: invert(1);
-  opacity: .6;
+  background: #0ff;
+  filter: lightyellow;
+  opacity: .9;
 }
 .bg-number {
   padding: .1em;
