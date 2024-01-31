@@ -582,65 +582,6 @@ nav.navigation a.button {
 
 /*Transitions*/
 /* Post Navigation */
-
-/*这是原来的导航栏设置
-#post-nav {
-    text-align: center;
-    font-weight: 500;
-    margin: 1em 0;
-}
-
-#post-nav span {
-    -webkit-transition: all 0.1s linear;
-    -moz-transition: all 0.1s linear;
-    -ms-transition: all 0.1s linear;
-    -o-transition: all 0.1s linear;
-    transition: all 0.1s linear;
-    position: relative;
-}
-
-#post-nav span a {
-  color: initial;
-  text-decoration: none;
-  font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, FandolKai, serif;;
-}
-
-#post-nav span a:hover {
-  position: relative;
-  inset: 1px 0 0 1px;
-}
-
-#post-nav span.prev {
-    float: left;
-}
-
-#post-nav span.next {
-    float: right;
-}
-
-#post-nav span .arrow {
-    position: relative;
-    padding: 1px;
-}
-
-#post-nav span.prev:hover .arrow {
-    left: -4px;
-}
-
-#post-nav span.next:hover .arrow {
-    right: -4px;
-}
-
-#post-nav span.prev:hover {
-    left: -3px;
-}
-
-#post-nav span.next:hover {
-    right: -3px;
-}
-*/
-
-/* Post Navigation */
 #post-nav {
   display: flex; /* 使用 Flexbox 布局 */
   justify-content: space-between; /* 将项目均匀分布在主轴上 */
@@ -674,6 +615,8 @@ nav.navigation a.button {
   text-align: right;
 }
 
+/*footnotes*/
+
 .side-right {
     float: right;
     clear: right;
@@ -693,21 +636,18 @@ nav.navigation a.button {
 .bg-number, .note-ref:has(+ .side:hover) {
   background: #0ff;
   filter: #0ff;
-  opacity: .9;
-}
-.bg-number {
+  background: #0ff;
   padding: 1px 5px;
   border-radius: 5px;
-  background: lightslategray;
-  color: #fff;
+  opacity: .9;
 }
-
 @media (max-width: 1280px) {
   .side { width: 100%; }
   main .side, .body .side {
     padding: 0em 0em;
+    margin-top: 0em;
     color: darkslategray;
-    background-color: lightyellow;
+    font-size: .83em;
   }
   .side-right {
     clear: both;
