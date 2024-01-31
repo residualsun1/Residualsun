@@ -674,11 +674,7 @@ nav.navigation a.button {
   text-align: right;
 }
 
-.hash-note, .side { background: lightyellow; }
-.hash-note a { color: inherit; }
-.hide-notes .hash-note, .unlist { display: none !important; }
-.side > p:first-child { margin-top: 0; }
-.side > p:last-child { margin-bottom: 0; }
+/*.hash-note, .side { background: lightyellow; }*/
 .bg-number, .note-ref:has(+ .side:hover) {
   background: #0ff;
   filter: lightyellow;
