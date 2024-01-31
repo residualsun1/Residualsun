@@ -683,9 +683,11 @@ nav.navigation a.button {
 }
 
 @media only screen and (min-width: 992px) {
+   .has-sidenotes .main, .has-sidenotes .fullwidth {
+    margin-left: 0;
+  }
   .side-right {
     width: 200px;
     margin-right: calc(-200px - 2em);
-    padding: 0 0 1em 0;
   }
 }
