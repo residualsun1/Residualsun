@@ -648,7 +648,8 @@ nav.navigation a.button {
     margin-top: 0.5em;
     color: darkslategray;
     font-size: .83em;
-    background-color: lightyellow;
+    border-radius: 5px;
+    background-color: yellow;
   }
   .side-right {
     clear: both;
