@@ -173,6 +173,10 @@ nav.navigation a.button {
     margin: 0 auto;
     text-align: right;
     z-index: 100;
+    /* scrollable menu */
+    white-space: nowrap;
+    overflow-y: hidden;
+    overflow-x: auto;
   }
   nav.navigation a {
     text-decoration: none;
