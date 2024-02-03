@@ -175,15 +175,14 @@ nav.navigation a.button {
     z-index: 100;
     /* scrollable menu */
     white-space: nowrap;
-    overflow-y: hidden;
-    overflow-x: auto;
+    overflow: auto;
   }
   nav.navigation a {
     text-decoration: none;
     color: initial;
     top: 8px;
     right: 6px;
-    padding: 8px 8px;
+    padding: 4px 8px; /* 原来是 8px 8px，要降低上下内边距才能看到订阅按钮的下边界 */
     font-size: 13px;
     line-height: 1.35;
     border-radius: 3px;
