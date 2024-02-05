@@ -685,7 +685,8 @@ nav.navigation a.button {
     float: right;
     clear: right;
     margin-right: calc(-200px - 2em);
-    background-color: var(--background);
+    background-color: lightyellow;
+    padding: 0.5em;
 
     p {
         font-size: .9rem;
