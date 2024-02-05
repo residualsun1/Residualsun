@@ -619,6 +619,7 @@ nav.navigation a.button {
 }
 
 /*footnotes*/
+
 /*
 .side-right {
     float: right;
@@ -667,6 +668,9 @@ nav.navigation a.button {
   }
 }
 */
+
+/*---分界线---*/
+
 
 .side {
     width: 200px;
@@ -722,7 +726,7 @@ nav.navigation a.button {
     font-size: .9rem;
     color: var(--font-color);
     text-decoration: none;
-    padding: 1px 5px;
+    padding: 1px 3px;
     border-radius: 5px;
 }
 
