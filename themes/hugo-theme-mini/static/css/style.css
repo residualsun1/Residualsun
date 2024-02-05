@@ -685,11 +685,11 @@ nav.navigation a.button {
     float: right;
     clear: right;
     margin-right: calc(-200px - 2em);
-    background-color: lightyellow;
-    padding: 0.5em;
+    background-color: white;
 
     p {
         font-size: .9rem;
+        font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, FandolKai, serif;
     }
 }
 
@@ -723,32 +723,33 @@ nav.navigation a.button {
 }
 
 .bg-number {
-    background: var(--light-background);
+    background: lightslategray;
     font-size: .9rem;
-    color: var(--font-color);
+    color: #fff;
     text-decoration: none;
-    padding: 1px 3px;
+    padding: 1px 5px;
     border-radius: 5px;
 }
 
 @media (max-width: 1280px) {
     .side {
         width: 100%;
-        padding: 0 0em;/*这里将2em改为0em，正常了一点*/
+        padding: 0 0;/*这里将2em改为0em，正常了一点*/
     }
 
     .side-right {
         float: none;
         clear: both;
         margin: 1em auto;
-        background: lightyellow;
+        background: white;
     }
 }
 
 @media (min-width: 1280px) {
-
+    .note-ref { cursor: pointer; }
     .note-ref:hover ~ .side {
         display: inline-block;
+        background-color: lightyellow;
         position: absolute;
         margin-left: 1rem;
         padding: .5rem;
