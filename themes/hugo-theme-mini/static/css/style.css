@@ -384,18 +384,12 @@ nav.navigation a.button {
 #single .content a {
   text-decoration: none;
   color: initial;
-  border-bottom: /*1px dashed*/2px dashed #0ff;
-  /*参考湘云代码
-  box-shadow: inset 0 -4px 0 #0ff;
-  background: transparent;
-  transition: background 150ms ease;*/
+  border-bottom: 1px dashed;
 }
 
 #single .content a:hover {
     position: relative;
     inset: 1px 0 0 1px;
-    /*参考湘云代码
-    background: #0ff;*/
 }
 
 @media (max-width: 700px) {
@@ -619,58 +613,6 @@ nav.navigation a.button {
 }
 
 /*footnotes*/
-
-/*
-.side-right {
-    float: right;
-    clear: right;
-    width: 100%;
-    margin: 1em 2em;
-    font-size: .9em;
-}
-
-@media only screen and (min-width: 1080px) {
-  .side-right {
-    width: 200px;
-    margin-right: calc(-200px - 2.5em);
-  }
-}
-
-.bg-number, .note-ref:has(+ .side:hover) {
-  background: #0ff;
-  filter: #0ff;
-  background: #0ff;
-  padding: 1px 5px;
-  border-radius: 5px;
-  opacity: .9;
-}
-@media (max-width: 1280px) {
-  .side { width: 100%; }
-  main .side, .body .side {
-    padding: 0em 0em;
-    margin-top: 0.5em;
-    color: darkslategray;
-    font-size: .83em;
-    border-radius: 5px;
-    background-color: yellow;
-  }
-  .side-right {
-    clear: both;
-    margin: 1em auto;
-    background: none;
-  }
-  .note-ref + .side { margin-left: 100vw; }
-  .side > :last-child { margin-bottom: 0; }
-  .embed-right {
-    float: inherit;
-    margin: auto;
-    padding: 1em;
-  }
-}
-*/
-
-/*---分界线---*/
-
 
 .side {
     width: 200px;
