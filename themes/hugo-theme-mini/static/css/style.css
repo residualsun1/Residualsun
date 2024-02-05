@@ -733,14 +733,14 @@ nav.navigation a.button {
 @media (max-width: 1280px) {
     .side {
         width: 100%;
-        padding: 0 2em;
+        padding: 0 0em;/*这里将2em改为0em，正常了一点*/
     }
 
     .side-right {
         float: none;
         clear: both;
         margin: 1em auto;
-        background: none;
+        background: lightyellow;
     }
 }
 
