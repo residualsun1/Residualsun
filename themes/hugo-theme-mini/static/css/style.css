@@ -600,18 +600,6 @@ nav.navigation a.button {
   padding: 10px;
   font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, FandolKai, serif;
   position: relative;  /*添加相对定位以定位竖线*/ 
-  /*以下是后来添加的代码*/
-  color: inherit; /* 继承父元素的文字颜色 */
-  background-color: #f2f2f2; /* 设定灰色块的背景色 */
-  border-radius: 0px; /* 添加圆角 */
-  margin: 5px; /* 设定上下导航之间的间距 */
-  transition: transform 0.3s ease; /* 添加过渡效果 */
-}
-
-#post-nav .nav-prev a:hover,
-#post-nav .nav-next a:hover {
-  background-color: #e0e0e0; /* 鼠标悬停时的背景色 */
-  transform: translateY(-5px); /* 向上浮动5像素 */
 }
 
 #post-nav .nav-prev {
