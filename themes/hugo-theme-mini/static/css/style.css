@@ -596,7 +596,7 @@ nav.navigation a.button {
 
 #post-nav .nav-prev a,
 #post-nav .nav-next a {
-  display: /*inline;*/block;/* 修改为块级元素，以充满父元素的宽度 */
+  display: inline;
   padding: 10px;
   font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, FandolKai, serif;
   position: relative;  /*添加相对定位以定位竖线*/ 
