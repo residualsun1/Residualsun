@@ -678,6 +678,7 @@ nav.navigation a.button {
     }
 
     .side-right {
+        font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, FandolKai, serif;
         float: none;
         clear: both;
         margin: 1em auto;
