@@ -10,25 +10,25 @@ tags:
 
 <!--more-->
 
-志钧和我说，他想去欧洲徒步两个月，原因并不复杂——电影《朝圣之路》中的几段对话深深击中了他的心灵：
+志钧和我说，他想去欧洲徒步两个月，原因并不复杂——电影[《朝圣之路》](https://movie.douban.com/subject/3750104/)中的几段对话深深击中了他的心灵：
 
 > Son: "Listen…My doctorate…I'm not gonna finish it."  
-> “听着……我的博士学位，我不准备完成了。”
+> 儿子：“听着……我的博士学位，我不准备完成了。”
 >
 > Dad: "You mean this year?"  
-> “你是说今年？”
+> 父亲：“你是说今年？”
 >
 > Son: "I mean ever."  
-> “我是说永远。”
+> 儿子：“我是说永远。”
 >
 > Son: "I can't learn about the world in school."  
-> “我没法在学校里学习这个世界。”
+> 儿子：“我没法在学校里学习这个世界。”
 >
 > Dad: "You're not just in school. You're at Berkeley. Take a semester off, sure, but don't throw away the last 10 years of your life."  
->“你去的不是一般学校，你去的是伯克利。休学一学期，没关系，但别把你过去十年的心血白费。”
+> 父亲：“你去的不是一般学校，你去的是伯克利。休学一学期，没关系，但别把你过去十年的心血白费。”
 >
 > Son: "When was the last time you travelled about abroad? And I'm not talking about for business. Nepal. Morocco. India. Papua New Guinea. Europe. I gotta go to these places. I gotta go. I gotta go."  
-> “你上次出国旅行是什么时候？我不是说商务旅行，尼泊尔、摩洛哥、印度、巴布亚新几内亚、欧洲。我要去这些地方，我得去，我得去。”
+> 儿子：“你上次出国旅行是什么时候？我不是说商务旅行，尼泊尔、摩洛哥、印度、巴布亚新几内亚、欧洲。我要去这些地方，我得去，我得去。”
 
 我尊重他的选择，纵使我难以抑制地认为他的想法难免理想化与浪漫化了一些。但如同我害怕的事情正是可能性的减少一般，我还是希望我们的未来可以多一些可能。
 
