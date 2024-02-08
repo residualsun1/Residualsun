@@ -1,7 +1,7 @@
 ---
 title: 自由的水手
 author: 黄国政
-date: '2024-02-06'
+date: '2024-02-06T12:00:00Z'
 slug: free-sailor
 categories: []
 tags:
