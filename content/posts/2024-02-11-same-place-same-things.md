@@ -5,7 +5,6 @@ date: '2024-02-11'
 slug: same-place-same-things
 categories: []
 tags:
-  - 杂文
   - 阅读
 ---
 
