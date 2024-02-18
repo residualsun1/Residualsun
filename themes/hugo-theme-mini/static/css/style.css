@@ -308,13 +308,13 @@ nav.navigation a.button {
 }
 
 /*想用这个，解锁index的<!--<img src="{{ .Params.image }}" >-->*/
-#list-page .item img {
-    width: 100%; /* 让图片宽度充满父容器 */
-    max-height: 100%; /* 限制图片最大高度，根据需要调整 */
-    object-fit: cover; /* 保持图片比例并填充整个容器 */
-    margin-top: 8px; /* Adjust as needed */
-    /*border-radius: 8px; /* 可选：添加圆角效果 */
-}
+/*#list-page .item img {
+    width: 100%; 让图片宽度充满父容器 
+    max-height: 100%; 限制图片最大高度，根据需要调整 
+    object-fit: cover; 保持图片比例并填充整个容器 
+    margin-top: 8px;  Adjust as needed 
+    border-radius: 8px; 可选：添加圆角效果
+}*/
 
 #list-page .title {
   display: inline-block;
