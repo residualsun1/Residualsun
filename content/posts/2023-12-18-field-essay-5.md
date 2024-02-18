@@ -1,5 +1,5 @@
 ---
-title: 田野随笔5：田野给的信心
+title: 田野随笔5 | 田野给的信心
 author: 黄国政
 date: '2023-12-18'
 slug: field-essay-5

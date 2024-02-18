@@ -1,5 +1,5 @@
 ---
-title: 田野随笔1：巴斯与路
+title: 田野随笔1 | 巴斯与路
 author: 黄国政
 date: '2023-12-12'
 slug: field-essay-1

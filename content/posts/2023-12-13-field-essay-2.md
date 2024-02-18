@@ -1,5 +1,5 @@
 ---
-title: 田野随笔2：如何建立关系
+title: 田野随笔2 | 如何建立关系
 author: 黄国政
 date: '2023-12-13'
 slug: field-essay-2

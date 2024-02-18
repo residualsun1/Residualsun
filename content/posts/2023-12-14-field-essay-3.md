@@ -1,5 +1,5 @@
 ---
-title: 田野随笔3：对话是件苦恼事
+title: 田野随笔3 | 对话是件苦恼事
 author: 黄国政
 date: '2023-12-14'
 slug: field-essay-3

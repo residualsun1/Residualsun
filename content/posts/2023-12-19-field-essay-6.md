@@ -1,5 +1,5 @@
 ---
-title: 田野随笔6：语言障碍
+title: 田野随笔6 | 语言障碍
 author: 黄国政
 date: '2023-12-19'
 slug: field-essay-6

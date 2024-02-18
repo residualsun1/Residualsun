@@ -1,5 +1,5 @@
 ---
-title: 田野随笔4：碎碎念
+title: 田野随笔4 | 碎碎念
 author: 黄国政
 date: '2023-12-17'
 slug: field-essay-4
