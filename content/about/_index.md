@@ -25,6 +25,7 @@ h2, h3 {
 ## 本站
 
 搭建工具：R、Rstudio、blogdown、Git、GitHub、Netlify
+
 评论系统：giscus
 
 2023年5月28日 中午，我按照统计之都的帖子成功搭建了自己的第一个博客网站，主题是anatole。我记得那天和xy老师一起吃饭，回来时他和我说：“国政，记得好好学习。”虽然他只是短暂地影响了我一段时间，但我一直很感谢他。
@@ -65,7 +66,7 @@ h2, h3 {
 
 * [太隐](https://wangyurui.com/)：博客精致，持续学习。
 
-* [郝洪涛](https://hongtaoh.com/)：毅力，奋进。
+* [郝鸿涛](https://hongtaoh.com/)：毅力，奋进。
 
 * [于淼](https://yufree.cn/)：脑力深邃。
 
