@@ -3,6 +3,13 @@
 
 <section id="section">
     {{ .Content }}
+    <div class="update">
+    <time datetime="{{ .Page.Lastmod.Format "2006年1月2日 15:04:05 MST" }}" class="post-date" style="background: #f2f2f2; padding: 9px 9px; color: #757575; font-size: 14px; margin-right: 3px;">
+    修改时间： {{ .Page.Lastmod.Format "2006年1月2日 15:04:05" }}
+    {{ with .GitInfo }}
+    {{ end }}
+    </time>
+    </div>
 </section>
-
+    
 {{ end }}
