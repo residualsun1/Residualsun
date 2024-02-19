@@ -46,21 +46,25 @@ h2, h3 {
 
 按照发现的顺序排列：
 
-* [益辉](https://yihui.org)：R码农，从《像猪一样战斗》入坑，影响我写博客的第一位朋友。
+* [益辉](https://yihui.org)：R码农，从《[像猪一样战斗](https://yihui.org/cn/2010/12/fighting-like-a-pig/)》入坑，影响我写博客的第一位朋友。
 
-* [湘云](https://xiangyun.rbind.io)：R语言爱好者，他的博客中，我阅读的第一篇是《求学10年和工作10月》，在统计之都中解答我问题的第一位朋友。
+* [湘云](https://xiangyun.rbind.io)：R语言爱好者，他的博客中，我阅读的第一篇是《[求学10年和工作10月](https://xiangyun.rbind.io/2020/08/ten-years-ten-months/)》，在统计之都中解答我问题的第一位朋友。
 
-* [叶寻](https://cyrusyip.org)：自我学习者，编程技术，他的博客中，我印象很深刻的是《为自己而活》，是我在GitHub中第一位和常驻贡献者。
+* [叶寻](https://cyrusyip.org)：自我学习者，编程技术，他的博客中，我印象很深刻的是《[为自己而活](https://cyrusyip.org/zh-cn/post/2021/02/18/live-for-myself/)》，是我在GitHub中第一位和常驻贡献者。
 
 * [列弛](https://www.liechi.org)：审慎思考，爱好文史，是第一位给我博客留言的朋友，他的文字一度给予了我温暖和支持的力量。
 
-* [袁凡](https://yuanfan.rbind.io)：思绪活跃，坚持阅读，坚持学习R，博客内容既有趣，也有着明显的个人哲思性。
+* [袁凡](https://yuanfan.rbind.io)：思绪活跃，坚持阅读，坚持学习R。
 
 * [进击的鱼子酱](https://dylanyu233.rbind.io)：初中同学，知心老朋友。虽然博客更新得很慢，但他的小记写得很走心。
 
 * [心的道理](https://stephenleng.com/)：我羡慕的写作者，擅长观察和批判社会现象。
 
 * [太隐](https://wangyurui.com/)：博客精致，持续学习。
+
+* [郝洪涛](https://hongtaoh.com/)：毅力，奋进。
+
+* [于淼](https://yufree.cn/)：脑力深邃。
 
 ## 写在最后
 
