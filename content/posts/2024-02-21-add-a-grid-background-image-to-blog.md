@@ -6,7 +6,7 @@ slug: add-a-grid-background-image-to-blog
 categories: []
 tags:
   - 折腾
-draft: true
+draft: false
 ---
 
 一位名为[天仙子](https://tianxianzi.me/)的博主的博客主题很是好看，背景以网格状呈现，字体18px，配色看起来也很舒适。
