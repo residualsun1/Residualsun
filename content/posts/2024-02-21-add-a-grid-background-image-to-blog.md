@@ -9,6 +9,8 @@ tags:
 draft: false
 ---
 
+<!--more-->
+
 一位名为[天仙子](https://tianxianzi.me/)的博主的博客主题很是好看，背景以网格状呈现，字体18px，配色看起来也很舒适。
 
 我顺着博客的页面找下去，摸到了[主题模板](https://github.com/SumiMakito/hexo-theme-typography)，遗憾的是它属于[Hexo](https://hexo.io/)，不属于[Hugo](https://gohugo.io/)。在Github上搜索hugo-theme-typography也无果。
