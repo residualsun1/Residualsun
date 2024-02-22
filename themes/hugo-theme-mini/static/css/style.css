@@ -32,7 +32,7 @@ blockquote {
   padding: 0 2em;
   background: none;
   border-left-width: 3px;
-  border-left: 3px solid #292929;
+  border-left: 3px solid #d3d3d3;
   color: #222;
 }
 
@@ -241,7 +241,7 @@ nav.navigation a.button {
   margin-top: 100px;
   margin-bottom: 100px;
   text-align: center;
-  color: /*#bbbbbb*/#292929;
+  color: /*#bbbbbb*/black;
   font-size: 14px;
 }
 
@@ -250,10 +250,33 @@ nav.navigation a.button {
   font-size: 15px;
 }
 
+#footer .copyright a {
+  text-decoration: none;
+  color: initial;
+  border-bottom: 1px dashed;
+}
+
+#footer .copyright a:hover {
+    position: relative;
+    inset: 1px 0 0 1px;
+}
+
 #footer .powerby {
   margin: 20px auto;
   font-size: 13px;
 }
+
+#footer .powerby a {
+  text-decoration: none;
+  color: initial;
+  border-bottom: 1px dashed;
+}
+
+#footer .powerby a:hover {
+    position: relative;
+    inset: 1px 0 0 1px;
+}
+
 
 #footer .split {
   cursor: pointer;
@@ -340,7 +363,7 @@ nav.navigation a.button {
   text-align: right;
   position: relative;
   top: 1px;
-  color: #bbb;
+  color: /*#bbb*/#a9a9a9;
 }
 
 #list-page .summary {
@@ -414,7 +437,7 @@ nav.navigation a.button {
 
 #single .tip {
   text-align: center;
-  color: #8c8c8c;
+  color: /*#8c8c8c*/#000;
   margin-top: 18px;
   font-size: 14px;
 }
@@ -433,13 +456,16 @@ nav.navigation a.button {
 #single .tags a {
   /*background: #f2f2f2;*/
   /*padding: 4px 7px;*/
-  color: #757575;
+  text-decoration: none;
+  color: initial;
+  border-bottom: 1px dashed;
   font-size: 14px;
   margin-right: 3px;
 }
 
 #single .tags a:hover {
-  color: black;
+  position: relative;
+  inset: 1px 0 0 1px;
 }
 
 #archive {
@@ -518,7 +544,6 @@ nav.navigation a.button {
   background: #f2f2f2;
   padding: 4px 7px;
   color: #757575;
-  color: #404040;
   font-size: 14px;
   margin-right: 3px;
 }
@@ -634,7 +659,7 @@ nav.navigation a.button {
     float: right;
     clear: right;
     margin-right: calc(-200px - 2em);
-    background-color: white;
+    /*background-color: white;*/
 
     p {
         font-size: .9rem;
