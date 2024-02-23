@@ -1,6 +1,5 @@
 ---
 title: 日志
-author: 黄国政
 ---
 
 <style>
