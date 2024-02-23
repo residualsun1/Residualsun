@@ -241,7 +241,7 @@ nav.navigation a.button {
   margin-top: 100px;
   margin-bottom: 100px;
   text-align: center;
-  color: /*#bbbbbb*/black;
+  color: #bbbbbb;
   font-size: 14px;
 }
 
@@ -363,7 +363,7 @@ nav.navigation a.button {
   text-align: right;
   position: relative;
   top: 1px;
-  color: /*#bbb*/#a9a9a9;
+  color: #bbb;
 }
 
 #list-page .summary {
@@ -437,7 +437,7 @@ nav.navigation a.button {
 
 #single .tip {
   text-align: center;
-  color: /*#8c8c8c*/#000;
+  color: #8c8c8c;
   margin-top: 18px;
   font-size: 14px;
 }
@@ -457,13 +457,13 @@ nav.navigation a.button {
   /*background: #f2f2f2;*/
   /*padding: 4px 7px;*/
   text-decoration: none;
-  color: initial;
-  border-bottom: 1px dashed;
+  color: #8c8c8c;
   font-size: 14px;
   margin-right: 3px;
 }
 
 #single .tags a:hover {
+  color: black;
   position: relative;
   inset: 1px 0 0 1px;
 }
