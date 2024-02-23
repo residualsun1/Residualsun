@@ -509,9 +509,9 @@ nav.navigation a.button {
   margin-left: 7px;
 }
 #archive .group .value .tags a {
-  background: #f2f2f2;
+  background: /*#f2f2f2*/none;
   padding: 4px 7px;
-  color: #999;
+  color: /*#999*/black;
   font-size: 14px;
   margin-right: 3px;
 }
