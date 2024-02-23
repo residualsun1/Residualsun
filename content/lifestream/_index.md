@@ -3,6 +3,13 @@ title: 日志
 author: 黄国政
 ---
 
+<style>
+h2, h3 {
+  text-align: center;
+  font-weight: bold;
+}
+</style>
+
 ## 2023
 
 ### 11月24日 晴
