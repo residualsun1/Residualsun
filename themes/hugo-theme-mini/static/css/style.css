@@ -541,11 +541,12 @@ nav.navigation a.button {
 }
 
 #tags .tag a {
-  background: #f2f2f2;
-  padding: 4px 7px;
-  color: #757575;
-  font-size: 14px;
+  background: /*#f2f2f2*/none;
+  /*padding: 4px 7px;*/
+  color: /*#757575*/black;
+  font-size: /*14px*/15px;
   margin-right: 3px;
+  border-bottom: dashed 1px;
 }
 
 #tags .tag a:hover {

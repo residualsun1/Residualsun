@@ -5,7 +5,7 @@ date: '2024-02-01'
 slug: still-naive
 categories: []
 tags:
-  - 杂文
+  - 想法
 ---
 
 <!--more-->
