@@ -7,13 +7,13 @@ body {
   color: black; /*哎呀！原来是#404040，这个颜色是深灰的，不如黑色本身，我说为什么字体看起来总是有点微微吃力的感觉！字体由15px/1.5em改成15.5px/1.5em会不会更好？*/
   line-height: 2.00; /*1.75改为1.80*/
   letter-spacing: 0.009em; /*原来是0.008em*/
-  /*设置网格背景*/
+  /*设置网格背景
   background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAACFJREFUeNpiZGBg4GegAsBlCD8TqSYNQg2Mo6FEBAAIMACdPABtrSW/IQAAAABJRU5ErkJggg==");
   background-repeat: repeat;
   background-attachment: fixed;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.04);
   min-height: 100vh;
-  margin: 0;
+  margin: 0;*/
 }
 
 a {
@@ -509,9 +509,9 @@ nav.navigation a.button {
   margin-left: 7px;
 }
 #archive .group .value .tags a {
-  background: /*#f2f2f2*/none;
+  background: #f2f2f2;
   padding: 4px 7px;
-  color: /*#999*/black;
+  color: #757575;
   font-size: 14px;
   margin-right: 3px;
 }
