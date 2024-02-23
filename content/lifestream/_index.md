@@ -1,13 +1,7 @@
 ---
-author: 黄国政
 title: 日志
+author: 黄国政
 ---
-
-<style>
-h1, h2 {
-  text-align:center;
-}
-</style>
 
 ## 2023
 
