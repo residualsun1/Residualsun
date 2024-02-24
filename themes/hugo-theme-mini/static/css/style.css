@@ -5,7 +5,7 @@ html[theme='dark-mode'] {
 body {
   font: normal 16px/1.5em 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color: black; /*哎呀！原来是#404040，这个颜色是深灰的，不如黑色本身，我说为什么字体看起来总是有点微微吃力的感觉！字体由15px/1.5em改成15.5px/1.5em会不会更好？*/
-  line-height: 2.00; /*1.75改为1.80*/
+  line-height: 1.90; /*1.75改为1.80*/
   letter-spacing: 0.009em; /*原来是0.008em*/
   /*设置网格背景
   background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAACFJREFUeNpiZGBg4GegAsBlCD8TqSYNQg2Mo6FEBAAIMACdPABtrSW/IQAAAABJRU5ErkJggg==");
@@ -401,7 +401,7 @@ nav.navigation a.button {
 
 /* single page */
 #single {
-  max-width: 680px/*680px*/;
+  max-width: 600px/*680px*/;
   margin: 60px auto 0 auto;
   padding: 0 64px;
 }
