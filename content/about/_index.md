@@ -42,7 +42,7 @@ h2 {
 
 ### 大学时期
 
-* 兵哥。《[把种子埋进心里](https://guozheng.rbind.io/posts/2023/06/seed-in-heart/)》、《[端午安康](https://guozheng.rbind.io/posts/2023/06/zongzi/)》、《[转载 | <在小谷围相信世界>](https://guozheng.rbind.io/posts/2023/08/image-world-in-xiaoguwei/)》《[不羡慕](https://guozheng.rbind.io/posts/2023/09/no-envy/)》、《[九月下半旬](https://guozheng.rbind.io/posts/2023/10/late-september-summary/)》
+* 兵哥。《[把种子埋进心里](https://guozheng.rbind.io/posts/2023/06/seed-in-heart/)》、《[端午安康](https://guozheng.rbind.io/posts/2023/06/zongzi/)》、《[转载 | <在小谷围想象世界>](https://guozheng.rbind.io/posts/2023/08/image-world-in-xiaoguwei/)》《[不羡慕](https://guozheng.rbind.io/posts/2023/09/no-envy/)》、《[九月下半旬](https://guozheng.rbind.io/posts/2023/10/late-september-summary/)》
 
 * 饭团。《[命运的缠绕](http://localhost:4321/posts/2023/11/the-twist-of-fate/)》、《[别话](http://localhost:4321/posts/2024/02/biehua/)》、「黑石屿记忆系列」
 
