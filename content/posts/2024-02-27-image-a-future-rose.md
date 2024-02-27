@@ -5,8 +5,15 @@ date: '2024-02-27'
 slug: image-a-future-rose
 categories: []
 tags:
-  - 诗歌
+  - 诗三百
 ---
+
+<style>
+  p {
+  margin: 1em 0;
+  padding: 0 4em;
+  }
+</style>
 
 <!--more-->
 
