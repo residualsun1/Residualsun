@@ -4,9 +4,10 @@ html[theme='dark-mode'] {
 
 body {
   font: normal 16px/1.5em 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  color: black; /*哎呀！原来是#404040，这个颜色是深灰的，不如黑色本身，我说为什么字体看起来总是有点微微吃力的感觉！字体由15px/1.5em改成15.5px/1.5em会不会更好？*/
+  color: #000; /*哎呀！原来是#404040，这个颜色是深灰的，不如黑色本身，我说为什么字体看起来总是有点微微吃力的感觉！字体由15px/1.5em改成15.5px/1.5em会不会更好？*/
   line-height: 1.90; /*1.75改为1.80*/
   letter-spacing: 0.009em; /*原来是0.008em*/
+  background-color: #F6F5F0;
   /*设置网格背景
   background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAACFJREFUeNpiZGBg4GegAsBlCD8TqSYNQg2Mo6FEBAAIMACdPABtrSW/IQAAAABJRU5ErkJggg==");
   background-repeat: repeat;
@@ -546,7 +547,7 @@ nav.navigation a.button {
   color: /*#757575*/black;
   font-size: /*14px*/15px;
   margin-right: 3px;
-  border-bottom: dashed 1px;
+  /*border-bottom: dashed 1px;*/
 }
 
 #tags .tag a:hover {
