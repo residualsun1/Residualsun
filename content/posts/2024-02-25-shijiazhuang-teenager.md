@@ -1,5 +1,5 @@
 ---
-title: 众生相 | 石家庄少年
+title: 石家庄少年
 author: 黄国政
 date: '2024-02-25'
 slug: shijiazhuang-teenager
