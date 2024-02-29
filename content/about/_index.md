@@ -64,15 +64,7 @@ h2 {
 
 另，本页面同时作为个人喜爱音乐的播放器，希望你也会喜欢my little airport！首推《下了两天雨》和《散步之年》。当然，如果你不感兴趣的话也没关系，因为我关闭了自动播放(●'◡'●)！
 
-## 我希望记住的人
-
-### 大学时期
-
-* 兵哥。《[把种子埋进心里](https://guozheng.rbind.io/posts/2023/06/seed-in-heart/)》、《[端午安康](https://guozheng.rbind.io/posts/2023/06/zongzi/)》、《[转载 | <在小谷围想象世界>](https://guozheng.rbind.io/posts/2023/08/image-world-in-xiaoguwei/)》《[不羡慕](https://guozheng.rbind.io/posts/2023/09/no-envy/)》、《[九月下半旬](https://guozheng.rbind.io/posts/2023/10/late-september-summary/)》
-
-* 饭团。《[命运的缠绕](http://localhost:4321/posts/2023/11/the-twist-of-fate/)》、《[别话](http://localhost:4321/posts/2024/02/biehua/)》、「黑石屿记忆系列」
-
-## 我的博客圈子
+## 我常看的博客
 
 按照发现的顺序排列：
 
@@ -97,6 +89,34 @@ h2 {
 * [于淼](https://yufree.cn/)：脑力深邃。
 
 * [天仙子](https://tianxianzi.me/)：文字森林、记录
+
+<!--
+## 我记住的人
+
+### 一生
+
+* 我的奶奶
+
+* 我的父母
+
+### 初中时期
+
+* 志肥。
+
+* 永胜。
+
+### 高中时期
+
+* 雷叔
+
+* 欢姐
+
+### 大学时期
+
+* 兵哥。《[把种子埋进心里](https://guozheng.rbind.io/posts/2023/06/seed-in-heart/)》、《[端午安康](https://guozheng.rbind.io/posts/2023/06/zongzi/)》、《[转载 | <在小谷围想象世界>](https://guozheng.rbind.io/posts/2023/08/image-world-in-xiaoguwei/)》《[不羡慕](https://guozheng.rbind.io/posts/2023/09/no-envy/)》、《[九月下半旬](https://guozheng.rbind.io/posts/2023/10/late-september-summary/)》
+
+* 饭团。《[命运的缠绕](http://localhost:4321/posts/2023/11/the-twist-of-fate/)》、《[别话](http://localhost:4321/posts/2024/02/biehua/)》、「黑石屿记忆系列」
+-->
 
 ## 写在最后
 
