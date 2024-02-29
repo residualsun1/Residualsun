@@ -212,7 +212,7 @@ nav.navigation a.button {
 /* toc */
 .toc {
   margin: auto;
-  background: #f8f8f8;
+  background: /*#f8f8f8*/#F6F5F0;
   border-radius: 0;
   padding: 10px 7px;
   margin-top: 36px;
