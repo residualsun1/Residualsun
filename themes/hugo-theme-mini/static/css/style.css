@@ -158,6 +158,13 @@ pre code, pre code:hover {
   word-break: break-all;
 }
 
+@media only screen and (min-width: 768px) {
+  pre, table {
+    width: auto;
+    max-width: none;
+    margin-left: auto;
+  }
+
 /* navigation */
 
 nav.navigation {
