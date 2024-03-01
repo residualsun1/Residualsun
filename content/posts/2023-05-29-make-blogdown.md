@@ -11,7 +11,7 @@ tags:
 
 ## A.前言
 
-从周五晚上开始挑选模板，周六也是花了一个晚上在挑，并开始初步修改模板，到周日搭建网站，然后继续深入修改模板，我的blogdown折腾了几乎<u>整整两天</u>（虽然其间两个早上的时间大部分都用来睡觉了）。  
+从周五晚上开始挑选模板，周六也是花了一个晚上在挑，并开始初步修改模板，到周日搭建网站，然后继续深入修改模板，我的blogdown折腾了几乎整整两天（虽然其间两个早上的时间大部分都用来睡觉了）。  
 
 这是除了bookdown外第二个让我如此专注的项目，两天的工作都是从早上到凌晨，醒来继续，一点一点调试，实在不懂就到[GitHub](https://github.com/)和[统计之都](https://cosx.org/)上求助，面对问题时抓耳挠腮的感受仍然“历历在目”  🤯，所幸都能专注下来寻找各种方法解决——解决问题的感觉当真是属于心灵的愉悦！
 
@@ -21,11 +21,13 @@ tags:
 
 ### B.1模板的选择 
 
-目前我搭建blog使用的是谢益辉开发的`Blogdown`包，搭配`Hugo`和`Github`以及`Github Deskopt`一起使用，网站建成以后托管到`netfliy`上。这里的方法主要是参考统计之都的贴文[<sup>1</sup>](#references1)和庄闪闪的公众号文章[<sup>2</sup>](#references2)。
+目前我搭建blog使用的是谢益辉开发的[Blogdown](https://github.com/rstudio/blogdown)包，搭配[Hugo](https://gohugo.io/)和[Github](https://github.com)以及[Github Deskopt](https://desktop.github.com/)一起使用，网站建成以后托管到[Netfliy](https://www.netlify.com/)上。这里的方法主要是参考统计之都的贴文[<sup>1</sup>](#references1)和庄闪闪的公众号文章[<sup>2</sup>](#references2)。
 
-可以在网站Hugo<https://themes.gohugo.io/>或<https://hugothemesfree.com/>上挑选模板。[Hexo](https://hexo.io/themes/)上的主题看起来更加丰富，但是我下载的模板建站都会失败，不知道是不是因为没有兼容。**在这里埋下一个坑**，~~等有时间~~好好细读谢大哥的[说明文档](https://bookdown.org/yihui/blogdown/)，之后再来填坑。
+可以在网站<https://themes.gohugo.io/>或<https://hugothemesfree.com/>上挑选模板。[Hexo](https://hexo.io/themes/)上的主题看起来更加丰富，但是我下载的模板建站都会失败，不知道是不是因为没有兼容。在这里埋下一个坑，~~等有时间~~好好细读益辉的[说明文档](https://bookdown.org/yihui/blogdown/)，之后再来填坑。
 
-我选择的模板是[“Anatole Hugo Theme”](https://github.com/lxndrblz/anatole.git)，需要修改的重要文件有如下几项：  
+我选择的模板是[“Anatole Hugo Theme”](https://github.com/lxndrblz/anatole.git)[^note1]，需要修改的重要文件有如下几项：  
+
+[^note1]: <mark>2024年3月1日更新，目前模板已更换为[hugo-theme-mini](https://github.com/nodejh/hugo-theme-mini)</mark>。
 
 基础配置
 1. /config/_default/config.yaml
@@ -55,7 +57,9 @@ tags:
 
 不同的模板具体修改方式不一致，但是大同小异。基于上面的修改内容，我回顾一下其中比较复杂的过程。
 
-在评论系统的设置上，我选择了GitHub上的[utterances](https://github.com/utterance/utterances)（开源及免费的），下载之后可以在个人GitHub的"setting-applications"中找到，对其进行configure，授权并连接到自己的博客代码项目。  
+在评论系统的设置上，我选择了GitHub上的[utterances](https://github.com/utterance/utterances)（开源及免费的），下载之后可以在个人GitHub的"setting-applications"中找到，对其进行configure，授权并连接到自己的博客代码项目。 [^note2]
+
+[^note2]: <mark>2024年3月1日更新，目前评论已更换为[giscus](https://github.com/giscus/giscus)</mark>。
 
 根据指引，获取属于自己的评论系统设置代码：
 
@@ -81,15 +85,14 @@ tags:
       {{ with .Page.Params.Tags }}
         {{ partial "taxonomy/tags.html" . }}
       {{ end }}
-  **<script src="https://utteranc.es/client.js"**
-    **repo="residualsun1/Residualsun"**
-    **issue-term="pathname"**
-    **theme="github-light"**
-    **crossorigin="anonymous"**
-    **async>**
-  **</script>**
-  #**是为了突出说明位置，实际不能保留。
-    </div>
+  <script src="https://utteranc.es/client.js"
+    repo="residualsun1/Residualsun"
+    issue-term="pathname"
+    theme="github-light"
+    crossorigin="anonymous"
+    async>
+  </script>
+</div>
 ```
 
 utterances.html改成这样：  
@@ -132,7 +135,6 @@ config.yaml中的baseURL需要修改为自己的博客地址，否则在评论�
 > `options(blogdown.generator.server = TRUE)`<br/>
 > `blogdown::serve_site()`<br/>
 > 详情：<https://bookdown.org/yihui/blogdown/livereload.html>
-> ——yihui  
 
 按照这个方法试过以后，我成功在Rstudio建站。
 
