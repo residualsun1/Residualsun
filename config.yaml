@@ -95,13 +95,8 @@ params:
     - css/custom.css # local css in `static/css/custom.css`
     # - https://example.com/custom.css # remote css
     # - https://cdn.jsdelivr.net/npm/@xiee/utils/css/faq.min.css
-    - https://cdn.jsdelivr.net/npm/@xiee/utils/css/copy-button.min.css
   customJS:
     ## e.g.
     # - js/custom.js # local js in `static/js/custom.js`
     # - https://example.com/custom.js # remote js
     # - https://cdn.jsdelivr.net/npm/@xiee/utils/js/faq.min.js
-    - https://cdn.jsdelivr.net/npm/@xiee/utils/js/sidenotes.min.js
-    - https://cdn.jsdelivr.net/npm/@xiee/utils/js/fix-footnote.min.js
-    - https://cdn.jsdelivr.net/npm/@xiee/utils/js/right-quote.min.js
-    - https://cdn.jsdelivr.net/npm/@xiee/utils/js/copy-button.min.js
