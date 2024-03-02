@@ -5,7 +5,7 @@
     {{ end }}
 
 <!-- 2023.8.2添加总文章数与总字数 -->
-共 <span style='color: #8c8c8c;'>{{ len (where .Site.RegularPages "Section" "posts" ) }}</span> 篇博文
+共 <span style='color: #8c8c8c;'>{{ len (where .Site.RegularPages "Section" "posts" ) }}</span> 篇日志
 {{$scratch := newScratch}}
 {{ range (where .Site.Pages "Kind" "page" )}}
     {{$scratch.Add "total" .WordCount}}
