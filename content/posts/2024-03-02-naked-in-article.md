@@ -73,10 +73,8 @@ git push -u origin main
 ### （1）git init
 
 ```
-Sonde@Sonder MINGW64 /d/02_work/2021-2022
 $ echo "# 2021-2022" >> README.md
 
-Sonde@Sonder MINGW64 /d/02_work/2021-2022
 $ git init
 Initialized empty Git repository in D:/02_work/2021-2022/.git/
 
@@ -89,7 +87,6 @@ Initialized empty Git repository in D:/02_work/2021-2022/.git/
 ### （2）git add
 
 ```
-Sonde@Sonder MINGW64 /d/02_work/2021-2022 (master)
 $ git add README.md
 warning: in the working copy of 'README.md', LF will be replaced by CRLF the next time Git touches it
 ```
@@ -119,7 +116,6 @@ warning: in the working copy of 'README.md', LF will be replaced by CRLF the nex
 ### （3）git commit
 
 ```
-Sonde@Sonder MINGW64 /d/02_work/2021-2022 (master)
 $ git commit -m "first commit"
 [master (root-commit) 81275c4] first commit
  1 file changed, 1 insertion(+)
@@ -145,7 +141,6 @@ $ git commit -m "first commit"
 ### （4）git branch
 
 ```
-Sonde@Sonder MINGW64 /d/02_work/2021-2022 (master)
 $ git branch -M main
 ```
 
@@ -154,7 +149,7 @@ $ git branch -M main
 ### （5）git remote add origin
 
 ```
-Sonde@Sonder MINGW64 /d/02_work/2021-2022 (main)
+
 $ git remote add origin https://github.com/residualsun1/2021-2022.git
 ```
 
@@ -167,7 +162,6 @@ $ git remote add origin https://github.com/residualsun1/2021-2022.git
 ### （6）git push
 
 ```
-Sonde@Sonder MINGW64 /d/02_work/2021-2022 (main)
 $ git push -u origin main
 remote: Invalid username or password.
 fatal: Authentication failed for 'https://github.com/residualsun1/2021-2022.git/'
@@ -193,14 +187,11 @@ fatal: Authentication failed for 'https://github.com/residualsun1/2021-2022.git/
 折腾了一下有新的报错信息出现，发现原来用户名和密码验证的方式已经移除，现在需要通过个人令牌来验证。
 
 ```
-Sonde@Sonder MINGW64 /d/02_work/2021-2022 (main)
 $ git remote set-url origin https://github.com/residualsun1/2021-2022.git
 
-Sonde@Sonder MINGW64 /d/02_work/2021-2022 (main)
 $ git remote add origin https://github.com/residualsun1/2021-2022.git
 error: remote origin already exists.
 
-Sonde@Sonder MINGW64 /d/02_work/2021-2022 (main)
 $  git push -u origin main
 remote: Support for password authentication was removed on August 13, 2021.
 remote: Please see https://docs.github.com/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
@@ -212,7 +203,6 @@ fatal: Authentication failed for 'https://github.com/residualsun1/2021-2022.git/
 之后再push就可以成功了。
 
 ```
-Sonde@Sonder MINGW64 /d/02_work/2021-2022 (main)
 $ git push -u origin main
 Enumerating objects: 3, done.
 Counting objects: 100% (3/3), done.
@@ -233,19 +223,17 @@ Writing objects: 100% (3/3), 221 bytes | 110.00 KiB/s, done.
 Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
 ```
 
-### 最后
+## 最后
 
 回到重点，我的目的是将大量文件一次性全部上传到远程仓库，因此需要如此操作。
 
 ```
-Sonde@Sonder MINGW64 /d/02_work/2021-2022 (main)
 $ git add .
 ```
 
 这是将所有文件添加到暂存区的命令。
 
 ```
-Sonde@Sonder MINGW64 /d/02_work/2021-2022 (main)
 $ git commit -m "我的2021-2022年大学日记"
 ```
 
@@ -737,7 +725,6 @@ $ git commit -m "我的2021-2022年大学日记"
 最后直接推送到远程仓库，只需要几秒钟——这是我喜欢git的地方。
 
 ```
-Sonde@Sonder MINGW64 /d/02_work/2021-2022 (main)
 $ git push -u origin main
 Enumerating objects: 553, done.
 Counting objects: 100% (553/553), done.
