@@ -1,7 +1,7 @@
 ---
 title: 花已开过
 author: 黄国政
-date: '2023-05-27'
+date: '2023-05-27T12:00:00Z'
 slug: flower-has-been-dried
 tags: [小小说]
 ---
