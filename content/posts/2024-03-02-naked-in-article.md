@@ -149,7 +149,6 @@ $ git branch -M main
 ### （5）git remote add origin
 
 ```
-
 $ git remote add origin https://github.com/residualsun1/2021-2022.git
 ```
 
