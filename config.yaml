@@ -43,16 +43,16 @@ markup:
 # Social links in footer, support github,twitter,stackoverflow,facebook
 social:
   # e.g.
-  # github: https://github.com/residualsun1
-  # twitter: https://twitter.com/Residualsun1
-  # stackoverflow: https://stackoverflow.com/users/22065130/residualsun
+  github: https://github.com/residualsun1
+  twitter: https://twitter.com/Residualsun1
+  stackoverflow: https://stackoverflow.com/users/22065130/residualsun
   # facebook: your-facebook-link
 
 
 # Site parameters
 params:
   # Site Author
-  author: 残日留痕
+  author: 黄国政
   # Author biography
   bio: 我与我周旋久，宁作我。
   # Site Description, used in HTML meat
