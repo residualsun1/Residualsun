@@ -2,7 +2,7 @@
 title: 想象一朵未来的玫瑰
 author: 黄国政
 date: '2024-02-27'
-slug: image-a-future-rose
+slug: imagine-a-future-rose
 categories: []
 tags:
   - 诗三百
@@ -33,4 +33,4 @@ tags:
 想象一朵未来的玫瑰  
 献给心中所爱之人  
 
-> ---写作欲望源于费尔南多·佩索阿诗选《[想象一朵未来的玫瑰](https://book.douban.com/subject/30443973/)》
+> ---写作灵感源自费尔南多·佩索阿诗选《[想象一朵未来的玫瑰](https://book.douban.com/subject/30443973/)》
