@@ -17,6 +17,10 @@ tags:
 
 <!--more-->
 
+<audio controls>
+    <source src="https://silver-muffin-22e086.netlify.app/audio/That-inferior-feeling.mp3" type="audio/mpeg">
+</audio> 
+
 哒、哒——哒哒哒哒哒
 
 哒——哒哒哒哒哒
