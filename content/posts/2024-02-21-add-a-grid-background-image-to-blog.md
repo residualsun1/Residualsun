@@ -142,3 +142,14 @@ Chatgpt的回答很详细：
 我找到了新问题的症结。第二个问题是当我手机打开网页时，加载速度很慢，不光思源宋体加载不出来，许多js也没办法正常加载（例如脚注序号添加“[]”和内容右浮）。我想了一下，“使用抗锯齿技术渲染字体，使字体边缘更加平滑，减少锯齿状的边缘”应该是和作为衬形字体的思源字体有所冲突，保险起见，我删除了`-webkit-font-smoothing: antialiased`和`-moz-osx-font-smoothing: grayscale`，再用Safari浏览器进入网站，速度恢复，只是微信似乎还不行。不过如果用我的荣耀手机，无论是浏览器还是微信都能正常加载。
 
 另，这种网页格子的背景似乎更适合非衬线字体。
+
+最终实现代码：
+
+```
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAACFJREFUeNpiZGBg4GegAsBlCD8TqSYNQg2Mo6FEBAAIMACdPABtrSW/IQAAAABJRU5ErkJggg==");
+  background-repeat: repeat;
+  background-attachment: fixed;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.04);
+  min-height: 100vh;
+  margin: 0;
+```
