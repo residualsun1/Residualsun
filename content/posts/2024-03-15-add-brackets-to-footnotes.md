@@ -1,5 +1,5 @@
 ---
-title: 给文章脚注编号添加括号“[ ]”
+title: 给博客文章脚注编号添加括号“[ ]”
 author: 黄国政
 date: '2024-03-15'
 slug: add-brackets-to-footnotes
