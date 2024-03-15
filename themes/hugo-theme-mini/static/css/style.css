@@ -714,7 +714,7 @@ nav.navigation a.button {
     }
 }
 
-.bg-number {
+.bg-number, .note-ref:has(+ .side:hover) {
     font-size: .9rem;
     background: white;
     filter: invert(1);
