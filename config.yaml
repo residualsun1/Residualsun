@@ -98,5 +98,6 @@ params:
   customJS:
     ## e.g.
     # - js/custom.js # local js in `static/js/custom.js`
+    - js/fix-footnote.min.js
     # - https://example.com/custom.js # remote js
     # - https://cdn.jsdelivr.net/npm/@xiee/utils/js/faq.min.js

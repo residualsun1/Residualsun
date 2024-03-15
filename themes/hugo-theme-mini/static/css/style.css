@@ -428,14 +428,14 @@ nav.navigation a.button {
   text-decoration: none;
   color: initial;
   /*border-bottom: 1px dashed;*/
-  box-shadow: 0 -5px rgba(189,195,199,.5)inset;
+  box-shadow: 0 -4px rgba(189,195,199,.5)inset;
   transition: all .3s ease;
 }
 
 #single .content a:hover {
     /*position: relative;
     inset: 1px 0 0 1px;*/
-    box-shadow: 0 -15px rgba(189,195,199,.7)inset;
+    box-shadow: 0 -12.5px rgba(189,195,199,.7)inset;
 }
 
 @media (max-width: 700px) {
@@ -716,9 +716,10 @@ nav.navigation a.button {
 
 .bg-number {
     font-size: .9rem;
-    color: black;
-    border-bottom: dashed 1px black;
-    text-decoration: none;
+    background: white;
+    filter: invert(1);
+    opacity: .6;
+    /*border-bottom: dashed 1px black;*/
     /*padding: 1px 5px;
     border-radius: 5px;*/
 }
