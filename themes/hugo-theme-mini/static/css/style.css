@@ -428,14 +428,14 @@ nav.navigation a.button {
   text-decoration: none;
   color: initial;
   /*border-bottom: 1px dashed;*/
-  box-shadow: 0 -4px rgba(189,195,199,.5)inset;
+  box-shadow: 0 -3px rgba(189,195,199,.5)inset;
   transition: all .3s ease;
 }
 
 #single .content a:hover {
     /*position: relative;
     inset: 1px 0 0 1px;*/
-    box-shadow: 0 -12.5px rgba(189,195,199,.7)inset;
+    box-shadow: 0 -10px rgba(189,195,199,.7)inset;
 }
 
 @media (max-width: 700px) {
