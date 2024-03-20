@@ -737,15 +737,3 @@ nav.navigation a.button {
         background: lightyellow;
     }
 }
-
-@media (min-width: 1280px) {
-    .note-ref { cursor: pointer; }
-    .note-ref:hover ~ .side {
-        display: inline-block;
-        background-color: lightyellow;
-        position: absolute;
-        margin-left: 1rem;
-        padding: .5rem;
-        box-sizing: content-box;
-    }
-}
