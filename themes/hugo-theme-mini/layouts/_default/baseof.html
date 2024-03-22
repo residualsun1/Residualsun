@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="{{ $.Site.LanguageCode | default "en" }}">
+  <head>
+    <title>{{ block "title" . }}{{ with .Params.Title }}{{ . }} | {{ end }}{{ .Site.Title }}{{ end }}</title>
+
+    {{ partial "head.html" . }}
+    <!-- 注释此处，将下面的网址复制到config.yaml文件。-->
+    <script src="https://cdn.jsdelivr.net/npm/@xiee/utils/js/sidenotes.min.js" defer></script>
+    <!--<script src="https://cdn.jsdelivr.net/npm/@xiee/utils/js/fix-footnote.min.js" defer></script>-->
+    <script src="https://cdn.jsdelivr.net/npm/@xiee/utils/js/right-quote.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@xiee/utils/js/copy-button.min.js" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/@xiee/utils/css/copy-button.min.css" rel="stylesheet">
+  </head>
+
+  <body>
+    {{ partial "navigation.html" . }}
+
+    <main class="main">
+      {{ block "main" . }}{{ end }}
+    </main>
+    
+   <!-- {{ partial "music" . }}--><!--2023.8.1在此添加音乐Aplayer-->
+    
+   <!-- {{ partial "script" . }}--><!--2023.8.1在此添加气泡channel-->
+
+    {{ partial "footer.html" . }}
+  </body>
+</html>

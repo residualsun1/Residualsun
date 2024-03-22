@@ -1,0 +1,103 @@
+baseURL: https://guozheng.rbind.io/
+languageCode: zh-CN
+title: Residualsun | 黄国政
+theme: "hugo-theme-mini"
+buildFuture: true
+timeZone: "Etc/GMT-8"    # UTC+08:00 timezone
+
+# Default content language, support en (English) / zh (Chinese) / nl (Dutch) / fr (French) / es (Spanish) / da (Danish), default 'en'
+defaultContentLanguage: zh
+
+preserveTaxonomyNames: true
+
+# !!! exampleSite only, you may need to delete the line: `themesDir: ../../` 
+
+hasCJKLanguage: true
+permalinks:
+  posts: /posts/:year/:month/:slug/
+
+paginate: 9
+enableGitInfo: true      # use git commit log to generate lastmod record # 可根据 Git 中的提交生成最近更新记录。
+# 2023.8.2添加最后更新时间
+frontmatter:
+  lastmod: ["lastmod", ":git",":fileModTime", "date", "publishDate"]
+
+#googleAnalytics: your-google-analytics-id
+#disqusShortname: https-guozheng-netlify-app
+
+# Hugo Configure Markup
+# More info: https://gohugo.io/getting-started/configuration-markup#
+markup:
+  highlight:
+    guessSyntax: true
+    style: emacs
+  tableOfContents:
+    endLevel: 4
+    ordered: false
+    startLevel: 2
+  # needed to render raw HTML (e.g. <sub>, <sup>, <kbd>, <mark>)
+  goldmark:
+    renderer:
+      unsafe: true
+
+# Social links in footer, support github,twitter,stackoverflow,facebook
+social:
+  # e.g.
+  github: https://github.com/residualsun1
+  twitter: https://twitter.com/Residualsun1
+  stackoverflow: https://stackoverflow.com/users/22065130/residualsun
+  # facebook: your-facebook-link
+
+
+# Site parameters
+params:
+  # Site Author
+  author: 黄国政
+  # Author biography
+  bio: 我与我周旋久，宁作我。
+  # Site Description, used in HTML meat
+  description: My Blog
+
+  ###########################################
+  # Optional Configuration
+  ###########################################
+
+  # To enable RSS, you could set `enableRSS: true`, default is `true`
+  enableRSS: true
+  # To enable comments, you may need to set `disqusShortname`
+  enableComments: true
+  # To enable comments, you may need to set `googleAnalytics`
+  enableGoogleAnalytics: false
+  # To enable table of content, you could set `showToc: true`, default is `false`
+  showToc: true
+  # To hidden powerBy message in the page footer, you could set: `showPowerBy: false`, default is `true`
+  showPowerBy: true
+  # To enable math typesetting , you could set `math: true`, default is `false`
+  math: false
+  # To hidden post summary in home page, you could set `hiddenPostSummaryInHomePage: true`, default is `false`
+  hiddenPostSummaryInHomePage: false
+  # Website copy write, default: '© Copyright 2021 ❤️ {params.author}'
+  copyright: '© Copyright 2023-2024 ❤️ [黄国政](https://github.com/residualsun1)'
+  # Extra links in navigation
+  links:
+    ## e.g.
+    # - name: Project
+    #   path: /project
+    - name: English
+      path: https://residualsun.blog/
+  startTime: "2023-05-27T00:00:00+21:00"
+  showRunTime: true
+
+  
+  # You can put your custom css and js to `static` directory, or use remote css and js files which start with `http://` or `https://`
+  customCSS:
+    ## e.g.
+    - css/custom.css # local css in `static/css/custom.css`
+    # - https://example.com/custom.css # remote css
+    # - https://cdn.jsdelivr.net/npm/@xiee/utils/css/faq.min.css
+  customJS:
+    ## e.g.
+    # - js/custom.js # local js in `static/js/custom.js`
+    - js/fix-footnote.min.js
+    # - https://example.com/custom.js # remote js
+    # - https://cdn.jsdelivr.net/npm/@xiee/utils/js/faq.min.js

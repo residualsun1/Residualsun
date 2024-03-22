@@ -1,0 +1,85 @@
+<footer id="footer">
+
+    {{ if .Site.Social }}
+        {{ partial "social.html" . }}
+    {{ end }}
+
+<!-- 2023.8.2添加总文章数与总字数 -->
+共 <span style='color: #8c8c8c;'>{{ len (where .Site.RegularPages "Section" "posts" ) }}</span> 篇日志
+{{$scratch := newScratch}}
+{{ range (where .Site.Pages "Kind" "page" )}}
+    {{$scratch.Add "total" .WordCount}}
+{{ end }}
+总计 <span style='color: #8c8c8c;'>{{$scratch.Get "total" }}</span> 字
+
+{{ if .Site.Params.showRunTime }}
+    <div id="siteRunTime" style="letter-spacing: 1.5px;"></div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var runtimeElement = document.getElementById("siteRunTime");
+
+            function updateRunTime() {
+                var startTime = new Date("{{ .Site.Params.startTime }}");
+                var currentTime = new Date();
+                var elapsedTime = currentTime - startTime;
+
+                var years = Math.floor(elapsedTime / (1000 * 60 * 60 * 24 * 365));
+                var days = Math.floor((elapsedTime % (1000 * 60 * 60 * 24 * 365)) / (1000 * 60 * 60 * 24));
+                var months = Math.floor(days / 30); // 使用平均每月30天的估算
+                days %= 30;
+                var hours = Math.floor((elapsedTime % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                var minutes = Math.floor((elapsedTime % (1000 * 60 * 60)) / (1000 * 60));
+                var seconds = Math.floor((elapsedTime % (1000 * 60)) / 1000);
+
+                var runtimeString = "我写下的文字已在世界上存在了<br>" +
+                    "<span style='color: #8c8c8c;'>" + years + "</span>年" +
+                    "<span style='color: #8c8c8c;'>" + months + "</span>月" +
+                    "<span style='color: #8c8c8c;'>" + days + "</span>天" +
+                    "<span style='color: #8c8c8c;'>" + hours + "</span>小时" +
+                    "<span style='color: #8c8c8c;'>" + minutes + "</span>分钟" +
+                    "<span style='color: #8c8c8c;'>" + seconds + "</span>秒";
+                runtimeElement.innerHTML = runtimeString;
+            }
+
+            updateRunTime(); // 初始化显示
+
+            setInterval(updateRunTime, 1000); // 每秒更新
+        });
+    </script>
+{{ end }}
+
+<div class="copyright">
+    {{ with .Site.Params.copyright }}
+        {{ . | markdownify }}
+    {{ else }}
+       © Copyright 
+       {{ now.Format "2006"}} 
+       <span class="split">
+        {{ partial "svgs/heart.svg" (dict "fill" "#8c8c8c" "width" 15 "height" 15 ) }}
+       </span>
+       {{ .Site.Params.Author }}
+    {{ end }}
+</div>
+
+    {{ if ne .Site.Params.showPowerBy false }}
+      <div class="powerby">
+        {{ i18n "poweredBy" | safeHTML }}
+      </div>
+    {{ end }}
+<!--
+ <div>
+    <a href="https://www.foreverblog.cn/go.html" target="_blank"> <img src="https://img.foreverblog.cn/wormhole_3_tp.gif" alt="" style="width:auto;height:32px;padding:0.8rem 0" title="穿梭虫洞-随机访问十年之约友链博客">
+    </a>
+</div>
+-->
+</footer>
+
+{{ range .Site.Params.customJS }}
+    {{ if ( or ( hasPrefix . "http://" ) ( hasPrefix . "https://" ) ) }}
+        <!-- remote js -->
+        <script src="{{ . }}"></script>
+    {{ else }}
+        <!-- local js -->
+        <script src="{{ $.Site.BaseURL }}{{ . }}"></script>
+    {{ end }}
+{{ end }}

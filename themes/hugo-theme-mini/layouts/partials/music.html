@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- require APlayer -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+    <!-- require MetingJS -->
+    <script src="https://cdn.jsdelivr.net/npm/meting@2.0.1/dist/Meting.min.js"></script>
+</head>
+<body>
+    <div class="demo">
+        <div id="player1">
+        </div>
+    </div>
+    <script>
+        var ap = new APlayer
+            ({
+                element: document.getElementById('player1'),
+                fixed: true,
+                autoplay: true,
+                mini: true,
+                theme: '#f8f4fc',
+                loop: 'all',
+                order: 'list',
+                preload: 'auto',
+                volume: 0.5,
+                mutex: true,
+                listFolded: false,
+                listMaxHeight: 90,
+                lrcType: 0,
+                music: [ 
+                  {
+                name:'下了两天雨',
+                url:'https://cdn.jsdelivr.net/gh/residualsun1/blog-static/audio/下了两天雨.mp3',
+                artist:'my little airport',
+                cover:'https://cdn.jsdelivr.net/gh/residualsun1/blog-static/music/SABINA之淚.jpg'
+                  },
+                  {
+                name:'散步之年',
+                url:'https://cdn.jsdelivr.net/gh/residualsun1/blog-static/audio/散步之年.mp3',
+                artist:'my little airport',
+                cover:'https://cdn.jsdelivr.net/gh/residualsun1/blog-static/music/SABINA之淚.jpg'
+                  },
+                  {
+                name:'SABINA之淚',
+                url:'https://cdn.jsdelivr.net/gh/residualsun1/blog-static/audio/SABINA之淚.mp3',
+                artist:'my little airport',
+                cover:'https://cdn.jsdelivr.net/gh/residualsun1/blog-static/music/SABINA之淚.jpg'
+                  },
+                  {
+                name:'那陣時不知道',
+                url:'https://cdn.jsdelivr.net/gh/residualsun1/blog-static/audio/那陣時不知道.mp3',
+                artist:'my little airport',
+                cover:'https://cdn.jsdelivr.net/gh/residualsun1/blog-static/music/SABINA之淚.jpg'
+                  },
+                  {
+                name:'憂傷的嫖客',
+                url:'https://cdn.jsdelivr.net/gh/residualsun1/blog-static/audio/憂傷的嫖客.mp3',
+                artist:'my little airport',
+                cover:'https://cdn.jsdelivr.net/gh/residualsun1/blog-static/music/寂寞星期五.jpg'
+                  },
+                  {
+                name:'回到中學的暑假',
+                url:'https://cdn.jsdelivr.net/gh/residualsun1/blog-static/audio/回到中學的暑假.mp3',
+                artist:'my little airport',
+                cover:'https://cdn.jsdelivr.net/gh/residualsun1/blog-static/music/寂寞星期五.jpg'
+                  },
+                  {
+                name:'美孚根斯堡與白田珍寶金',
+                url:'https://cdn.jsdelivr.net/gh/residualsun1/blog-static/audio/美孚根斯堡與白田珍寶金.mp3',
+                artist:'my little airport',
+                cover:'https://cdn.jsdelivr.net/gh/residualsun1/blog-static/music/我們在炎熱與抑鬱的夏天,無法停止抽煙.jpg'
+                  },
+                  {
+                name:'LUNCH',
+                url:'https://cdn.jsdelivr.net/gh/residualsun1/blog-static/audio/LUNCH.mp3',
+                artist:'my little airport',
+                cover:'https://cdn.jsdelivr.net/gh/residualsun1/blog-static/music/跟你开玩笑.jpg'
+                  },
+                  {
+                name:'因講了出來',
+                url:'https://cdn.jsdelivr.net/gh/residualsun1/blog-static/audio/因講了出來.mp3',
+                artist:'my little airport',
+                cover:'https://cdn.jsdelivr.net/gh/residualsun1/blog-static/music/SABINA之淚.jpg'
+                  },
+                  {
+                name:'每次你走的時分',
+                url:'https://cdn.jsdelivr.net/gh/residualsun1/blog-static/audio/每次你走的時分.mp3',
+                artist:'my little airport',
+                cover:'https://cdn.jsdelivr.net/gh/residualsun1/blog-static/music/SABINA之淚.jpg'
+                  },
+                ]
+        });
+        //ap.init();
+    </script>
+</body>

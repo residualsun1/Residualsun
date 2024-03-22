@@ -1,0 +1,56 @@
+home:
+  other: 首页
+
+archive:
+  other: 日志
+
+tags:
+  other: 分类
+
+now:
+  other: 现在
+
+music:
+  other: 声音
+
+subscribe:
+  other: 订阅
+
+about:
+  other: 关于
+
+404title:
+  other: 敬请期待
+
+404subtitle:
+  other: "正在努力码字中✍……"
+
+readMore:
+  other: 更多内容
+
+minuteRead:
+  other: "{{ .ReadingTime }}分钟"
+
+publishDate:
+  other: '{{ .PublishDate.Format "2006.01.02" }}'
+
+publishDateFull:
+  other: '{{ .PublishDate.Format "2006年01月02日" }}'
+
+wordCount:
+  one: "{{ .WordCount }}字"
+  other: "{{ .WordCount }}字"
+
+postsNewer:
+  other: 下一页
+
+postsOlder:
+  other: 上一页
+
+poweredBy:
+  other: >-
+    Powered by <a href='http://www.gohugo.io/'>Hugo</a> Theme By <a
+    href='https://github.com/nodejh/hugo-theme-mini'>nodejh</a>
+
+publishDateShort:
+  other: '{{ .PublishDate.Format "01.02" }}'

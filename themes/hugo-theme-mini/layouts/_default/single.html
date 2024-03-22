@@ -1,0 +1,75 @@
+{{ define "main" }}
+
+<section id="single">
+    <h1 class="title">{{ .Title }}</h1>
+
+    <div class="tip">
+        <time datetime="{{ .PublishDate }}">{{ i18n "publishDateFull" . }}</time>
+        <span class="split">
+          ·
+        </span>
+        <span>
+          {{ i18n "wordCount" . }}
+        </span>
+        <span class="split">
+          ·
+        </span>
+        <span>
+          {{ i18n "minuteRead" . }}
+        </span>
+        <span class="split">
+          ·
+        </span>
+        {{ with .Params.tags }}
+        <span class="tags">
+          {{ range . }}
+                <a href="{{ "tags/" | absURL }}{{ . | urlize }}">{{ . }}</a>
+          {{ end }}
+        </span>
+        {{ end }}
+    </div>
+
+    {{ if or .Site.Params.showToc .Params.showToc }}
+        {{ partial "toc.html" . }}
+    {{ end }}
+
+    <div class="content">
+      {{ .Content }}
+       <style>
+        h2 {
+        text-align: center;
+        font-weight: bold;
+          }
+       </style>
+    </div>
+    
+<!-- 此处是原来单篇文章内标签被设置的位置，位于一篇文章的底部，我调到了标题下方。
+    {{ with .Params.tags }}
+        <div class="tags">
+            {{ range . }}
+                <a href="{{ "tags/" | absURL }}{{ . | urlize }}">{{ . }}</a>
+            {{ end }}
+        </div>
+    {{ end }}
+--> 
+
+     <!--2023.8.2添加最后更新时间-->
+    <div class="update" style="background: none;">
+    <time datetime="{{ .Page.Lastmod.Format "2006年01月02日 15:04:05 MST" }}" class="post-date" style="font-weight: bold; color: #757575; font-size: 14px;"> <!--去掉padding: 9px 9px;和margin-right: 3px; -->
+    更新时间： {{ .Page.Lastmod.Format "2006年01月02日" }}<!--如果要具体到几时几分几秒，在年月日后面直接添加15:04:05即可-->
+    {{ with .GitInfo }}
+    {{ end }}
+    </time>
+    </div>
+    
+    {{ if .Section }}
+     <nav id="post-nav">
+       <span class="nav-prev">{{ with .PrevInSection }}<a href="{{ .RelPermalink }}">&larr;{{ .Title }}</a>{{ end }}</span>
+       <span class="nav-next">{{ with .NextInSection }}<a href="{{ .RelPermalink }}">{{ .Title }}&rarr;</a>{{ end }}</span>
+</nav>
+     {{ end }}
+    
+    {{ partial "comments.html" . }}
+</section>
+
+{{ end }}
