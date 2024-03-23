@@ -235,8 +235,10 @@ $ du -h
 
 ## 可参考的文章
 
-1、《寻找并删除 Git 记录中的大文件》，Harttle Land，2016-03-22，https://harttle.land/2016/03/22/purge-large-files-in-gitrepo.html
+1、《GitHub/jsDelivr 图床教程》，叶寻的博客，2020-12-05，https://cyrusyip.org/zh-cn/post/2020/12/05/host-images-on-github/
 
-2、《git filter-branch 命令修改删除提示记录,删除误提交的大文件.减小.git的大小》，赵克利博客，2018-11-24，https://www.zhaokeli.com/article/8332.html
+2、《寻找并删除 Git 记录中的大文件》，Harttle Land，2016-03-22，https://harttle.land/2016/03/22/purge-large-files-in-gitrepo.html
 
-3、《记录删除.git记录大文件的过程》，小仙的博客，2021-09-22，https://cexll.cn/posts/%E8%AE%B0%E5%BD%95%E5%88%A0%E9%99%A4.git%E8%AE%B0%E5%BD%95%E5%A4%A7%E6%96%87%E4%BB%B6%E7%9A%84%E8%BF%87%E7%A8%8B/
+3、《git filter-branch 命令修改删除提示记录,删除误提交的大文件.减小.git的大小》，赵克利博客，2018-11-24，https://www.zhaokeli.com/article/8332.html
+
+4、《记录删除.git记录大文件的过程》，小仙的博客，2021-09-22，https://cexll.cn/posts/%E8%AE%B0%E5%BD%95%E5%88%A0%E9%99%A4.git%E8%AE%B0%E5%BD%95%E5%A4%A7%E6%96%87%E4%BB%B6%E7%9A%84%E8%BF%87%E7%A8%8B/
