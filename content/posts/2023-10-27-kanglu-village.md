@@ -25,7 +25,7 @@ tags:
 
 和在板桥村一样，我会好奇地四周张望，逼仄的房屋，狭窄的街巷，形形色色的地摊与商贩，还有神情几乎都一致“耷拉”——上面是什么，生活？现实？还是什么——着的居民。我也许试图想知道能看出什么。久久地，记忆里浮现出严飞说的“穿透”，浮现出翟学伟说的“敏锐”。透过眼前的街景与人物，你想到了什么？
 
-![出行前松哥给我们的建议](https://cdn.jsdelivr.net/residualsun1/blog-static/images/2023/10/10-27-out-plan.jpg)
+![出行前松哥给我们的建议](https://cdn.jsdelivr.net/gh/residualsun1/blog-static/images/2023/10/10-27-out-plan.jpg)
 
 遗憾的是，就和在板桥村一样，也和很久以前——我记得当我还在康鹭片区内走着而有些苦闷于无所收获时，想到我把那时候称作“When I was a child”——其实就在我念大二的寒假，我在老家县城里闲逛一样。
 
@@ -43,7 +43,7 @@ tags:
 
 但我一无所获，也没有勇气和当地人交谈。经过一家便利店时，我看到一位阿姨在门口的大木板上张贴满了制衣厂的转让广告，我稍稍酝酿了一下，试图上前和她交谈——开口是结巴的，问她这些广告什么时候开始有的。或许是因为我在门外停留太久，又或许是因为我特意给广告拍照，她瞥了我一眼，淡淡地说了一句“不知道”，而后不再理会我。我知道她没有兴趣和我交谈，带着戒备。
 
-|![](https://cdn.jsdelivr.net/residualsun1/blog-static/images/2023/10/10-27-advertise1.jpg)|![](https://cdn.jsdelivr.net/residualsun1/blog-static/images/2023/10/10-27-advertise2.jpg)|
+|![](https://cdn.jsdelivr.net/gh/residualsun1/blog-static/images/2023/10/10-27-advertise1.jpg)|![](https://cdn.jsdelivr.net/gh/residualsun1/blog-static/images/2023/10/10-27-advertise2.jpg)|
 |:-:|:-:|
 
 拒绝不出人意料。但在被拒绝以后，我站在原地，不知所措。之后，我没有再尝试和任何人交谈，我一面为自己作为一位外来闯入者来到此地而感到“奇怪的”，一面困惑着：**我该和ta说什么**？甚至是开口的第一句话也想不出来。
@@ -62,7 +62,7 @@ tags:
 
 中午躺在床上的时候，我翻来覆去，突然越发觉得，以为，或许我真的不适合做学术。这次短暂的田野经历带来的挫败感还是挺强的。松哥让我们写写这个早上在康鹭村的感受，一些印象深刻的感受，但我惊讶地发现我没有。即使有，在我看来也实在普通，丝毫不足以称道。面对这个田野，我感到无能为力，我的思绪好像贫瘠的土地，也好像干裂的河床，我就静默地，无奈地，拍下照片，绞尽脑子地在备忘录里试图抓住飘渺的可能。
 
-|![](https://cdn.jsdelivr.net/residualsun1/blog-static/images/2023/10/10-27-beiwanglu1.jpg)|![](https://cdn.jsdelivr.net/residualsun1/blog-static/images/2023/10/10-27-beiwanglu2.jpg)|
+|![](https://cdn.jsdelivr.net/gh/residualsun1/blog-static/images/2023/10/10-27-beiwanglu1.jpg)|![](https://cdn.jsdelivr.net/gh/residualsun1/blog-static/images/2023/10/10-27-beiwanglu2.jpg)|
 |:-:|:-:|
 
 ## 读书，读的是什么；学术，研究的是什么
@@ -71,7 +71,7 @@ tags:
 
 是的，这时候我想说自己在过度反思——我认可列弛说的“不要过度反思”。但说“我自己在过度反思”这件事让我不确定，或者说让我觉得我没有必要拿出来讲，不过我认为事实确实如此。当田野调查这门课需要我们以小组的形式出行时，当松哥建议我们最后能记录一些印象深刻的事情时，我不自觉地**紧张**起来。
 
-|![](https://cdn.jsdelivr.net/residualsun1/blog-static/images/2023/10/10-27-advise1.jpg)|![](https://cdn.jsdelivr.net/residualsun1/blog-static/images/2023/10/10-27-advise2.jpg)|
+|![](https://cdn.jsdelivr.net/gh/residualsun1/blog-static/images/2023/10/10-27-advise1.jpg)|![](https://cdn.jsdelivr.net/gh/residualsun1/blog-static/images/2023/10/10-27-advise2.jpg)|
 |:-:|:-:|
 
 **这是一种应激的反应。**

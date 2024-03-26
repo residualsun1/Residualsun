@@ -51,7 +51,7 @@ draft: no
 
 回到民宿，我迫不及待地和饭团分享了自己的喜悦。让我更惊喜的是，当我打开房门走进房间时，看到了一张明信片。
 
-![](https://cdn.jsdelivr.net/residualsun1/blog-static/images/2023/12/12-28-cherish-gift.jpg)
+![](https://cdn.jsdelivr.net/gh/residualsun1/blog-static/images/2023/12/12-28-cherish-gift.jpg)
 
 看完文字那一刻，我感觉心灵被击中了。明信片字数不多，内容也很简单，但它出现得那么突然，蓄谋已“久”又恰到好处，它的好意那么大方而真诚。我万万没想到，欣旖会悄悄给我留下祝福。她知道我来做田野，而我从不告诉身边的朋友我要做什么。她知道，但她仍细心而“默契”地给了我一份完全可以接受并且势必会感到喜悦的小礼物。
 

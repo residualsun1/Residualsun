@@ -22,7 +22,7 @@ tags:
 
 我突然想到可以找ChatGPT帮忙，于是以“修眼镜”这篇博文为例，有了下面的对话：
 
-![](https://cdn.jsdelivr.net/residualsun1/blog-static/images/2023/12/12-10-talk-to-chatgpt.png)
+![](https://cdn.jsdelivr.net/gh/residualsun1/blog-static/images/2023/12/12-10-talk-to-chatgpt.png)
 
 我在心里给过自己借口：别人是浙江大学的博士生呀，况且别人专门写“文化批评”类的文章，定位清晰，而我主要是记录日常……
 

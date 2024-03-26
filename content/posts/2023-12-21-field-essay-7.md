@@ -35,12 +35,12 @@ draft: no
 
 这个中午我也真的做饭了，总是等着阿用做饭给我吃，这是我无法忍受的事情。既然我有求于人，那便实在是没有理由被如此服务。
 
-![炸五花肉](https://cdn.jsdelivr.net/residualsun1/blog-static/images/2023/12/12-21-lunch1.jpg)
+![炸五花肉](https://cdn.jsdelivr.net/gh/residualsun1/blog-static/images/2023/12/12-21-lunch1.jpg)
 
 这道菜是和阿用学的，制作材料有三勺面粉、少许淀粉、少许麦片、两个鸡蛋和五花肉，制作程序并不复杂，将前述制作材料全部混在一起搅拌，小火烧得平底锅均匀受热后用油炸，伴上甜辣酱和沙拉酱还是挺好吃的。不足的地方在于我切的五花肉中基本是纯肥的部分，即使炸出来味道不错，但吃起来容易腻，不如半肥半瘦的炸起来好。
 
-![没有技术含量的青椒青瓜炒腊肠](https://cdn.jsdelivr.net/residualsun1/blog-static/images/2023/12/12-21-lunch2.jpg)
+![没有技术含量的青椒青瓜炒腊肠](https://cdn.jsdelivr.net/gh/residualsun1/blog-static/images/2023/12/12-21-lunch2.jpg)
 
 这一天的早上和晚上，也都是我煮饭，虽然厨艺并不好，但这也不是不动手的理由。
 
-![和小庄饭团学习的煎饼。不足是搅拌鸡蛋与面粉时没有加盐/糖，以及由于面粉下得太少（三勺），最终做出来的分量不够。](https://cdn.jsdelivr.net/residualsun1/blog-static/images/2023/12/12-21-dinner.jpg)
+![和小庄饭团学习的煎饼。不足是搅拌鸡蛋与面粉时没有加盐/糖，以及由于面粉下得太少（三勺），最终做出来的分量不够。](https://cdn.jsdelivr.net/gh/residualsun1/blog-static/images/2023/12/12-21-dinner.jpg)

@@ -10,7 +10,7 @@ tags:
 
 <!--more-->
 
-![阎云翔](https://cdn.jsdelivr.net/residualsun1/blog-static/images/2023/10/10-29-yanyunxiang.jpg)
+![阎云翔](https://cdn.jsdelivr.net/gh/residualsun1/blog-static/images/2023/10/10-29-yanyunxiang.jpg)
 
 在读《中国社会的个体化》之前，我对个体化的理解是道德层面上的，即自私自利。开读书会的时候，我才意识到袁宇阳老师又推动着我们理解贝克提出的西方的个体化，与阎云翔在下岬村做的研究发现的中国式的个体化进行了对话。
 

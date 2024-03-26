@@ -12,7 +12,7 @@ tags:
 
 <!--more-->
 
-![齐格蒙特·鲍曼](https://cdn.jsdelivr.net/residualsun1/blog-static/images/2023/11/11-29-bauman.jpeg)
+![齐格蒙特·鲍曼](https://cdn.jsdelivr.net/gh/residualsun1/blog-static/images/2023/11/11-29-bauman.jpeg)
 
 ## 前言
 

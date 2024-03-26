@@ -50,7 +50,7 @@ tags:
 
 为了顺利用bookdown的电子书形式展示Amos的学习成果，我当时狠下心来要在一个周末学会bookdown，为此周五放学便直奔图书馆，从傍晚待到将近十一点，第二天起来继续扎进图书馆，一待就是一天。当时我真的是被bookdown的功能震撼了，左边明明是一串代码，但右边却生成了外观整洁好看的电子书。
 
-![是不是很震撼？](https://cdn.jsdelivr.net/residualsun1/blog-static/images/2023/12/12-07-amos.png)
+![是不是很震撼？](https://cdn.jsdelivr.net/gh/residualsun1/blog-static/images/2023/12/12-07-amos.png)
 
 如同益辉希望的那样，我当时的心情就是“真他爷爷的震撼”。其实我对bookdown学习的最大驱动力，就来自它的“神奇”，从一系列代码，变成简洁好看的网页画面。我心里是有小九九的：哼，我要是做成网页展示，可不比同学们用word或ppt展示更牛！为此我可以说是“废寝忘食”，在图书馆的时候反复琢磨、反复试错，回到宿舍的时候则纠结报错要怎么解决。晚上迟迟入睡，第二天起床第一件事是接着解决问题。读大学以来，我从来没有那么专注过，也从来没有那么投入过。最后皇天不负有心人，我还是捣鼓出了一个可以展示的[网页](https://residualsun1.github.io/Amos_sample/)，还如愿以偿地在课程展示中得到了老师（相对其他同学）最高的肯定（虽然我经常缠着老师问结构方程模型的原理，在展示中严格按照统计原理来介绍，这点让老师觉得我比较全面地掌握了他的教学内容，他由此和我说“看完你的展示，我觉得你可以当我的研究助理了”，但我一直相信是bookdown给了更好的展示体验，让我加深了对Amos的原理理解），这或许是我求学生涯中为数不多的一次高峰体验了吧。
 
@@ -58,7 +58,7 @@ tags:
 
 从这篇帖子开始，我深深记住了益辉，也循着过来找到了统计之都。刚好[“大家贴一下自己的博客地址吧”](https://d.cosx.org/d/421538)这篇帖子置顶着，我在统计之都观察了一阵子和问过几个问题后，不久也点进这篇帖子细细看了起来，这时候才开始对博客有了更多了解，并用益辉写的blogdown包搭建了属于自己的第一个博客，顺带开始探索起GitHub和Netlify的使用方法。
 
-![](https://cdn.jsdelivr.net/residualsun1/blog-static/images/2023/12/12-07-blog.png)
+![](https://cdn.jsdelivr.net/gh/residualsun1/blog-static/images/2023/12/12-07-blog.png)
 
 最初，我访问了给我解答过问题的湘云和叶寻的博客，接着是第一个给我留言的列弛，再接着就是我经常在论坛上看见发言的袁凡，每一个人的博客中都有着一段段独特的生活经历和生命体验，我看着他们给我的留言，看着他们对自己一路成长以来的自白，有困惑、有感慨、有思索，每个人都是鲜活的，每个人也都是充满力量和温度的，我悄悄记住他们，把他们放进了自己的友链，也暗暗希望自己能像他们一样记录。
 
@@ -72,7 +72,7 @@ tags:
 
 <center>
 <figure>
-<img src="https://cdn.jsdelivr.net/residualsun1/blog-static/images/2023/12/12-07-yuan.jpg" height="70%" width="70%">
+<img src="https://cdn.jsdelivr.net/gh/residualsun1/blog-static/images/2023/12/12-07-yuan.jpg" height="70%" width="70%">
 </figure>
 </center>
 
@@ -97,7 +97,7 @@ tags:
 
 <center>
 <figure>
-<img src="https://cdn.jsdelivr.net/residualsun1/blog-static/images/2023/12/12-07-write.jpg" width="70%" height="70%">
+<img src="https://cdn.jsdelivr.net/gh/residualsun1/blog-static/images/2023/12/12-07-write.jpg" width="70%" height="70%">
 </figure>
 </center>
 
@@ -105,7 +105,7 @@ tags:
 
 > 我以一种人们欣然回家的方式，转向另一个人的房产，转向道拉多雷斯大街上宽敞的办公室。我走进我的写字台，如同它是抗击生活的堡垒。我有一种如此不可阻挡的柔情，面对现实中的账本，面对我给他人记数的账本，面对我使用过的墨水瓶，还有不远处S弓着背写下的提货单，我的眼里充盈着泪水。我觉得，我爱这一切，也许这是因为我没有别的什么可爱，或者，即使世上没有什么真的值得任何心灵所爱，多愁善感的我，却必须爱有所及。我可以滥情于区区一个墨水瓶之微，就像滥情于星空中巨大无边的寂冷。
 
-![费尔南多·佩索阿](https://cdn.jsdelivr.net/residualsun1/blog-static/images/2023/12/12-07-pessoa.jpeg)
+![费尔南多·佩索阿](https://cdn.jsdelivr.net/gh/residualsun1/blog-static/images/2023/12/12-07-pessoa.jpeg)
 
 这是葡萄牙作家费尔南多·佩索阿在《上帝的剥削》一文中写的最后一段话。
 

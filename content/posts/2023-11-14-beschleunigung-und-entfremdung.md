@@ -11,7 +11,7 @@ tags:
 <!--more-->
 
 <center>
-<img src="https://cdn.jsdelivr.net/residualsun1/blog-static/images/2023/11/11-14-rosa.jpg">
+<img src="https://cdn.jsdelivr.net/gh/residualsun1/blog-static/images/2023/11/11-14-rosa.jpg">
 <figcaption>哈特穆特·罗萨</figcaption>
 </center>
 

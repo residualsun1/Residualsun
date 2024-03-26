@@ -100,7 +100,7 @@ tags:
 
 今天是回到西埠村的第八天，我终于鼓起勇气主动踏进了田野。我总觉得自己的前摇太长，想起饭团在朋友圈发了一张图片，上面写了“想都是问题，做才是答案”，这会儿当真是深以为然。
 
-![](https://cdn.jsdelivr.net/residualsun1/blog-static/images/2023/12/12-18-image.jpg)
+![](https://cdn.jsdelivr.net/gh/residualsun1/blog-static/images/2023/12/12-18-image.jpg)
 
 记得有时候朋友会讲一些幽默诙谐的网络笑话，有一段是这么说的：
 
@@ -112,7 +112,7 @@ tags:
 
 前天下单的《田野悄悄门》也到了，我骑着电动车到镇上取了快递，回来之前看到傍晚里海风下的渔船，突然心有所感。
 
-![](https://cdn.jsdelivr.net/residualsun1/blog-static/images/2023/12/12-18-boat2.jpg)
+![](https://cdn.jsdelivr.net/gh/residualsun1/blog-static/images/2023/12/12-18-boat2.jpg)
 
 我赶紧打开豆瓣，试图记录此刻的感受：
 

@@ -32,7 +32,7 @@ tags:
 
 对我来说，饭团和小庄似乎慢慢变成了一种带有家人般亲近感觉的存在。这是一件神奇的事情，当我想到，六月份以前，我们还只是陌生人，但因为我们交叉在一起的道路，这五个多月以来我们频繁地出现在彼此的生命经历之中。
 
-![当时看到这则消息时，我心头顿时一暖，只因为“一起回岛”](https://cdn.jsdelivr.net/residualsun1/blog-static/images/2023/11/11-30-belong.jpg)
+![当时看到这则消息时，我心头顿时一暖，只因为“一起回岛”](https://cdn.jsdelivr.net/gh/residualsun1/blog-static/images/2023/11/11-30-belong.jpg)
 
 这学期的实习我将再次返回黑石屿，在西埠村进行社区走访。我深知，在黑石屿长期住宿其实会给饭团带来不小的压力，而我的实际能力给饭团的可持续渔村探索带来的帮助也极其有限。大多数时间里，我的身份其实是学习者和消费者，而非团队里的生产者，但饭团始终支持着我，给予我高度自由的安排时间，还有丰富的日常活动。就事实而言，这是一场单方面收获的实习，我得到了锻炼能力最好的机会，却难以回馈我的帮助者。
 
@@ -42,7 +42,7 @@ tags:
 
 <center>
 <figure>
-<img src="https://cdn.jsdelivr.net/residualsun1/blog-static/images/2023/11/11-30-yumi.jpg" height="50%" width="50%">
+<img src="https://cdn.jsdelivr.net/gh/residualsun1/blog-static/images/2023/11/11-30-yumi.jpg" height="50%" width="50%">
 <figcaption>知道我没吃晚饭，大家过来时给我带了一根玉米、两条红薯和一个橙子</figcaption>
 </figure>
 </center>

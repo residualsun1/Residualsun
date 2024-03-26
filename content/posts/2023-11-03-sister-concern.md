@@ -66,7 +66,7 @@ tags:
 
 今晚在姐姐家吃到了久违的家常菜。
 
-![家常菜不仅能吃饱，还能让人感到满足](https://cdn.jsdelivr.net/residualsun1/blog-static/images/2023/11/11-02-concern.jpg)
+![家常菜不仅能吃饱，还能让人感到满足](https://cdn.jsdelivr.net/gh/residualsun1/blog-static/images/2023/11/11-02-concern.jpg)
 
 吃饭的时候，已经忘记霞姐和俊哥聊到了什么话题，只记得霞姐对俊哥大声而又稍显调皮任性地说了一句：
 

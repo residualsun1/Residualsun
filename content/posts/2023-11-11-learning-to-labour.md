@@ -11,7 +11,7 @@ tags:
 <!--more-->
 
 <center>
-<img src="https://cdn.jsdelivr.net/residualsun1/blog-static/images/2023/11/11-11-paul.jpeg" width=50% height=50%>
+<img src="https://cdn.jsdelivr.net/gh/residualsun1/blog-static/images/2023/11/11-11-paul.jpeg" width=50% height=50%>
 <figcaption>保罗·威利斯</figcaption>
 </center>
 

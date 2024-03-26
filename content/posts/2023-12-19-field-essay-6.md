@@ -22,11 +22,11 @@ tags:
 
 虽然拒绝动手绘制，但爷爷很乐意回忆，然后叙说。无奈，我只好听着爷爷说，自己动笔绘制。
 
-![手绘地图](https://cdn.jsdelivr.net/residualsun1/blog-static/images/2023/12/12-19-map.jpg)
+![手绘地图](https://cdn.jsdelivr.net/gh/residualsun1/blog-static/images/2023/12/12-19-map.jpg)
 
 当“成品”出来以来，我十分不确定自己画的是不是爷爷脑海中所想的景象。在我和他确认绘制路线交谈过程中，他讲了很久的雷州话，我耐心地听着，最后试图用自己蹩脚的雷州话请求他用白话解释一下。爷爷戴着眼镜，看了一眼我展示在他面前的平板地图，说自己眼神不好使，而后基本还是描述出了我绘制的地图路线。
 
-![网络地图](https://cdn.jsdelivr.net/residualsun1/blog-static/images/2023/12/12-19-map1.jpg)
+![网络地图](https://cdn.jsdelivr.net/gh/residualsun1/blog-static/images/2023/12/12-19-map1.jpg)
 
 看起来我绘制的这份地图基本没有太大问题，但我心中始终有着疙瘩。第一，这不是爷爷亲手绘制的，不是当事渔民在自己回忆的指引下动手画出的“记忆地图”；第二，在听爷爷描述的时候，我一直在拿着平板上的地图来对照验证，发现爷爷讲的地点在平板地图上都有清楚地标着（部分地点需要放大之后才能呈现），基本就是在海南岛自西向东绕了一个圈，我总疑心自己没有听到爷爷的真实路线；第三，和爷爷的交谈中，爷爷大部分以及自然流利的话语都是我没听懂的雷州话，请求他讲粤语时，我听到的仅仅是某几个具体地点之间东南西北的位置关系，这让我很难相信手绘的路线是否准确。
 
@@ -52,9 +52,9 @@ tags:
 
 绑冻蟹和绑梭子蟹不同，前者挣扎的力气更大，用钳子夹人的速度更快，要用另一种方法去绑。我用绑梭子蟹的方法去绑冻蟹，速度太慢，还颇为狼狈，只好帮忙将别人绑好放在一旁的螃蟹放进打氧气的水桶中。
 
-![满满一桶的冻蟹](https://cdn.jsdelivr.net/residualsun1/blog-static/images/2023/12/12-19-xie.jpg)
+![满满一桶的冻蟹](https://cdn.jsdelivr.net/gh/residualsun1/blog-static/images/2023/12/12-19-xie.jpg)
 
-![卫国一家将冻蟹倒出来收进蟹笼中给蟹老板收购](https://cdn.jsdelivr.net/residualsun1/blog-static/images/2023/12/12-19-busy.jpg)
+![卫国一家将冻蟹倒出来收进蟹笼中给蟹老板收购](https://cdn.jsdelivr.net/gh/residualsun1/blog-static/images/2023/12/12-19-busy.jpg)
 
 今天下午我到卫国一家面前试图混了一个脸熟。
 

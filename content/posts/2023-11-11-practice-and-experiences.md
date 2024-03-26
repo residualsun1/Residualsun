@@ -18,7 +18,7 @@ tags:
 
 上个学期读的书全是民族志，《努尔人》、《缅甸高地诸政治体系》、《道德的重量》、《城市里的陌生人》和《末日松茸》。想起当时兵哥发出招募读书成员的PDF，以及PDF中写明的阅读清单时，现在都能感到微微的激动。
 
-![](https://cdn.jsdelivr.net/residualsun1/blog-static/images/2023/11/11-11-zhaomu.png)
+![](https://cdn.jsdelivr.net/gh/residualsun1/blog-static/images/2023/11/11-11-zhaomu.png)
 
 和袁老师一起读的书是共同讨论出来的，但基本都是很明显的社会学领域书籍。从《茶馆》到《中国社会的个体化》，到《学做工》，再到《新异化的诞生》，最后是《工作、消费主义和新穷人》。但由于这个学期第十三周就要开始专业实践，我们真正在一起开会分享的书籍只有前三本，后两本只能自己找来看了。
 
@@ -40,7 +40,7 @@ tags:
 
 出乎我意料的是，吃饭的时候完全没有尴尬的感觉。我寻思着提议到粤陈记吃饭的bj是不是提前考虑到这一点了。首先，粤陈记十分热闹，不同于我在其他自助火锅店吃饭时坐在一个区域里会比较安静的氛围，这里闹哄哄的，各桌之间挨得近，也没有隔板和屏风什么的，如同茶楼一般；第二，每个人的座位上都单独有一个粥底火锅，自己拿菜，自己管理，不用烦恼客气与否，也不用烦恼是否要基于人情去照顾他人。我们的注意力要么落在多样的食材，要么落在吃本身，要么落在好奇一下别人的粥煮成了什么样——我的看起来似乎是最养生的，虫草和玉米下锅，整锅粥看起来金黄金黄的，获得大家“这是家里妈妈熬的粥”、“你怎么那么养生”、“笑死，和我们完全不是一个频道”的评价。
 
-![我的虫草玉米粥底](https://cdn.jsdelivr.net/residualsun1/blog-static/images/2023/11/11-11-porridge.jpg)
+![我的虫草玉米粥底](https://cdn.jsdelivr.net/gh/residualsun1/blog-static/images/2023/11/11-11-porridge.jpg)
 
 气氛很自然。我接受大家分享的食材，甚至也敢主动将自己的食材分享出去。或许这听起来很奇怪，有什么不能主动分享呢？但在此前，我潜意识里仍然认为女生之间分享食材很正常，但我作为一个男生将自己的食材分享出去会不会让大家感到尴尬呢？
 
@@ -54,7 +54,7 @@ tags:
 
 <center>
 <figure>
-<img src="https://cdn.jsdelivr.net/residualsun1/blog-static/images/2023/11/11-11-nihuawocai.jpg" alt="xy的大作" width=50% height=50%>
+<img src="https://cdn.jsdelivr.net/gh/residualsun1/blog-static/images/2023/11/11-11-nihuawocai.jpg" alt="xy的大作" width=50% height=50%>
 <figcaption>最后附上一张你画我猜时xy的抽象画作，承包了大家两分钟的笑点</figcaption>
 </figure>
 </center>

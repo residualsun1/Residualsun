@@ -18,9 +18,9 @@ tags:
 
 我们聊了许多，刚好我最近在看李亦园的《田野图像》，书名这四个字也一直盘旋在我的脑海中。
 
-![刚上船我便忍不住拍下了这一幕](https://cdn.jsdelivr.net/residualsun1/blog-static/images/2023/12/12-11-boat.jpg)
+![刚上船我便忍不住拍下了这一幕](https://cdn.jsdelivr.net/gh/residualsun1/blog-static/images/2023/12/12-11-boat.jpg)
 
-我记得自己[第一次](https://guozheng.rbind.io/posts/2023/06/do-not-need-meaning/)来硇洲时，也拍了一张众人围在船边的照片。
+我记得自己[第一次](https://cdn.jsdelivr.net/gh/residualsun1/blog-static/images/2023/06/do-not-need-meaning/)来硇洲时，也拍了一张众人围在船边的照片。
 
 这个场景让我想起了《新异化的诞生》。罗萨眼中的现代化，可以将一部分解释为交通运输技术的进步和生活步调的加快带来了“空间萎缩”，逐渐使得空间不再那么重要，进而导致我们对周身所处的环境感到越来越陌生。这设想的前提是我们原本可以对某片空间形成记忆和情感。
 
@@ -30,7 +30,7 @@ tags:
 
 晚上和阿用开着小电瓶到镇上，黑石屿特有的晚霞让我想起八月月底回家的前一天，那阵时预备刮台风，岛上的天色很美。
 
-![台风前夜](https://cdn.jsdelivr.net/residualsun1/blog-static/images/2023/12/12-11-sunset.jpg)
+![台风前夜](https://cdn.jsdelivr.net/gh/residualsun1/blog-static/images/2023/12/12-11-sunset.jpg)
 
 露天唱歌的地方让我想起小杨师姐。有一次我和阿用开玩笑，说要不下次喊小杨师姐一起出来唱歌，没想到第二回他真的悄悄把小杨师姐载过来了。待在黑石屿的最后一晚，饭团请大家吃饭，把小杨师姐也叫了出来，我和小杨师姐说，你请我吃了一次炒冰，这次一定要让我请你，送礼必须要有回礼，否则礼物之灵会惩罚受礼者。
 

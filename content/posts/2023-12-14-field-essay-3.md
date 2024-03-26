@@ -46,7 +46,7 @@ tags:
 
 中午，嘉豪的爷爷拿了一个梭子蟹和皮皮虾过来，放在门口就走了。
 
-![嘉豪的爷爷送来的梭子蟹和皮皮虾](https://cdn.jsdelivr.net/residualsun1/blog-static/images/2023/12/12-14-gift.jpg)
+![嘉豪的爷爷送来的梭子蟹和皮皮虾](https://cdn.jsdelivr.net/gh/residualsun1/blog-static/images/2023/12/12-14-gift.jpg)
 
 我有点疑惑，不知道嘉豪的爷爷这是在做什么。
 
