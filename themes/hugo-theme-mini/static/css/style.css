@@ -738,7 +738,7 @@ nav.navigation a.button {
     }
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1281px) {
     .note-ref { cursor: pointer; }
     .note-ref:hover ~ .side {
         display: inline-block;
