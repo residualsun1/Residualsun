@@ -1,5 +1,5 @@
 ---
-title: 转：《渠敬东 | 真正的教育不止发生在大学》
+title: 转载 | 《渠敬东 | 真正的教育不止发生在大学》
 author: 黄国政
 date: '2023-08-04'
 slug: real-education
