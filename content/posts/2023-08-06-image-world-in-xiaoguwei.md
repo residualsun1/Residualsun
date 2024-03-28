@@ -4,7 +4,8 @@ author: 黄国政
 date: '2023-08-06'
 slug: image-world-in-xiaoguwei
 categories: []
-tags: ["想法"]
+tags: 
+  - 转载
 ---
 
 <!--more-->
