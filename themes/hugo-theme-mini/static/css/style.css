@@ -365,6 +365,11 @@ nav.navigation a.button {
   width: 80%;
 }
 
+#list-page .title a:hover {
+  position: relative;
+  inset: 1px 0 0 1px;
+}
+
 #list-page .date {
   width: 20%;
   float: right;
@@ -482,6 +487,11 @@ nav.navigation a.button {
   padding: 0 24px;
 }
 
+#archive a:hover {
+  position: relative;
+  inset: 1px 0 0 1px;
+}
+
 #archive .total {
   font-size: 15px;
 }
@@ -559,6 +569,8 @@ nav.navigation a.button {
 
 #tags .tag a:hover {
   color: black;
+  position: relative;
+  inset: 1px 0 0 1px;
 }
 
 /* section page */
@@ -654,6 +666,16 @@ nav.navigation a.button {
 
 #post-nav .nav-next {
   text-align: right;
+}
+
+#post-nav .nav-prev a:hover{
+  position: relative;
+  inset: 1px 0 0 1px;
+}
+
+#post-nav .nav-next a:hover{
+  position: relative;
+  inset: 1px 0 0 1px;
 }
 
 /*footnotes*/

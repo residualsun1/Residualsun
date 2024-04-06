@@ -76,6 +76,6 @@ FJ想了想，说：“《摩洛哥田野作业反思》。”
 
 延伸阅读：
 
-1、《[“我”在“他”中](https://www.lifeweek.com.cn/h5/article/detail.do?artId=150689)》
+1. 《“我”在“他”中》，https://book.douban.com/subject/1836616/discussion/16681444/
 
-2、《[好想的摩洛哥与难说的拉比诺——人类学田野作业的反思问题](https://book.douban.com/subject/1836616/discussion/16681444/)》
+2. 《好想的摩洛哥与难说的拉比诺——人类学田野作业的反思问题》，https://book.douban.com/subject/1836616/discussion/16681444/

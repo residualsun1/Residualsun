@@ -1,5 +1,5 @@
 ---
-title: 如何减少基于Git的博客仓库大小（英文博客仓库版）
+title: 如何减少基于Git的博客仓库大小（简化版）
 author: 黄国政
 date: '2024-04-06'
 slug: how-to-reduce-size-in-en-git
