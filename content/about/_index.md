@@ -80,9 +80,9 @@ h2 {
 
 * [列弛](https://www.liechi.org)：审慎思考，爱好文史，是第一位给我博客留言的朋友，他的文字一度给予了我温暖和支持的力量。
 
-* [袁凡](https://yuanfan.rbind.io)：思绪活跃，坚持阅读，坚持学习R。
+* [袁凡](https://yuanfan.rbind.io)：思绪活跃，记录生活，善于思考，坚持阅读，坚持学习R。
 
-* [进击的鱼子酱](https://dylanyu233.rbind.io)：初中同学，知心老朋友。虽然博客更新得很慢，但他的小记写得很走心。
+* [进击的鱼子酱](https://dylanyu233.rbind.io)：初中同学，知心老朋友。虽然博客更新得很慢，但小记写得很走心。
 
 ## 我学习的博主
 
@@ -92,7 +92,7 @@ h2 {
 
 * [郝鸿涛](https://hongtaoh.com/)：毅力，奋进。
 
-* [于淼](https://yufree.cn/)：脑力深邃。
+* [Randy Lu](https://lutaonan.com/)：计算机、技术、思考与创造，一个独立与独特的灵魂。
 
 * [天仙子](https://tianxianzi.me/)：文字森林、记录
 
