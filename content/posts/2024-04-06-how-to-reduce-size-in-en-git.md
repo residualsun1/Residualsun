@@ -8,9 +8,9 @@ tags:
   - 天工记
 ---
 
-<!--more-->
-
 继上一回成功[减少中文博客仓库的大小](https://guozheng.rbind.io/posts/2024/03/how-to-reduce-size-in-git/)以后，叶寻在评论区补充了一个将Git中所有提交记录合并为一个的[方法](https://github.com/residualsun1/Residualsun/discussions/46#discussioncomment-8882040)，刚好我希望能继续用英文写博客，同时进一步熟悉Git的历史记录与储存空间管理，并基于上一次的经验对记录过程进行简化，遂决定以此方法处理英文博客仓库。
+
+<!--more-->
 
 需要的储备知识：懂得如何使用GitHub创建仓库，以及Git的基本使用。
 

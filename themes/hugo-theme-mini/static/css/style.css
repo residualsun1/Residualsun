@@ -380,7 +380,8 @@ nav.navigation a.button {
 }
 
 #list-page .summary {
-  color: #757575;
+  font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, FandolKai, serif;
+  color: /*#757575*/#404040;
   margin-top: 12px;
   word-break: normal;
   overflow-wrap: anywhere;
