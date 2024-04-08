@@ -21,7 +21,7 @@ h3 {
 ### 李志《关于郑州的记忆》
 
 <audio controls>
-    <source src="https://cdn.jsdelivr.net/gh/residualsun1/blog-static/audio/2022-07-02-关于郑州的记忆.mp3" type="audio/mpeg">
+    <source src="https://cdn.jsdelivr.net/gh/residualsun1/blog-audio/sound/2022-07-02-关于郑州的记忆.mp3" type="audio/mpeg">
 </audio>  
 
 - 时间：2022年7月2日
@@ -35,7 +35,7 @@ h3 {
 ### 五月天《拥抱》
 
 <audio controls>
-    <source src="https://cdn.jsdelivr.net/gh/residualsun1/blog-static/audio/2022-11-27-拥抱.mp3" type="audio/mpeg">
+    <source src="https://cdn.jsdelivr.net/gh/residualsun1/blog-audio/sound/2022-11-27-拥抱.mp3" type="audio/mpeg">
 </audio>  
 
 - 时间：2022年11月27日
@@ -51,7 +51,7 @@ h3 {
 - 形式：KTV
 
 <audio controls>
-    <source src="https://cdn.jsdelivr.net/gh/residualsun1/blog-static/audio/2023-05-15-我是真的爱上你.mp3" type="audio/mpeg">
+    <source src="https://cdn.jsdelivr.net/gh/residualsun1/blog-audio/sound/2023-05-15-我是真的爱上你.mp3" type="audio/mpeg">
 </audio>  
 
 这是我高音唱得最好的一次，之后再也没能达到这样的状态——虽然也算不上好。我从小学就开始听王杰了，第一首是《不浪漫罪名》，这首歌在哥哥的一部电子产品里被我发现。后来上初中时，我才接触到王杰更多的音乐，其中最是喜欢的莫过于《爱不起》和这首《我是真的爱上你》，两首歌旋律一样，前者为粤语，后者为国语。
@@ -75,7 +75,7 @@ h3 {
 ### 张国荣《怪你过分美丽》
 
 <audio controls>
-    <source src="https://cdn.jsdelivr.net/gh/residualsun1/blog-static/audio/2023-07-16-怪你过分美丽.mp3" type="audio/mpeg">
+    <source src="https://cdn.jsdelivr.net/gh/residualsun1/blog-audio/sound/2023-07-16-怪你过分美丽.mp3" type="audio/mpeg">
 </audio> 
 
 - 时间：2023年7月16日
@@ -91,7 +91,7 @@ h3 {
 - 形式：音响麦克风
 
 <audio controls>
-    <source src="https://cdn.jsdelivr.net/gh/residualsun1/blog-static/audio/2023-07-16-风雨夜归人.mp3" type="audio/mpeg">
+    <source src="https://cdn.jsdelivr.net/gh/residualsun1/blog-audio/sound/2023-07-16-风雨夜归人.mp3" type="audio/mpeg">
 </audio> 
 
 初中的时候在听李克勤的歌，起因似乎是音乐课上我唱了《月半小夜曲》，得到了老师的肯定，后来开始找起了李克勤唱过的其他音乐。其中，我觉得《风雨夜归人》比较冷门，但是含情脉脉。
@@ -103,7 +103,7 @@ h3 {
 - 形式：音响麦克风
 
 <audio controls>
-    <source src="https://cdn.jsdelivr.net/gh/residualsun1/blog-static/audio/2023-07-16-爱与痛的边缘.mp3" type="audio/mpeg">
+    <source src="https://cdn.jsdelivr.net/gh/residualsun1/blog-audio/sound/2023-07-16-爱与痛的边缘.mp3" type="audio/mpeg">
 </audio>
 
 第一次听《爱与痛的边缘》是王菲唱的。有两段词让我印象很是深刻：
@@ -121,7 +121,7 @@ h3 {
 - 形式：音响麦克风
 
 <audio controls>
-    <source src="https://cdn.jsdelivr.net/gh/residualsun1/blog-static/audio/2023-07-23-父亲写的散文诗.mp3" type="audio/mpeg">
+    <source src="https://cdn.jsdelivr.net/gh/residualsun1/blog-audio/sound/2023-07-23-父亲写的散文诗.mp3" type="audio/mpeg">
 </audio>
 
 不管是许飞的原唱还是李健的翻唱，《父亲写的散文诗》都很好听，配合旋律细细咀嚼歌词，让人心中十分感动。
@@ -133,7 +133,7 @@ h3 {
 - 形式：露天KTV
 
 <audio controls>
-    <source src="https://cdn.jsdelivr.net/gh/residualsun1/blog-static/audio/2023-08-07-分裂.mp3" type="audio/mpeg">
+    <source src="https://cdn.jsdelivr.net/gh/residualsun1/blog-audio/sound/2023-08-07-分裂.mp3" type="audio/mpeg">
 </audio> 
 
 在舍友那儿被“洗脑”许久后，我从周杰伦的《你听得到》，听到了《园游会》、《分裂》和《瓦解》。我觉得《分裂》是比较冷门的存在。
@@ -141,7 +141,7 @@ h3 {
 ### 陈奕迅《葡萄成熟时》
 
 <audio controls>
-    <source src="https://cdn.jsdelivr.net/gh/residualsun1/blog-static/audio/2023-08-08-葡萄成熟时.mp3" type="audio/mpeg">
+    <source src="https://cdn.jsdelivr.net/gh/residualsun1/blog-audio/sound/2023-08-08-葡萄成熟时.mp3" type="audio/mpeg">
 </audio> 
 
 - 时间：2023年8月8日
@@ -196,7 +196,7 @@ h3 {
 - 形式：露天KTV
 
 <audio controls>
-    <source src="https://cdn.jsdelivr.net/gh/residualsun1/blog-static/audio/2023-08-24-千千阙歌.mp3" type="audio/mpeg">
+    <source src="https://cdn.jsdelivr.net/gh/residualsun1/blog-audio/sound/2023-08-24-千千阙歌.mp3" type="audio/mpeg">
 </audio>
 
 送给FJ的《千千阙歌》，感谢能在硇洲遇见她。
@@ -208,7 +208,7 @@ h3 {
 - 形式：露天KTV
 
 <audio controls>
-    <source src="https://cdn.jsdelivr.net/gh/residualsun1/blog-static/audio/2023-08-24-风继续吹.mp3" type="audio/mpeg">
+    <source src="https://cdn.jsdelivr.net/gh/residualsun1/blog-audio/sound/2023-08-24-风继续吹.mp3" type="audio/mpeg">
 </audio>
 
 ### 张国荣《风再起时》
@@ -218,7 +218,7 @@ h3 {
 - 形式：露天KTV
 
 <audio controls>
-    <source src="https://cdn.jsdelivr.net/gh/residualsun1/blog-static/audio/2023-08-24-风再起时.mp3" type="audio/mpeg">
+    <source src="https://cdn.jsdelivr.net/gh/residualsun1/blog-audio/sound/2023-08-24-风再起时.mp3" type="audio/mpeg">
 </audio>
 
 ### 张国荣《至少还有你》
@@ -228,5 +228,5 @@ h3 {
 - 形式：露天KTV
 
 <audio controls>
-    <source src="https://cdn.jsdelivr.net/gh/residualsun1/blog-static/audio/2024-01-09-至少还有你.mp3" type="audio/mpeg">
+    <source src="https://cdn.jsdelivr.net/gh/residualsun1/blog-audio/sound/2024-01-09-至少还有你.mp3" type="audio/mpeg">
 </audio>
