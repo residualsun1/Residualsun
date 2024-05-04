@@ -12,7 +12,7 @@ h2 {
 
 ## 我是谁
 
-一名普通的大三学生，就读于南方某不知名院校。不用抖音、不看小红书、不发朋友圈，没啥生活乐趣，闲来无事时喜欢听音乐，或者[嗷两嗓子](https://guozheng.rbind.io/music/)。我消沉的时候喜欢听Linkin Park，闲适的时候喜欢听my little airport和周杰伦，怀旧的时候喜欢听张国荣。大一的[网页设计作业](https://Leslie-Cheung.netlify.app)便是以纪念张国荣为主题。
+一名普通的大三学生，就读于南方某不知名院校。不用抖音、不看小红书、不发朋友圈，没啥生活乐趣，闲来无事时喜欢听音乐，或者[嗷两嗓子](https://guozheng.rbind.io/sound/)。我消沉的时候喜欢听Linkin Park，闲适的时候喜欢听my little airport和周杰伦，怀旧的时候喜欢听张国荣。大一的[网页设计作业](https://Leslie-Cheung.netlify.app)便是以纪念张国荣为主题。
 
 接触R语言的[blogdown](https://github.com/rstudio/blogdown)包后，我搭建了自己的[独立博客网站](https://guozheng.rbind.io)，并就此迷上折腾博客网站以及写作博客。被问起兴趣爱好是什么时，我会想得抓破头皮，最后只能厚着脸皮、恬不知耻地说喜欢写作——在我看来，喜欢写博客如同喜欢写作，但我仍然觉得自己不过庸人一个，容易自我感动却又最讨厌自我感动——写的东西太过幼稚，“小我”太大——但我不想一味否定当下的自己。
 

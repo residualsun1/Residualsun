@@ -4,7 +4,6 @@ author: 黄国政
 date: '2023-05-27T12:00:00Z'
 slug: flower-has-been-dried
 tags: [想法]
-draft: true
 ---
 
 <!--
