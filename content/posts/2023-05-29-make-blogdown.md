@@ -21,7 +21,7 @@ tags:
 
 ### B.1模板的选择 
 
-目前我搭建blog使用的是谢益辉开发的[Blogdown](https://github.com/rstudio/blogdown)包，搭配[Hugo](https://gohugo.io/)和[Github](https://github.com)以及[Github Deskopt](https://desktop.github.com/)一起使用，网站建成以后托管到[Netfliy](https://www.netlify.com/)上。这里的方法主要是参考统计之都的贴文[<sup>1</sup>](#references1)和庄闪闪的公众号文章[<sup>2</sup>](#references2)。
+目前我搭建blog使用的是谢益辉开发的[Blogdown](https://github.com/rstudio/blogdown)包，搭配[Hugo](https://gohugo.io/)和[Github](https://github.com)以及[Github Deskopt](https://desktop.github.com/)一起使用，网站建成以后托管到[Netfliy](https://www.netlify.com/)上。这里的方法主要参考统计之都的贴文[<sup>1</sup>](#references1)和庄闪闪的公众号文章[<sup>2</sup>](#references2)。
 
 可以在网站<https://themes.gohugo.io/>或<https://hugothemesfree.com/>上挑选模板。[Hexo](https://hexo.io/themes/)上的主题看起来更加丰富，但是我下载的模板建站都会失败，不知道是不是因为没有兼容。在这里埋下一个坑，~~等有时间~~好好细读益辉的[说明文档](https://bookdown.org/yihui/blogdown/)，之后再来填坑。
 
