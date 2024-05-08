@@ -584,15 +584,15 @@ nav.navigation a.button {
 #section a {
   text-decoration: none;
   color: initial;
-  /*border-bottom: 1px dashed;*/
-  box-shadow: 0 -5px rgba(189,195,199,.5)inset;
-  transition: all .3s ease;
+  border-bottom: 1px dashed;
+  /*box-shadow: 0 -5px rgba(189,195,199,.5)inset;
+  transition: all .3s ease;*/
 }
 
 #section a:hover {
-    /*position: relative;
-    inset: 1px 0 0 1px;*/
-    box-shadow: 0 -15px rgba(189,195,199,.7)inset;
+    position: relative;
+    inset: 1px 0 0 1px;
+    /*box-shadow: 0 -15px rgba(189,195,199,.7)inset;*/
 }
 
 /* 404 page */
