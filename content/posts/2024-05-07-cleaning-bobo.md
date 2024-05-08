@@ -6,7 +6,7 @@ slug: cleaning-bobo
 categories: []
 tags:
   - 生活
-draft: true
+draft: false
 ---
 
 <!--more-->
