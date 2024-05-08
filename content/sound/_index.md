@@ -20,11 +20,15 @@ h3 {
 
 ### 张国荣《怪你过分美丽》
 
-- 时间： 2024年5月5日
+- 时间：2024年5月5日
+- 地点：番禺区某KTV
+- 形式：KTV
 
 <audio controls>
     <source src="https://cdn.jsdelivr.net/gh/residualsun1/blog-audio/sound/2024-05-03-怪你过分美丽.mp3" type="audio/mpeg">
 </audio>
+
+我喜欢唱哥哥的《左右手》，以及这一首《怪你过分美丽》，但不是说自己唱得多好听，仅仅是因为我觉得唱起来会觉得舒服、畅快。
 
 ### 张国荣《至少还有你》
 
@@ -66,7 +70,9 @@ h3 {
     <source src="https://cdn.jsdelivr.net/gh/residualsun1/blog-audio/sound/2023-08-24-千千阙歌.mp3" type="audio/mpeg">
 </audio>
 
-送给FJ的《千千阙歌》，感谢能在硇洲遇见她
+和阿用一起唱《千千阕歌》，送给FJ，感谢能在硇洲遇见她。
+
+这是她离开硇洲的前一晚，不知为何，她离开以后，我感到万分不舍，但这无关情意，只是一种亲近。
 
 ### 陈奕迅《葡萄成熟时》
 

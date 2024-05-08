@@ -48,6 +48,8 @@ social:
   stackoverflow: https://stackoverflow.com/users/22065130/residualsun
   # facebook: your-facebook-link
 
+outputs:
+  home: ["html", "rss", "json"]
 
 # Site parameters
 params:
@@ -83,12 +85,13 @@ params:
     ## e.g.
     # - name: Project
     #   path: /project
+    - name: 搜索
+      path: https://guozheng.rbind.io/search/
     - name: English
       path: https://residualsun.blog/
   startTime: "2023-05-27T00:00:00+21:00"
   showRunTime: true
 
-  
   # You can put your custom css and js to `static` directory, or use remote css and js files which start with `http://` or `https://`
   customCSS:
     ## e.g.
