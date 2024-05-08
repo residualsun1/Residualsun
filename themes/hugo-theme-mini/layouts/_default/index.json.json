@@ -4,7 +4,3 @@
 {{- dict "uri" $p.RelPermalink "title" $p.Title "content" ($p.Plain | htmlUnescape | plainify) | jsonify -}}
 {{- end -}}
 ]
-[
-  {"uri": "/foo/", "title": "Hi foo", "content": "This is foo."},
-  {"uri": "/bar/", "title": "Hi bar", "content": "This is bar."}
-]

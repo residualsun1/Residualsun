@@ -4,7 +4,9 @@ disable_comments: true
 disable_sidenotes: true
 ---
 
-The search is [performed via fuse.js](/en/2023/09/fuse-search/).[^1] For the search keywords, white spaces act as the `AND` operator, and `|` acts as the `OR` operator. To match an exact phrase, double quote it. For example, `R Markdown` matches articles that contain both `R` and `Markdown`, `R | Markdown` matches articles that contain `R` or `Markdown`, and `"R Markdown"` matches articles that contain the whole phrase `R Markdown`.
+本页面的搜索框代码取自来自博主[谢益辉](https://yihui.org)，通过[fuse.js](/en/2023/09/fuse-search/)运行，下列是关于搜索的说明：
+
+搜索关键词时，空格代表`AND`运算符，`|`代表`OR`运算符，如果需要匹配精确的短语，可以使用双引号`""`。例如，`R Markdown`匹配的是包含`R`和`Markdown`的文章，`R | Markdown`匹配的是包含`R`或`Markdown`的文章，而`"R Markdown"`则匹配包含整个短语`R Markdown`的文章。
 
 <style type="text/css">
 .main {
@@ -38,7 +40,7 @@ The search is [performed via fuse.js](/en/2023/09/fuse-search/).[^1] For the sea
 }
 </style>
 
-<input type="search" id="search-input">
+<input type="search" id="search-input" placeholder="请搜索(●'◡'●).">
 
 <div class="search-results">
 <section>
@@ -49,5 +51,3 @@ The search is [performed via fuse.js](/en/2023/09/fuse-search/).[^1] For the sea
 
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2" defer></script>
 <script src="https://cdn.jsdelivr.net/npm/@xiee/utils/js/fuse-search.min.js" defer></script>
-
-[^1]: If you are not satisfied by the search, you may use alternative search engines such as Google or DuckDuckGo, and add the filter `site:yihui.org` after your keywords, e.g., `R Markdown site:yihui.org`.
