@@ -2,7 +2,7 @@
 title: 宿舍楼下的保洁员阿伯
 author: 黄国政
 date: '2024-05-07'
-slug: cleaning-bobo
+slug: cleaner-uncle
 categories: []
 tags:
   - 生活
@@ -15,10 +15,7 @@ draft: false
 
 广州的雨可算停歇一会儿啦！我吭哧吭哧地终于把积灰已久的床帘洗了一遍，瞅着大太阳兴奋地挂在了宿舍楼楼梯间的栏杆上。
 
-<center>
-<img src="https://cdn.jsdelivr.net/gh/residualsun1/blog-static/images/2024/05/05-07-1.jpg" width="70%"/>
-<figcaption>咳，这是一张背光的图片，然后床帘看起来也晾得很草率……<figcaption>
-</center>
+![咳，这是一张背光的图片，然后床帘看起来也晾得很草率……](https://cdn.jsdelivr.net/gh/residualsun1/blog-static/images/2024/05/05-07-1.jpg)
 
 在楼梯间，我遇上了经常在宿舍楼下收拾垃圾的阿伯，彼时他正在打扫楼梯卫生。
 
@@ -33,10 +30,7 @@ draft: false
 
 为啥想和他搭话呢？我也不知道，我不清楚这是否出于一种怜悯或同情——在我心中，这样的念头一度闪过，但我同时又认为这样的情感似乎显得自己在自上而下地看待自己和别人的关系。
 
-<center>
-<img src="https://cdn.jsdelivr.net/gh/residualsun1/blog-static/images/2024/05/05-07-2.jpg" width="50%"/>
-<figcaption>工作中的保洁伯伯 | 2024年5月7日<figcaption>
-</center>
+![工作中的保洁伯伯 | 2024年5月7日](https://cdn.jsdelivr.net/gh/residualsun1/blog-static/images/2024/05/05-07-2.jpg)
 
 我自认为不应该如此，我或许只是在过度解读别人的生活，又或许只是自作多情。
 
@@ -44,10 +38,7 @@ draft: false
 
 我总忍不住去想象，他日复一日地在宿舍楼下收拾整一栋楼的垃圾，这是一件很辛苦的事情，假期（比如这个五一）在做，下雨的时候也在做，将垃圾桶里的餐盒捡起来，打开盒盖，将可能放了三四天——甚至更久的剩菜剩饭倒出来。而这只是冰山一角，毕竟我们无法具体且真切地想象人类都能制造一些什么垃圾。我扔垃圾的时候都会时常想象，若是让我来清理，怕是十分钟也坚持不下来。
 
-<center>
-<img src="https://cdn.jsdelivr.net/gh/residualsun1/blog-static/images/2024/05/05-07-3.jpg" width="50%"/>
-<figcaption>下雨天还在清理垃圾的伯伯 | 2023年9月8日<figcaption>
-</center>
+![下雨天还在清理垃圾的伯伯 | 2023年9月8日](https://cdn.jsdelivr.net/gh/residualsun1/blog-static/images/2024/05/05-07-3.jpg)
 
 但我从未见过这位伯伯愁眉苦脸。他似乎总是如此——和我在超市、医院等地方见到的任职人员那面对生活时无神，甚至总带着不耐烦和幽怨的双目完全不同，他看起来总是平静且亲和，默默地待在一边干自己的活儿，如同他那淡黄色和棕色的工作服般不甚起眼……当我某一回还在想象他在生活中面对着无穷无尽的垃圾时，他正拉着有滚轮的垃圾桶走进宿舍小区，憨厚的脸上还挂着浅浅的笑意——事实上不止是这一次，在我印象里，伯伯似乎就没有过面对生活时流露出“苦大仇深”般的情绪。
 
@@ -63,10 +54,7 @@ draft: false
 
 我赶忙说了一句“谢谢你”，但在句末却情不自禁地加上了一点“啊”的尾音，显得有些略微的局促。
 
-<center>
-<img src="https://cdn.jsdelivr.net/gh/residualsun1/blog-static/images/2024/05/05-07-4.jpg" width="100%"/>
-<figcaption>清理垃圾的伯伯，可以看到衣服背后已经被汗水浸湿了 | 2023年9月13日<figcaption>
-</center>
+![清理垃圾的伯伯，可以看到衣服背后已经被汗水浸湿了 | 2023年9月13日](https://cdn.jsdelivr.net/gh/residualsun1/blog-static/images/2024/05/05-07-4.jpg)
 
 |![2023年10月29日](https://cdn.jsdelivr.net/gh/residualsun1/blog-static/images/2024/05/05-07-5.jpg)|![2023年10月29日](https://cdn.jsdelivr.net/gh/residualsun1/blog-static/images/2024/05/05-07-6.jpg)|
 |:-:|:-:|
@@ -89,10 +77,7 @@ draft: false
 |![成堆后如山般的垃圾](https://cdn.jsdelivr.net/gh/residualsun1/blog-static/images/2024/05/05-07-8.jpg)|![疲惫的保洁员](https://cdn.jsdelivr.net/gh/residualsun1/blog-static/images/2024/05/05-07-9.jpg)|
 |:-:|:-:|
 
-<center>
-<img src="https://cdn.jsdelivr.net/gh/residualsun1/blog-static/images/2024/05/05-07-10.jpg" width="50%"/>
-<figcaption>某位同学的呼吁<figcaption>
-</center>
+![某位同学的呼吁](https://cdn.jsdelivr.net/gh/residualsun1/blog-static/images/2024/05/05-07-10.jpg)
 
 当时，我们还得知阿叔阿姨们可能会集体在楼下的架空层打地铺睡觉，有同学知道后便动员大家一起和学校进行反映，希望能给阿叔阿姨们安排好休息的地方。最后校方给了我们回复，让大家放心，承诺给阿叔阿姨们安排好了睡觉的房间，当时还发了图片——环境没有问题，看着还很温馨。
 
@@ -104,10 +89,7 @@ draft: false
 
 第二则分享一张我在大二时拍下的一张照片。
 
-<center>
-<img src="https://cdn.jsdelivr.net/gh/residualsun1/blog-static/images/2024/05/05-07-7.jpg" width="65%"/>
-<figcaption>2022年11月18日<figcaption>
-</center>
+![2022年11月18日](https://cdn.jsdelivr.net/gh/residualsun1/blog-static/images/2024/05/05-07-7.jpg)
 
 这会儿学校内解封不久，当时我正在回宿舍的路上，刚好看见两位保洁阿叔傍在一起看手机，手机播放出的音频竟然还是《熊出没》的开场主题曲。
 
