@@ -95,6 +95,9 @@ pre {
   word-break: normal;
   overflow-wrap: anywhere;
 }
+.markdown-image {
+  text-align: center;
+}
 .markdown-image img {
   max-width: 100%;
 }
