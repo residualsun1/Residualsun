@@ -56,9 +56,11 @@ draft: false
 
 ![清理垃圾的伯伯，可以看到衣服背后已经被汗水浸湿了 | 2023年9月13日](https://cdn.jsdelivr.net/gh/residualsun1/blog-static/images/2024/05/05-07-4.jpg)
 
-|![2023年10月29日](https://cdn.jsdelivr.net/gh/residualsun1/blog-static/images/2024/05/05-07-5.jpg)|![2023年10月29日](https://cdn.jsdelivr.net/gh/residualsun1/blog-static/images/2024/05/05-07-6.jpg)|
-|:-:|:-:|
-|有时候，我会觉得伯伯有股神奇的力量|他当真是可以把宿舍区域收拾得非常干净|
+![2023年10月29日](https://cdn.jsdelivr.net/gh/residualsun1/blog-static/images/2024/05/05-07-5.jpg)
+
+有时候，我会觉得伯伯有股神奇的力量，他当真是可以把宿舍区域收拾得非常干净。
+
+![2023年10月29日](https://cdn.jsdelivr.net/gh/residualsun1/blog-static/images/2024/05/05-07-6.jpg)
 
 伯伯回了一句不用谢，扫帚缓缓摆动的声音从楼下传来。
 
@@ -74,14 +76,19 @@ draft: false
 
 当时我们还有一个学生自行开发的发言平台小程序，大家在上面转载校园信息，有同学拍下了成堆的垃圾和保洁员们工作的照片，希望大家能自行处理一下餐饮垃圾，做到干湿分离，以及剩菜剩饭和餐具的分离，给阿叔阿姨们减轻一下负担。
 
-|![成堆后如山般的垃圾](https://cdn.jsdelivr.net/gh/residualsun1/blog-static/images/2024/05/05-07-8.jpg)|![疲惫的保洁员](https://cdn.jsdelivr.net/gh/residualsun1/blog-static/images/2024/05/05-07-9.jpg)|
-|:-:|:-:|
+![成堆后如山般的垃圾](https://cdn.jsdelivr.net/gh/residualsun1/blog-static/images/2024/05/05-07-8.jpg)
+
+![疲惫的保洁员](https://cdn.jsdelivr.net/gh/residualsun1/blog-static/images/2024/05/05-07-9.jpg)
 
 ![某位同学的呼吁](https://cdn.jsdelivr.net/gh/residualsun1/blog-static/images/2024/05/05-07-10.jpg)
 
-当时，我们还得知阿叔阿姨们可能会集体在楼下的架空层打地铺睡觉，有同学知道后便动员大家一起和学校进行反映，希望能给阿叔阿姨们安排好休息的地方。最后校方给了我们回复，让大家放心，承诺给阿叔阿姨们安排好了睡觉的房间，当时还发了图片——环境没有问题，看着还很温馨。
+得知阿叔阿姨们可能还会集体在楼下的架空层打地铺睡觉时，仍然是有不知名的同学动员大家一起向学校进行反映，希望能给他们安排好休息的地方。
 
-写着写着，突然便想起了这件往事。即便大家时不时会吐槽学校，但在疫情那会儿咱们学校的好无法挑剔，学生吃喝不愁，还有零食拿，最后还给日常中最容易被我们忽略的保洁员们安排好了住处。
+学校承诺会安排好房间，最后也没有让大家感到失望。[^zhaopian]
+
+[^zhaopian]: 我记得当时看到一张图片，上面是阿叔阿姨们在房间里边休息边交谈的画面。
+
+写着写着突然便想起了这件往事。即便大家时不时会吐槽学校，但在疫情期间我们学校各方面的保障做得还是很好，学生吃喝不愁，日常中最容易被忽略的保洁阿叔阿姨们也能得到较为妥善的安排。
 
 我还想起布迪厄写的[《世界的苦难》](https://book.douban.com/subject/26943381/)，以及郭于华老师的[《倾听底层：我们如何讲述苦难》](https://book.douban.com/subject/6826610/)。
 
