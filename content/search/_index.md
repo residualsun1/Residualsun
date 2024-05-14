@@ -4,11 +4,11 @@ disable_comments: true
 disable_sidenotes: true
 ---
 
-本页面的搜索框代码来自博主[谢益辉](https://yihui.org)，通过[fuse.js](/en/2023/09/fuse-search/)运行。如果你也想为自己的Hugo博客加入搜索功能，我推荐你阅读谢益辉的这篇保姆级博文教程[《Add Client-side Searching via Fuse.js to Static Sites》](https://yihui.org/en/2023/09/fuse-search/)。
+本页面的搜索框参考[谢益辉](https://yihui.org)的博文[《Add Client-side Searching via Fuse.js to Static Sites》](https://yihui.org/en/2023/09/fuse-search/)进行设置，以下是根据关键词进行搜索的具体说明：
 
-下面是关于搜索操作的具体说明：
-
-搜索关键词时，空格代表 `AND` 运算符，`|` 代表 `OR` 运算符，如果需要匹配精确的短语，可以使用双引号 `""` 。例如， `R Markdown` 匹配的是包含 `R` 和 `Markdown` 的文章， `R | Markdown` 匹配的是包含 `R` 或 `Markdown` 的文章，而 `"R Markdown"` 则匹配包含整个短语 `R Markdown` 的文章。
+- 空格：代表 `AND` 运算符，例如`生活 想法` 匹配的是包含 `生活` 和 `想法` 两个关键词的文章。  
+- `|` ：代表 `OR` 运算符，例如`生活 | 想法` 匹配的是包含 `生活` 或 `想法` 关键词的文章。
+- `""`：用以精确匹配短语，例如 `"生活 想法"` 匹配包含整个短语 `生活 想法` 的文章。  
 
 <style type="text/css">
 .main {
