@@ -6,6 +6,7 @@ slug: life-naozhou
 categories: []
 tags:
   - 转载
+comment: false
 ---
 
 每每阅读FJ唯一一篇田野手记，我心中都会感到一阵深深的触动。早在《[她的文字](https://guozheng.rbind.io/posts/2023/09/her-words/)》中，我便写到“为那深沉的哀而不伤，静静的叙述而同样让自己的心神慢慢沉下去、慢慢沉下去”，或者用另一句话说更合适：“这是一个很迷茫又很让人着迷的过程”。
