@@ -52,7 +52,7 @@ h2 {
 
 ## 我的网站
 
-2023年5月28日 中午，我按照统计之都的帖子成功搭建了自己的第一个博客网站，主题是[anatole](https://github.com/lxndrblz/anatole)。那天和xy老师一起吃饭，回来时他和我说：“国政，记得好好学习。”说起来，正是他引我走进了R的世界。虽然他只是短暂地影响了我一段时间，但我一直很感谢他。
+2023年5月28日 中午，我按照统计之都的[帖子](https://cosx.org/2018/01/build-blog-with-blogdown-hugo-netlify-github/)用R包[blogdown](https://pkgs.rstudio.com/blogdown/)成功搭建了自己的第一个博客网站，主题是[anatole](https://github.com/lxndrblz/anatole)。那天和xy老师一起吃饭，回来时他和我说：“国政，记得好好学习。”说起来，正是他引我走进了R的世界。虽然他只是短暂地影响了我一段时间，但我一直很感谢他。
 
 2023年6月5日 凌晨，更换博客主题[hugo-tania](https://github.com/WingLim/hugo-tania?tab=readme-ov-file)。那天我待在北海的一家民宿，更换主题，从晚上折腾到了天亮。
 
@@ -74,15 +74,15 @@ h2 {
 
 按照发现的顺序排列：
 
-* [益辉](https://yihui.org)：R码农，从《[像猪一样战斗](https://yihui.org/cn/2010/12/fighting-like-a-pig/)》入坑，影响我写博客的第一位朋友。
+* [益辉](https://yihui.org)：R码农，影响我写博客的第一位朋友。我从他的博文《[像猪一样战斗](https://yihui.org/cn/2010/12/fighting-like-a-pig/)》开始入坑博客，另外，他的网页也是本站页面美化的灵感来源。
 
-* [湘云](https://xiangyun.rbind.io)：R语言爱好者，他的博客中，我阅读的第一篇是《[求学10年和工作10月](https://xiangyun.rbind.io/2020/08/ten-years-ten-months/)》，在统计之都中解答我问题的第一位朋友。
+* [湘云](https://xiangyun.rbind.io)：R语言爱好者，他的博客中，我阅读的第一篇是《[求学10年和工作10月](https://xiangyun.rbind.io/2020/08/ten-years-ten-months/)》，他是在统计之都中解答我问题的第一位朋友。
 
-* [叶寻](https://cyrusyip.org)：自我学习者，编程技术，他的博客中，我印象很深刻的是《[为自己而活](https://cyrusyip.org/zh-cn/post/2021/02/18/live-for-myself/)》，是我在GitHub中第一位和常驻贡献者。
+* [叶寻](https://cyrusyip.org)：自我学习者，喜欢捣鼓各种编程技术，他的博客中，我印象很深刻的是《[为自己而活](https://cyrusyip.org/zh-cn/post/2021/02/18/live-for-myself/)》，他是我在GitHub中的第一位和常驻贡献者，为本站提供了大量美化建议。
 
 * [列弛](https://www.liechi.org)：审慎思考，爱好文史，是第一位给我博客留言的朋友，他的文字一度给予了我温暖和支持的力量。
 
-* [袁凡](https://yuanfan.rbind.io)：思绪活跃，记录生活，爱思考，坚持阅读，坚持学习R，一位善良、知性的朋友。
+* [袁凡](https://yuanfan.rbind.io)：思绪活跃，记录生活，坚持阅读，坚持学习R，是一位善良和知性的朋友，一度激励了我不要落下阅读。
 
 * [进击的鱼子酱](https://dylanyu233.rbind.io)：初中同学，知心老朋友。虽然博客更新得很慢，但小记写得很走心。
 
@@ -92,7 +92,7 @@ h2 {
 
 * [太隐](https://wangyurui.com/)：博客精致，持续学习。
 
-* [郝鸿涛](https://hongtaoh.com/)：毅力，奋进。
+* [郝鸿涛](https://hongtaoh.com/)：毅力，奋进，博客内容写得很充实。
 
 * [Randy Lu](https://lutaonan.com/)：计算机、技术、思考与创造，一个独立与独特的灵魂。
 
