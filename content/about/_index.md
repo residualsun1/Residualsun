@@ -14,6 +14,8 @@ h2 {
 
 ## 我是谁
 
+![2023年8月24日 | 在黑石屿](https://cdn.jsdelivr.net/gh/residualsun1/blog-static/images/about/me.jpg)
+
 一个普通的学生，就读于南方某不知名院校，喜欢听音乐，有时会[唱歌](https://guozheng.rbind.io/sound/)。我消沉的时候喜欢听Linkin Park，闲适的时候喜欢听my little airport和周杰伦，怀旧的时候喜欢听张国荣。大一的[网页设计作业](https://Leslie-Cheung.netlify.app)便是以纪念张国荣为主题。
 
 接触R语言的[blogdown](https://github.com/rstudio/blogdown)包后，我搭建了自己的[独立博客网站](https://guozheng.rbind.io)，并就此迷上折腾博客网站以及写作博客。被问起兴趣爱好是什么时，我会想得抓破头皮，最后只能厚着脸皮、恬不知耻地说喜欢写作——在我看来，喜欢写博客如同喜欢写作，虽然我时常觉得自己写的东西含糊不清。
