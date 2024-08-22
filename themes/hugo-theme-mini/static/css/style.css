@@ -769,3 +769,10 @@ nav.navigation a.button {
         box-sizing: content-box;
     }
 }
+
+/*fullwidth*/
+
+.fullwidth {
+   width: 100vw;
+   margin-left: calc(50% - 50vw);
+}
