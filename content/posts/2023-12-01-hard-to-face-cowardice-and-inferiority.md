@@ -1,11 +1,11 @@
 ---
-title: 难以直面的懦弱与自卑
+title: 错过
 author: 黄国政
 date: '2023-12-01'
-slug: hard-to-face-cowardice-and-inferiority
+slug: stray
 categories: []
 tags:
-  - 小小说
+  - 想法
 ---
 
 <!--more-->
