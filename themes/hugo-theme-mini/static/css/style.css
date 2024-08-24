@@ -35,6 +35,7 @@ blockquote:not(:hover) {
 }
 
 hr {
+  width: 150px;
   display: block;
   border: none;
   height: 2px;
