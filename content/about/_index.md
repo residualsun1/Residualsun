@@ -22,7 +22,7 @@ h2 {
 
 ## 我在长期关注
 
-### （1）失败者社会学
+### 失败者社会学
 
 对这一话题感兴趣源于关键词“失败者”，从社会学的角度怎么理解“失败者”？
 
@@ -30,40 +30,18 @@ h2 {
 
 待眼下的阶段过去以后，我计划完成课程阅读的所有书目，并开始课程学习。以下是《[失败者社会学](https://www.bilibili.com/video/BV1pU4y1V7HF/?spm_id_from=333.337.search-card.all.click)》的指定与延伸阅读书目，欢迎读者和我一起学习。
 
-|《失败者社会学》十讲|指定阅读|延伸阅读|
-|:----:|:----:|:----:|
-|被烙上污名的人|《[污名](https://book.douban.com/subject/3865994/)》|《[日常生活的自我呈现](https://book.douban.com/subject/3062632/)》、《[精神病院](https://book.douban.com/subject/20382579/)》|
-|被惩罚规训的人|《[规训与惩罚](https://book.douban.com/subject/1877254/)》|《[性史](https://book.douban.com/subject/1866517/)》|
-|被无奈牵引的人|《[单身者舞会](https://book.douban.com/subject/3389457/)》|《[写作理论纲要](https://book.douban.com/subject/25697743/)》、《[區判](https://book.douban.com/subject/36317738/)》|
-|被体制放弃的人|《[学做工](https://book.douban.com/subject/21370327/)》|Paul Willis (2004) “Twenty-Five Years On: Old Books, New Times.” In N. Dolby & G. Dimitriadis eds. Learning to Labor in New Times. |
-|被理想牺牲的人|《[马克思背后的女人](https://book.douban.com/subject/1868963/)》| |
-|被戴上面具的人|《[黑皮囊，白面具](https://book.douban.com/subject/36055979/)》|《[大地上的受苦者](https://book.douban.com/subject/3751938/)》、《[黑色吶喊](https://book.douban.com/subject/3151725/)》|
-|被逐出街头的人|《[泰利的街角](https://book.douban.com/subject/3688800/)》|《[街角社会](https://book.douban.com/subject/1024255/)》《[貧窮文化](https://book.douban.com/subject/1359929/)》|
-|被消费左右的人|《[工作、消費與新貧](https://book.douban.com/subject/1351818/)》|《[消费社会](https://book.douban.com/subject/25900948/)》、《[流动的生活](https://book.douban.com/subject/11520291/)》、《[第4消费时代](https://book.douban.com/subject/26350064/)》|
-|被恐惧占据的人|《[恐懼的原型](https://book.douban.com/subject/27099462/)》|《[焦虑的意义](https://book.douban.com/subject/34788803/)》、《[无边的恐惧](https://book.douban.com/subject/5975975/)》、《[孤独](https://book.douban.com/subject/4909378/)》|
-|被荒谬笼罩的人|《[薛西弗斯的神話](https://book.douban.com/subject/26432761/)》| |
-
-### （2）存在与死亡
-
-中学的某一晚，关于“**死亡、虚无和永恒**”的想象突然攫取了我，所幸生活的琐屑一度将其深深掩盖。
-
-但孤独常在，无处不在的孤独让我一度想要占有和索要他人对我的关爱，乃至只是与我的一段普通联系。
-
-孤独带着虚无回来了，我的存在似乎在下一秒便会坍塌——我会因为ta的出现和热情而害怕ta的离开，哪怕我们素未谋面，我却是那么容易便开始期待ta的出现，依赖ta，眷恋ta……我会因为某位陌生人经常在我余光中的座位出现，而在某天ta提前离开时，周围其他陌生的人让此刻的我仿佛失去了支点，害怕、恐惧，希望ta一直在那儿；我会因为曾经讨厌一个人，而当我因为不知如何维护我与ta飘渺的联系而苦恼孤独时，因为这人在熟悉的地方再次出现而感到心中宽慰……
-
-但我知道，这些不是拯救我的方式，它们反而是关于“自我”的危机，暴露了长期以来我内心的羸弱、孤独和破碎。而这些只是其次，微不足道，更让我惶恐不安的，是**意识到自己的死亡**——**在我有生之时里，我因想到死亡以后永无止尽的漫长，以及揣测整个宇宙、世界的存在的尽头而深深战栗，难以言表**。“存在”究竟是什么？为什么一开始会有“存在”？没有“存在”时又是什么？
-
-似乎有声音告诉我，这是我的存在主义危机，我得做些什么。为此，我同样给自己开列了书单，希望能在前人的思想中，找到属于自己的一份解释。
-
-|心理学|哲学|社会学|
-|:----:|:----:|:----:|
-|《存在主义心理治疗》|《自我中心性与神秘主义》|《死之孤独》|
-|《当尼采哭泣》||《死的困扰与生的执著》|
-|《存在的艺术》|| |
-|《爱的艺术》|| |
-|《自我的追寻》|| |
-|《弗洛姆著作精选：人性、社会、拯救》|| |
-|《说爱》|||
+|《失败者社会学》十讲|阅读书目|
+|:----:|:----:|
+|被烙上污名的人<br>平等的人|必读：《[污名](https://book.douban.com/subject/3865994/)》<br>选读：《[日常生活的自我呈现](https://book.douban.com/subject/3062632/)》、《[精神病院](https://book.douban.com/subject/20382579/)》|
+|被惩罚规训的人<br>自由的人|必读：《[规训与惩罚](https://book.douban.com/subject/1877254/)》<br>选读：《[性史](https://book.douban.com/subject/1866517/)》|
+|被无奈牵引的人<br>主动的人|必读：《[单身者舞会](https://book.douban.com/subject/3389457/)》<br>选读：《[写作理论纲要](https://book.douban.com/subject/25697743/)》、《[區判](https://book.douban.com/subject/36317738/)》|
+|被体制放弃的人<br>看穿的人|必读：《[学做工](https://book.douban.com/subject/21370327/)》<br>选读：Paul Willis (2004) “Twenty-Five Years On: Old Books, New Times.” In N. Dolby & G. Dimitriadis eds. Learning to Labor in New Times. |
+|被理想牺牲的人<br>抗拒的人|必读：《[马克思背后的女人](https://book.douban.com/subject/1868963/)》|
+|被戴上面具的人<br>自觉的人|必读：《[黑皮囊，白面具](https://book.douban.com/subject/36055979/)》<br>选读：《[大地上的受苦者](https://book.douban.com/subject/3751938/)》、《[黑色吶喊](https://book.douban.com/subject/3151725/)》|
+|被逐出街头的人<br>互助的人|必读：《[泰利的街角](https://book.douban.com/subject/3688800/)》<br>选读：《[街角社会](https://book.douban.com/subject/1024255/)》《[貧窮文化](https://book.douban.com/subject/1359929/)》|
+|被消费左右的人<br>脱困的人|必读：《[工作、消費與新貧](https://book.douban.com/subject/1351818/)》<br>选读：《[消费社会](https://book.douban.com/subject/25900948/)》、《[流动的生活](https://book.douban.com/subject/11520291/)》、《[第4消费时代](https://book.douban.com/subject/26350064/)》|
+|被恐惧占据的人<br>勇气的人|必读：《[恐懼的原型](https://book.douban.com/subject/27099462/)》<br>选读：《[焦虑的意义](https://book.douban.com/subject/34788803/)》、《[无边的恐惧](https://book.douban.com/subject/5975975/)》、《[孤独](https://book.douban.com/subject/4909378/)》|
+|被荒谬笼罩的人<br>希望的人|必读：《[薛西弗斯的神話](https://book.douban.com/subject/26432761/)》|
 
 ## 我的网站
 
