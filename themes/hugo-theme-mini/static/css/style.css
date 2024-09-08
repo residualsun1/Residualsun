@@ -2,15 +2,6 @@ html[theme='dark-mode'] {
   filter: invert(1) hue-rotate(180deg);
 }
 
-@media (prefers-color-scheme: dark) {
-  html, img, video, iframe {
-    filter: invert(1);
-  }
-  body {
-    background-color: white;
-  }
-}
-
 body {
   font: normal 16px/*1.5em*/ 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color: #000; /*哎呀！原来是#404040，这个颜色是深灰的，不如黑色本身，我说为什么字体看起来总是有点微微吃力的感觉！字体由15px/1.5em改成15.5px/1.5em会不会更好？*/
@@ -778,6 +769,17 @@ nav.navigation a.button {
         padding: .5rem;
         box-sizing: content-box;
     }
+}
+
+/*增加夜间浏览模式*/
+
+@media (prefers-color-scheme: dark) {
+  html, img, video, iframe {
+    filter: invert(1);
+  }
+  body {
+    background-color: white;
+  }
 }
 
 /*fullwidth*/
