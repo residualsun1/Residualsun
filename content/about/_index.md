@@ -30,7 +30,7 @@ h2 {
 >
 > <center>嘲讽了死亡  愚弄了时光</center> 
 >
-> <center>我们重视自我 
+> <center>我们重视自我</center> 
 >
 > <center>我们再次相见</center> 
 > 
@@ -99,11 +99,15 @@ h2 {
 
 * [进击的鱼子酱](https://dylanyu233.rbind.io)：初中同学，知心老朋友。虽然博客更新得很慢，但小记写得很走心。
 
-## 我学习的博主
+## 我浏览的博客
+
+* [Matei · Candea](https://www.candea.org/new-page-1)：马泰 · 坎迪亚，剑桥大学社会人类学教授，其编写的《Schools and Styles of Anthropological Theory》被视为极好的教材，将在国内被翻译为《剑桥大学人类学十五讲：人类学理论的流派与风格》；此外，他在《Comparison in Anthropology: The Impossible Method》提出了新的比较模型，相对人类学过往的比较理论更加抽象，也更为前沿。
 
 * [心的道理](https://stephenleng.com/)：我羡慕的写作者，擅长观察和批判社会现象。
 
 * [太隐](https://wangyurui.com/)：博客精致，持续学习。
+
+* [狗蛋日](https://www.young-mann.top/)：关于死亡的[思索](https://www.young-mann.top/posts/%E6%80%95%E6%AD%BB/)。
 
 * [郝鸿涛](https://hongtaoh.com/)：毅力，奋进，博客内容写得很充实。
 
