@@ -774,7 +774,7 @@ nav.navigation a.button {
 /*增加夜间浏览模式*/
 
 @media (prefers-color-scheme: dark) {
-  html, img, video, iframe {
+  html, img, video, iframe, .aplayer {
     filter: invert(1);
   }
   body {
