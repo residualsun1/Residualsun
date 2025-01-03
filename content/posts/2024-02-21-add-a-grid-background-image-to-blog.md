@@ -5,8 +5,8 @@ date: '2024-02-21'
 slug: add-a-grid-background-image-to-blog
 categories: []
 tags:
-  - 天工记
-draft: false
+  - 技术折腾
+  - CSS
 ---
 
 <!--more-->

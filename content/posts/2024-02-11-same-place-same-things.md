@@ -1,11 +1,12 @@
 ---
-title: 死水恶波
+title: 阅读札记 | 《死水恶波》
 author: 黄国政
 date: '2024-02-11'
 slug: same-place-same-things
 categories: []
 tags:
-  - 阅读
+  - 阅读札记
+  - 外国文学
 ---
 
 <!--more-->

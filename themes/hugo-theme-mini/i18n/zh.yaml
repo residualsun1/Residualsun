@@ -5,13 +5,16 @@ archive:
   other: 日志
 
 tags:
-  other: 分类
+  other: 标签
 
 now:
   other: 现在
 
 sound:
   other: 声音
+
+link:
+  other: 链接
 
 subscribe:
   other: 订阅

@@ -5,7 +5,8 @@ date: '2024-03-22'
 slug: how-to-reduce-size-in-git
 categories: []
 tags:
-  - 天工记
+  - 技术折腾
+  - Git
 ---
 
 <!--more-->

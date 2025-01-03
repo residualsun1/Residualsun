@@ -1,11 +1,13 @@
 ---
-title: 鲍曼：将熟悉变为陌生
+title: 阅读札记 | 《将熟悉变为陌生》
 author: 黄国政
 date: '2024-10-17'
 slug: making-the-familiar-unfamiliar
 categories: []
 tags:
-  - 阅读
+  - 阅读札记
+  - 社会学
+  - 齐格蒙特·鲍曼
 ---
 
 <!--more-->

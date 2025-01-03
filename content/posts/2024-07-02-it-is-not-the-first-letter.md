@@ -1,6 +1,6 @@
 ---
 title: 第一封来信
-author: 黄国政
+author: BE
 date: '2024-07-02'
 slug: it-is-not-the-first-letter
 categories: []

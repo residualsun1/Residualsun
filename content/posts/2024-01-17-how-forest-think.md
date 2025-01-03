@@ -1,11 +1,12 @@
 ---
-title: 《森林如何思考：超越人类的人类学》
+title: 阅读札记 | 《森林如何思考：超越人类的人类学》
 author: 黄国政
 date: '2024-01-17'
 slug: how-forest-think
 categories: []
 tags:
-  - 阅读
+  - 阅读札记
+  - 人类学
 ---
 
 <!--more-->

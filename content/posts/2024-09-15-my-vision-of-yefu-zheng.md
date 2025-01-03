@@ -6,6 +6,8 @@ slug: my-vision-of-yefu-zheng
 categories: []
 tags:
   - 想法
+  - 人物
+  - 郑也夫
 ---
 
 <!--more-->

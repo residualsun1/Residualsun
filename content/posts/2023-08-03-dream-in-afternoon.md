@@ -2,7 +2,7 @@
 title: 午间的梦
 author: 黄国政
 date: '2023-08-03'
-slug: naozhoudao-nighteenth-day
+slug: dream-in-afternoon
 categories: []
 tags:
   - 想法

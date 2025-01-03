@@ -5,7 +5,7 @@ date: '2024-03-02'
 slug: naked-in-article
 categories: []
 tags:
-  - 天工记
+  - 技术折腾
 ---
 
 <!--more-->

@@ -1,7 +1,7 @@
 {{ define "main" }}
 {{ partial "profile.html" . }}
 <section id="tags">
-      {{ $data := .Data }}
+      <!--{{ $data := .Data }}
       {{ range $key, $value := .Data.Terms.ByCount }}
           {{ if ($value.Name) }}
               <span class="tag">
@@ -10,6 +10,31 @@
                 </a>
               </span>
           {{ end }}
-      {{ end }}
+      {{ end }}-->
+     
+    <!--如果需要恢复原样，只需要将以下删除，并将以上注释去掉--> 
+    <span class="terms-tags">
+    {{- $type := .Type }}
+    {{- range $key, $value := .Data.Terms.Alphabetical }}
+    {{- $name := .Name }}
+    {{- $count := .Count }}
+    {{- with $.Site.GetPage (printf "/%s/%s" $type $name) }}
+        {{ $largestFontSize := 1.5 }}
+        {{ $smallestFontSize := 1 }}
+        {{ $fontSpread := sub $largestFontSize $smallestFontSize }}
+        {{ $max := add (len (index $.Site.Taxonomies.tags.ByCount 0).Pages) 1 }}
+        {{ $min := len (index $.Site.Taxonomies.tags.ByCount.Reverse 0).Pages }}
+        {{ $spread := sub $max $min }}
+        {{ $fontStep := div $fontSpread $spread }}
+        {{ $weigth := div (sub (math.Log $count) (math.Log $min)) (sub (math.Log $max) (math.Log $min)) }}
+        {{ $currentFontSize := (add $smallestFontSize (mul (sub $largestFontSize $smallestFontSize) $weigth)) }}
+        <a href="{{ .Permalink }}" style="font-size: {{ $currentFontSize }}rem; font-weight: {{ mul $currentFontSize 200 }};">
+            {{ .Name }} <sup><strong><sup>{{ $count }}</sup></strong></sup>
+        </a>
+    {{- end }}
+    {{- end }}
+    </span>
+    <!--如果要恢复原样，只需要将以上删除-->
+    
 </section>
 {{ end }}

@@ -6,6 +6,7 @@ slug: study-gesture-in-anthropology
 categories: []
 tags:
   - 想法
+  - 人类学
 ---
 
 <!--more-->

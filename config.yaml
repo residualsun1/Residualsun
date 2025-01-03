@@ -56,7 +56,7 @@ params:
   # Site Author
   author: 黄国政
   # Author biography
-  bio: 我与我周旋久，宁作我。
+  bio: 永远怀着一颗学徒的心
   # Site Description, used in HTML meat
   description: My Blog
 
@@ -87,8 +87,8 @@ params:
     #   path: /project
     - name: 搜索
       path: https://guozheng.rbind.io/search/
-    - name: English
-      path: https://residualsun.blog/
+    # - name: English
+    #   path: https://residualsun.blog/
   startTime: "2023-05-27T00:00:00+21:00"
   showRunTime: true
 

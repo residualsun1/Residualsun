@@ -6,6 +6,7 @@ slug: the-day-before-the-mid-autumn-festival
 categories: []
 tags:
   - 生活
+  - 中秋
 ---
 
 <!--more-->
