@@ -3,7 +3,9 @@ author: 黄国政
 title: 链接
 ---
 
-本页面用于收集我个人感兴趣的网站，将持续更新。
+本页面用于收集个人感兴趣的网站，将持续更新。
+
+最近一次更新：2025-01-05
 
 ## 常逛的网站
 
@@ -15,7 +17,7 @@ title: 链接
 
 - [Sapiens](https://www.sapiens.org/)：一个英文人类学杂志网站，包括体质、考古、文化等方向的议题，也包括评论、诗歌等体裁。
 
-## 一些有意思的网站
+## 有意思的网站
 
 - [秘密花园](http://www.yini.org/)：一个1999年建立的网站，似乎是一代人的网络记忆，是花园、是美好、是旖旎，多愁善感的女子……
 
@@ -37,9 +39,9 @@ title: 链接
 
 - [天仙子](https://tianxianzi.me/)：如其网站所言，文字森林。
 
-- [Mark Fisher](http://k-punk.org/)：《资本主义现代主义》作者。
+- [Mark Fisher](http://k-punk.org/)：马克·费舍尔，《资本主义现代主义》作者。
 
-- [Matei · Candea](https://www.candea.org/new-page-1)：马泰 · 坎迪亚，剑桥大学社会人类学教授，其编写的《Schools and Styles of Anthropological Theory》被视为极好的教材，在国内被翻译为《剑桥大学人类学十五讲：人类学理论的流派与风格》
+- [Matei · Candea](https://www.candea.org/new-page-1)：马泰 · 坎迪亚，剑桥大学社会人类学教授，著有人类学教材《Schools and Styles of Anthropological Theory》，大陆译本《剑桥大学人类学十五讲：人类学理论的流派与风格》。
 
 ## 台湾地区社会学与人类学网站资源
 
