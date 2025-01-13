@@ -7,7 +7,7 @@ title: 关于我
 
 一个普通的大四学生，就读于南方某不知名院校社会学专业，同时也在学习人类学。我不使用抖音、快手，不喜欢豆瓣和小红书的社区生态，喜欢独立博客网站的写作与交流氛围，喜欢「车、马、邮件都很慢」的「过去」，期待能与远方的他者相互来信。闲来无事之际，我喜欢听音乐，my little airport的《下了两天雨》，满足了我关于每个阴天雨后最舒适的幻想；王菲的《乘客》，字里行间和旋律都构成了我对爱情浪漫的想象；Taylor Swift的《Enchanted》，直到今天也仍然让我心旌摇曳。
 
-接触R语言的[blogdown](https://github.com/rstudio/blogdown)包后，我搭建了自己的[独立博客网站](https://guozheng.rbind.io)，并就此迷上折腾博客网站以及写作博客。被问起兴趣爱好是什么时，我会想得抓耳挠腮，最后只能厚着脸皮、恬不知耻地说喜欢写作——在我看来，喜欢写博客如同喜欢写作，虽然我时常觉得自己写的东西含糊不清。
+接触R语言的[Blogdown](https://github.com/rstudio/blogdown)包后，我搭建了自己的[独立博客网站](https://guozheng.rbind.io)，并就此迷上折腾博客网站以及写作博客。被问起兴趣爱好是什么时，我会想得抓耳挠腮，最后只能厚着脸皮、恬不知耻地说喜欢写作——在我看来，喜欢写博客如同喜欢写作，虽然我时常觉得自己写的东西含糊不清。
 
 我看过这样一段话，莫名喜欢。
 
@@ -37,7 +37,7 @@ title: 关于我
 
 ## 我的网站
 
-2023年5月28日 中午，我按照统计之都的[帖子](https://cosx.org/2018/01/build-blog-with-blogdown-hugo-netlify-github/)用R包[blogdown](https://pkgs.rstudio.com/blogdown/)成功搭建了自己的第一个博客网站，主题是[anatole](https://github.com/lxndrblz/anatole)。那天和谢颖老师一起吃饭，回来时他和我说：「国政，记得好好学习。」说起来，正是他引我走进了R的世界。虽然他只是短暂地影响了我一段时间，但我一直很感谢他。
+2023年5月28日 中午，我按照统计之都的[帖子](https://cosx.org/2018/01/build-blog-with-blogdown-hugo-netlify-github/)用R包Blogdown成功搭建了自己的第一个博客网站，主题是[anatole](https://github.com/lxndrblz/anatole)。那天和谢颖老师一起吃饭，回来时他和我说：「国政，记得好好学习。」说起来，正是他引我走进了R的世界。虽然他只是短暂地影响了我一段时间，但我一直很感谢他。
 
 2023年6月5日 凌晨，更换博客主题[hugo-tania](https://github.com/WingLim/hugo-tania?tab=readme-ov-file)。那天我待在北海的一家民宿，更换主题，从晚上折腾到了天亮。
 
