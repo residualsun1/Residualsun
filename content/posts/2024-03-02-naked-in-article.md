@@ -1,8 +1,8 @@
 ---
-title: 裸呈
+title: 使用Git将本地文件上传至GitHub
 author: 黄国政
 date: '2024-03-02'
-slug: naked-in-article
+slug: upload-through-git
 categories: []
 tags:
   - 技术折腾
@@ -12,33 +12,17 @@ tags:
 
 ## 前言
 
-第一次听说“裸呈”这一概念，是在梁永佳的《[直面认识论难题的主体民族志](https://kns.cnki.net/kcms2/article/abstract?v=UeijT_GnegA-fDnOx8h_XAFbn3Df1npd6-qZ3JmQbIT3a3QhE0lXBbrJO3lPn5bY1MrziYNdZZaziWelGA4KDiWysPSazv6RJAl1XVAI4eUYKEjAEs3Q9j6nSWW3pq8S9NGmrAjSW0joO0nzia7cCA==&uniplatform=NZKPT&language=CHS)》这篇文章上[^note1]。原文中有一段话对“裸呈”的解释最为通俗：
+今天突然想起了在大一时的[eDiary](http://www.haoxg.net/ediary/index.html)，这是一个简易的日记软件，我在上面记录了2021年到2022年的大学日记。
 
-[^note1]: 文章以朱炳祥“对蹠人”系列民族志中的《他者的表述》和《自我的解释》为例，讨论对象是主体民族志，其中“裸呈”概念由朱炳祥提出。
+一两年前说远也不远，但再次阅读过去的文字，我还是会感到恍惚，还有失而复得的惊喜。只是，曾经几乎毫无保留的文字让我感到有些惊讶——我的偏执、我的偏激、我的戾气……
 
-> “‘裸呈’指原原本本地呈现当事人的自发叙述。它除了要求简单的编辑外，还要求尽量减少作者的参与，追求将当事人的叙述‘自然而然地呈现’出来。”
-
-当然，“裸呈”本身的概念十分丰富[^note2]，但在这里仅作为概念借用——关于面对自我的真实文字。
-
-[^note2]: 可参见朱炳祥的《[三论“主体民族志”:走出“表述的危机”](https://kns.cnki.net/kcms2/article/abstract?v=UeijT_GnegCzoxHfQIDdk8CK9HYqyewcL3awWM8KWsIvJs1sYW3an_G4gT1-lOtcvwpNo_K_wLl9MzZXSXoErQb9ZClIDxGXiJMlvDIjvPn_GldgWI2mM5UDsZEcdV3E8UD0oG1bC__0rXZ4TU1Zvw==&uniplatform=NZKPT&language=CHS)》
-
-今天突然想起了大一时下载的[eDiary](http://www.haoxg.net/ediary/index.html)，这是一个简易的日记软件，我在上面记录了2021年到2022年的大学生活和想法。今天再次打开，回忆重新被唤醒。
-
-一两年前说远也不远，但当被遗忘的文字再次出现时，我多少还是会感到恍惚。当然，还有股失而复得的惊喜。
-
-欣喜之余，我决定将这两年的78篇日记搬到自己的博客，但当再读起彼时的文字，几乎毫无保留的文字却让我感到些许的触目惊心，甚至是狰狞——我的偏执、我的偏激、我的戾气……在过去的文字中，我读出了今天部分让自己感到不满的性格的来源。
-
-我认为，人还是很难直面自我——真实的自我。我会为自己的性格变得比过去更加稳定和内敛而高兴，但实在无法将它们再摆上台面，逐字逐句阅读下去。于我而言，至少在当下，它们只能被阅读一次，我也仅有一次经由文字感受自己变化过程的机会。但它们对我而言仍然重要，是曾经的我无法切割的一部分。只是我希望自己能像马达加斯加的维佐人一样，不受历史拘束，摆脱自己的过去，以行动于当下重新获得身份。
-
-我决定将这78篇日记全部保存在GitHub的私密仓库中。由于文件太多，一个个拖动直接上传到仓库并不实际，于是我决定用起一直都不熟悉的Git，并将该过程记录下来。
-
-或许以后，我会拥有坦然“裸呈”的心态。
+我还是很难直面自我，会为自己变得比过去沉稳一些而高兴，但这些文字还是很不成熟，决定使用Git将这78篇日记上传到GitHub的私密仓库，日后再回头看看吧。
 
 ## Git与GitHub
 
 如何通过Git将本地文件上传到GitHub仓库？
 
-首先，在GitHub创建一个私人/公共仓库（我选择了私人。如果要制作网页，则不能选择私人。），仓库创建好后会显示下列代码。
+首先，在GitHub创建一个私人/公共仓库，仓库创建好后会显示下列代码。
 
 ```
 echo "# 2021-2022" >> README.md
@@ -262,5 +246,3 @@ To https://github.com/residualsun1/2021-2022.git
    81275c4..77b47ae  main -> main
 branch 'main' set up to track 'origin/main'.
 ```
-
-2021-2022的我，就封存在我的GitHub私人仓库里吧。或许在未来的某一天，我会再打开你们，面对裸呈的自我。
