@@ -117,6 +117,7 @@ h4:hover a {
 /* code */
 /* 代码块样式 */
 pre {
+  margin: 0.5em 0; /* 缩小代码块与上下文的间距 */
   border: 1px solid #ddd;
   box-shadow: 5px 5px 5px #eee;
   overflow-x: auto; /* 添加水平滚动条 */
@@ -742,6 +743,24 @@ nav.navigation a.button {
 #post-nav .nav-next a:hover{
   position: relative;
   inset: 1px 0 0 1px;
+}
+
+/*特殊符号*/
+
+kbd {
+  border: 2px solid #ccc;
+  box-shadow: 2px 2px #999;
+  display: inline-block;
+  padding: 0 5px;
+  border-radius: 0.25em;
+  min-width: 1.5em;
+  text-align: center;
+  margin-right: .15em;
+}
+kbd:hover {
+  position: relative;
+  top: 2px;
+  left: 2px;
 }
 
 /*note增加编者说明*/
