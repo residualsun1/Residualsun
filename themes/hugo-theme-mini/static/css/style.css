@@ -40,37 +40,26 @@ blockquote:not(:hover) {
 
 /* 表格样式 */
 table {
-  width: 100%;
-  margin: 40px auto; /* 上下间距和居中 */
-  border-collapse: collapse; /* 合并表格边框 */
-  line-height: 1.5em; /* 行高 */
+  margin: auto;
   border-top: 1px solid #666;
   border-bottom: 1px solid #666;
 }
 
-th, td {
-  padding: 10px 15px; /* 内边距 */
-  text-align: left;
-  vertical-align: top; /* 让文本顶端对齐 */
-  border: 1px solid #dadadc; /* 边框样式 */
+table thead th { 
+  border-bottom: 1px solid #666;
+  text-align: center; /* 表头居中对齐 */
+  padding: 10px; /* 增加表头单元格的内边距 */
+  font-size: 16px; /* 设置表头合适的字号 */
 }
 
-thead th {
-  border-bottom: 1px solid #ddd; /* 表头下边框 */
-  font-size: 13px; /* 字体大小 */
-  font-weight: bold;
-  color: #444; /* 文字颜色 */
-  cursor: default; /* 禁止表头的光标点击效果 */
-  white-space: nowrap; /* 避免文字换行 */
-  padding: 10px 15px; /* 内边距 */
+th, td { 
+  padding: 8px 12px; /* 增加表格单元格的内边距 */
+  text-align: center; /* 单元格内容居中对齐 */
+  font-size: 15px; /* 设置表格单元格内容的字体大小 */
 }
 
-tr:nth-child(even) {
-  background: #eee; /* 偶数行背景色 */
-}
-
-tr:nth-child(odd) {
-  background: #fcfcfc; /* 奇数行背景色 */
+thead, tfoot, tr:nth-child(even) {
+  background: #f8f8f8;
 }
 
 /* 分隔线样式 */
@@ -88,11 +77,10 @@ h1, h2, h3 {
 }
 
 p {
-  margin-block-start: 1.5em;
-  margin-block-end: 1.5em;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
 }
-p,
-pre {
+p, pre {
   word-break: normal;
   overflow-wrap: anywhere;
 }
@@ -114,7 +102,8 @@ h4:hover a {
   visibility: visible
 }
 
-/* code */
+/* 代码 */
+
 /* 代码块样式 */
 pre {
   margin: 0.5em 0; /* 缩小代码块与上下文的间距 */
@@ -124,32 +113,27 @@ pre {
   padding: 1em; /* 保持代码块内的适当内边距 */
 }
 
-code {
-  background: #f9f9f9; /* 默认背景颜色 */
-  font-family: Consolas, Courier, 'Courier New', FandolKai, monospace;
-  hyphens: none; /* 禁止自动断字 */
-}
-
 /* 预格式化文本中的代码样式 */
 pre code {
   background: none; /* 清除背景色 */
   display: block;
   padding: .5em; /* 适当的内边距，增加代码的可读性 */
   word-wrap: break-word; /* 防止长单词溢出容器 */
+  word-break: break-word; /* 防止长单词溢出容器 */
 }
 
 /* 代码行内样式 */
-p code {
-  background-color: #f0f0f0; /* 更浅一点的灰色背景 */
-  padding: 1px 1px;
-  border-radius: 2px; /* 圆角效果 */
-  box-shadow: 1.5px 1.5px 2px #d0d0d0; /* 更小更柔和的阴影 */
+code {
+  background: #f9f9f9; /* 默认背景颜色 */
+  padding: 2px 4px;
+  font-family: Consolas, Courier, 'Courier New', FandolKai, monospace;
+  hyphens: none; /* 禁止自动断字 */
 }
 
-/* 代码块内悬停效果 */
-pre code:hover {
-  white-space: pre-wrap; /* 让代码在悬停时自动换行 */
-  word-break: break-all; /* 断开单词以避免溢出 */
+p code {
+  background-color: #f0f0f0; /* 更浅一点的灰色背景 */
+  padding: 2px 4px;
+  border-radius: 5px; /* 圆角效果 */
 }
 
 /* 高亮代码块容器 */
@@ -160,7 +144,6 @@ pre code:hover {
 
 .highlight pre {
   padding: 7px; /* 为高亮区域内的预格式化代码块增加内边距 */
-  overflow-x: auto; /* 保证溢出内容可滚动 */
 }
 
 /* navigation 导航栏 */
