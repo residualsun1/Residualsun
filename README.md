@@ -1,7 +1,9 @@
-# Residualsun
+「那一天我二十一岁
 
-This is guozheng's personal blog website, which is used to record life.
+在我一生的黄金时代
 
-It is also my spiritual homeland.
+我有好多奢望
 
-Keep reading and writing.
+我想爱，想吃
+
+还想在一瞬间变成天上半明半暗的云」 
