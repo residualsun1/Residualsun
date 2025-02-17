@@ -3,13 +3,10 @@ title: 散记 Ⅰ  | 慢……人类学，失败与社会学
 author: 黄国政
 date: '2025-01-11'
 slug: social-anthro-weekly-1
-categories:
-  - 周刊
 tags:
   - 周刊
   - 社会学
   - 人类学
-  - 民族学
 ---
 
 <!--more-->

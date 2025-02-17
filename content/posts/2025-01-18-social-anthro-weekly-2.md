@@ -7,7 +7,6 @@ categories: []
 tags:
   - 社会学
   - 人类学
-  - 民族学
   - 周刊
 draft: yes
 ---

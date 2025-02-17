@@ -434,6 +434,10 @@ nav.navigation a.button {
   display: block; 
 }
 
+#single h3 {
+  text-align: center;
+}
+
 #single .content a {
   text-decoration: none;
   color: initial;
