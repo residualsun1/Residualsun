@@ -2,7 +2,7 @@
 title: 每晚睡前再写下当天发生的3件好事
 author: 黄国政
 date: '2025-02-07'
-slug: good-things-today-again
+slug: 3-good-things-today-again
 categories: []
 tags:
   - 生活
