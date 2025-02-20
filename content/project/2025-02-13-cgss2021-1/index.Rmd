@@ -12,13 +12,15 @@ draft: yes
 
 <!--more-->
 
-大二时老师让我们用 CGSS 的数据库进行简单的数据分析，从安装 R 开始，一路自行探索。我仍然记得，当时同学们大多被困于 R 的下载安装和数据录入两个步骤，我则在处理数据缺失值上犯难。
+念大二时，老师让我们用 CGSS 的数据库进行简单的数据分析，从安装 R 开始，一路自行探索。我仍然记得，当时同学们大多被困于 R 的下载安装和数据录入两个步骤，我则在处理数据缺失值上犯难。
 
-我们当时以四川师范大学的王敏杰老师编写的《[数据科学中的R语言](https://bookdown.org/wangminjie/R4DS/)》为主要参考书，这本入门书对中文小白十分友好。
+我们以四川师范大学的王敏杰老师编写的《[数据科学中的R语言](https://bookdown.org/wangminjie/R4DS/)》为主要参考书，这本入门书对中文小白十分友好。
 
-过去的作业提交在了 Rpubs 上，现将其复现于 blogdown 中。
+过去的作业提交在了 [Rpubs](https://rpubs.com/Sonder/954077) 上，现将其复现于 blogdown 中。
 
-首先录入选择的 CGSS2021 数据，文件格式为 .dta。
+## 数据录入
+
+首先通过 `haven` 包录入文件格式为 `.dta` 的 CGSS2021 数据。
 
 ```{r}
 library(haven)
@@ -28,6 +30,21 @@ library(tidyverse)
 我将分析对象命名为 cgss2021，使用<kbd>Alt</kbd>+<kbd>-</kbd>，可以快速召唤`<-`。
 
 ```{r}
-cgss <- read_stata("D://05_GitHub/Data/dta/CGSS2021.dta")
-data(cgss)
+CSS2019 <- read_stata("D://05_GitHub/Data/dta/CGSS2021.dta")
+```
+运行关于标签设置的 R 包。
+
+```{r}
+library(sjmisc)
+library(sjlabelled)
+```
+
+选择需要检查的变量。
+
+```{r}
+table(CSS2019$A2) #个人性别                         需要修改值标签
+table(CSS2019$A7a)   #个人教育程度                     需要修改值标签
+table(CSS2019$a1e1)   #个人婚姻                         需要修改值标签
+table(CSS2019$b1)     #目前工作情况                     需要修改值标签
+table(CSS2019$b2a)    #没有工作状况的主要原因          
 ```
