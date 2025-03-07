@@ -4,7 +4,7 @@ author: 黄国政
 date: '2025-01-11'
 slug: social-anthro-weekly-1
 tags:
-  - 周刊
+  - 散记
   - 社会学
   - 人类学
 ---

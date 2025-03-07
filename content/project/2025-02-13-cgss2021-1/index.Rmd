@@ -1,50 +1,83 @@
 ---
-title: 对 CGSS2021 数据进行探索
+title: 练习1 | R 语言合并数据框及绘制三线图
 author: 黄国政
 date: '2025-02-13'
-slug: cgss2021-1
+slug: LMS-practice-1
 categories: []
 tags:
   - R
+  - 统计学
   - 数据分析
+  - 数据框
+  - 三线表
 draft: yes
 ---
 
 <!--more-->
 
-念大二时，老师让我们用 CGSS 的数据库进行简单的数据分析，从安装 R 开始，一路自行探索。我仍然记得，当时同学们大多被困于 R 的下载安装和数据录入两个步骤，我则在处理数据缺失值上犯难。
+本文围绕书籍 [*Introduction to Modern Statistics*](https://openintro-ims.netlify.app/) 的局部内容展开，以做中学的方式来认识数据框、数据框合并方法以及三线表的绘制。同时，搭配王敏杰老师的《数据科学中的 R 语言》和 Hadley 的 [*R for Data Science (2e)*](https://r4ds.hadley.nz/) 中对 `tidyverse` 的介绍一起使用，以方便处理数据。
 
-我们以四川师范大学的王敏杰老师编写的《[数据科学中的R语言](https://bookdown.org/wangminjie/R4DS/)》为主要参考书，这本入门书对中文小白十分友好。
-
-过去的作业提交在了 [Rpubs](https://rpubs.com/Sonder/954077) 上，现将其复现于 blogdown 中。
-
-## 数据录入
-
-首先通过 `haven` 包录入文件格式为 `.dta` 的 CGSS2021 数据。
+书籍涉及的数据资源基本可在 R 包 `openintro` 中找到。
 
 ```{r}
-library(haven)
+library(openintro)
 library(tidyverse)
 ```
 
-我将分析对象命名为 cgss2021，使用<kbd>Alt</kbd>+<kbd>-</kbd>，可以快速召唤`<-`。
+## 案例研究：使用支架预防中风
+
+### 背景与问题
+
+这一章的目的在于通过「评估医疗方法的疗效」来认识统计学在实践中的应用。
+
+支架（sentes）是一种放置在狭窄或者薄弱动脉内的小网管，可以帮助患者在心脏病发作后进行恢复，并降低再次心脏病发作或死亡的风险。许多医生想知道这是否对中风风险患者起到相似的作用，基于此，研究人员设计实验研究支架对中风风险患者的治疗效果，并提出问题：**使用支架是否可以减少中风的风险**？
+
+### 实验安排
+
+研究者安排了451位带有中风风险的病人参与实验，每位志愿病人被随机分配到两组中的一组。
+
+1. 治疗组：治疗组的病人接受支架和医疗管理。其中，医疗管理包括药物治疗、风险因素管理以及生活方式改变上的帮助。
+2. 控制组：控制组的病人接受和治疗组相同的医疗管理，但是没有接受支架。
+
+研究人员随机将224位病人分配到治疗组，227位病人分配到控制组。在此研究中，控制组提供了参照点，可据此衡量支架对于治疗组的医疗影响。此外，对支架效果的研究安排在两个时间点：病人入院后的30天和入院后的365天。5位病人的结果总结于下列表格，结果被记录为「中风」或「无事件」，以代表病人在此期间是否中风。
+
+## 查看描述统计
+
+### 作为数据框的 `stent30` 和 `stent365`
+
+查看数据 `stent30` 和 `stent365`，两个数据集分别代表病人入院后30天和365天的患病情况。
 
 ```{r}
-CSS2019 <- read_stata("D://05_GitHub/Data/dta/CGSS2021.dta")
+stent30
+stent365
 ```
-运行关于标签设置的 R 包。
+
+
+
+### 合并：`mutate()` 与 `bind_rows()`
+
+此前，需要使用 `mutate()` 给两个数据集增加变量 `time`，表示数据集的组别和结果都属于哪一天后的情况。
 
 ```{r}
-library(sjmisc)
-library(sjlabelled)
+stent30_1 <- stent30 |> mutate(time = "30 days")
+stent365_1 <- stent365 |> mutate(time = "365 days")
 ```
 
-选择需要检查的变量。
+接着使用 `bind_rows()` 进行合并。
 
 ```{r}
-table(CSS2019$A2) #个人性别                         需要修改值标签
-table(CSS2019$A7a)   #个人教育程度                     需要修改值标签
-table(CSS2019$a1e1)   #个人婚姻                         需要修改值标签
-table(CSS2019$b1)     #目前工作情况                     需要修改值标签
-table(CSS2019$b2a)    #没有工作状况的主要原因          
+stent_all <- bind_rows(stent30_1, stent365_1)
 ```
+
+### 绘制三线图
+
+```{r}
+table1(~ group | time*outcome, data = stent_all)
+```
+
+## 参考资料
+
+1. *Introduction to Modern Statistics*
+2. *R for Data Science (2e)*, Hadley Wickham, https://r4ds.hadley.nz/, last built on 2025-02-18.
+3. 《数据科学中的 R 语言》, 王敏杰, https://bookdown.org/wangminjie/R4DS/, last built on 2024-10-28.
+4. Making tables in R with table1: A pretty reckless dive into a package that hits the sweet spot for me, Danielle Navarro, June 21, 2024, https://blog.djnavarro.net/posts/2024-06-21_table1/#table-structure

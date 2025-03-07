@@ -82,6 +82,6 @@ tags:
 
 1. 张珣. 仪式与社会——大甲妈祖辖区之变迁 [A]. 张珣. 文化妈祖：台湾妈祖信仰研究论文集 [C]. 中央研究院民族学研究所出版,2003:107-141.
 
-2. 黄剑波. 人类学家极其理论生成 [M]. 华东师范大学出版社,2021.
+2. 黄剑波. 人类学家及其理论生成 [M]. 华东师范大学出版社,2021.
 
 3. Alfred Cort Haddon, https://en.wikipedia.org/w/index.php?title=Alfred_Cort_Haddon&oldid=1254241669 (last visited Feb. 17, 2025).
