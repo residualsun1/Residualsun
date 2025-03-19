@@ -2,7 +2,7 @@
 title: 与梁老师共读《礼物》
 author: 黄国政
 date: '2025-03-18'
-slug: read-'essai-sur-le-don'-with-liang
+slug: read-essai-sur-le-don-with-liang
 categories: []
 tags:
   - 人类学
