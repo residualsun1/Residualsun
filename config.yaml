@@ -59,6 +59,7 @@ params:
   bio: 永远怀着一颗学徒的心
   # Site Description, used in HTML meat
   description: My Blog
+  enableimgloop: true
 
   ###########################################
   # Optional Configuration

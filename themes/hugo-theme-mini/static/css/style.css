@@ -867,3 +867,24 @@ kbd:hover {
         box-sizing: content-box;
     }
 }
+
+.swiper-container {
+    width: 100%;
+    max-width: 100%;
+    margin: 2em auto;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background-color: #fff;
+    /* 居中显示内容 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.swiper-slide img {
+    max-width: 100% !important;
+    height: auto !important;
+    object-fit: contain; /* 保持完整显示图片 */
+    display: block;
+}
