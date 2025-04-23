@@ -9,6 +9,7 @@
 <!--
 	<a href="{{ "/sound" | relURL }}">{{ with .Site.Params.sound }}{{ . }}{{ else }}{{ i18n "sound" }}{{ end }}</a>
 -->
+  <a href="{{ "/record" | relURL }}">{{ with .Site.Params.record }}{{ . }}{{ else }}{{ i18n "record" }}{{ end }}</a>
 	{{ range $element := .Site.Params.Links }}
 		<a href="{{ $element.path }}">{{ $element.name }}</a>
 	{{ end }}

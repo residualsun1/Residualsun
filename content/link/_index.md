@@ -43,8 +43,6 @@ title: 链接
 
 - [Mark Fisher](http://k-punk.org/)：马克·费舍尔，《资本主义现代主义》作者。
 
-- [Matei · Candea](https://www.candea.org/new-page-1)：马泰 · 坎迪亚，剑桥大学社会人类学教授，著有人类学教材《Schools and Styles of Anthropological Theory》，大陆译本《剑桥大学人类学十五讲：人类学理论的流派与风格》。
-
 ## 台湾地区社会学与人类学网站资源
 
 - [臺灣人類學與民族學學會](https://www.taiwananthro.org.tw/)：前身為1934年12月16日創立於中國南京的「中國民族學會」。學會遷台半世紀以來，人類學在台灣穩定發展，且已明顯本土化，經過相當時間的討論與議決，於2005年6月26日更名為「臺灣人類學與民族學學會」。

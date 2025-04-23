@@ -1,6 +1,7 @@
 ---
 author: 黄国政
 title: 关于我
+toc: true
 ---
 
 ## 我是谁
