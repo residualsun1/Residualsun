@@ -11,7 +11,7 @@ tags:
 
 <!--more-->
 
-谢颖老师给了我一本《 AI 辅助编程 Python 实战：基于 GitHub Copilot 和 ChatGPT》（下文简称为「《 AI 辅助编程 Python 实战》」），他简单地在 Python 中演示了如何结合 Copilot 写代码——在以 VS code 作为编辑代码环境的 Python 中安装 Copilot 的插件，接着给 Copilot 提供提示词，Copilot 会据此提供相应的回答和代码。
+谢颖老师给了我一本《 AI 辅助编程 Python 实战：基于 GitHub Copilot 和 ChatGPT》（下文简称为「《 AI 辅助编程 Python 实战》」），他简单地在 Python 中演示了如何结合 Copilot 写代码——在以 VS Code 作为编辑代码环境的 Python 中安装 Copilot 的插件，接着给 Copilot 提供提示词，Copilot 会据此提供相应的回答和代码。
 
 老师建议我将这种方式作为一个实战项目，展示「如何通过 AI 学习 Python 或 R」，例如，可以将之前做过的[ R 语言学习笔记](https://residualsun1/deploy)以这样的方式展示，做一个基于 Copilot 回答的学习笔记。
 
@@ -29,7 +29,7 @@ Copilot 是一种 AI 助手，或者说是一种能将英语转换为程序代�
 >
 > 请注意，我们并没有说 Copilot 明白它正在做的事情。它仅仅是依靠当前的上下文来持续生成代码。在你今后的编程之路上，要始终铭记：只有我们自己能判断生成的代码是否真正实现了自己的意图。虽然大多数情况下它能够做到，但你仍然应该时刻保持适度的怀疑精神。
 
-过去，我在朋友袁凡的博客《[使用 Ragas 框架评估 RAG 项目的使用效果](https://yuanfan.rbind.io/project/ragas/)》中第一次接触到 LLM 的概念，只知晓其与 AI 有关，却怎么也看不懂是什么，没曾想《 AI 辅助编程 Python 实战》的解释却让我豁然开朗。
+袁凡在博客《[使用 Ragas 框架评估 RAG 项目的使用效果](https://yuanfan.rbind.io/project/ragas/)》中也提到了 LLM，我想理解 LLM 后应该能进一步理解文章的内容。
 
 ## 配置环境
 
@@ -37,9 +37,9 @@ Copilot 是一种 AI 助手，或者说是一种能将英语转换为程序代�
 
 1. 拥有一个 GitHub 账号，以访问 Copilot。进入 GitHub 后，到「Settings」的左侧导航栏找到「Copilot」，点击进入后启用 Copilot。
 2. 安装 Python。关于这一点，可以参考我之前详细写过的《[下载与安装 Python （Windows版）](https://guozheng.rbind.io/project/hello-python/)》。
-3. 安装 Visual Studio Code，作为编写代码的文本编辑器。进入 VScode 后，可以看见一共有「活动栏」、「侧边栏」、「编辑区」和「输出和终端版面」四个界面，然后在最左侧的活动栏中找到排第五的图标「Extensions」，点击进入，搜索并安装插件 `python` 、`GitHub Copilot`和`GitHub Copilot Chat`。
+3. 安装 Visual Studio Code，作为编写代码的文本编辑器。进入 VS Code 后，可以看见一共有「活动栏」、「侧边栏」、「编辑区」和「输出和终端版面」四个界面，然后在最左侧的活动栏中找到排第五的图标「Extensions」，点击进入，搜索并安装插件 `python` 、`GitHub Copilot`和`GitHub Copilot Chat`。
 
-插件安装成功后，VS code 的界面右下角会出现一个 Copilot 图标，图示已用红线框标出。
+插件安装成功后，VS Code 的界面右下角会出现一个 Copilot 图标，图示已用红线框标出。
 
 ![](https://cdn.jsdelivr.net/gh/residualsun1/blog-static/project/2025/04/04-14-1.png)
 
