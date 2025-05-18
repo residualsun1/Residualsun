@@ -888,3 +888,12 @@ kbd:hover {
     object-fit: contain; /* 保持完整显示图片 */
     display: block;
 }
+
+/* 高亮背景块 */
+.highlight-block {
+  background-color: #fff8dc;    /* 淡淡的米色底 */
+  padding: 1em;                /* 内边距 */
+  border-radius: 4px;          /* 圆角 */
+  margin: 1em 0;               /* 上下留白 */
+  line-height: 1.6;            /* 行高更舒适 */
+}

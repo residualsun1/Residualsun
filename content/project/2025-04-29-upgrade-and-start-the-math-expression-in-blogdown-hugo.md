@@ -304,5 +304,5 @@ $$
 
 ## 参考资料
 
-1. $\KaTeX$: The fastest math typesetting library for the web. 'Auto-render Extension'. [2025-04-30]. https://katex.org/docs/autorender
-2. Yikun Wu. Markdown 数学公式指导手册. (2025-04-12)[2025-04-30]. https://wu-yikun.github.io/post/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/markdown-mathjax-basic-tutorial-and-quick-reference/
+1. $\KaTeX$ 团队. *The fastest math typesetting library for the web*, Auto-render Extension, https://katex<wbr>.org<wbr>/docs<wbr>/autorender, 访问日期：2025-04-30.
+2. Yikun Wu. 「Markdown 数学公式指导手册」, 2025-04-12, https://wu-yikun<wbr>.github<wbr>.io<wbr>/post<wbr>/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7<wbr>/markdown-mathjax-basic-tutorial-and-quick-reference/, 访问日期：2025-04-30.
