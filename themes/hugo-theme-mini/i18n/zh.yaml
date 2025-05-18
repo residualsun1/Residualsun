@@ -4,11 +4,14 @@ home:
 archive:
   other: 日志
 
+project:
+  other: 技术
+
 tags:
   other: 标签
 
 now:
-  other: 现在
+  other: Now
 
 sound:
   other: 声音

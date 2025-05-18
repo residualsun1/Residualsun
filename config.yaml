@@ -84,8 +84,6 @@ params:
   # Extra links in navigation
   links:
     ## e.g.
-    - name: 技术
-      path: /project
     - name: 搜索
       path: https://guozheng.rbind.io/search/
     # - name: English
