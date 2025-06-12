@@ -10,6 +10,9 @@ project:
 tags:
   other: 标签
 
+other:
+  other: 其他 
+
 now:
   other: Now
 
