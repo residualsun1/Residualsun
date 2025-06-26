@@ -753,16 +753,20 @@ kbd:hover {
 /*note增加编者说明*/
 
 .update-notification {
-  background-color: lightyellow; /* 背景色 */
-  border: 1px solid #CCCCCC; /* 边框 */
+  background-color: lightyellow;
+  border: 1px solid #CCCCCC;
+  border-radius: 5px;
+  padding: 1em;
+  margin: 1.5em 0;
 }
 
 .update-notification legend {
-  font-weight: bold; /* 标题字体加粗 */
-  /*width: fit-content; 使 legend 宽度适应内容 */
+  font-weight: bold;
+  font-size: 1em;
+  padding: 0 0.5em;
 }
 
-.update-notification p {
+.update-notification .update-body {
   font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, FandolKai, serif;
   font-size: .9em;
 }
