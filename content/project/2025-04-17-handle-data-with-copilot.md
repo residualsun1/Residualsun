@@ -279,7 +279,7 @@ pip install matplotlib
 >
 > 模块扩展了 Python 这门编程语言的功能范畴。 Python 拥有大量模块，它们能帮助你完成各种各样的任务，包括数据分析、网站创建和电子游戏开发等。看到代码中的 import 语句，你就知道代码需要使用 Python 模块了。 Python 并不会自动安装所有模块，因为其中的大部分你可能根本用不到。因此，当你希望使用某个模块时，需要自行安装包含该模块的“包”（package）。
 
-{{< update "2025.06.26 更新" >}}
+{{< notice info "2025.06.26 更新" >}}
 `pip install` 不是 Python 的语法，而是命令行命令，如果直接在 `.py` 文件中运行会报错，显示 `SyntaxError`。
 
 正确的做法是将 `pip install` 放在终端窗口运行，如果是 Windows 就用PowerShell，VS Code 内下方的终端窗口也可以。
@@ -290,7 +290,7 @@ pip install matplotlib
 | 执行 Python 代码             | `.py` 文件中 | `import pandas`               | ✅    |
 | 把 `pip install` 写进 `.py` | `.py` 文件中 | `pip install pandas`          | ❌ 报错 |
 
-{{< /update >}}
+{{< /notice >}}
 
 ## 小结
 

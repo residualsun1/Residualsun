@@ -11,10 +11,10 @@ tags:
   - 人类学
 ---
 
-{{< update "转载说明" >}}
+{{< notice info "转载说明" >}}
 本文为博主的人类学老师写给广州大学全体社会学学生的信。
 <br>原文链接：https://mp.weixin.qq.com/s/db6brsRAMC0kFNl2aUbBtA
-{{< /update >}}
+{{< /notice >}}
 
 <!--
 

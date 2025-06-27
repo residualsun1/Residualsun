@@ -1,0 +1,10 @@
+<!-- layouts/shortcodes/notice.html -->
+{{ $type := .Get 0 | default "info" }}
+{{ $title := .Get 1 | default (print (title $type) " Notice") }}
+
+<fieldset class="notice-box notice-{{ $type }}">
+  <legend>{{ $title }}</legend>
+  <div class="notice-body">
+    {{ .Inner | markdownify }}
+  </div>
+</fieldset>

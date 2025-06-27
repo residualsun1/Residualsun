@@ -11,9 +11,9 @@ tags:
   - 黑石屿
 ---
 
-{{< update "引子" >}}
+{{< notice info "引子" >}}
 &emsp;&emsp;有一些暂时的分别让人心中依依不舍，悄悄眷恋
-{{< /update >}}
+{{< /notice >}}
 
 <!--more-->
 

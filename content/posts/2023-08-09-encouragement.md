@@ -11,10 +11,10 @@ tags:
 
 <!--more-->
 
-{{< update "说明" >}}
+{{< notice info "说明" >}}
 &emsp;&emsp;原文引自《格雷伯逝世一周年丨人类学的政治价值》，发表于澎湃新闻思想市场<br>
 &emsp;&emsp;原文链接：https://www.thepaper.cn/newsDetail_forward_14362170
-{{< /update >}}
+{{< /notice >}}
 
 > ## 人类学的馈赠
 >
