@@ -4,13 +4,18 @@
         {{ partial "social.html" . }}
     {{ end }}
 
-<!-- 2023.8.2添加总文章数与总字数 -->
-共 <span style='color: black;'>{{ len (where .Site.RegularPages "Section" "posts" ) }}</span> 篇日志
-{{$scratch := newScratch}}
-{{ range (where .Site.Pages "Kind" "page" )}}
-    {{$scratch.Add "total" .WordCount}}
+<!-- 2023.8.2添加总文章数与总字数 - 同时统计 posts 和 project -->
+{{ $sectionsToInclude := slice "posts" "project" }}
+{{ $pagesToCount := where .Site.RegularPages "Section" "in" $sectionsToInclude }}
+
+共 <span style='color: black;'>{{ len $pagesToCount }}</span> 篇文章
+
+{{ $totalWords := 0 }}
+{{ range $pagesToCount }}
+    {{ $totalWords = add $totalWords .WordCount }}
 {{ end }}
-总计 <span style='color: black;'>{{$scratch.Get "total" }}</span> 字
+
+总计 <span style='color: black;'>{{ $totalWords }}</span> 字
 
 {{ if .Site.Params.showRunTime }}
     <div id="siteRunTime" style="letter-spacing: 1.5px;"></div>
