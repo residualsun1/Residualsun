@@ -4,7 +4,7 @@
         {{ partial "social.html" . }}
     {{ end }}
 
-<!-- 2023.8.2添加总文章数与总字数 - 同时统计 posts 和 project -->
+<!-- 2025.6.27 改进添加总文章数与总字数 - 同时统计 posts 和 project -->
 {{ $sectionsToInclude := slice "posts" "project" }}
 {{ $pagesToCount := where .Site.RegularPages "Section" "in" $sectionsToInclude }}
 
@@ -55,7 +55,7 @@
 
 <div class="copyright">
     {{ with .Site.Params.copyright }}
-        {{ . | markdownify }}
+        {{ replace . "{Year}" now.Year | markdownify }}
     {{ else }}
        © Copyright 
        {{ now.Format "2006"}} 
