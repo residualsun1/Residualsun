@@ -928,6 +928,7 @@ kbd:hover {
   }
   .about-img {
     flex: 1 1 30%;
+    max-width: 180px; /* 限制图片容器最大宽度 */
     text-align: center;
   }
 }
