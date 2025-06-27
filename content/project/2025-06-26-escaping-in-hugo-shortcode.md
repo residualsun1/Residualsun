@@ -51,28 +51,32 @@ CSS：
 
 呈现出来的文本视觉效果如下：[^notice][^warning]
 
-[^notice]: 这一类「更新信息」的说明后续被我称作「信息提示框」，并更换了实现的代码，具体可见《[Hugo 信息提示框设置](https://guozheng.rbind.io/hugo-info-grid/)》。
-[^warning]: {{< notice danger "注意">}} `{\{\< notice info "更新时间 2025 年 6 月 26 日">}}
+[^notice]: 这一类「更新信息」的说明后续被我称作「信息提示框」，并更换了实现的代码，具体可见《[Hugo 信息提示框设置](https://guozheng.rbind.io/project/hugo-info-grid/)》。
+[^warning]: {{< notice danger "注意">}} `{\{< notice info "更新时间 2025 年 6 月 26 日">}}
 那些美好的，越靠近越沉溺
-{\{\< /notice >}}` 部分本不应该有 `\`，但这里如果不加上 `\`，短码则会被执行，导致报错。{{< /notice >}}
+{\{< /notice >}}` 部分本不应该有 `\`，但这里如果不加上 `\`，短码则会被执行，导致报错，后面也一样。{{< /notice >}}
+
+<div class="highlight-block">
 
 ```
-{\{\< notice info "更新时间 2025 年 6 月 26 日">}}
+{\{< notice info "更新时间 2025 年 6 月 26 日">}}
 那些美好的，越靠近越沉溺
-{\{\< /notice >}}
+{\{< /notice >}}
 ```
 
 {{< notice info "更新时间 2025 年 6 月 26 日">}}
 那些美好的，越靠近越沉溺
 {{< /notice >}}
 
-但是我却无法通过 Markdown 的语法实现文本加粗、换行、代码块、呈现表格等效果，只能通过 `<b></b>`、`<br>` 这一类 HTML 的标识实现加粗或换行效果，十分麻烦，而且能实现的效果也十分有限。
+</div>
+
+但是我却无法通过 Markdown 的语法实现文本加粗、换行、代码块、呈现表格等效果，只能通过 `<b></b>`、`<br>` 这一类 HTML 的标签实现加粗或换行效果，十分麻烦，而且能实现的效果也十分有限。
 
 ## 问题
 
-根据 ChatGPT 的说法，Hugo 短码（shortcode）默认会对内容进行转义（escaping），特别是在 `{\{\< shortcode >}} ... {\{\< /shortcode >}}` 的格式下，它会将 Markdown、HTML 或代码中可能被误认为标签或语法的符号转换成普通的纯文本来显示，以防止它被解释或执行，进而无法解析或渲染出代码块、表格等效果。
+根据 ChatGPT 的说法，Hugo 短码（shortcode）默认会对内容进行转义（escaping），特别是在 `{\{< shortcode >}} ... {\{< /shortcode >}}` 的格式下，它会将 Markdown、HTML 或代码中可能被误认为标签或语法的符号转换成普通的纯文本来显示，以防止它被解释或执行，进而无法解析或渲染出代码块、表格等效果。
 
-例如在短码 `{\{\< shortcode >}} ... {\{\< /shortcode >}}` 中写下这段内容：
+例如在短码 `{\{< shortcode >}} ... {\{< /shortcode >}}` 中写下这段内容：
 
 ```
 **我要加粗这段文字**
@@ -122,7 +126,9 @@ CSS：
 
 问题出在 `<p>{{ .Inner }}</p>` 部分，`.Inner` 被放在 `<p>` 标签里，没有受到 Markdown 的渲染，因此写在短码内的代码块语法、表格语法、加粗语法等都不会被 Hugo 解释为 Markdown，而且，很明显的一个问题是表格语法在 `<p>` 标签中不合法，渲染了也会失败，所以解决方案是直接将 `<p>{{ .Inner }}</p>` 修改为 `{{ .Inner | markdownify }}`。
 
-ChatGPT 还建议我用 `{{%/* */%}}` 的写法来代替 `{\{< >}}`，但在修改 `layouts/shortcodes/update.html` 后，我发现无论用 `{{%/* */%}}` 还是 `{\{< >}}` 效果都一样，都可以正常渲染短码内的 Markdown 语法。ChatGPT 的解释是<b> `{{ .Inner | markdownify }}` 的修改是关键，它强制 Hugo 无论用的是 `{\{< >}}` 还是 `{{%/* */%}}`，都把短码中的内容当成 Markdown 进行解析</b>。
+ChatGPT 还建议我用 `{{%/* */%}}` 的写法来代替 `{\{< >}}`，但在修改 `layouts/shortcodes/update.html` 后，我发现无论用 `{{%/* */%}}` 还是 `{\{< >}}` 效果都一样，都可以正常渲染短码内的 Markdown 语法。
+
+对此，ChatGPT 的解释是<b> `{{ .Inner | markdownify }}` 的修改是关键，它强制 Hugo 无论用的是 `{\{< >}}` 还是 `{{%/* */%}}`，都把短码中的内容当成 Markdown 进行解析</b>。
 
 `{\{< >}}` 和 `{{%/* */%}}` 具体区别如下：
 

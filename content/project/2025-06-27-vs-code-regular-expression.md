@@ -22,23 +22,31 @@ ChatGPT 为我提供了「使用 VS Code 的正则替换」和「使用命令行
 
 第一步，在 VS Code 中打开包含使用了短码的 `.md` 文件的文件夹——以我的网站为例，只有 `posts` 和 `project` 两个文件夹包含了使用短码的文件，分为两批先后处理即可。
 
-第二部，在 VS Code 中打开文件夹后，按下 <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>F</kbd>（Windows/Linux）或 <kbd>Cmd</kbd> + <kbd>Shift</kbd> + <kbd>F</kbd>（Mac）打开「全局搜索」，或者是直接点击最左侧导航栏的第二个搜索号。
+![](https://cdn.jsdelivr.net/gh/residualsun1/blog-static/project/2025/06/06-27-1.png)
 
-第三步，点击搜索框最右侧的 `.*`，打开正则模式，之后再搜索框中输入以下正则表达式以查找所有 `update` 短码。
+第二步，在 VS Code 中打开文件夹后，按下 <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>F</kbd>（Windows/Linux）或 <kbd>Cmd</kbd> + <kbd>Shift</kbd> + <kbd>F</kbd>（Mac）打开「全局搜索」，或者是直接点击最左侧导航栏的第二个搜索号。
+
+![](https://cdn.jsdelivr.net/gh/residualsun1/blog-static/project/2025/06/06-27-2.png)
+
+第三步，点击搜索框最右侧的 `.*`，打开正则模式，之后在搜索框中输入以下正则表达式以查找所有 `update` 短码。
 
 ```bash
 \{\{%+\s*update\s*%+\}\}
 ```
 
-第四步，点击搜索框左侧的 `>`，会显示替换输入框，在替换输入框中填入下面的代码，然后在输入框右侧点击全部替换。
+![](https://cdn.jsdelivr.net/gh/residualsun1/blog-static/project/2025/06/06-27-3.png)
+
+第四步，点击搜索框左侧的 `>`，`>` 会变成 `v`，然后显示出替换输入框，接着在替换输入框中填入下面的代码，最后在输入框右侧点击全部替换。
 
 ```bash
 {{%/* notice info$1 */%}}
 ```
 
+![](https://cdn.jsdelivr.net/gh/residualsun1/blog-static/project/2025/06/06-27-4.png)
+
 `$1` 是保留原来跟在 `update` 后面的参数信息（如果有的话），例如“2024-04-15 更新”。
 
-进行到这里完成的是对起始标签 `{{%/* update */%}}` 的全部替换，还要对关闭标签 `{{%/* /update */%}}` 进行替换，步骤和上述一样，先输入关闭标签的正则表达式进行查找。
+进行到这里完成的是对起始标签 `{{%/* update */%}}` 的全部替换，还要对结尾标签 `{{%/* /update */%}}` 进行替换，步骤和上述一样，先输入结尾标签的正则表达式进行查找。
 
 ```bash
 \{\{%+\s*/update\s*%+\}\}
