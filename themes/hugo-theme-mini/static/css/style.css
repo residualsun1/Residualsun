@@ -917,15 +917,6 @@ kbd:hover {
     display: block;
 }
 
-/*about 界面图片响应式*/
-
-@media screen and (max-width: 768px) {
-  .about-img {
-    flex: 0 0 auto;
-    max-width: 150px;
-  }
-}
-
 /* 高亮背景块 */
 .highlight-block {
   background-color: #fff8dc;    /* 淡淡的米色底 */

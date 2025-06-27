@@ -6,6 +6,17 @@ toc: true
 
 ## 我是谁
 
+<style>
+  @media screen and (max-width: 768px) {
+    .float-image {
+      float: right !important;
+      display: inline-block;
+      width: 55% !important;
+      max-width: none;
+      margin: 0 0 0 0.5em !important; /* 图在右，左边留间距 */
+    }
+</style>
+
 <img src="https://cdn.jsdelivr.net/gh/residualsun1/blog-static/about/me_3.jpg"
      alt="广大湖"
      class="float-image"
