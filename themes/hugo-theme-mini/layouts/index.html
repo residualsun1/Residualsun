@@ -2,7 +2,7 @@
 {{ partial "profile.html" . }}
 
 <div id="list-page">
-    {{ $pages := .Site.RegularPages }}
+    {{ $pages := where .Site.RegularPages "Section" "ne" "moments" }} <!--这一段改动过，不让「思绪」显示在主页-->
     {{ $paginator := .Paginate ($pages) }}
     {{ range $paginator.Pages }}
         {{ $title := .Title }}

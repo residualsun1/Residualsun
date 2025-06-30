@@ -1,0 +1,23 @@
+{{ define "main" }}
+<section id="section">
+  
+<h1>{{ .Title }}</h1>
+
+<div class="notes-grid">
+  {{ $notes := .Pages.ByDate.Reverse }}
+  {{ $total := len $notes }}
+  {{ $i := 0 }}
+  {{ range $notes }}
+    {{ $i = add $i 1 }}
+    <div class="note-card">
+      <div class="note-meta">第 {{ sub $total (sub $i 1) }} 道 ｜ {{ .Date.Format "2006年1月2日" }}</div>
+      {{ if ne .Params.title "" }}
+      <h3>{{ .Title }}</h3>
+      {{ end }}
+      <div class="note-content">{{ .Content }}</div>
+    </div>
+  {{ end }}
+</div>
+
+</section>
+{{ end }}
