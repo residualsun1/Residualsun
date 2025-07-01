@@ -7,6 +7,7 @@ categories: []
 tags:
   - Hugo
   - Shortcode
+  - 技术折腾
   - 与 AI 学习
 ---
 

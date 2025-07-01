@@ -13,20 +13,11 @@ tags:
 moments:
   other: 思绪
 
-other:
-  other: 其他 
-
-now:
-  other: Now
-
 sound:
   other: 声音
 
 link:
   other: 链接
-
-record:
-  other: 收录
 
 subscribe:
   other: 订阅
@@ -44,17 +35,17 @@ readMore:
   other: 更多内容
 
 minuteRead:
-  other: "{{ .ReadingTime }}分钟"
+  other: "{{ .ReadingTime }} 分钟"
 
 publishDate:
   other: '{{ .PublishDate.Format "2006.01.02" }}'
 
 publishDateFull:
-  other: '{{ .PublishDate.Format "2006年01月02日" }}'
+  other: '{{ .PublishDate.Format "2006 年 01 月 02 日" }}'
 
 wordCount:
-  one: "{{ .WordCount }}字"
-  other: "{{ .WordCount }}字"
+  one: "{{ .WordCount }} 字"
+  other: "{{ .WordCount }} 字"
 
 postsNewer:
   other: 下一页

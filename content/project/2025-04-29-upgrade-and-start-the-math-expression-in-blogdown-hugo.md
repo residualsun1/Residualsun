@@ -5,6 +5,8 @@ date: '2025-04-29'
 slug: start-and-upgradethe-math-expression-in-blogdown-hugo
 categories: []
 tags:
+  - Hugo
+  - 数学公式
   - 技术折腾
 ---
 
