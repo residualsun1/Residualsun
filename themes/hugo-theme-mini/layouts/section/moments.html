@@ -10,7 +10,7 @@
   {{ range $notes }}
     {{ $i = add $i 1 }}
     <div class="note-card">
-      <div class="note-meta">第 {{ sub $total (sub $i 1) }} 道 ｜ {{ .Date.Format "2006 年 1 月 2 日" }}</div>
+      <div class="note-meta">第 {{ sub $total (sub $i 1) }} 道 ｜ {{ .Date.Format "2006 年 1 月 2 日 15:04" }}</div>
       {{ if ne .Params.title "" }}
       <h3>{{ .Title }}</h3>
       {{ end }}
