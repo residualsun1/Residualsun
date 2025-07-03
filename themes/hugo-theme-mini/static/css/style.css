@@ -896,6 +896,8 @@ kbd:hover {
     }
 }
 
+/*Swiper 轮播图样式，对应短码中的imgloop*/
+
 .swiper-container {
     width: 100%;
     max-width: 100%;
