@@ -5,11 +5,46 @@
 
     {{ partial "head.html" . }}
     <!-- 注释此处，将下面的网址复制到config.yaml文件。-->
-    <script src="https://cdn.jsdelivr.net/npm/@xiee/utils/js/sidenotes.min.js" defer></script>
-    <!--<script src="https://cdn.jsdelivr.net/npm/@xiee/utils/js/fix-footnote.min.js" defer></script>-->
+    
+    <script>
+  (function() {
+    // 匹配桌面宽度阈值
+    const desktopMQ = window.matchMedia("(min-width: 1281px)");
+
+    function loadSidenotes() {
+      // 如果已经加载过，就不再重复
+      if (window.__sidenotesLoaded) return;
+      window.__sidenotesLoaded = true;
+
+      const s = document.createElement("script");
+      s.src = "https://cdn.jsdelivr.net/npm/@xiee/utils/js/sidenotes.min.js";
+      s.defer = true;
+      document.head.appendChild(s);
+    }
+
+    function unloadSidenotes() {
+      // 可选：如果你还想在从桌面切回手机时移除侧注 DOM，写卸载逻辑
+      // 但一般页面刷新后就不会再触发
+    }
+
+    // 初始判断
+    if (desktopMQ.matches) {
+      loadSidenotes();
+    }
+
+    // 响应浏览器窗口 resize
+    desktopMQ.addListener(e => {
+      if (e.matches) {
+        loadSidenotes();
+      } else {
+        unloadSidenotes();
+      }
+    });
+  })();
+    </script>
+
     <script src="https://cdn.jsdelivr.net/npm/@xiee/utils/js/right-quote.min.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/@xiee/utils/js/copy-button.min.js" defer></script>
-    <!--<script src="https://cdn.jsdelivr.net/npm/@xiee/utils/js/fullwidth.min.js" defer></script>-->
     <link href="https://cdn.jsdelivr.net/npm/@xiee/utils/css/copy-button.min.css" rel="stylesheet">
   </head>
 
@@ -21,8 +56,6 @@
     </main>
     
    <!-- {{ partial "music" . }}--><!--2023.8.1在此添加音乐Aplayer-->
-    
-   <!-- {{ partial "script" . }}--><!--2023.8.1在此添加气泡channel-->
 
     {{ partial "footer.html" . }}
   </body>

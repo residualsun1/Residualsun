@@ -3,10 +3,10 @@ html[theme='dark-mode'] {
 }
 
 body {
-  font: normal 16px/*1.5em*/ 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  color: #000; /*哎呀！原来是#404040，这个颜色是深灰的，不如黑色本身，我说为什么字体看起来总是有点微微吃力的感觉！字体由15px/1.5em改成15.5px/1.5em会不会更好？*/
+  font: normal 16px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #000; 
   line-height: 1.90; /*1.75改为1.80*/
-  letter-spacing: 0.009em; /*原来是0.008em*/
+  letter-spacing: 0.009em;
   /*background-color: #F6F5F0;*/
 }
 
@@ -821,7 +821,6 @@ kbd:hover {
     float: right;
     clear: right;
     margin-right: calc(-200px - 2em);
-    /*background-color: white;*/
 
     p {
         font-size: .9rem;
@@ -862,27 +861,9 @@ kbd:hover {
     background: white;
     filter: invert(1);
     opacity: .6;
-    /*border-bottom: dashed 1px black;*/
-    /*padding: 1px 5px;
-    border-radius: 5px;*/
 }
 
-/*media响应式*/
-
-@media (max-width: 1280px) {
-    .side {
-        width: 100%;
-        padding: 0 0;/*这里将2em改为0em，正常了一点*/
-    }
-
-    .side-right {
-        font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, FandolKai, serif;
-        float: none;
-        clear: both;
-        margin: 1em auto;
-        background: lightyellow;
-    }
-}
+/*脚注media响应式*/
 
 @media (min-width: 1281px) {
     .note-ref { cursor: pointer; }
