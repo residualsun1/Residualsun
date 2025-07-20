@@ -17,10 +17,10 @@ toc: true
     }
 </style>
 
-<img src="https://cdn.jsdelivr.net/gh/residualsun1/blog-static/about/me_3.jpg"
+<img src="https://cdn.jsdelivr.net/gh/residualsun1/blog-static/about/me_7.jpg"
      alt="广大湖"
      class="float-image"
-     style="float: right; margin: 0 0 0 0.5em; width: 270px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+     style="float: right; margin: 0.5em 0 0 0.5em; width: 270px;">
 
 你好👋，我叫黄国政，广东湛江人，今年 22 岁，本科就读于广州大学社会学专业，即将前往中央民族大学攻读民族学硕士。
 
