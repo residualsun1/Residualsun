@@ -50,7 +50,7 @@ toc: true
 
 - [尤雨溪](https://evanyou.me/)：Vue 创始人。
 
-- [Nicholas C.Zakas](https://humanwhocodes.com/blog/)：《JavaScript高级程序涉及》作者，ESLint 作者。
+- [Nicholas C.Zakas](https://humanwhocodes.com/blog/)：《JavaScript 高级程序设计》作者，ESLint 作者。
 
 ## 台湾地区社会学与人类学网站资源
 
