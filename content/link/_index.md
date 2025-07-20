@@ -1,6 +1,7 @@
 ---
 author: 黄国政
 title: 链接
+toc: true
 ---
 
 本页面用于收集个人感兴趣的网站，将持续更新。
@@ -21,12 +22,6 @@ title: 链接
 
 - [sophie chao](https://www.morethanhumanworlds.com/)：一个致力于探讨人类与非人类（如动物、植物、技术、环境等）之间相互关系的网站，主要聚焦于跨学科的议题，尤其是涉及人类学、哲学、生态学、环境伦理学等领域，关注人类与非人类世界之间的复杂互动及其对全球变革的影响。
 
-## 有意思的网站
-
-- [秘密花园](http://www.yini.org/)：一个1999年建立的网站，似乎是一代人的网络记忆，是花园、是美好、是旖旎，多愁善感的女子……
-
-- [Sudan Memory](https://www.sudanmemory.org/cms/111/)：苏丹记忆。一个致力于保护和促进苏丹文化与文化遗产的数字化项目，在里面可以找到苏丹相关的文化与历史档案故事。我在里面发现了英国人类学家Evans-Pritchard拍摄的田野照片。
-
 ## 独立博客网站
 
 - [心的道理](https://stephenleng.com/)：又名「浮云笑此生」，我羡慕及学习的写作者，擅长观察和批判社会现象，写作内容涉猎广泛，让我印象十分深刻的是博主对「亲密关系」和「浪漫爱情」的见解。
@@ -41,9 +36,21 @@ title: 链接
 
 - [卢涛南](https://lutaonan.com/)：计算机、技术、思考与创造，独立而又独特的灵魂。
 
-- [Tales from the fairies](https://talesfromthefairies.wordpress.com/)：一个讲述关于魔法、想象、自然的故事的作家。
+## 人文与艺术
+
+- [秘密花园](http://www.yini.org/)：一个1999年建立的网站，似乎是一代人的网络记忆，是花园、是美好、是旖旎，多愁善感的女子……
+
+- [Sudan Memory](https://www.sudanmemory.org/cms/111/)：苏丹记忆。一个致力于保护和促进苏丹文化与文化遗产的数字化项目，在里面可以找到苏丹相关的文化与历史档案故事。我在里面发现了英国人类学家Evans-Pritchard拍摄的田野照片。
+
+- [Tales from the fairies](https://talesfromthefairies.wordpress.com/)：一个讲述关于魔法、想象、自然的故事的作家
 
 - [Mark Fisher](http://k-punk.org/)：马克·费舍尔，《资本主义现代主义》作者。
+
+## 科学与技术
+
+- [尤雨溪](https://evanyou.me/)：Vue 创始人。
+
+- [Nicholas C.Zakas](https://humanwhocodes.com/blog/)：《JavaScript高级程序涉及》作者，ESLint 作者。
 
 ## 台湾地区社会学与人类学网站资源
 
