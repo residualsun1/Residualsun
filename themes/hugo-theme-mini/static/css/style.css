@@ -62,6 +62,23 @@ thead, tfoot, tr:nth-child(even) {
   background: #f8f8f8;
 }
 
+/*增加响应式，不允许表格溢出*/
+@media (max-width: 700px) {
+  table {
+    display: block;               /* 变成块级，才能用 overflow */
+    width: max-content;           /* 宽度跟内容走，不强制撑满 */
+    max-width: 100%;              /* 但又不超过容器 */
+    margin: auto;                 /* 内容少时自动居中 */
+    overflow-x: auto;             /* 内容多时横向滚动 */
+    -webkit-overflow-scrolling: touch; /* iOS 下平滑滚动（可选） */
+    border-collapse: collapse;    /* 保持你原来边框样式 */
+  }
+  table th,
+  table td {
+    white-space: nowrap;          /* 不换行，才能横向滚 */
+  }
+}
+
 /* 分隔线样式 */
 hr {
   width: 150px;
