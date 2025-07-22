@@ -797,6 +797,11 @@ kbd:hover {
   background-color: lightyellow;
 }
 
+.notice-content {
+  border-color: black;
+  background-color: #F6F5F0;
+}
+
 .notice-warning {
   border-color: #f0ad4e;
   background-color: #fff8e6;
