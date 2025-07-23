@@ -88,15 +88,43 @@ HTML（Hyper Text Markup Language）叫**超文本标记语言**，是一种用�
 </html>
 ```
 
+### HTML 元素
+
+如前所述，**HTML 元素由 HTML 标签及标签中的内容构成**。`<html>……</html>` 是元素，`<head><title>路内小说三部曲</title></head>` 也是元素。
+
+![图源：MDN Web Docs](https://cdn.jsdelivr.net/gh/residualsun1/blog-static/project/07/07-22-3.png)
+
+HTML 元素可以分为**单标签元素**和**双标签元素**，双标签元素包含开始标签和结束标签，如我们所见的多数标签；单标签元素则只有一个标签，比如 `<meta>`、`<img>`、`<input>`，这一类标签不需要插入内容。[^1][^2]
+
+[^1]: 但标签元素还有一些写法，如 `<img/>`、`<img />`，现在统一写成 `<img>` 即可。
+[^2]: 另外再补充一点，HTML 元素不区分大小写，但是推荐小写。
+
+可以说，一个完整的网页结构包含最多的就是各种各样的 HTML 元素，换句话说，HTML 本质上是由一系列元素构成的。元素是网页的一部分，可以包含一个数据项、一块文本、一张照片，又或者是什么都不包含。
+
+HTML 元素很多，不必刻意全部记下，可以参考文档 [MDN Web Docs](https://developer.mozilla.org/zh-CN/) ：https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements
+
+从语义化的角度来看，了解各种不同的元素是必要的，但在实际的开发过程中，不同的元素其实可以相互实现。换而言之，对于常用的元素必须记住，不常见的则可以通过查询文档进行补充。
+
+此外，HTML 元素还具有属性（attribute），可以对某具体的元素内容进行管理。**一个完整的属性通过等号连接「属性名称」与「被 `""` 括住的属性值」以构成**，具体写在元素名称的一个空格之后，若有多个属性，属性之间则以一个空格空开即可。[^3]
+
+[^3]: 如 `<p class="title" id="name">My cat is very grumpy</p>`
+
+![](https://cdn.jsdelivr.net/gh/residualsun1/blog-static/project/07/07-22-4.png)
+
+如上图所示，我们可以通过属性 `class="editor-note"` 来对元素 `<p>My cat is very grumpy</p>` 进行标记以进行额外设置，而属性信息不会出现在内容中。
+
+元素属性也可以进行分类，一类是公共的，每一个元素都可以设置，比如 class、id、title；另一类是特有的，比如 meta 中的 charset，img 中的 alt。
+
+
 ## 开发工具
 
 虽然按照上面的方式可以开发出一个简单的网页，但是这种方式却十分麻烦，效率低下——一方面不方便于创建和管理文件，另一方面则是没有颜色标识和智能提示，也无法调试程序。
 
 因此，在实际的开发过程中，开发人员不会使用记事本，而会选择专业的前端开发工具，如 WebStorm（过去用得非常多）、Sublime Text（文本编辑器，也可以安装插件）、Visual Studio Code、Atom、HBuilder、IntelliJ IDEA（开发 Java 时用得较多）、Dreamweaver 等。这些工具的优点包括智能提示、高亮识别、语法检测、集成环境和开发效率高。
 
-当下，似乎 Webstorm 和 VS Code 用得比较多，前者是集成开发工具，将许多功能集合在一起，包罗万象，但是占用系统资源多，收费；后者则相当于一个编辑器，轻量级，而且免费（微软开源）[^1]，但是就需要安装一些插件来辅助开发。
+当下，似乎 Webstorm 和 VS Code 用得比较多，前者是集成开发工具，将许多功能集合在一起，包罗万象，但是占用系统资源多，收费；后者则相当于一个编辑器，轻量级，而且免费（微软开源）[^4]，但是就需要安装一些插件来辅助开发。
 
-[^1]: 据闻作为闭源公司的微软收购最大的开源社区 Github 后曾引起担忧，但是微软似乎没有在 Github 上有什么收费行为。甚至过去 Github 会对私人仓库的建立收费，但在微软收购后变为免费。另，同样开源且好用的 TypeScript 也是微软的产品。
+[^4]: 据闻作为闭源公司的微软收购最大的开源社区 Github 后曾引起担忧，但是微软似乎没有在 Github 上有什么收费行为。甚至过去 Github 会对私人仓库的建立收费，但在微软收购后变为免费。另，同样开源且好用的 TypeScript 也是微软的产品。
 
 我们在这里选择 VS Code 来开启自己的开发之旅。
 
@@ -105,24 +133,63 @@ HTML（Hyper Text Markup Language）叫**超文本标记语言**，是一种用�
 | 插件 | 内容  | 备注 |
 |------|-------|------|
 | Chinese (Simplified) (简体中文) Language Pack for Visual Studio Code | 中文插件 | 能用英文肯定更好，但在不熟悉的时候先从中文入手也未尝不可 |
-| Atom One Dark Theme | 颜色主题           |                              |
-| VSCode Great Icons  | 文件夹图标         |                              |
-| open in browser     | 在浏览器中打开网页 |                              |
-| Live Server         | 在浏览器中打开网页 |                              |
-| Auto Rename Tag     | 自动重命名标签     |                              |
+| Atom One Dark Theme | 颜色主题           | 可选                        |
+| VSCode Great Icons  | 文件夹图标         | 给文件夹和文件添加美化图标   |
+| open in browser     | 在浏览器中打开网页 | 在编辑器里直接跳转到浏览器打开文件，但文件更新后需要刷新 |
+| Live Server         | 在浏览器中打开网页 | 在本地启动服务器，与上者的区别是可以根据文件更新实时更新 |
+| Auto Rename Tag     | 自动重命名标签     | 手动修改开始/结束标签时，系统会自动更改对应的另一个标签  |
 
 
-还可以进行一些相关的 VS Code 配置：
+还可以进行一些相关的 VS Code 配置[^5]：
 
-| 配置 | 内容 | 说明 | 备注 |
-|------|------|------|------|
-| Auto Save | 自动保存 | 左上角导航栏 File 处可设置 |                                            |
-| Font Size | 修改代码字体大小 | 一种方式是对整个 VS Code 界面大小调整，即 <kbd>Crtl</kbd>+<kbd>+</kbd>；另一个是点击 File 中的 Preferences，选择 Settings，然后是 Text Editor，再点击 Font，即可看见 Font Size |                                            |
-| Word Wrap | 代码自动换行 | 直接在 Preferences 的 Settings 搜索栏处输入 Wrap，有两处都可以调整：一处是 Commonly Used，这里的调整可以使得编辑界面中的代码自动换行；另一处是 Diff Editor，这里的是在拆分（split）文件后，同样发生自动换行  |               |
-| Render Whitespace | 空格的渲染方式  | 同样在 Settings 中直接搜索 Render Whitespace，将默认的 selection 改为 all |                     |
-| Tab Size | 代码缩进 | 同样在 Settings 中直接搜索 Tab Size，将 4 改为 2 即可 | 推荐 2 个空格，公司开发项目基本都是 2 个空格，前端中比较流行的也是 2 个空格。按 <kbd>Tab</kbd> 即可往后缩进，<kbd>Shfit</kbd> + <kbd>Tab</kbd> 往前缩进。 |
+| 配置 | 内容 | 说明 | 
+|------|------|------|
+| Auto Save | 自动保存编辑器中的修改 | 左上角导航栏 File 处可设置 | 
+| Font Size | 修改代码字体大小 | 一、<kbd>Crtl</kbd>+<kbd>+</kbd>，调整整个 VS Code 界面的大小；<br>二、点击 File 中的 Preferences，选择 Settings -> Text Editor -> Font，修改 Font Size |
+| Word Wrap | 代码自动换行 | 直接在 Preferences 的 Settings 搜索栏处输入 Wrap，有两处都可以调整：<br>一处是 Commonly Used，这里的调整可以使得编辑界面中的代码自动换行；<br>另一处是 Diff Editor，这里的是在拆分（split）文件后，同样发生自动换行 |
+| Render Whitespace | 空格的渲染方式，使用点标记空格，清楚缩进状态 | 同样在 Settings 中直接搜索 Render Whitespace，将默认的 selection 改为 all 即可|
+| Tab Size | 代码缩进 | 同样在 Settings 中直接搜索 Tab Size，将 4 改为 2 即可。<br>推荐 2 个空格，公司开发项目基本都是 2 个空格，前端中比较流行的也是 2 个空格。<br>按 <kbd>Tab</kbd> 即可往后缩进，<kbd>Shfit</kbd> + <kbd>Tab</kbd> 往前缩进 |
+
+[^5]: Rstudio 中空格渲染的设置在 `Tools -> Global Options -> Code -> Display -> Show whitespace charaters`。我觉得渲染空格非常有助于视觉上的编写。
+
+{{% notice info "Tips" %}}
+
+在 VS Code 中有一些便捷的编辑方法。
+
+1. 键入 <kbd>Ctrl</kbd>+<kbd>Enter</kbd> 可以让光标在任意位置移到下一行。
+
+2. 输入标签时，不带 <> 号写可用 <kbd>Tab</kbd> 补齐，比较方便。
+
+3. 在 HTML 文件界面中输入 `!`，回车后可以直接生成如下内容
+
+```HTML
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+</body>
+</html>
+```
+
+4. 输入 `div>li>ui` 可以直接生成如下内容
+
+```HTML
+<div>
+  <li>
+    <ui></ui>
+  </li>
+</div>
+```
+
+{{% /notice %}}
 
 
-## HTML 元素
 
 ## 注释编写
+
+

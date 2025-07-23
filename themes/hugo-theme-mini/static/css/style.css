@@ -791,6 +791,31 @@ kbd:hover {
   font-size: .9em;
 }
 
+/* 仅针对 notice 提示框内的预格式化代码 */
+.notice-body pre {
+  /* 让 pre 的最大宽度不超过父容器 */
+  max-width: 100%;
+  box-sizing: border-box;
+
+  /* 同时保留水平滚动条 */
+  overflow-x: auto;
+
+  /* 允许在空白处折行 */
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+/* 进一步约束 code 元素 */
+.notice-body pre code {
+  max-width: 100%;
+  box-sizing: border-box;
+
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
 /* 不同类型的背景色和边框 */
 .notice-info {
   border-color: #CCCCCC;
