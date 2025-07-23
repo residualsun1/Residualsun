@@ -47,7 +47,7 @@ HTML 负责网页的内容结构，CSS 负责网页的视觉体验，JavaScript 
 简而言之，网页的显示过程即用户在浏览器输入网站，浏览器在此基础上找到对应的服务器地址，进而请求静态资源（可以存放在世界上任何一个地方），服务器发现请求后将静态资源返回给浏览器，浏览器再对静态资源进行解析和展示。
 
 <div align="center">
-<img src="https://cdn.jsdelivr.net/gh/residualsun1/blog-static/project/2025/07/07-21-1.png" width="25%"  />
+<img src="https://cdn.jsdelivr.net/gh/residualsun1/blog-static/project/2025/07/07-21-1.png" width="50%"  />
 </div>
 
 ### 前端工程师的角度

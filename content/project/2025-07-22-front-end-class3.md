@@ -1,5 +1,5 @@
 ---
-title: 第一个网页
+title: 开发第一个网页
 author: 黄国政
 date: '2025-07-22'
 slug: front-end-class3
@@ -11,7 +11,47 @@ draft: yes
 
 <!--more-->
 
-## 从 0 开始
+{{% notice info "Tips" %}}
+
+总结在 VS Code 中有一些便捷的编辑方法。
+
+1. 键入 <kbd>Ctrl</kbd>+<kbd>Enter</kbd> 可以让光标在任意位置移到下一行。
+
+2. 输入标签时，不带 `< >` 号写可用 <kbd>Tab</kbd> 补齐，比较方便。
+
+3. <kbd>alt</kbd>+<kbd>Shift</kbd>+<kbd>⬇</kbd> 可以快速复制上一行。
+
+4. <kbd>Ctrl</kbd>+<kbd>/</kbd> 快捷注释 `<!--  -->`，在内容较多时，选中全部内容然后键入快捷键，即可全部注释。
+
+5. 在 HTML 文件界面中输入 `!`，回车后可以直接生成如下内容：
+
+```HTML
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+</body>
+</html>
+```
+
+6. 输入 `div>ui>li` 可以直接生成如下内容：
+
+```HTML
+<div>
+  <ui>
+    <li></li>
+  </ui>
+</div>
+```
+
+{{% /notice %}}
+
+## 一、从 0 开始
 
 使用记事本，便可以创建一个最简单的网页。
 
@@ -25,7 +65,7 @@ draft: yes
 我离开工厂之后，有很多个夜晚，都在稿纸上描述它。有时候我把它写得非常伤感，有时候则非常快乐。我从来没有写过白蓝，除了这一次。即使是在我三十岁以后，写到她，也只是一些断断续续的故事，我不能一次就把她说完。我做不到。在我有限的生命里，我将一次次地把她放下，又重新拾起。我用这种方式所表达的已经不是爱了，而是怀念。但是这种怀念来自于我身体最深的地方，是我血液中的一部分，不仅是白蓝，还有其他人。
 {{% /notice %}}
 
-![](https://cdn.jsdelivr.net/gh/residualsun1/blog-static/project/07/07-22-1.png)
+![](https://cdn.jsdelivr.net/gh/residualsun1/blog-static/project/2025/07/07-22-1.png)
 
 但这样的网页内容非常粗糙，仅仅是文本的堆叠，浏览器不知如何进行解析，导致所有的文本都挤在一起，此时需要使用特定的标记进行管理。而上文提到的浏览器内核要做的，就是识别不同的标记以进行渲染。例如，`<h1></h1>` 标签呈现大标题，`<h2></h2>` 呈现二级标题，`<p></p>` 则呈现段落。
 
@@ -39,17 +79,17 @@ draft: yes
 \<p>我离开工厂之后，有很多个夜晚，都在稿纸上描述它。有时候我把它写得非常伤感，有时候则非常快乐。我从来没有写过白蓝，除了这一次。即使是在我三十岁以后，写到她，也只是一些断断续续的故事，我不能一次就把她说完。我做不到。在我有限的生命里，我将一次次地把她放下，又重新拾起。我用这种方式所表达的已经不是爱了，而是怀念。但是这种怀念来自于我身体最深的地方，是我血液中的一部分，不仅是白蓝，还有其他人。\</p>
 {{% /notice %}}
 
-![](https://cdn.jsdelivr.net/gh/residualsun1/blog-static/project/07/07-22-2.png)
+![](https://cdn.jsdelivr.net/gh/residualsun1/blog-static/project/2025/07/07-22-2.png)
 
-## 认识 HTML
+## 二、认识 HTML
 
-### HTML 概览
+### 2.1 HTML 概览
 
 HTML（Hyper Text Markup Language）叫**超文本标记语言**，是一种用于创建网页的标记语言。值得注意的是，HTML 是**标记语言**，并不是**编程语言**（但 JavaScript 是编程语言），但仍然是一种计算机语言。
 
 「标记语言」由许多**标签**组成，如前面写到的 `<h1>`、`<h2>`、`<p>`（开始标签），`</h1>`、`</h2>`、`</p>`（结束标签），它们会对某些内容进行特殊标记以供其他解释器识别处理，例如 `<h1></h1>` 就会将被其标记的文本识别为「标题」并进行加粗和文字放大显示，而**由标签和标签中的内容——如`<h1>少年巴比伦</h1>`——组成的部分则被称为元素（element）**。
 
-正是一个又一个 HTML 元素，构成了网站的基石。
+因此，正是一个又一个 HTML 元素构成了网站的基石。
 
 |   类型   |      构成             |
 |----------|-----------------------|
@@ -60,7 +100,7 @@ HTML（Hyper Text Markup Language）叫**超文本标记语言**，是一种用�
 
 一般来说，我们常见的 HTML 文件拓展名是 `.html`，但由于历史遗留问题，Win95/Win98 系统的文件拓展名不能超过 3 个字符，因此使用的是 `.hml`。不过今天的文件拓展名已经没有这样的限制，同时统一使用 `.html`。
 
-### HTML 结构
+### 2.2 HTML 结构
 
 虽然前面的简单网页只通过 `<h1>`、`<h2>`、`<p>` 几个标签便完成，但一个真正完整的 HTML 结构必须包含 `<html>……</html>`、`<head>……</head>` 和 `<body>……</body>` 几个元素。
 
@@ -88,43 +128,80 @@ HTML（Hyper Text Markup Language）叫**超文本标记语言**，是一种用�
 </html>
 ```
 
-### HTML 元素
+### 2.3 HTML 元素
 
-如前所述，**HTML 元素由 HTML 标签及标签中的内容构成**。`<html>……</html>` 是元素，`<head><title>路内小说三部曲</title></head>` 也是元素。
+#### 2.3.1 元素的结构
 
-![图源：MDN Web Docs](https://cdn.jsdelivr.net/gh/residualsun1/blog-static/project/07/07-22-3.png)
+如前所述，**HTML 元素由 HTML 标签及标签中的内容构成**。`<html>……</html>` 是元素，`<head><title>路内小说三部曲</title></head>` 是元素，`<h1>少年巴比伦</h1>` 也是元素。
 
-HTML 元素可以分为**单标签元素**和**双标签元素**，双标签元素包含开始标签和结束标签，如我们所见的多数标签；单标签元素则只有一个标签，比如 `<meta>`、`<img>`、`<input>`，这一类标签不需要插入内容。[^1][^2]
+![图源：MDN Web Docs](https://cdn.jsdelivr.net/gh/residualsun1/blog-static/project/2025/07/07-22-3.png)
 
-[^1]: 但标签元素还有一些写法，如 `<img/>`、`<img />`，现在统一写成 `<img>` 即可。
-[^2]: 另外再补充一点，HTML 元素不区分大小写，但是推荐小写。
+显然，一个最简单的 HTML 元素的结构至少包括「开始标签」、「内容」和「结束标签」。[^1]
 
-可以说，一个完整的网页结构包含最多的就是各种各样的 HTML 元素，换句话说，HTML 本质上是由一系列元素构成的。元素是网页的一部分，可以包含一个数据项、一块文本、一张照片，又或者是什么都不包含。
+[^1]: 或许还有另一种理解方式，那就是认为 HTML 元素的结构包括「开始标签」、「内容」和「结束标签」，以及后面讲到的「属性」和「嵌套关系」。
 
-HTML 元素很多，不必刻意全部记下，可以参考文档 [MDN Web Docs](https://developer.mozilla.org/zh-CN/) ：https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements
+HTML 元素可以分为**单标签元素**和**双标签元素**，双标签元素包含开始标签和结束标签，如我们所见的多数标签；单标签元素则只有一个标签，比如 `<meta>`、`<img>`、`<input>`，这一类标签不需要插入内容。值得一提的是，这些单标签元素还有一些写法，如 `<img/>`、`<img />`，但现在统一写成 `<img>` 即可。
 
-从语义化的角度来看，了解各种不同的元素是必要的，但在实际的开发过程中，不同的元素其实可以相互实现。换而言之，对于常用的元素必须记住，不常见的则可以通过查询文档进行补充。
+另外，HTML 元素不区分大小写，但是推荐小写。
 
-此外，HTML 元素还具有属性（attribute），可以对某具体的元素内容进行管理。**一个完整的属性通过等号连接「属性名称」与「被 `""` 括住的属性值」以构成**，具体写在元素名称的一个空格之后，若有多个属性，属性之间则以一个空格空开即可。[^3]
+#### 2.3.2 元素的属性
 
-[^3]: 如 `<p class="title" id="name">My cat is very grumpy</p>`
+HTML 元素具有属性（attribute），可以对某具体的元素内容进行管理。**一个完整的属性通过等号连接「属性名称」与「被 `""` 括住的属性值」以构成**，具体写在元素名称的一个空格之后，若有多个属性，属性之间则以一个空格空开即可。[^2]
 
-![](https://cdn.jsdelivr.net/gh/residualsun1/blog-static/project/07/07-22-4.png)
+[^2]: 如 `<p class="title" id="name">My cat is very grumpy</p>`
+
+![图源：MDN Web Docs](https://cdn.jsdelivr.net/gh/residualsun1/blog-static/project/2025/07/07-22-4.png)
 
 如上图所示，我们可以通过属性 `class="editor-note"` 来对元素 `<p>My cat is very grumpy</p>` 进行标记以进行额外设置，而属性信息不会出现在内容中。
 
 元素属性也可以进行分类，一类是公共的，每一个元素都可以设置，比如 class、id、title；另一类是特有的，比如 meta 中的 charset，img 中的 alt。
 
+#### 2.3.3 元素的嵌套关系
 
-## 开发工具
+某些元素的内容除了可以是文本以外，还可以是其他元素，这样就形成了元素的嵌套。
 
-虽然按照上面的方式可以开发出一个简单的网页，但是这种方式却十分麻烦，效率低下——一方面不方便于创建和管理文件，另一方面则是没有颜色标识和智能提示，也无法调试程序。
+```HTML
+  <ul>
+    <li>
+      <div>
+        <span></span>
+        <span></span>
+      </div>
+    </li>
+  </ul>
+```
+
+`ul` 与 `li`，或者 `li` 与 `div` 之间是父子关系。`<span>` 与 `<span>` 之间是兄弟关系——兄弟关系的元素必须位于同一个父级元素之中。
+
+#### 2.3.4 小结
+
+总的来说，一个完整的网页结构包含最多的就是各种各样的 HTML 元素。HTML 本质上由一系列元素构成，元素是网页的一部分，可以包含一个数据项、一块文本、一张照片，又或者是什么都不包含。
+
+HTML 元素很多，从语义化的角度来看，了解各种不同的元素是必要的，但在实际的开发过程中，不同的元素其实可以相互实现，不必刻意全部记下，记住常用元素即可，对于不常见的元素则可以参考文档 [MDN Web Docs](https://developer.mozilla.org/zh-CN/) ：https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements
+
+## 三、HTML 注释
+
+注释是一段代码说明，只向开发者呈现。
+
+```HTML
+<!-- 这里是注释内容，根据需要进行说明  -->
+```
+
+书写注释是良好的习惯，一则在拥有大量代码的项目中保持清晰，二则便于协同开发、减少沟通成本，三则在开发自己的框架时加入适当注释有利于他人使用和学习（开源精神），四则便于调试代码。
+
+使用快捷键 <kbd>Ctrl</kbd>+<kbd>/</kbd> 可以快速打出注释 `<!--  -->`，如果要注释的内容较多，可以直接用鼠标全部选中，之后按下快捷键即可全部注释。
+
+但是注释不可以相互嵌套，也即注释之中不可以再有注释，如果注释相互嵌套，最外围的注释会失效。
+
+## 四、开发工具
+
+虽然按照前面记事本的方式可以开发出一个简单的网页，但是十分麻烦，效率低下——一方面不方便于创建和管理文件，另一方面则是没有颜色标识和智能提示，也无法调试程序。
 
 因此，在实际的开发过程中，开发人员不会使用记事本，而会选择专业的前端开发工具，如 WebStorm（过去用得非常多）、Sublime Text（文本编辑器，也可以安装插件）、Visual Studio Code、Atom、HBuilder、IntelliJ IDEA（开发 Java 时用得较多）、Dreamweaver 等。这些工具的优点包括智能提示、高亮识别、语法检测、集成环境和开发效率高。
 
-当下，似乎 Webstorm 和 VS Code 用得比较多，前者是集成开发工具，将许多功能集合在一起，包罗万象，但是占用系统资源多，收费；后者则相当于一个编辑器，轻量级，而且免费（微软开源）[^4]，但是就需要安装一些插件来辅助开发。
+当下，似乎 Webstorm 和 VS Code 用得比较多，前者是集成开发工具，将许多功能集合在一起，包罗万象，但是占用系统资源多，收费；后者则相当于一个编辑器，轻量级，而且免费（微软开源）[^3]，但是就需要安装一些插件来辅助开发。
 
-[^4]: 据闻作为闭源公司的微软收购最大的开源社区 Github 后曾引起担忧，但是微软似乎没有在 Github 上有什么收费行为。甚至过去 Github 会对私人仓库的建立收费，但在微软收购后变为免费。另，同样开源且好用的 TypeScript 也是微软的产品。
+[^3]: 据闻作为闭源公司的微软收购最大的开源社区 Github 后曾引起担忧，但是微软似乎没有在 Github 上有什么收费行为。甚至过去 Github 会对私人仓库的建立收费，但在微软收购后变为免费。另，同样开源且好用的 TypeScript 也是微软的产品。
 
 我们在这里选择 VS Code 来开启自己的开发之旅。
 
@@ -139,8 +216,9 @@ HTML 元素很多，不必刻意全部记下，可以参考文档 [MDN Web Docs]
 | Live Server         | 在浏览器中打开网页 | 在本地启动服务器，与上者的区别是可以根据文件更新实时更新 |
 | Auto Rename Tag     | 自动重命名标签     | 手动修改开始/结束标签时，系统会自动更改对应的另一个标签  |
 
+还可以进行一些相关的 VS Code 配置[^4]：
 
-还可以进行一些相关的 VS Code 配置[^5]：
+[^4]: Rstudio 中空格渲染的设置在 `Tools -> Global Options -> Code -> Display -> Show whitespace charaters`。我觉得渲染空格非常有助于视觉上的编写。
 
 | 配置 | 内容 | 说明 | 
 |------|------|------|
@@ -149,47 +227,3 @@ HTML 元素很多，不必刻意全部记下，可以参考文档 [MDN Web Docs]
 | Word Wrap | 代码自动换行 | 直接在 Preferences 的 Settings 搜索栏处输入 Wrap，有两处都可以调整：<br>一处是 Commonly Used，这里的调整可以使得编辑界面中的代码自动换行；<br>另一处是 Diff Editor，这里的是在拆分（split）文件后，同样发生自动换行 |
 | Render Whitespace | 空格的渲染方式，使用点标记空格，清楚缩进状态 | 同样在 Settings 中直接搜索 Render Whitespace，将默认的 selection 改为 all 即可|
 | Tab Size | 代码缩进 | 同样在 Settings 中直接搜索 Tab Size，将 4 改为 2 即可。<br>推荐 2 个空格，公司开发项目基本都是 2 个空格，前端中比较流行的也是 2 个空格。<br>按 <kbd>Tab</kbd> 即可往后缩进，<kbd>Shfit</kbd> + <kbd>Tab</kbd> 往前缩进 |
-
-[^5]: Rstudio 中空格渲染的设置在 `Tools -> Global Options -> Code -> Display -> Show whitespace charaters`。我觉得渲染空格非常有助于视觉上的编写。
-
-{{% notice info "Tips" %}}
-
-在 VS Code 中有一些便捷的编辑方法。
-
-1. 键入 <kbd>Ctrl</kbd>+<kbd>Enter</kbd> 可以让光标在任意位置移到下一行。
-
-2. 输入标签时，不带 <> 号写可用 <kbd>Tab</kbd> 补齐，比较方便。
-
-3. 在 HTML 文件界面中输入 `!`，回车后可以直接生成如下内容
-
-```HTML
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  
-</body>
-</html>
-```
-
-4. 输入 `div>li>ui` 可以直接生成如下内容
-
-```HTML
-<div>
-  <li>
-    <ui></ui>
-  </li>
-</div>
-```
-
-{{% /notice %}}
-
-
-
-## 注释编写
-
-
