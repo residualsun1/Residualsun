@@ -6,6 +6,7 @@ slug: front-end-class3
 categories: []
 tags:
   - 前端
+  - HTML
 ---
 
 <!--more-->
@@ -38,7 +39,9 @@ tags:
 </html>
 ```
 
-6. 输入 `div>ui>li` 可以直接生成如下内容：
+6. 生成上面的内容后，接着按 <kbd>Tab</kbd> 也可让默认光标往下移动，但和第一点有所不同。
+
+7. 输入 `div>ui>li` 可以直接生成如下内容：
 
 ```HTML
 <div>
@@ -151,7 +154,7 @@ HTML 元素具有属性（attribute），可以对某具体的元素内容进行
 
 ![图源：MDN Web Docs](https://cdn.jsdelivr.net/gh/residualsun1/blog-static/project/2025/07/07-22-4.png)
 
-如上图所示，我们可以通过属性 `class="editor-note"` 来对元素 `<p>My cat is very grumpy</p>` 进行标记以进行额外设置，而属性信息不会出现在内容中。
+如上图所示，我们可以通过属性 `class="editor-note"` 来对元素 `<p>My cat is very grumpy</p>` 进行标记以进行额外设置，而属性仅是对元素进行额外补充，不会像内容一样具体出现在界面上。
 
 元素属性也可以进行分类，一类是公共的，每一个元素都可以设置，比如 class、id、title；另一类是特有的，比如 meta 中的 charset，img 中的 alt。
 
