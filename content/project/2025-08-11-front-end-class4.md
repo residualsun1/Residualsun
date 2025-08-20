@@ -2,7 +2,7 @@
 title: HTML 基础结构及各元素
 author: 黄国政
 date: '2025-08-11'
-slug: front-end-class5
+slug: front-end-class4
 categories: []
 tags:
   - 前端
@@ -251,18 +251,18 @@ img 元素有两个常见属性，一个是 src，另一个是 alt（占位）�
 
 {{% notice info "示例" %}}
 ```HTML
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Levi-strauss_260.jpg/330px-Levi-strauss_260.jpg" alt="By Wikipedia | Claude Lévi-Strauss">
+<img src="https://cdn.jsdelivr.net/gh/residualsun1/blog-static/project/2025/08/08-11-1.jpg">
 ```
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Levi-strauss_260.jpg/330px-Levi-strauss_260.jpg" alt="By Wikipedia | Claude Lévi-Strauss">
+<img src="https://cdn.jsdelivr.net/gh/residualsun1/blog-static/project/2025/08/08-11-1.jpg">
 {{% /notice %}}
 
 {{% notice info "示例" %}}
 ```HTML
-<img src="https://upload.wikimedia.org/wikipedia" alt="By Wikipedia | Claude Lévi-Strauss">
+<img src="https://cdn.jsdelivr.net……" alt="Claude Lévi-Strauss">
 ```
 
-<img src="https://upload.wikimedia.org/wikipedia" alt="By Wikipedia | Claude Lévi-Strauss">
+<img src="https://cdn.jsdelivr.net……" alt="Claude Lévi-Strauss">
 {{% /notice %}}
 
 {{% notice warning "注意" %}}
@@ -276,7 +276,7 @@ img 元素有两种图片路径，一个是网络图片，另一个是本地图�
 * **网络图片**。网络图片的引用最简单，给 src 提供网络上现成的图片地址即可。
 
   ```HTML
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Levi-strauss_260.jpg/330px-Levi-strauss_260.jpg" alt="">
+  <img src="https://cdn.jsdelivr.net/gh/residualsun1/blog-static/project/2025/08/08-11-1.jpg" alt="">
   ```
 
 * **本地图片**。本地图片是本地电脑上的图片，后期要和 HTML 一起部署到服务器，用户使用时要在网络中进行加载，而在本地图片中，又分为**绝对路径**和**相对路径**两种方式。
@@ -353,10 +353,10 @@ a 元素有两个常见属性，分别是 href（Hypertext Reference）和 targe
 {{% notice info "示例" %}}
 
 ```HTML
-<a href="https://zh.wikipedia.org/w/index.php?title=%E5%85%8B%E5%8B%9E%E5%BE%B7%C2%B7%E6%9D%8E%E7%B6%AD-%E5%8F%B2%E9%99%80&oldformat=true&variant=zh-cn" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Levi-strauss_260.jpg/330px-Levi-strauss_260.jpg" alt=""></a>
+<a href="https://zh.wikipedia.org/w/index.php?title=%E5%85%8B%E5%8B%9E%E5%BE%B7%C2%B7%E6%9D%8E%E7%B6%AD-%E5%8F%B2%E9%99%80&oldformat=true&variant=zh-cn" target="_blank"><img src="https://cdn.jsdelivr.net/gh/residualsun1/blog-static/project/2025/08/08-11-1.jpg" alt=""></a>
 ```
 
-<a href="https://zh.wikipedia.org/w/index.php?title=%E5%85%8B%E5%8B%9E%E5%BE%B7%C2%B7%E6%9D%8E%E7%B6%AD-%E5%8F%B2%E9%99%80&oldformat=true&variant=zh-cn" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Levi-strauss_260.jpg/330px-Levi-strauss_260.jpg" alt=""></a>
+<a href="https://zh.wikipedia.org/w/index.php?title=%E5%85%8B%E5%8B%9E%E5%BE%B7%C2%B7%E6%9D%8E%E7%B6%AD-%E5%8F%B2%E9%99%80&oldformat=true&variant=zh-cn" target="_blank"><img src="https://cdn.jsdelivr.net/gh/residualsun1/blog-static/project/2025/08/08-11-1.jpg" alt=""></a>
 
 {{% /notice %}}
 
@@ -381,7 +381,6 @@ a 元素有两个常见属性，分别是 href（Hypertext Reference）和 targe
   <a href="#theme03">段落三</a>
   <a href="#theme04">段落四</a>
   <a href="#theme05">段落五</a>
-
 
 <!--第一步：在要跳转的元素上定义 id 属性-->
   <h4 id="theme01">段落一</h4>
@@ -790,70 +789,3 @@ br 元素是换行元素（break），但在开发之中已经不使用。不再
 <p title="才怪！怎么可能呢？">我不喜欢看《银魂》。</p>
 
 {{% /notice %}}
-
-## 六、额外知识补充
-
-额外知识在前面的帖子中有穿插讲过一部分，包括 URL、元素语义化和字符编码等，这里再简单集合整理一下，方便回顾。
-
-### 6.1 字符实体
-
-在 HTML 中，`<>` 的使用十分常见，浏览器会将其中的 `<` 背后的文本解析为一个 tag，但在某些情况下，我们却需要编写一个 `<` 展示出来，此时便要用到字符实体。
-
-HTML 实体是一段以连字号 `&` 开头，以分号 `;` 结尾的文本（字符串），实体常常用于显示保留字符——这些字符原本会被解析为 HTML 代码——和不可见的字符（如「不换行空格」），也可以用实体代替其他难以用标准键盘键入的字符。
-
-具体实现的方式是在 `&` 和 `;` 之间写上指定字符实体的名称或编码。
-
-```HTML
-<span>&名称/编码;这是一段文本</span>
-```
-
-部分常用的字符实体与编码如下。
-
-| **字符** | **描述**        | **实体名称** | **实体编号** |
-|----------|-----------------|--------------|--------------|
-|          | 空格            | \&nbsp;      | \&#160;      |
-| <        | 小于号          | \&lt;        | \&#60;       |
-| >        | 大于号          | \&gt;        | \&#62;       |
-| &        | 和号            | \&amp;       | \&#38;       |
-| "        | 双引号          | \&quot;      | \&#34;       |
-| '        | 单引号          | \&apos;      | \&#39;       |
-| ©        | 版权（copyright） | \&copy:      | \&#169;      |
-| ®        | 注册商标        | \&reg;       | \&#174;      |
-| ™        | 商标            | \&trade;     | \&#8482;     |
-| ¢        | 分（cent）      | \&cent;      | \&#162;      |
-| £        | 镑（pound）     | \&pound;     | \&#163;      |
-| ￥       | 元（yen）       | \&yen;       | \&#165;      |
-| €        | 欧元（euro）    | \&euro;      | \&#8364;     |
-| §        | 小节            | \&sect;      | \&#167;      |
-| ×        | 乘号            | \&times;     | \&#215;      |
-| ÷        | 除号            | \&divide;    | \&#247;      |
-
-
-{{% notice info "示例" %}}
-```HTML
-<span>&lt;这是一段文本&gt;</span>
-```
-
-<span>&lt;这是一段文本&gt;</span>
-
-{{% /notice %}}
-
-### 6.2 URL 地址
-
-详见《[URL 与 URI](https://guozheng.rbind.io/project/front-end-class4/)》一文。
-
-### 6.3 元素语义化
-
-以「正确」的元素做「正确」的事情，或者说以特定的元素完成特定的任务，p 就具体对应段落，img 就具体对应图片。
-
-### 6.4 SEO 优化
-
-SEO 是搜索引擎优化（search  engine optimization），通过了解搜索引擎的运作规则来调整网站，以及提高网站在有关搜索引擎内排名的方式。
-
-### 6.5 字符编码
-
-计算机最早用于解决数字计算问题，后来发现还可以用于文本处理。不过，由于计算机的底层硬件实现是用电路的开和闭两种状态来表示 1 和 0 两个数字，因此只能识别诸如 010110111000 这类由 0 和 1 两个数字组成的二进制数字，也只能直接存储和处理二进制数字。
-
-为了再计算机上也能表示、存储和处理文字、符号这一类字符，就必须将这类字符转换为二进制数字。不过不是想怎么转换就怎么转换，否则会造成同一段二进制数字在不同计算机上显示出来的字符不一样的情况，因此必须得定一个统一、标准的转换规则。
-
-作为自然语言的文字主要可以通过 ASCII、UTF8 或 GBK 等进行字符编码，转换为计算机语言，之后再按照原来对应的规则（也就是 ASCII、UTF8 或 GBK）再解码为文字。
