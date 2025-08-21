@@ -11,6 +11,10 @@ tags:
 
 <!--more-->
 
+{{% notice success "说明" %}}
+少部分内容可能需要科学上网才能正常显示。
+{{% /notice %}}
+
 ## 一、文档声明
 
 前面讲到基本的 HTML 结构主要由 `<html>...</html>`、`<head>...</head>` 和 `<body>...</body>` 几个元素构成，但实际上还缺少文档声明。
@@ -437,7 +441,7 @@ a 元素有两个常见属性，分别是 href（Hypertext Reference）和 targe
 
 除了跳转到新网页，a 元素也可以用于跳转指向链接以下载特定资源，也可以用于发邮件。
 
-在这里，URL 可以是指向其他网页的一个地址，也可以是定向到某一特定资源，其具体内容可以参考《[URL 与 URI](https://guozheng.rbind.io/project/front-end-class4/)》。
+在这里，URL 可以是指向其他网页的一个地址，也可以是定向到某一特定资源，其具体内容可以参考[此处](https://guozheng.rbind.io/project/front-end-class5#二URL-地址)。
 
 {{% notice info "示例" %}}
 
