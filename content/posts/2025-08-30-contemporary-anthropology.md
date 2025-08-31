@@ -37,10 +37,16 @@ tags:
 
 这里需要提提后面这部分老师，他们的共同特点是广受学生喜爱，且研究相对国内多数人类学学者而言也更贴近当下，关注人的具体生活与生存处境，具体对应的内容可参考如下：
 
-* 安孟竹老师：播客分享《[從自閉症兒童養育到公共人類學探索](https://www.arts.cuhk.edu.hk/~ant/tc/podcast/an/)》
-* 袁长庚老师：博士论文《[好日子，壞日子 : 華北弋城安利人的民族志研究](https://repository.lib.cuhk.edu.hk/en/item/cuhk-1292374)》
-* 饶一晨老师：一席演讲《[我们可能觉得自己不再是网瘾少年了，但还是很难摆脱一个个设计好的互联网黑洞 | 饶一晨 一席第861位讲者](https://mp.weixin.qq.com/s/xr1zn-lvxZgQx2aFjV1Oxw)》
-* 钱霖亮老师：个人专著《[爱的悖论：中国福利机构儿童养育的制度与伦理](https://book.douban.com/subject/36808884/)》
+* 安孟竹老师：
+  * 博士论文《[尋求有尊嚴的生活 : 在中國城市養育自閉兒](https://repository.lib.cuhk.edu.hk/tc/item/cuhk-3121649?solr_nav%5Bid%5D=ccbb99e7a65a88f0ac84&solr_nav%5Bpage%5D=0&solr_nav%5Boffset%5D=0)》
+  * 播客分享《[從自閉症兒童養育到公共人類學探索](https://www.arts.cuhk.edu.hk/~ant/tc/podcast/an/)》
+* 袁长庚老师：
+  * 博士论文《[好日子，壞日子 : 華北弋城安利人的民族志研究](https://repository.lib.cuhk.edu.hk/en/item/cuhk-1292374)》
+  * 发表文章《[“排毒”与“洗脑”：一个民族志个案中的身体与道德](https://mp.weixin.qq.com/s/0WB6BpluieaYeSZ0n7znOA)》
+* 饶一晨老师：
+  * 一席演讲《[我们可能觉得自己不再是网瘾少年了，但还是很难摆脱一个个设计好的互联网黑洞](https://mp.weixin.qq.com/s/xr1zn-lvxZgQx2aFjV1Oxw)》
+* 钱霖亮老师：
+  * 个人专著《[爱的悖论：中国福利机构儿童养育的制度与伦理](https://book.douban.com/subject/36808884/)》
 
 进击师还认为，国内不让这些老师「立」起来，将新鲜血液引向这部分老师，最后会导向两个结果：其一，培养出来的学生不知道人类学能干什么；其二，仍然可能会出现一部分有想法、想试探性地探索一些「离经叛道」议题的学生，但他们不知道如何切入、关注这些题目。
 
