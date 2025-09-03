@@ -1,7 +1,7 @@
 ---
 title: ''
 author: 黄国政
-date: '2025-09-03'
+date: '2025-09-03T22:14:00'
 slug: first-night-in-beijing
 categories: []
 tags: []
