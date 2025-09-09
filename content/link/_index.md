@@ -40,6 +40,8 @@ toc: true
 
 - [秘密花园](http://www.yini.org/)：一个1999年建立的网站，似乎是一代人的网络记忆，是花园、是美好、是旖旎，多愁善感的女子……
 
+- [AnthroSource](https://anthrosource.onlinelibrary.wiley.com/)：一份人类学外文阅读期刊，内容丰富。
+
 - [Sudan Memory](https://www.sudanmemory.org/cms/111/)：苏丹记忆。一个致力于保护和促进苏丹文化与文化遗产的数字化项目，在里面可以找到苏丹相关的文化与历史档案故事。我在里面发现了英国人类学家Evans-Pritchard拍摄的田野照片。
 
 - [Tales from the fairies](https://talesfromthefairies.wordpress.com/)：一个讲述关于魔法、想象、自然的故事的作家

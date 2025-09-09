@@ -122,7 +122,7 @@ CSS 样式中的不同声明用 `;` 隔开，同时建议在每条 CSS 样式后
 以上代码 CSS 选择器是 div，而非自定义的选择器，因此设置的 CSS 样式会作用于整个网站的 div，在此示例不仅会在示例板块里展示效果，还会影响本篇文章的 CSS 样式。
 {{% /notice %}}
 
-如果需要对特定的元素进行配置，则需要使用全局属性 class，关于这部分具体可见全局属性的[介绍](https://guozheng.rbind.io/project/front-end-class4/#%e4%ba%94html-%e5%85%a8%e5%b1%80%e5%b1%9e%e6%80%a7)。
+如果需要对特定的元素进行配置，则需要使用全局属性 class，通过 class 来给元素增加特定的标识。关于这部分具体可见全局属性的[介绍](https://guozheng.rbind.io/project/front-end-class4/#%e4%ba%94html-%e5%85%a8%e5%b1%80%e5%b1%9e%e6%80%a7)。
 
 {{% notice info "示例" %}}
 
@@ -421,3 +421,266 @@ CSS 样式太多，全部记下并不现实，关键还是需要知道在哪里�
 [^2]: 在不设置 width 的情况下，背景默认占据一整行。但在实际的界面中看到的并非完全占据整行全部空间，两边还是留下了小小的边距，这是 body 默认加进来的。
 
 [^3]: 这里的独占一行不会因为对 div 的宽度进行设置而受到改变，例如将 div 的宽度调小，接着加入 span 元素的内容，该内容仍然是位于 div 元素的下一行。如果需要改变，可以通过 flex 等布局进行设置。
+
+## 案例练习：介绍两位人类学家
+
+下面通过简单介绍两位与「本体论转向」有关的人类学家来进行案例练习。
+
+预期效果如下：
+
+![](https://cdn.jsdelivr.net/gh/residualsun1/blog-static/project/2025/09/09-08-3.png)
+
+首先要分析存在哪些结构（HTML），之后则是样式（CSS）。先从结构来看，有标题、图片、段落，实际上形成了两个区域，这两个区域刚好可以各自放进一个盒子（div）中。
+
+{{% notice content "示例" %}}
+```HTML
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>本体论转向人类学家</h1>
+  <div>
+    <h2>Viveiros de Castro</h2>
+    <img src="https://cdn.jsdelivr.net/gh/residualsun1/Front-end/CSS/images/castro.jpg" alt="">
+    <p>
+    Viveiros de Castro，一位来自巴西的人类学家，同时也是「本体论转向」的主要人物之一，他的重要贡献是解释了透视主义——这是一种亚马逊土著人的观点。他对透视主义的描述借鉴了 Gilles Deleuze，谈到人类和动物之间的一种无区别状态，以及自我和他者的相互渗透性。对 Castro 来说，透视主义是所有生物都起源于人类（“文化”），并通过成为动物身体（即“我们”所说的“自然”）将自己与人类分开的想法。在许多方面，这与 Descartes 二元论相反，在 Descartes 的二元论中，人类起源于动物，并继续在人类和自然之间创造二分法（文化将我们置于自然之上）。
+    </p>
+  </div>
+  <div>
+    <h2>Roy Wagner</h2>
+    <img src="https://cdn.jsdelivr.net/gh/residualsun1/Front-end/CSS/images/wagner.jpg" alt="">
+    <p>
+    Roy Wagner，一位对文化意义与文化创造性深具远见的理论家，2018 年 9 月 10 日逝世于美国维吉尼亚州 Charlottesville 的家中。Wagner 以巴布亚新几内亚亲属、仪式、神话研究著称，更重要的是，他将人类学的思维再现为「观点互换（reciprocity of perspectives）」的实验，启迪了人类学的「本体论转向（ontological turn）」，以及倒反（reverse）、对称、交叉的复数人类学。简介来自芭乐人类学译稿，详见https://guavanthropology.tw/article/7000。
+    </p>
+  </div>
+</body>
+</html>
+```
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>本体论转向人类学家</h1>
+  <div>
+    <h2>Viveiros de Castro</h2>
+    <img src="https://cdn.jsdelivr.net/gh/residualsun1/Front-end/CSS/images/castro.jpg" alt="">
+    <p>
+    Viveiros de Castro，一位来自巴西的人类学家，同时也是「本体论转向」的主要人物之一，他的重要贡献是解释了透视主义——这是一种亚马逊土著人的观点。他对透视主义的描述借鉴了 Gilles Deleuze，谈到人类和动物之间的一种无区别状态，以及自我和他者的相互渗透性。对 Castro 来说，透视主义是所有生物都起源于人类（“文化”），并通过成为动物身体（即“我们”所说的“自然”）将自己与人类分开的想法。在许多方面，这与 Descartes 二元论相反，在 Descartes 的二元论中，人类起源于动物，并继续在人类和自然之间创造二分法（文化将我们置于自然之上）。相关文章：https://mp.weixin.qq.com/s/f5zm8XqzQLYk8GXRGmtHww
+    </p>
+  </div>
+  <div>
+    <h2>Roy Wagner</h2>
+    <img src="https://cdn.jsdelivr.net/gh/residualsun1/Front-end/CSS/images/wagner.jpg" alt="">
+    <p>
+    Roy Wagner，一位对文化意义与文化创造性深具远见的理论家，2018 年 9 月 10 日逝世于美国维吉尼亚州 Charlottesville 的家中。Wagner 以巴布亚新几内亚亲属、仪式、神话研究著称，更重要的是，他将人类学的思维再现为「观点互换（reciprocity of perspectives）」的实验，启迪了人类学的「本体论转向（ontological turn）」，以及倒反（reverse）、对称、交叉的复数人类学。简介来自芭乐人类学译稿，详见https://guavanthropology.tw/article/7000。
+    </p>
+  </div>
+</body>
+</html>
+
+{{% /notice %}}
+
+接着是样式，这里的样式需要调整的地方包括段落字体、图片大小以及整体布局，整体来说，这里的样式调整并不难，但更重要的是调整的具体思路。
+
+* 字体调整：由于两个介绍区域内的效果一致，因此共用一个标识选择器即可。这里我们将标识选择器定义为「keyword」，并放在 span 元素中。
+
+  ```CSS
+  .keyword {
+      background-color:burlywood;
+      color: white;
+      font-size: 24px;
+    }
+  ```
+  
+  ```HTML
+   <span class="keyword">Viveiros de Castro</span>……
+   <span class="keyword">Roy Wagner</span>……
+  ```
+
+* 整体布局：首先要调整布局，得先找到 div，但在真实的开发过程中，div 的数量可能会特别多，最好可以给予标识——我们可以将一个又一个 div 盒子看作「一项」又「一项」，在此基础上理解，可以给盒子标识为 item。既然两个盒子的效果一样，就不用区分为 item1 或 item2，甚至更多，只需要用到 item 一个即可。其次，由于两个盒子中的文本段落都各占据了整一行，如果要让两个盒子区域能够位于同一行，可以通过调整 div 整体的宽度来限制文本，我们在此将两个 div 的宽度都设置为 250px。[^4]
+
+  
+  ```CSS
+  .item {
+      width: 250px;
+    }
+  ```
+
+  ```HTML
+  <div class="item">
+  <h2>Viveiros de Castro</h2>
+  <img src="https://cdn.jsdelivr.net/gh/residualsun1/Front-end/CSS/images/castro.jpg" alt="">
+    <p>
+    <span class="keyword">Viveiros de Castro</span>，一位来自巴西的人类学家，同时也是「本体论转向」的主要人物之一，他的重要贡献是解释了透视主义——这是一种亚马逊土著人的观点。他对透视主义的描述借鉴了 Gilles Deleuze，谈到人类和动物之间的一种无区别状态，以及自我和他者的相互渗透性。对 Castro 来说，透视主义是所有生物都起源于人类（“文化”），并通过成为动物身体（即“我们”所说的“自然”）将自己与人类分开的想法。在许多方面，这与 Descartes 二元论相反，在 Descartes 的二元论中，人类起源于动物，并继续在人类和自然之间创造二分法（文化将我们置于自然之上）。相关文章：https://mp.weixin.qq.com/s/f5zm8XqzQLYk8GXRGmtHww
+    </p>
+  </div>
+
+  <div class="item">
+  <h2>Roy Wagner</h2>
+  <img src="https://cdn.jsdelivr.net/gh/residualsun1/Front-end/CSS/images/wagner.jpg" alt="">
+  <p>
+  <span class="keyword">Roy Wagner</span>，一位对文化意义与文化创造性深具远见的理论家，2018 年 9 月 10 日逝世于美国维吉尼亚州 Charlottesville 的家中。Wagner 以巴布亚新几内亚亲属、仪式、神话研究著称，更重要的是，他将人类学的思维再现为「观点互换（reciprocity of perspectives）」的实验，启迪了人类学的「本体论转向（ontological turn）」，以及倒反（reverse）、对称、交叉的复数人类学。简介来自芭乐人类学译稿，详见https://guavanthropology.tw/article/7000。
+  </p>
+  </div>
+  ```
+
+  这一步完成以后，两个 div 区域的文字都被限制在了 div 的宽度之内，但 Wagner 的图片相较 Castro 的却超出了 div 的宽度限制。如果我们需要图片宽度和 div 宽度保持一致，则需要设置图片宽度。同样地，在开发过程中可能存在多个 img，若能指定 img 进行宽度设置会更好，这里有三种方法：
+  
+  * 第一，直接选择 img 元素选择器
+  
+    ```CSS
+    img {
+    width: 250px;
+    }
+    ```
+  
+  * 第二，在 img 后进行标识选择器。
+    ```CSS
+    .image {
+    width: 250px;
+    }
+    ```
+    ```HTML
+    <img class="image" src="https://cdn.jsdelivr.net/gh/residualsun1/Front-end/CSS/images/wagner.jpg" alt="">
+    ```
+  
+  * 第三，使用后代选择器。
+    ```CSS
+    .item img {
+    width: 250px;
+    }
+    ```
+    ```HTML
+    <div class="item">
+      <h2>Roy Wagner</h2>
+      <img src="https://cdn.jsdelivr.net/gh/residualsun1/Front-end/CSS/images/wagner.jpg" alt="">
+      <p>
+      <span class="keyword">Roy Wagner</span>，一位对文化意义与文化创造性深具远见的理论家，2018 年 9 月 10 日逝世于美国维吉尼亚州 Charlottesville 的家中。Wagner 以巴布亚新几内亚亲属、仪式、神话研究著称，更重要的是，他将人类学的思维再现为「观点互换（reciprocity of perspectives）」的实验，启迪了人类学的「本体论转向（ontological turn）」，以及倒反（reverse）、对称、交叉的复数人类学。简介来自芭乐人类学译稿，详见https://guavanthropology.tw/article/7000。
+      </p>
+    </div>
+    ```
+  
+  这时候两个 div 区域内的文本和图片宽度都达到了一致，但由于 div 元素默认 block 的块级特性，所以两个盒子仍然各占一行，此时则需要改变 div 特性以实现两个盒子水平排布的效果。这里提供两种方案：
+
+  * 第一种是改变元素的特性和垂直方向的布局。
+    ```CSS
+    .item {
+      width: 250px;
+      display: inline-block;
+      vertical-align: top; 
+    }
+    ```
+  
+  * 第二种是通过浮动完成。
+    ```CSS
+    .item {
+      width: 250px;
+      float: left;
+    }
+    ```
+    
+  两种方案，前者会使得两个 div 区域之间留有一点缝隙空间，后者效果下的两个 div 区域会紧密贴合。
+
+{{% notice content "最终示例" %}}
+
+```HTML
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .keyword {
+      background-color: burlywood;
+      color: white;
+      font-size: 24px;
+    }
+    .item {
+      width: 250px;
+      display: inline-block;
+      vertical-align: top; 
+    }
+    .item img {
+      width: 250px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>本体论转向人类学家</h1>
+  
+  <div class="item">
+  <h2>Viveiros de Castro</h2>
+  <img src="https://cdn.jsdelivr.net/gh/residualsun1/Front-end/CSS/images/castro.jpg" alt="">
+    <p>
+    <span class="keyword">Viveiros de Castro</span>，一位来自巴西的人类学家，同时也是「本体论转向」的主要人物之一，他的重要贡献是解释了透视主义——这是一种亚马逊土著人的观点。他对透视主义的描述借鉴了 Gilles Deleuze，谈到人类和动物之间的一种无区别状态，以及自我和他者的相互渗透性。对 Castro 来说，透视主义是所有生物都起源于人类（“文化”），并通过成为动物身体（即“我们”所说的“自然”）将自己与人类分开的想法。在许多方面，这与 Descartes 二元论相反，在 Descartes 的二元论中，人类起源于动物，并继续在人类和自然之间创造二分法（文化将我们置于自然之上）。相关文章：https://mp.weixin.qq.com/s/f5zm8XqzQLYk8GXRGmtHww
+    </p>
+  </div>
+
+  <div class="item">
+  <h2>Roy Wagner</h2>
+  <img src="https://cdn.jsdelivr.net/gh/residualsun1/Front-end/CSS/images/wagner.jpg" alt="">
+  <p>
+  <span class="keyword">Roy Wagner</span>，一位对文化意义与文化创造性深具远见的理论家，2018 年 9 月 10 日逝世于美国维吉尼亚州 Charlottesville 的家中。Wagner 以巴布亚新几内亚亲属、仪式、神话研究著称，更重要的是，他将人类学的思维再现为「观点互换（reciprocity of perspectives）」的实验，启迪了人类学的「本体论转向（ontological turn）」，以及倒反（reverse）、对称、交叉的复数人类学。简介来自芭乐人类学译稿，详见https://guavanthropology.tw/article/7000。
+  </p>
+  </div>
+</body>
+</html> 
+```
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .keyword {
+      background-color: burlywood;
+      color: white;
+      font-size: 24px;
+    }
+    .item {
+      width: 250px;
+      display: inline-block;
+      vertical-align: top; 
+    }
+    .item img {
+      width: 250px;
+    }
+  </style>
+</head>
+<body>
+  
+  <h1>本体论转向人类学家</h1>
+
+  <div class="item">
+  <h2>Viveiros de Castro</h2>
+  <img src="https://cdn.jsdelivr.net/gh/residualsun1/Front-end/CSS/images/castro.jpg" alt="">
+    <p>
+    <span class="keyword">Viveiros de Castro</span>，一位来自巴西的人类学家，同时也是「本体论转向」的主要人物之一，他的重要贡献是解释了透视主义——这是一种亚马逊土著人的观点。他对透视主义的描述借鉴了 Gilles Deleuze，谈到人类和动物之间的一种无区别状态，以及自我和他者的相互渗透性。对 Castro 来说，透视主义是所有生物都起源于人类（“文化”），并通过成为动物身体（即“我们”所说的“自然”）将自己与人类分开的想法。在许多方面，这与 Descartes 二元论相反，在 Descartes 的二元论中，人类起源于动物，并继续在人类和自然之间创造二分法（文化将我们置于自然之上）。相关文章：https://mp.weixin.qq.com/s/f5zm8XqzQLYk8GXRGmtHww
+    </p>
+  </div>
+
+  <div class="item">
+  <h2>Roy Wagner</h2>
+  <img src="https://cdn.jsdelivr.net/gh/residualsun1/Front-end/CSS/images/wagner.jpg" alt="">
+  <p>
+  <span class="keyword">Roy Wagner</span>，一位对文化意义与文化创造性深具远见的理论家，2018 年 9 月 10 日逝世于美国维吉尼亚州 Charlottesville 的家中。Wagner 以巴布亚新几内亚亲属、仪式、神话研究著称，更重要的是，他将人类学的思维再现为「观点互换（reciprocity of perspectives）」的实验，启迪了人类学的「本体论转向（ontological turn）」，以及倒反（reverse）、对称、交叉的复数人类学。简介来自芭乐人类学译稿，详见https://guavanthropology.tw/article/7000。
+  </p>
+  </div>
+</body>
+</html>
+{{% /notice %}}
+
+[^4]: 不对 div 设置高度，div 的高度会由里面的内容撑起来
