@@ -40,7 +40,7 @@ HTML 负责网页的内容结构，CSS 负责网页的视觉体验，JavaScript 
 
 ### 用户的角度
 
-在浏览器输入网站地址或域名（例如 bilibili.com），**浏览器**会通过 **DNS**（Domain Name System） 服务器将该域名解析为对应的 **IP 地址**，然后根据该 IP 地址找到对应的**服务器**，将服务器中存储好的 HTML、CSS、JavaScript 等资源下载到浏览器中，接下来浏览器会对这些资源进行识别——渲染引擎会将 HTML、CSS 渲染成对应的界面，js 引擎则对 JavaScript 进行解析。
+在浏览器输入网站地址或域名（例如 bilibili.com），**浏览器**会通过 **DNS**（Domain Name System） ——域名服务器将该域名解析为对应的 **IP 地址**，然后根据该 IP 地址找到对应的**服务器**，将服务器中存储好的 HTML、CSS、JavaScript 等资源下载到浏览器中，接下来浏览器会对这些资源进行识别——渲染引擎会将 HTML、CSS 渲染成对应的界面，js 引擎则对 JavaScript 进行解析。
 
 以上过程完成后，浏览器则可以向用户呈现网页页面。
 
