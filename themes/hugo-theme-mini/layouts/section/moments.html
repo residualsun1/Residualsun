@@ -1,23 +1,65 @@
 {{ define "main" }}
 <section id="section">
-  
-<h1>{{ .Title }}</h1>
+  <h1>{{ .Title }}</h1>
 
-<div class="notes-grid">
   {{ $notes := .Pages.ByDate.Reverse }}
+  {{ $perPage := 9 }}
+  {{ $p := .Paginate $notes $perPage }}
   {{ $total := len $notes }}
-  {{ $i := 0 }}
-  {{ range $notes }}
-    {{ $i = add $i 1 }}
-    <div class="note-card">
-      <div class="note-meta">第 {{ sub $total (sub $i 1) }} 道 ｜ {{ .Date.Format "2006 年 1 月 2 日 15:04" }}</div>
-      {{ if ne .Params.title "" }}
-      <h3>{{ .Title }}</h3>
-      {{ end }}
-      <div class="note-content">{{ .Content }}</div>
-    </div>
-  {{ end }}
-</div>
+  {{ $start := mul (sub $p.PageNumber 1) $perPage }}
+  {{ $i := $start }}
 
+  <div id="notes-grid" class="notes-grid">
+    {{ range $p.Pages }}
+      {{ $i = add $i 1 }}
+      <article class="note-card">
+        <div class="note-meta">第 {{ sub $total (sub $i 1) }} 道 ｜ {{ .Date.Format "2006 年 1 月 2 日 15:04" }}</div>
+        {{ if ne .Params.title "" }}<h3>{{ .Title }}</h3>{{ end }}
+        <div class="note-content">{{ .Content }}</div>
+      </article>
+    {{ end }}
+  </div>
+
+  <div class="pagination" id="pagination">
+    {{ if $p.HasNext }}
+      <a id="next-page-link" href="{{ $p.Next.URL }}" style="display:none"></a>
+      <div class="load-more-wrap"><button id="load-more-btn" class="btn">加载更多</button></div>
+    {{ end }}
+  </div>
 </section>
+
+<script>
+document.addEventListener('DOMContentLoaded', ()=> {
+  const next = document.querySelector('#next-page-link'),
+        btn  = document.querySelector('#load-more-btn'),
+        grid = document.querySelector('#notes-grid');
+  if (!next || !btn || !grid) return;
+
+  btn.addEventListener('click', async () => {
+    btn.disabled = true;
+    const old = btn.textContent; btn.textContent = '加载中…';
+    try {
+      const res = await fetch(next.href, { credentials: 'same-origin' });
+      if (!res.ok) throw new Error(res.status);
+      const doc = new DOMParser().parseFromString(await res.text(), 'text/html');
+      const remote = doc.querySelector('#notes-grid') || doc.querySelector('.notes-grid');
+      if (remote) {
+        const cards = remote.querySelectorAll('.note-card');
+        if (cards.length) {
+          const frag = document.createDocumentFragment();
+          cards.forEach(c => frag.appendChild(c.cloneNode(true)));
+          grid.appendChild(frag);
+        }
+      }
+      const newNext = doc.querySelector('#next-page-link');
+      if (newNext && newNext.href) { next.href = newNext.href; btn.disabled = false; btn.textContent = old; }
+      else btn.remove();
+    } catch (e) {
+      console.error('load more error', e);
+      btn.disabled = false; btn.textContent = '加载失败，重试';
+      setTimeout(()=>{ if (btn) btn.textContent = old }, 2000);
+    }
+  });
+});
+</script>
 {{ end }}
