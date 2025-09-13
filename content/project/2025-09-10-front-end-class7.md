@@ -7,7 +7,6 @@ categories: []
 tags:
   - CSS
   - 进制
-draft: true
 ---
 
 <!--more-->
@@ -195,6 +194,71 @@ color: #FFFFFF
 
 ## 四、Chrome 调试工具
 
-## 五、浏览器渲染流程
+稍微再补充一下在 Chrome 进行调试的内容，但不多：
+
+* 使用快捷键 <kbd>Ctrl</kbd> + <kbd>+</kbd> / <kbd>-</kbd> 可以调整页面或字体大小。
+* 直接在页面中的某个特定区域右键并选择检查，可以直接定位查看该区域的 HTML 结构。
+* 快捷键入 <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>C</kbd> 后，鼠标移动到哪个特定区域都会自动选中并显示其具体 HTML 结构。这个功能——选中元素——也可以在打开调试工具后点击左上角的的箭头实现。
+* 以上两种方式都可以查看具体的 HTML 结构，在此基础上，可以通过删除或添加某些元素来查看网页结构的变化。
+* 除了改变 HTML，还可以通过增删 CSS 来调试网页样式。
+
+![](https://cdn.jsdelivr.net/gh/residualsun1/blog-static/project/2025/09/09-10-2.png)
+
+## 五、浏览器的渲染流程
+
+这里对浏览器的渲染流程进行一个很简要的介绍，只涉及 HTML 和 CSS，尚未包括 JavaScript。
+
+```HTML
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  
+ <div class="home">
+  <div class="title">
+   <span>一段文本</span>
+   <span>两段文本</span>
+  </div>
+  <h1>这是一级标题</h1>
+ </div>
+
+</body>
+</html>
+```
+
+上面的代码包含了 HTML 结构和 CSS 样式两部分，一个基础网页的展示，最简要来说就是将这两部分交由浏览器来进行解析和渲染。接下来看看该过程的具体原理。
+
+![](https://cdn.jsdelivr.net/gh/residualsun1/blog-static/project/2025/09/09-10-3.jpg)
+
+由上图可以看出，浏览器渲染的第一步是加载 HTML——过去我们说过，当我们访问某个网页时，首先会下载一份 index.html 的文件，这意味着浏览器首先获取的是 HTML 文件，先加载的也是 HTML（Load HTML），加载完成后开始从上往下地依次解析 HTML（Parse HTML），如从文档声明到 head 元素。
+
+当解析到 head 元素时，往往会遇到 CSS 样式，因此需要讨论一下 CSS 的情况。如果 CSS 样式是以内联样式或内部样式表的形式存在于 HTML 中，那么这部分样式会与 HTML 一起被下载；但如果 CSS 样式是以 link 元素的形式从外部独立文件引入，浏览器此时便还需要从服务器中下载这部分 CSS，此时出现的问题是：**这会儿浏览器是继续往下解析 HTML，还是等待 CSS 下载完毕后再继续解析 HTML**？答案是**不会等待，而是同时进行**，即**浏览器在加载和解析 CSS 时，仍然会独立地解析 HTML，两者互不干扰**。
+
+从 head 元素到 body 元素，网页中往往可能会有一些复杂的嵌套结构（如上述代码），在浏览器解析完整个 HTML 结构后，浏览器会将整个结构转换为树形的结构，这就是 DOM Tree，如下所示。
+
+```ASCII
+HTML
+├── head
+│   ├── meta
+│   ├── title
+│   └── link
+└── body
+    └── div
+        ├── div
+        │   ├── span
+        │   └── span
+        └── h1
+```
+
+但转换出来的 DOM Tree 不会马上被渲染和展示，因为还不清楚 DOM Tree 中的每个节点（DOM nodes）有什么样式，只有 HTML 而还没 CSS，所以还要等待另一个工作流上的 CSS 被加载和解析完，然后给 DOM Tree 中的各节点（DOM nodes）依次附加上 CSS 样式，最后才统一渲染[^2]，由 DOM Tree 转换为 Render Tree，Render Tree 开始则可以真正开始进行渲染。换句话说，浏览器最终的目的就是获取 Render Tree，并根据 Render Tree 上的结构来进行最后的渲染和展示（Display）。
+
+需要注意的是，往后还会讲到 JavaScript，因为在加载和解析 HTML 的过程中，JavaScript 可能会影响 DOM。
 
 [^1]: 回顾一下，img 和 iframe 元素中链接资源的属性都是 `src`，link 的是 `href`。此外，注意 link 元素虽可以引入 CSS 资源，但它是 HTML 中的元素，是标记语言，而非 CSS 这样的样式语言。
+
+[^2]: 一般来说都是如此，因为如果 DOM Tree 先被渲染了，待 CSS 解析后则还要再渲染一次，这样会影响性能。
