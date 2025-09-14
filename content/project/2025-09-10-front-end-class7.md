@@ -11,17 +11,23 @@ tags:
 
 <!--more-->
 
-## 一、link 元素
+## 一、`link` 元素
 
 ```HTML
-<link rel="" href="">
+......
+<head>
+......
+  <title>Document</title>
+  <link rel="" href="">
+</head>
+......
 ```
 
-link 元素是外部资源链接元素，规范了文档与外部资源的关系，通常是在 head 元素之中。其最常用的链接是样式表（CSS），但也可以用来创建站点图标，比如 favicon 图标。
+`link` 元素是外部资源链接元素，规范了文档与外部资源的关系，通常是在 `head` 元素之中。其最常用的链接是样式表（CSS），但也可以用来创建站点图标，比如 favicon 图标。
 
-link 元素最常用的属性是 href[^1]，该属性指定被链接资源的 URL，这里的 URL 可以是绝对的，也可以是相对的；另一个常用属性是 rel，它指定 link 元素的链接类型——如前所述，包括 stylesheet（CSS 样式）和 icon（站点图标），更多类型可见[此处](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes/rel)。
+`link` 元素最常用的属性是 `href`[^1]，该属性指定被链接资源的 URL，这里的 URL 可以是绝对的，也可以是相对的；另一个常用属性是 `rel`，它指定 `link` 元素的链接类型——如前所述，包括 stylesheet（CSS 样式）和 icon（站点图标），更多类型可见[此处](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes/rel)。
 
-在此可以聊聊 link 元素中有助于**网站实现性能优化**的属性 `dns-prefetch`。此处只是看名称也可以尝试见名知意。过去我们在「[网页的显示过程](http://guozheng.rbind.io/project/front-end-class2/#%E7%BD%91%E9%A1%B5%E7%9A%84%E6%98%BE%E7%A4%BA%E8%BF%87%E7%A8%8B)」中聊过 DNS 的含义，即域名解析服务器。
+在此可以聊聊 `link` 元素中有助于**网站实现性能优化**的属性 `dns-prefetch`。此处只是看名称也可以尝试见名知意。过去我们在「[网页的显示过程](http://guozheng.rbind.io/project/front-end-class2/#%E7%BD%91%E9%A1%B5%E7%9A%84%E6%98%BE%E7%A4%BA%E8%BF%87%E7%A8%8B)」中聊过 DNS 的含义，即域名解析服务器。
 
 所谓域名解析服务器会将域名解析为对应的 IP 地址，进而找到对应的服务器，并将相关资源下载到浏览器中。但从域名解析为 IP 地址，这个过程需要花费一定的时间，因为 DNS 需要查询网站备案，而备案需要绑定对应服务器，这意味着默认的 DNS 解析需要经过查询备案和服务器的过程，最终才匹配到对应的 IP 地址。`dns-prefetch` 的功能正是预先执行 DNS 解析，这意味着我们下次再搜索相关域名时，该域名已经和对应的 IP 地址建立了映射关系，DNS 将不再需要花费时间进行解析。
 
@@ -235,11 +241,11 @@ color: #FFFFFF
 
 ![](https://cdn.jsdelivr.net/gh/residualsun1/blog-static/project/2025/09/09-10-3.jpg)
 
-由上图可以看出，浏览器渲染的第一步是加载 HTML——过去我们说过，当我们访问某个网页时，首先会下载一份 index.html 的文件，这意味着浏览器首先获取的是 HTML 文件，先加载的也是 HTML（Load HTML），加载完成后开始从上往下地依次解析 HTML（Parse HTML），如从文档声明到 head 元素。
+由上图可以看出，浏览器渲染的第一步是加载 HTML——过去我们说过，当我们访问某个网页时，首先会下载一份 `index.html` 的文件，这意味着浏览器首先获取的是 HTML 文件，先加载的也是 HTML（Load HTML），加载完成后开始从上往下地依次解析 HTML（Parse HTML），如从文档声明到 `head` 元素。
 
-当解析到 head 元素时，往往会遇到 CSS 样式，因此需要讨论一下 CSS 的情况。如果 CSS 样式是以内联样式或内部样式表的形式存在于 HTML 中，那么这部分样式会与 HTML 一起被下载；但如果 CSS 样式是以 link 元素的形式从外部独立文件引入，浏览器此时便还需要从服务器中下载这部分 CSS，此时出现的问题是：**这会儿浏览器是继续往下解析 HTML，还是等待 CSS 下载完毕后再继续解析 HTML**？答案是**不会等待，而是同时进行**，即**浏览器在加载和解析 CSS 时，仍然会独立地解析 HTML，两者互不干扰**。
+当解析到 `head` 元素时，往往会遇到 CSS 样式，因此需要讨论一下 CSS 的情况。如果 CSS 样式是以内联样式或内部样式表的形式存在于 HTML 中，那么这部分样式会与 HTML 一起被下载；但如果 CSS 样式是以 `link` 元素的形式从外部独立文件引入，浏览器此时便还需要从服务器中下载这部分 CSS，此时出现的问题是：**这会儿浏览器是继续往下解析 HTML，还是等待 CSS 下载完毕后再继续解析 HTML**？答案是**不会等待，而是同时进行**，即**浏览器在加载和解析 CSS 时，仍然会独立地解析 HTML，两者互不干扰**。
 
-从 head 元素到 body 元素，网页中往往可能会有一些复杂的嵌套结构（如上述代码），在浏览器解析完整个 HTML 结构后，浏览器会将整个结构转换为树形的结构，这就是 DOM Tree，如下所示。
+从 `head` 元素到 `body` 元素，网页中往往可能会有一些复杂的嵌套结构（如上述代码），在浏览器解析完整个 HTML 结构后，浏览器会将整个结构转换为树形的结构，这就是 DOM Tree，如下所示。
 
 ```ASCII
 HTML
@@ -259,6 +265,6 @@ HTML
 
 需要注意的是，往后还会讲到 JavaScript，因为在加载和解析 HTML 的过程中，JavaScript 可能会影响 DOM。
 
-[^1]: 回顾一下，img 和 iframe 元素中链接资源的属性都是 `src`，link 的是 `href`。此外，注意 link 元素虽可以引入 CSS 资源，但它是 HTML 中的元素，是标记语言，而非 CSS 这样的样式语言。
+[^1]: 回顾一下，`img` 和 `iframe` 元素中链接资源的属性都是 `src`，`link` 的是 `href`。此外，注意 `link` 元素虽可以引入 CSS 资源，但它是 HTML 中的元素，是标记语言，而非 CSS 这样的样式语言。
 
 [^2]: 一般来说都是如此，因为如果 DOM Tree 先被渲染了，待 CSS 解析后则还要再渲染一次，这样会影响性能。
