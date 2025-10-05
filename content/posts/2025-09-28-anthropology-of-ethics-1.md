@@ -7,7 +7,6 @@ categories: []
 tags: 
   - 人类学
   - 伦理人类学
-draft: true
 ---
 
 <!--more-->
