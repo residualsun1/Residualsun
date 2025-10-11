@@ -14,9 +14,7 @@ tags:
 
 {{% notice content "2025 年 10 月 11 日 我想记住的" %}}
 
-<center>
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=1945802821&auto=0&height=66"></iframe>
-</center>
 
 谨以此文记录我与 Z 外出时感受到的那些美好时刻——或许，所谓「美好时刻」可以与 Z 本人分离，也可以与我和 Z 的尴尬的关系分离。我要坦诚，在我这一生中，我确实渴望一段感情，一段让我愿意如「飞蛾扑火」般疯狂的感情，而与 Z 的相处让我感受到了一股愿意为此奋不顾身的着迷。但我是幼稚的，轻易便会将所谓的「喜欢」和「心动」看得十分沉重，我与她分明没有进入关系，但我却会因为我们的距离、忽远忽近——如果这不是我一厢情愿地理解——而内耗、痛苦、茶饭不思。
 
