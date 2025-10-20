@@ -110,7 +110,7 @@ James Laidlaw 被认为是「德性伦理」的重要代表，在 Laidlaw 身上
 
 应当如何理解「Morality」？「Morality」可以简单理解为某种具有**价值**导向的规范，但它对价值并没有鲜明的解释，因而留下了一些问题。面对同一个问题，「德性伦理」的回应方式是对「Morality」进行强烈的反思，但需要注意的是，它并非局限于宗教的语境，或者说行动者对世界的反思要全然借助于宗教教义，而非回归自身出发，相反，「德性伦理」同样注重入世体验，还会更**强烈地**询问「**我要如何活在这个世界中**」。
 
-以 Saba Mahmood 的研究[为例](https://mp.weixin.qq.com/s/-cDsdJ8bHpMefkIdmWP7PA)，里面涉及埃及的前进运动，妇女们需要到清真寺中自发学习，并且会自行戴上面纱。但在这里，妇女并非是出于遵循教育而学习或是戴上面纱，而是女性们认为自身在这样的处境下能做的事情便是想要怎么去学习。唯有如此，她们认为才能保持纯洁，而这「纯洁」会让她们更好地面对自己的丈夫、自己所身处的社区以及彼时动乱的埃及国家。Joel Robbins 研究的乌拉米人则面临着一种生存时的强烈自我挣扎感，而这种感受来源于乌拉米人自身在作为教徒的同时，又面临着作为活着的教徒，只要生活下去就会违背教义的境况——「我」在其中永远有罪，「我」应该怎么办？「我」要怎么承受自己的罪？这看似属于宗教神学范畴，但所有的宗教与神学都要解决现实中教徒的问题。还有 [Charles Hirschkind](https://charleshirschkind.com/) 研究的伊斯兰录像带政治，他们的作品中都带有一股强烈的追问：「**想要成为什么？**」而这种取向在 Alasdair Chalmers MacIntyre 和 Bernard Williams 对伦理的讨论中也能感受到。
+以 Saba Mahmood 对开罗女性虔敬运动的研究[为例](https://mp.weixin.qq.com/s/-cDsdJ8bHpMefkIdmWP7PA)，妇女们需要到清真寺中自发学习，并且会自行戴上面纱。但在这里，妇女并非是出于遵循教育而学习或是戴上面纱，而是女性们认为自身在这样的处境下能做的事情便是想要怎么去学习。唯有如此，她们认为才能保持纯洁，而这「纯洁」会让她们更好地面对自己的丈夫、自己所身处的社区以及彼时动乱的埃及国家。Joel Robbins 研究的乌拉米人则面临着一种生存时的强烈自我挣扎感，而这种感受来源于乌拉米人自身在作为教徒的同时，又面临着作为活着的教徒，只要生活下去就会违背教义的境况——「我」在其中永远有罪，「我」应该怎么办？「我」要怎么承受自己的罪？这看似属于宗教神学范畴，但所有的宗教与神学都要解决现实中教徒的问题。还有 [Charles Hirschkind](https://charleshirschkind.com/) 研究的伊斯兰录像带政治，他们的作品中都带有一股强烈的追问：「**想要成为什么？**」而这种取向在 Alasdair Chalmers MacIntyre 和 Bernard Williams 对伦理的讨论中也能感受到。
 
 但日常语言哲学的取径则显得更「弱」或「模糊」：道德/Morality 在生活之中，但并没有直接去辨认什么就是「好·坏」，「善·恶」，相反，它更试图呈现「**Morality」如何弥散在日常生活之中——人处于世界之中，但关注的并非人本身，而是世界本身如何将人包裹于其中并与人的每一处连接，因而会呈现出人在世界中的脆弱性、无力承受、崩溃的状态，以及在坍塌以后又如何于其中努力重新建立、维系与世界的相互联系**。
 
@@ -194,17 +194,11 @@ Laidlaw 则是做了很长时间研究，在年纪大了以后抽身出来进行
 ### 英文
 
 [1] Charles Hirschkind, 2009, *The Ethical Soundscape: Cassette Sermons and Islamic Counterpublics*, Columbia University Press.  
-[2] James Faubion, 2001. Toward an Anthropology of
-Ethics: Foucault and the Pedagogies of Autopoiesis.
-Representations 74（1）：83‒104.  
+[2] James Faubion, 2001. Toward an Anthropology of Ethics: Foucault and the Pedagogies of Autopoiesis. Representations 74（1）：83‒104.  
 [3] James Laidlaw, 1991, *Riches and Renunciation Religion, Economy, and Society Among the Jains*. Oxford University Press.  
-[4] James Laidlaw. 2002, For an Anthropology of Ethics and
-Freedom. Journal of the Royal Anthropological
-Institute 8（2）：311‒32.  
+[4] James Laidlaw. 2002, For an Anthropology of Ethics and Freedom. Journal of the Royal Anthropological Institute 8（2）：311‒32.  
 [5] Joel Robbins, 2004, *Becoming Sinners: Christianity and Moral Torment in a Papua New Guinea Society*, Berkeley, California: University of California Press.  
-[6] Jarrett Zigon, 2007, Moral Breakdown and the Ethical Demand: A Theoretical Framework for an Anthropology of Moralities, Anthropological Theory 7(2): 131–150.
-[7] Jarrett Zigon, 2008, *Morality: An Anthropological Perspective*, Bloomsbury Academic.
-[8] Michael Lambek, 2000, The Anthropology of Religion and
-the Quarrel between Poetry and Philosophy. Current
-Anthropology 41（3）：309‒20.  
+[6] Jarrett Zigon, 2007, Moral Breakdown and the Ethical Demand: A Theoretical Framework for an Anthropology of Moralities, Anthropological Theory 7(2): 131–150.  
+[7] Jarrett Zigon, 2008, *Morality: An Anthropological Perspective*, Bloomsbury Academic.  
+[8] Michael Lambek, 2000, The Anthropology of Religion and the Quarrel between Poetry and Philosophy. Current Anthropology 41（3）：309‒20.  
 [9] Signe Howell, 1996, *The Ethnography of Moralities*, Routledge.  
