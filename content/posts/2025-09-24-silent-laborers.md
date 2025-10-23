@@ -1,5 +1,5 @@
 ---
-title: 触摸「静寂」之处：《靜寂工人：碼頭的日與夜》
+title: 阅读札记 | 触摸「静寂」之处：《靜寂工人：碼頭的日與夜》
 author: 黄国政
 date: '2025-09-24'
 slug: silent-laborers

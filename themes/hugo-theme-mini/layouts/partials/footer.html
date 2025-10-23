@@ -8,14 +8,28 @@
 {{ $sectionsToInclude := slice "posts" "project" }}
 {{ $pagesToCount := where .Site.RegularPages "Section" "in" $sectionsToInclude }}
 
-共 <span style='color: black;'>{{ len $pagesToCount }}</span> 篇文章
+共 <span class="num-format" data-num="{{ len $pagesToCount }}" style='color: black;'>{{ len $pagesToCount }}</span> 篇文章
 
 {{ $totalWords := 0 }}
 {{ range $pagesToCount }}
     {{ $totalWords = add $totalWords .WordCount }}
 {{ end }}
 
-总计 <span style='color: black;'>{{ $totalWords }}</span> 字
+总计 <span class="num-format" data-num="{{ $totalWords }}" style='color: black;'>{{ $totalWords }}</span> 字
+
+<!-- 数字格式化脚本：将 data-num 中的原始数字格式化为带千分位逗号的显示 -->
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  document.querySelectorAll('.num-format').forEach(function(el){
+    var raw = el.getAttribute('data-num');
+    var n = Number(raw);
+    if (!isNaN(n)) {
+      // 使用 'en-US' 强制用逗号作为千位分隔符；若你想跟随访客本地设置，可去掉 'en-US'
+      el.textContent = n.toLocaleString('en-US');
+    }
+  });
+});
+</script>
 
 {{ if .Site.Params.showRunTime }}
     <div id="siteRunTime" style="letter-spacing: 1.5px;"></div>
