@@ -2,13 +2,13 @@
 
 <section id="section">
     <h1 class="title">{{ .Title }}</h1>
-    
+  
     {{ if or .Site.Params.showToc .Params.showToc }}
         {{ partial "toc.html" . }}
     {{ end }}
   
     {{ .Content }}
-  
+    <!--</br></br>
+    {{ partial "comments.html" . }}-->
 </section>
-
 {{ end }}

@@ -32,7 +32,7 @@ tags:
 * Charles Hirschkind：查尔斯·赫施肯，美国人类学家
 * Michael Lambek： 迈克尔·兰贝克，加拿大人类学家
 * Veena Das：维娜·达斯，印度人类学家
-* Lauren Berlant：劳伦·贝兰特，美国人类学家
+* Lauren Berlant：劳伦·贝兰特，美国文化理论学者
 * Didier Fassin：迪迪埃·法桑，法国人类学家
 * Arthur Kleinman：凯博文，美国人类学家
 * Cheryl Mattingly：雪莉·马丁利，美国人类学家

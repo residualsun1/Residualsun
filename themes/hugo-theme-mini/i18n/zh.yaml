@@ -1,32 +1,32 @@
 home:
   other: 首页
 
+about:
+  other: 关于
+
 archive:
   other: 日志
 
 project:
   other: 技术
 
-vitae:
-  other: 简历
-
 tags:
   other: 标签
-
-moments:
-  other: 思绪
-
-sound:
-  other: 声音
 
 link:
   other: 链接
 
+vitae:
+  other: 简历
+  
+program:
+  other: 项目
+  
+moments:
+  other: 思绪
+
 subscribe:
   other: 订阅
-
-about:
-  other: 关于
 
 404title:
   other: 敬请期待
