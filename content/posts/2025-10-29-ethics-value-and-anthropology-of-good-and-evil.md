@@ -79,4 +79,14 @@ Robbins 对「创伤」的叙述似乎是想论证 savage slot（野蛮人之位
 
 在 James Laidlaw 看来，Ortner 与 Giddens 和 Bourdieu 笔下，实践理论的理论范式对「能动性」的界定都是和「结构」直接相对的。换句话说，对结构的再造、抗争或改变才是认定个人行为效力（能动性）的标准，所以这种处理方式的结果便是系统性地将自由问题与主体行为对结构的影响效力问题混为一谈。也就是说，只有对「结构」产生一定作用效果的主体行为才会被认为具有「能动性」，在这种取向下，研究者往往喜欢假定社会主体行为的「真正」目的在于自我获利，通过抵触或挑战社会文化结构来提升自己在社会结构中的地位。
 
+{{% notice content "说明" %}}
+
+既然前面提到了 agency 这个单词，那么来区分一下 agent 和 subject 之间的差异吧。关于这两个单词，我在网络上看到有人给布朗大学的哲学教授 Jaegwon Kim 发邮件询问两个单词的[区别](https://blog.sina.com.cn/s/blog_9007770301012j0i.html)，这里就摘录一段：
+
+> As for “agent” and “subject”, one speaks of an agent in connection with action, in action theory, moral psychology, and ethics. An agent is a person, or more broadly an entity, who acts, or performs actions, or who has the capacity to act. One normally thinks of “responsible” agents, agents who can be held responsible for their actions. Thus, they are also referred to as “moral” agents. And sometimes we refer to “free” agents – these are agents whose choices and decisions, and hence whose actions, are freely made (by the agents of course).
+>
+> “Subject” has a broader meaning; it is often used to denote the persons, or entities, who have experiences and other mental states. One often hear about “subjects of experiences”. Agents, or reflective and responsible agents, are presumably subjects of experiences and have beliefs, desires, and intentions.
+
+{{% /notice %}}
+
 我们需要重新思考「自由」。
