@@ -17,7 +17,7 @@ toc: true
     }
 </style>
 
-<img src="https://cdn.jsdelivr.net/gh/residualsun1/blog-static/about/me_7.jpg"
+<img src="https://cdn.jsdelivr.net/gh/residualsun1/blog-static/about/me_8.jpg"
      alt="广大湖"
      class="float-image"
      style="float: right; margin: 0.5em 0 0 0.5em; width: 270px;">
