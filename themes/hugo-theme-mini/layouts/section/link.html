@@ -1,7 +1,12 @@
 {{ define "main" }}
-{{ partial "profile.html" . }}
 
 <section id="section">
+    <h1 class="title">{{ .Title }}</h1>
+    
+    {{ if or .Site.Params.showToc .Params.showToc }}
+        {{ partial "toc.html" . }}
+    {{ end }}
+    
     {{ .Content }}
   
     {{ partial "comments.html" . }}
