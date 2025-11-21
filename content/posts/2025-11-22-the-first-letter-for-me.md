@@ -1,6 +1,6 @@
 ---
 title: 给迷恋的你的第一封信
-author: 黄国政
+author: 残日留痕
 date: '2025-11-22'
 slug: the-first-letter-for-me
 categories: []

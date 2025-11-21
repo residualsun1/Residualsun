@@ -1,6 +1,6 @@
 ---
 title: 22 岁的「特权」
-author: 黄国政
+author: 郝有光-
 date: '2025-11-21'
 slug: my-only-privilege-in-22
 categories: []
