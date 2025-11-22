@@ -53,4 +53,4 @@ tags:
 > --- 残日留痕  
 > --- 2025.11.23 凌晨 03:35
 
-***罗生门（follow） --- 7paste / live-nine***
+***[罗生门（follow）](https://cdn.jsdelivr.net/gh/residualsun1/blog-audio/love/罗生门7paste-live_nine.mp3) --- 7paste / live-nine***
