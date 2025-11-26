@@ -1,0 +1,18 @@
+---
+title: ''
+author: 黄国政
+date: '2025-11-26T15:38:00'
+slug: can-not-understand
+categories: []
+tags: []
+---
+
+<!--more-->
+
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=1418131335&auto=0&height=66"></iframe>
+
+最要好的一位朋友告诉我她不喜欢自己的男友了，男友不再有吸引力，自己也觉得一个人的状态更好，想要分手。
+
+我支持她的选择，但是也感到有些难过。我和 Z 的模糊关系大概率会在今晚迎来了结了吧，但是想到关系可以如此流动变化，上一刻可能还是喜欢，但下一刻便没了感觉，这种感觉真让人感到困惑，也有不安。真的会有一种很真实、充满安全感的爱情吗？所谓真心是什么？真心如何才算是得到回应？没有得到回应，会伤痕累累吗？爱，又究竟是什么？
+
+我不后悔真心过，但我也开始越发困惑、不安，难以理解。
