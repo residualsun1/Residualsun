@@ -5,7 +5,7 @@ toc: true
 ---
 
 ## 我是谁
-
+<!--
 <style>
   @media screen and (max-width: 768px) {
     .float-image {
@@ -21,7 +21,7 @@ toc: true
      alt="广大湖"
      class="float-image"
      style="float: right; margin: 0.5em 0 0.3em 0.5em; width: 270px;">
-
+-->
 你好👋，我叫黄国政，03 年广东湛江人，本科就读于广州大学社会学专业，目前正在中央民族大学就读民族学专业。
 
 本科期间，我受王利兵老师影响，喜欢上了人类学，曾前往湛江市硇洲岛待过四个月，还随老师参加了一系列生态与海洋保护会议，由此开始接触相关的公益与环保组织。我还深受谢颖老师影响，开始学习 R 语言和 Python，其间最大的收获是接触了由[谢益辉](https://yihui.org)开发的一系列 R 包，特别是 [`Blogdown`](https://github.com/rstudio/blogdown) 包，由此搭建了自己的独立网站。
