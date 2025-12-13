@@ -13,7 +13,7 @@ draft: true
 
 <!--more-->
 
-{{% notice content "说明" %}}
+{{% notice content "按语" %}}
 这是一篇用于与春花进行第二周交流的阅读习作，基础阅读内容包括 Sherry B. Ortner 的论文「晦暗的人类学及其他者：二十世纪八十年代以来的理论」，Robbins Joel 的「超越饱受苦难的主体：迈向善的人类学」，以及 James Laidlaw 的专著《以德为体》第四章「超越社会科学中的“不自由”」。
 
 若有余力，进阶阅读 David Graeber 的「价值：人类学的价值理论」，Joel Robbins 的「道德革命，价值变迁与道德进步的问题」，Thomas J. Csordas 的「Morality as a Cultural System?」以及 David Parkin 的 The anthropology of Evil 的导论部分。

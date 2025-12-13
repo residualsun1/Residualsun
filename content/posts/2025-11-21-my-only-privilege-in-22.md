@@ -12,7 +12,7 @@ tags:
 
 <!--more-->
 
-{{% notice content "想法" %}}
+{{% notice content "按语" %}}
 在 B 站刷到 up 主[郝有光-](https://space.bilibili.com/3546575177517692?spm_id_from=333.788.upinfo.head.click)的视频《[最可怕的，不是忽然的心动，而是再也不会心动了](https://www.bilibili.com/video/BV1jYypBNEBR/?share_source=copy_web&vd_source=3f89400ae195feff9dd7d805682d7814)》，觉得里面的文案写得真好。虽然被它吸引的原因在不小的程度上是试图从中获取一些勇气和相信自己的力量，但抛开这些来看，内心深处的情感也确实为它唤起，而这不也是一件十分难能可贵的事情吗？
 
 我想将视频的文案转载过来，留给 22 岁的自己，也留给 32 岁的自己，甚至是 42、52、62、72、82 的自己——假使我能活得足够久。

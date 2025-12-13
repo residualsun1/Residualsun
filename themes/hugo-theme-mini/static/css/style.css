@@ -775,11 +775,10 @@ kbd:hover {
 
 /* 信息提示框整体 */
 .notice-box {
-  border: 1px solid;
-  border-radius: 5px;
-  padding: 1em;
-  margin: 1.5em 0;
-  box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+  border: 1px solid rgba(0,0,0,0.06);
+  margin: 1.5rem auto;/* 居中并有上下留白 */
+  padding: 1rem 2.7rem;
+  max-width: 54rem;  
 }
 
 /* 标题样式 */
@@ -792,7 +791,8 @@ kbd:hover {
 /* 内容正文样式 */
 .notice-body {
   font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, FandolKai, serif;
-  font-size: .9em;
+  font-size: 0.92rem;
+  color: #534a46;
 }
 
 /* 仅针对 notice 提示框内的预格式化代码 */
@@ -800,10 +800,8 @@ kbd:hover {
   /* 让 pre 的最大宽度不超过父容器 */
   max-width: 100%;
   box-sizing: border-box;
-
   /* 同时保留水平滚动条 */
   overflow-x: auto;
-
   /* 允许在空白处折行 */
   white-space: pre-wrap;
   word-wrap: break-word;
@@ -814,7 +812,6 @@ kbd:hover {
 .notice-body pre code {
   max-width: 100%;
   box-sizing: border-box;
-
   white-space: pre-wrap;
   word-wrap: break-word;
   word-break: break-all;
@@ -827,8 +824,8 @@ kbd:hover {
 }
 
 .notice-content {
-  border-color: black;
-  background-color: /*#F6F5F0*/#FFFFFF;
+  border-color: #f5f5f5;
+  background-color: #f5f5f5;
 }
 
 .notice-warning {
