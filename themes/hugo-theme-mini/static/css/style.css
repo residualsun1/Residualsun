@@ -15,13 +15,6 @@ a {
   color: initial;
 }
 
-/*
-a:hover {
-    position: relative;
-    inset: 1px 0 0 1px;
-}
-*/
-
 /* markdown content styles */
 
 /*引用*/
@@ -655,18 +648,15 @@ nav.navigation a.button {
   display: block; 
 }
 
-#section a {
+#section .content a {
   text-decoration: none;
   color: initial;
   border-bottom: 1px dashed;
-  /*box-shadow: 0 -5px rgba(189,195,199,.5)inset;
-  transition: all .3s ease;*/
 }
 
-#section a:hover {
+#section .content a:hover {
     position: relative;
     inset: 1px 0 0 1px;
-    /*box-shadow: 0 -15px rgba(189,195,199,.7)inset;*/
 }
 
 /* 404 page */
@@ -815,6 +805,21 @@ kbd:hover {
   white-space: pre-wrap;
   word-wrap: break-word;
   word-break: break-all;
+}
+
+/* 内部引用格式 */
+
+.notice-body blockquote {
+  margin: 1em 0;
+  padding: 0 2em;
+  background: none;
+  border-left-width: 3px;
+  border-left: 3px solid #d3d3d3;
+  color: gray;
+}
+
+.notice-body blockquote:not(:hover) {
+  border-left-color: transparent;
 }
 
 /* 不同类型的背景色和边框 */

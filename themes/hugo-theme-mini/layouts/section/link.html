@@ -7,7 +7,9 @@
         {{ partial "toc.html" . }}
     {{ end }}
     
-    {{ .Content }}
+    <div class="content">
+      {{ .Content }}
+    </div>
   
     {{ partial "comments.html" . }}
 </section>

@@ -56,9 +56,9 @@ params:
   # Site Author
   author: 黄国政
   # Author biography
-  bio: 永远怀着一颗学徒的心
+  bio: 哭也是笑，笑也是哭
   # Site Description, used in HTML meat
-  description: My Blog
+  description: 黄国政的个人网站
   enableimgloop: true
 
   ###########################################
