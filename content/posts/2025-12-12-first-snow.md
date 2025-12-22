@@ -7,7 +7,6 @@ categories: []
 tags:
   - 生活
   - 北京
-draft: true
 ---
 
 <!--more-->
