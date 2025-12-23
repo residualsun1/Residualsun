@@ -648,15 +648,17 @@ nav.navigation a.button {
   display: block; 
 }
 
-#section .content a {
+#section .content a,
+#section .note-content a {
   text-decoration: none;
   color: initial;
   border-bottom: 1px dashed;
 }
 
-#section .content a:hover {
-    position: relative;
-    inset: 1px 0 0 1px;
+#section .content a:hover,
+#section .note-content a:hover {
+  position: relative;
+  inset: 1px 0 0 1px;
 }
 
 /* 404 page */
