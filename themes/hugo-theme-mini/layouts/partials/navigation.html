@@ -3,13 +3,13 @@
 		<a href="{{ "/" | relURL }}"> <!--<span class="arrow">←</span>-->{{ with .Site.Params.home }}{{ . }}{{ else }}{{ i18n "home" }}{{ end }}</a>
 	{{ end }}
 	<a href="{{ "/about" | relURL }}">{{ with .Site.Params.about }}{{ . }}{{ else }}{{ i18n "about" }}{{ end }}</a>
-	<a href="{{ "/posts" | relURL }}">{{ with .Site.Params.archive }}{{ . }}{{ else }}{{ i18n "archive" }}{{ end }}</a>
 	<a href="{{ "/project" | relURL }}">{{ with .Site.Params.project }}{{ . }}{{ else }}{{ i18n "project" }}{{ end }}</a>
-	<a href="{{ "/tags" | relURL }}">{{ with .Site.Params.tags }}{{ . }}{{ else }}{{ i18n "tags" }}{{ end }}</a>
 	<a href="{{ "/program" | relURL }}">{{ with .Site.Params.program }}{{ . }}{{ else }}{{ i18n "program" }}{{ end }}</a>
 	<a href="{{ "/vitae" | relURL }}">{{ with .Site.Params.vitae }}{{ . }}{{ else }}{{ i18n "vitae" }}{{ end }}</a>
 	<a href="{{ "/link" | relURL }}">{{ with .Site.Params.link }}{{ . }}{{ else }}{{ i18n "link" }}{{ end }}</a>
-	<a href="{{ "/moments" | relURL }}">{{ with .Site.Params.link }}{{ . }}{{ else }}{{ i18n "moments" }}{{ end }}</a>
+	<a href="{{ "/posts" | relURL }}">{{ with .Site.Params.archive }}{{ . }}{{ else }}{{ i18n "archive" }}{{ end }}</a>
+	<a href="{{ "/tags" | relURL }}">{{ with .Site.Params.tags }}{{ . }}{{ else }}{{ i18n "tags" }}{{ end }}</a>
+	<!--<a href="{{ "/moments" | relURL }}">{{ with .Site.Params.link }}{{ . }}{{ else }}{{ i18n "moments" }}{{ end }}</a>-->
 
 	{{ range $element := .Site.Params.Links }}
 		<a href="{{ $element.path }}">{{ $element.name }}</a>

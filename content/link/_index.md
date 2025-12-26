@@ -4,15 +4,19 @@ title: 链接
 toc: true
 ---
 
-## 中文
+## 一、个人网站
 
-### 一、独立博客
+- [尤雨溪](https://evanyou.me/)：Vue 创始人
+
+- [Nicholas C.Zakas](https://humanwhocodes.com/blog/)：《JavaScript 高级程序设计》作者，ESLint 作者。
+
+- [卢涛南](https://lutaonan.com/)：计算机、技术、思考与创造。
+
+- [贤民的博客](https://www.xianmin.org/)：一个四海为家的全干程序员，经营过一家青年旅舍，目前正在写作关于中年程序员的自救周记。
 
 - [笔迹](https://www.shuohan.work/)：英文专业大学生，对阅读、计算机、语言学都感兴趣，持续学习、持续成长。
 
 - [心的道理](https://stephenleng.com/)：又名「浮云笑此生」，我羡慕及学习的写作者，擅长观察和批判社会现象，写作内容涉猎广泛，让我印象十分深刻的是博主对「亲密关系」和「浪漫爱情」的见解。
-
-- [贤民的博客](https://www.xianmin.org/)：一个四海为家的全干程序员，经营过一家青年旅舍，目前正在写作关于中年程序员的自救周记。
 
 - [太隐](https://wangyurui.com/)：阅读、思考、终身学习。
 
@@ -20,11 +24,19 @@ toc: true
 
 - [郝鸿涛](https://hongtaoh.com/)：毅力，奋进，写作清晰。
 
-- [卢涛南](https://lutaonan.com/)：计算机、技术、思考与创造。
+- [Tales from the fairies](https://talesfromthefairies.wordpress.com/)：一个讲述关于魔法、想象、自然的故事的作家
 
-### 二、平台网站
+- [Mark Fisher](http://k-punk.org/)：马克·费舍尔，《资本主义现代主义》作者。
 
-#### 2.1 人类学（多数需要魔法上网）
+## 二、平台网站
+
+### 2.1 计算机与统计
+
+- [GitHub](https://github.com)：全球最大的程序员~~同性交友网站~~平台，本站的托管地点。
+
+- [统计之都](https://cosx.org/)：我学习 R 语言时常逛的网站，正是在这里，我发现了独立博客。
+
+### 2.2 人类学
 
 - [结绳志](https://tyingknots.net/)：一个致力于介绍人类学观点、方法与行动的平台。人类学讲述的故事应当如同系绳与解结，浸润、回归于生活的现实之中，思考、保存并创造关于过去和未来的知识。
 
@@ -42,11 +54,13 @@ toc: true
 
 - [原住民族委员会](https://www.cip.gov.tw/zh-tw/index.html)：一个与台湾原住民相关的网站，包括阿美族、泰雅族、排湾族、布农族、卑南族、鲁凯族、鄒族、赛夏族、雅美族、邵族、噶瑪蘭族、太鲁阁族、撒奇莱亚族、赛德克族、拉阿鲁哇族、卡那卡那族。
 
-#### 2.2 计算机与统计
+- [AnthroSource](https://anthrosource.onlinelibrary.wiley.com/)：一份人类学外文阅读期刊，内容丰富。
 
-- [统计之都](https://cosx.org/)：我学习 R 语言时常逛的网站，正是在这里，我发现了独立博客。
+- [Sapiens](https://www.sapiens.org/)：一个英文人类学杂志网站，包括体质、考古、文化等方向的议题，也包括评论、诗歌等体裁。
 
-#### 2.3 其他
+- [Sudan Memory](https://www.sudanmemory.org/cms/111/)：一个致力于保护和促进苏丹文化与文化遗产的数字化项目，在里面可以找到苏丹相关的文化与历史档案故事。我在里面发现了英国人类学家 Evans-Pritchard 拍摄的田野照片
+
+### 2.3 其他
 
 - [秘密花园](http://www.yini.org/)：一个1999年建立的网站，似乎是一代人的网络记忆。
 
@@ -61,31 +75,5 @@ toc: true
 - [盲眼的尼安德塔石器匠](https://neanderthaldna.pixnet.net/blog)：人类与演化的知识集散地。
 
 - [故事StoryStudio](https://storystudio.tw/)：以历史脉络书写当代议题，和读者一起从生活发现历史、从台湾看见世界、从过去想像未来。
-
-## 英文
-
-### 一、独立博客
-
-- [Tales from the fairies](https://talesfromthefairies.wordpress.com/)：一个讲述关于魔法、想象、自然的故事的作家
-
-- [Mark Fisher](http://k-punk.org/)：马克·费舍尔，《资本主义现代主义》作者。
-
-- [Nicholas C.Zakas](https://humanwhocodes.com/blog/)：《JavaScript 高级程序设计》作者，ESLint 作者。
-
-### 二、平台网站
-
-#### 2.1 计算机与统计
-
-- [GitHub](https://github.com)：全球最大的程序员~~同性交友网站~~平台，本站的托管地点。
-
-#### 2.2 人类学
-
-- [AnthroSource](https://anthrosource.onlinelibrary.wiley.com/)：一份人类学外文阅读期刊，内容丰富。
-
-- [Sapiens](https://www.sapiens.org/)：一个英文人类学杂志网站，包括体质、考古、文化等方向的议题，也包括评论、诗歌等体裁。
-
-- [Sudan Memory](https://www.sudanmemory.org/cms/111/)：一个致力于保护和促进苏丹文化与文化遗产的数字化项目，在里面可以找到苏丹相关的文化与历史档案故事。我在里面发现了英国人类学家 Evans-Pritchard 拍摄的田野照片。
-
-#### 2.3 其他
 
 - [Aeon](http://aeon.co)：一个神奇的英文杂志网站，涉及哲学、心理学、社会和文化等议题，文章内容质量较高

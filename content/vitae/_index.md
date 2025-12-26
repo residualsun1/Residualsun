@@ -38,7 +38,8 @@ toc: true
 
 以下汇报幻灯片是基于谢益辉开发的 [xaringan](https://github.com/yihui/xaringan) 包制作的 HTML 网页。
 
-* 黄国政，2025，阅读汇报：「自我受损」的民族志：静默之身，中央民族大学（幻灯片）（文稿）
+* 黄国政，2025-12-23，田野分享汇报：祭祀圈视角下的地方社会建构：以硇洲岛的神明轮祭仪式为例，中央民族大学明德楼 110（幻灯片）
+* 黄国政，2025-12-17，阅读汇报：「自我受损」的民族志：静默之身，中央民族大学（幻灯片）
 
 ## 获得奖励
 
@@ -49,8 +50,8 @@ toc: true
 
 ## 计算机水平
 
-* 语言：R 语言半生不熟，HTML 与 CSS 基础水平，目标掌握 Javascript、Vue 与 React
-* 应用程序：常用 Rstudio 写博客，用 Visual Studio Code 学习前端
+* 语言：R 语言，HTML，CSS，目标掌握 Javascript、Vue 与 React
+* 应用程序：Rstudio-写博客，Visual Studio Code-学习前端
 * 操作系统：Windows，希望以后能换成 Mac
 * 计算机等级：计算机一级
 
