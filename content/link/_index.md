@@ -6,14 +6,6 @@ toc: true
 
 ## 一、个人网站
 
-- [尤雨溪](https://evanyou.me/)：Vue 创始人
-
-- [Nicholas C.Zakas](https://humanwhocodes.com/blog/)：《JavaScript 高级程序设计》作者，ESLint 作者。
-
-- [卢涛南](https://lutaonan.com/)：计算机、技术、思考与创造。
-
-- [贤民的博客](https://www.xianmin.org/)：一个四海为家的全干程序员，经营过一家青年旅舍，目前正在写作关于中年程序员的自救周记。
-
 - [笔迹](https://www.shuohan.work/)：英文专业大学生，对阅读、计算机、语言学都感兴趣，持续学习、持续成长。
 
 - [心的道理](https://stephenleng.com/)：又名「浮云笑此生」，我羡慕及学习的写作者，擅长观察和批判社会现象，写作内容涉猎广泛，让我印象十分深刻的是博主对「亲密关系」和「浪漫爱情」的见解。
@@ -23,6 +15,14 @@ toc: true
 - [于淼](https://yufree.cn)：美国杰克逊实验室科学家，脑力深邃，吐槽功力高深。
 
 - [郝鸿涛](https://hongtaoh.com/)：毅力，奋进，写作清晰。
+
+- [尤雨溪](https://evanyou.me/)：Vue 创始人
+
+- [Nicholas C.Zakas](https://humanwhocodes.com/blog/)：《JavaScript 高级程序设计》作者，ESLint 作者。
+
+- [卢涛南](https://lutaonan.com/)：计算机、技术、思考与创造。
+
+- [贤民的博客](https://www.xianmin.org/)：一个四海为家的全干程序员，经营过一家青年旅舍，目前正在写作关于中年程序员的自救周记。
 
 - [Tales from the fairies](https://talesfromthefairies.wordpress.com/)：一个讲述关于魔法、想象、自然的故事的作家
 
