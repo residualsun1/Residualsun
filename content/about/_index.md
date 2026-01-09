@@ -13,7 +13,7 @@ toc: true
       display: inline-block;
       width: 55% !important;
       max-width: none;
-      margin: 0 0 0 0.5em !important;
+      margin: 0.35em 0 0 0.35em !important;
     }
 </style>
 
