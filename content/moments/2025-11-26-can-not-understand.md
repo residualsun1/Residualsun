@@ -9,7 +9,7 @@ tags: []
 
 <!--more-->
 
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=1418131335&auto=0&height=66"></iframe>
+<meting-js server="netease" type="song" id="1418131335"></meting-js>
 
 最要好的一位朋友告诉我她不喜欢自己的男友了，男友不再有吸引力，自己也觉得一个人的状态更好，想要分手。
 

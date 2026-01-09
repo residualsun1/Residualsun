@@ -11,4 +11,8 @@ tags: []
 
 前奏响起，我就知道还忘不掉你。
 
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=39436782&auto=0&height=66"></iframe>
+<meting-js
+	server="netease"
+	type="song"
+	id="39436782">
+</meting-js>

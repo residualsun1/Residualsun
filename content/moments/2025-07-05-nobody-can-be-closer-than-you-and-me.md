@@ -9,7 +9,7 @@ tags: []
 
 <!--more-->
 
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=1468592465&auto=0&height=66"></iframe>
+<meting-js server="netease" type="song" id="1468592465"></meting-js>
 
 再见，「还需要更多勇气」。
 

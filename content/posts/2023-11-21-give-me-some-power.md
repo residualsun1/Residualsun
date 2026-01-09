@@ -32,9 +32,7 @@ tags:
 
 由于是跟风，不久后我也慢慢淡忘了林肯公园。
 
-<center>
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=30148051&auto=0&height=66"></iframe>
-</center>
+<meting-js server="netease" type="song" id="30148051"></meting-js>
 
 这段时间想起了林肯公园，再听时，《In the End》、《What I’ve done》、《Battle Symphony》、《One More Light》、《Numb》、《Leave Out All the Rest》、《Crawling》和《Somewhere I Belong》等等却莫名给了我一股力量。
 

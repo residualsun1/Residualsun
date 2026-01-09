@@ -10,9 +10,7 @@ tags:
 
 <!--more-->
 
-<center>
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=28099697&auto=1&height=66"></iframe>
-</center>
+<meting-js server="netease" type="song" id="28099697"></meting-js>
 
 离开教学楼的前一刻，雨声渐起，我却蓦地想起路灯照在水洼上明晃晃的白色——或许记忆一度出错，那不过是月色的白。
 
