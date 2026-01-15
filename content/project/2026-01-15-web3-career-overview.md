@@ -1,7 +1,7 @@
 ---
 title: Web3 行业赛道全览
 author: 黄国政
-date: '2026-01-16'
+date: '2026-01-15'
 slug: web3-career-overview
 categories: []
 tags:
