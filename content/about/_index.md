@@ -89,9 +89,10 @@ toc: true
 
 ## 联系我
 
-* 邮箱：Residualsun@proton.me
-* GitHub：https://github.com/residualsun1
-* LXDAO：https://lxdao.io/buidlers/0xDA079EaE923c95146F7CA7E1c6A34619098b9940
+* Email：Residualsun@proton.me
+* [GitHub](https://github.com/residualsun1)
+* [LXDAO](https://lxdao.io/buidlers/0xDA079EaE923c95146F7CA7E1c6A34619098b9940)
+* [ X ](https://x.com/Residualsun1)
 
 ## 写在最后
 
