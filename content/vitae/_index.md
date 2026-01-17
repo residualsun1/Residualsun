@@ -5,7 +5,7 @@ toc: true
 
 ## 联系方式
 
-* Email：Residualsun@proton.com
+* Email：Residualsun@proton.me
 * 主页：[https://guozheng.rbind.io](https://guozheng.rbind.io/)
 
 ## 兴趣议题

@@ -87,6 +87,12 @@ toc: true
 
 * [袁凡](https://yuanfan.rbind.io)：第一位给我写信的博友，坚持学习 R 和阅读，善良、知性、热爱生活，在她的博文中，常常能发现许多被「成年」遗忘的童真与美好。
 
+## 联系我
+
+* 邮箱：Residualsun@proton.me
+* GitHub：https://github.com/residualsun1
+* LXDAO：https://lxdao.io/buidlers/0xDA079EaE923c95146F7CA7E1c6A34619098b9940
+
 ## 写在最后
 
 欢迎到访我的博客，也很期待你在博文的评论区中留下自己的足迹。
