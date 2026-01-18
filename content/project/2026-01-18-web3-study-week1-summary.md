@@ -1,8 +1,8 @@
 ---
 title: Web3 第一周学习总结
 author: 黄国政
-date: '2026-01-18'
-slug: web3-study-summary
+date: '2026-01-18T09:00:00'
+slug: web3-study-week1-summary
 categories: []
 tags:
   - Web3

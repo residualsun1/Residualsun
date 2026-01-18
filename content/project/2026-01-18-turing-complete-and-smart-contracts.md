@@ -1,7 +1,7 @@
 ---
 title: 今日 Web3 相关概念补充与比较
 author: 黄国政
-date: '2026-01-18'
+date: '2026-01-18T08:00:00'
 slug: turing-complete-and-smart-contracts
 categories: []
 tags:
