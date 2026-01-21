@@ -17,7 +17,7 @@ Demo 项目地址：https://agentreputation.netlify.app/
 
 ## 今日想法
 
-黑客松即将到来，我决定今天上手结合 AI尝试开发一个 DApp[^DApp]——严格来说或许只是一个 Demo 吧。同时，今天在 Co-Learning 上又听到 wachi 老师分享了自己关于 Web3 的学习理念，我最为在意的内容是**对概念的学习吸收**。具体来说，其实**技术向的学习也离不开概念的理解，许多概念越发熟悉，在写代码和做项目时也会越发得心应手**。
+黑客松即将到来，我决定今天上手结合 AI 尝试开发一个 DApp[^DApp]——严格来说或许只是一个 Demo 吧。同时，今天在 Co-Learning 上又听到 wachi 老师分享了自己关于 Web3 的学习理念，我最为在意的内容是**对概念的学习吸收**。具体来说，其实**技术向的学习也离不开概念的理解，许多概念越发熟悉，在写代码和做项目时也会越发得心应手**。
 
 [^DApp]: DApp 概念可以见此[博文](https://guozheng.rbind.io/project/smart-contract-development/)。
 
