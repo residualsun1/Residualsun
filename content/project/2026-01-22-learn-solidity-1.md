@@ -1,5 +1,5 @@
 ---
-title: 理解 Solidity 语法的基本结构（一）
+title: 理解 Solidity 语法的基本结构
 author: 黄国政
 date: '2026-01-22'
 slug: learn-solidity-1
@@ -25,21 +25,35 @@ tags:
 
 ## Solidity 语法中的基本结构
 
-在 Solidity 代码中，都必须先指定和声明 Solidity 的编译器版本。
-
 ```Solidity
-pragma solidity ^0.8.26;
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.21;
+contract HelloWeb3{
+    string public _string = "Hello Web3!";
+}
 ```
+
+上面是几段最简单的 Solidity 代码，由一行注释和三行代码组成。第一行的注释说明前加上了 `//` 意为注释，不会被程序执行，整行注释代码表示使用软件许可 MIT，如果不写许可，编译时就会出现警告
+
+由于不同版本的语法有差异，因此第二行代码是声明 Solidity 的编译器版本，这里是表示源文件不允许小于 0.8.21 版本或大于 0.9.0 编译器编译，然后在 Solidity 中语句要以 `;` 作为结尾。
+
+第三行和第四行的代码是合约部分，第三行意为创建合约，合约名称采用大驼峰命名法命名为 `HelloWeb3`，第四行则是具体的合约内容，在 `string` 字符串这一数据存储结构中将状态变量 `_string` 赋值为 `Hello Web3!`。
 
 接下来的具体内容以实例来理解 Solidity 语法中的基本结构，以下面三段 Solidity 语法为例。
 
 ```Solidity
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
+
 contract HelloWorld {
-    string public greet = "Hello World!";
+    string public _string = "Hello Web3!";
 }
 ```
 
 ```Solidity
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
+
 contract Counter {
     uint256 public count;
 
