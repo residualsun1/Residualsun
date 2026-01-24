@@ -1,7 +1,7 @@
 ---
 title: Solidity 中的值类型
 author: 黄国政
-date: '2026-01-24'
+date: '2026-01-23'
 slug: value-type-in-solidity
 categories: []
 tags:

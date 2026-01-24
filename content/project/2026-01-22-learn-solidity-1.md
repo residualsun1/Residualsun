@@ -126,18 +126,163 @@ constructor(参数列表) {
 普通函数结构我们已经[看过](https://guozheng.rbind.io/project/smart-contract-development/#solidity-%e6%99%ba%e8%83%bd%e5%90%88%e7%ba%a6%e7%bc%96%e7%a8%8b)了，但是没有与智能合约中的其他部分一起进行梳理，在此再次书写一次，以便对比和理解。
 
 ```Solidity
-function 函数名(参数列表) 可见性 状态可变性 修饰符 返回类型 {
+function 函数名(参数列表) 
+可见性说明符 
+状态可变性 
+修饰符 
+虚拟/重写关键字 
+自定义修饰器
+returns(返回类型)
+{
     // 函数体
 }
 ```
 
 * `function` 固定开头，声明要定义一个函数；
 * `函数名` 部分可以自定义，且通常采用小驼峰命名法——第一个单词首字母小写，从第二个单词开始每个单词的首字母大写；
-* `(参数列表)` 内的内容是函数接收的参数，可以为空；
-* `可见性` 包括 `public`（谁都可以调用参数）、`private`（只有合约自己内部可以调用参数）、`internal`（自己和继承的子合约可以调用参数） 和 `external`（只有外部能调用参数）四种；
-* `状态可变性` 部分详细可见[此处](https://guozheng.rbind.io/project/compile-and-deploy-message-contract/#4%e6%a0%b8%e5%bf%83%e5%8a%9f%e8%83%bd%e5%87%bd%e6%95%b0);
-* `返回类型` 是函数返回的结果，如果有——写成 `returns` 而非 `return`——需要告知其返回的数据类型。
-* `修饰符` 有点复杂，它允许在函数执行前插入额外逻辑，常用于权限控制与前置检查。
+* `(参数列表)` 内的内容是函数接收的参数，即输入到函数的变量类型和名称，可以为空；
+* `可见性说明符` 有四种
+  * `public`：内部和外部都可见（谁都可以调用参数）
+  * `private`：只能从本合约内部访问，继承的合约也不能使用（只有合约自己内部可以调用参数）
+  * `internal`：只能从合约内部访问，继承的合约可以用（自己和继承的子合约可以调用参数）
+  * `external`：只能从合约外部访问（但内部可以通过 `this.f()` 来调用，`f` 是函数名）；
+  
+  {{% notice warning "注意" %}}
+  合约中定义的函数需要明确指定可见性，它们没有默认值。
+  
+  `public`、`private` 和 `internal` 也可用于修饰状态变量，`public` 变量会自动生成同名的 `getter` 函数，用于查询数值。未标明可见性类型的状态变量，默认为 `internal`。
+  
+  另外，由于 `internal` 函数只能由合约内部调用，所以可以通过定义一个 `external` 的 `minuxCall` 函数来间接调用内部的 `minus` 函数。
+  
+  ```Solidity
+    // internal: 内部函数 每次调用都使得 number 减少 1
+  function minus() internal {
+      number = number - 1;
+  }
+
+  // 合约内的函数可以调用内部函数
+  function minusCall() external {
+      minus();
+  }
+  ```
+  {{% /notice %}}
+
+* `状态可变性` 主要有四种，分别是无可变性修饰符、`view`、`pure` 和 `payable`
+
+  由于以太坊交易需要支付 Gas Fee，因而 `Solidity` 引入了 `view` 和 `pure`——合约的状态变量存储在链上，Gas Fee 很贵，如果计算不改变链上状态，就可以不支付 Gas Fee。这里包含 `view` 和 `pure` 的函数不会改写链上状态，因此用户直接调用它不需要支付 Gas Fee，相应地，非 `view` 和 `pure` 函数调用 `view` 和 `pure` 需要支付 Gas Fee。
+
+  以下事件可以被视为修改链上状态。
+
+  * 写入状态变量。
+  * 释放事件。
+  * 创建其他合约。
+  * 使用 selfdestruct.
+  * 通过调用发送以太币。
+  * 调用任何未标记 view 或 pure 的函数。
+  * 使用低级调用（low-level calls）。
+  * 使用包含某些操作码的内联汇编。
+  
+  | 状态可变性修饰符 | 是否读取状态 | 是否修改状态 | 是否接收 ETH | Gas 费用 |
+  | --- | --- | --- | --- | --- |
+  | 无修饰符（普通） | ✅ | ✅ | ❌ | 需要 |
+  | view            | ✅ | ❌ | ❌ | 免费* |
+  | pure            | ❌ | ❌ | ❌ | 免费* |
+  | payable         | ✅ | ✅ | ✅ | 需要 |
+
+  *免费是指本地调用时；如果通过交易调用仍需 Gas
+
+  {{% notice warning "Tips" %}}
+
+  智能合约不一定必须含有普通函数，从语法角度来看，一个合约只包含 `view` 或 `pure` 函数也是完全合法的。但从实用角度来看，只有 `view` 或 `pure` 函数的合约由于无法改变状态，因而没有实际价值。大多数有意义的合约都会有至少一个可以修改状态的函数。
+
+  {{% /notice %}}
+  
+  {{% notice success "补充" %}}
+  
+  ![还是要做题才能真实理解不同修饰符之间的差异](https://cdn.jsdelivr.net/gh/residualsun1/blog-static/project/2026/01/01-22-1.png)
+  
+  这里进一步补充一下 `view` 和 `pure` 之间的差异。虽然两者都不修改链上状态（**不修改存储在区块链上的状态变量**），但是前者需要在**读取状态变量**时使用，后者不可以涉及状态变量的读取和修改，但可以涉及局部变量、参数的运算。总结来说，`view` 和 `pure` 之间最大的差异其实是**是否对状态变量进行作用**，只要你对状态变量敏感，就能很快发现。
+  
+  可以用一些代码来进行对比。
+  
+  ```Solidity
+    contract Demo {
+      uint256 public stateVar = 10;
+    
+      // ✅ pure - 只用参数
+      function pureMath(uint256 a, uint256 b) public pure returns (uint256) {
+          return a + b;
+      }
+    
+      // ✅ view - 要读取状态变量时才用到
+      function viewMath(uint256 a) public view returns (uint256) {
+          return a + stateVar;  // 使用了 stateVar
+      }
+    
+      // ✅ payable - 接收 ETH
+      function deposit() public payable {
+          // 可以接收 ETH
+      }
+      
+      // ❌ 错误示例
+      function add(uint256 a, uint256 b) public view returns (uint256) {
+          return a + b;  // 没必要用 view，应该用 pure
+      }
+  }
+  ```
+
+  这里再举一个有意思的例子。
+  
+  ```Solidity
+    // SPDX-License-Identifier: MIT
+  pragma solidity ^0.8.21;
+  contract FunctionTypes{
+      uint256 public number = 5;
+      
+    // 这个写法是错误的 ❌ 
+  function add() external pure{
+      number = number + 1;
+  }
+
+    // 这个写法是正确的 ✅ 
+  function addPure(uint256 _number) external pure returns(uint256 new_number){
+      new_number = _number + 1;
+  }
+  
+  // 为什么改了一下就对了？因为给函数传递一个参数 _number，然后让它返回 _number + 1，这个操作不会读取或写入状态变量。另外，这些应该是局部变量，只在函数执行时存在于内存中。
+  
+  // 这个写法也是错误的 ❌  因为 view 能读取，但不能够改写状态变量。
+  function add() external view{
+      number = number + 1;
+  }
+  
+  // 这个写法是正确的 ✅  因为读取但是不改写 number，返回一个新的变量
+  function addView() external view returns(uint256 new_number) {
+      new_number = number + 1;
+  }
+  
+  }
+  ```
+  
+  发现 `pure` 和 `view` 正确改写之后的差异了吗？
+  
+  ```Solidity
+  function addPure(uint256 _number) external pure returns(uint256 new_number){
+      new_number = _number + 1;
+  }
+  
+  function addView() external view returns(uint256 new_number) {
+      new_number = number + 1;
+  }
+  ```
+  
+  是的，含有 `pure` 的函数的函数体中完全没有状态变量 `number`，因为它既无法读取也无法修改；而含 `view` 的函数的函数体中却可以出现状态变量 `number`，因为它至少可以读取，不过也仅仅是读取，不可以改写 `number` 本身，我们是在读取其的基础上造了一个新的变量 `new_number`。
+  
+  {{% /notice %}}
+  
+* `虚拟/重写关键字`：方法是否可以被重写，或者是否是重写方法。`virtual` 用在父合约上，标识的方法可以被子合约重写。`override` 用在自合约上，表名方法重写了父合约的方法；
+* `自定义修饰器`：自定义的修饰器，可以有 0 个或多个，有点复杂，它允许在函数执行前插入额外逻辑，常用于权限控制与前置检查。
+* `returns(返回类型)` 是函数返回的变量类型和名称，如果有——写成 `returns` 而非 `return`——需要告知其返回的数据类型。
 
 理解函数的基本结构，对于理解新的代码很有帮助，以一段计数的代码为例。
 
