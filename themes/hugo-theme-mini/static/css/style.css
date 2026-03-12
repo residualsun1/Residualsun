@@ -817,7 +817,7 @@ kbd:hover {
   background: none;
   border-left-width: 3px;
   border-left: 3px solid #d3d3d3;
-  color: gray;
+  color: grey;
 }
 
 .notice-body blockquote:not(:hover) {
@@ -826,8 +826,8 @@ kbd:hover {
 
 /* 不同类型的背景色和边框 */
 .notice-info {
-  border-color: #CCCCCC;
-  background-color: lightyellow;
+  border-color: black;
+  background-color: white;
 }
 
 .notice-content {
