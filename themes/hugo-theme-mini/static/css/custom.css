@@ -1,26 +1,345 @@
+/* 引入思源宋体、楷体还有指定代码字体 */
+
 @font-face {
   font-family: 'Source Han Serif CN';
   src: local('Source Han Serif CN'), local('Source Han Serif SC'),
-       local('Source Han Serif TC'), local('Source Han Serif TW'),
-       local('Source Han Serif'), local('Noto Serif CJK SC'), local('Songti SC'), local('SimSong'),
-       url('https://cdn.jsdelivr.net/gh/residualsun1/infont/SourceHanSerifCN-Regular-from-yihui.woff2') format('woff2');
+    local('Source Han Serif TC'), local('Source Han Serif TW'),
+    local('Source Han Serif'), local('Noto Serif CJK SC'), local('Songti SC'), local('SimSong'),
+    url('https://cdn.jsdelivr.net/gh/residualsun1/infont/SourceHanSerifCN-Regular-from-yihui.woff2') format('woff2');
 }
 
-@font-face { 
-   font-family: 'FandolKai'; 
-   src: local('Kaiti'), local('Kaiti SC'), local('STKaiti'), local('楷体'), local('SimKai'), local('AR PL KaitiM GB'), local('DFKai-SB'), local('FandolKai'), 
-        url('https://cdn.jsdelivr.net/gh/residualsun1/infont/AR-PL-KaitiM-GB-from-yihui.woff2') format('woff2'); 
- } 
+@font-face {
+  font-family: 'FandolKai';
+  src: local('Kaiti'), local('Kaiti SC'), local('STKaiti'), local('楷体'), local('SimKai'), local('AR PL KaitiM GB'), local('DFKai-SB'), local('FandolKai'),
+    url('https://cdn.jsdelivr.net/gh/residualsun1/infont/AR-PL-KaitiM-GB-from-yihui.woff2') format('woff2');
+}
 
 body {
   font-family: Palatino, 'Palatino Linotype', 'Palatino LT STD', 'Latin Modern Roman', 'Source Han Serif CN', serif;
 }
+
 blockquote {
   font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, FandolKai, serif;
 }
+
 code {
   font-family: Consolas, Courier, 'Courier New', FandolKai, monospace;
 }
-pre, code {
+
+pre,
+code {
   font-size: .95em;
+}
+
+/* Dark Mode 夜间浏览模式 */
+
+@media (prefers-color-scheme: dark) {
+
+  html,
+  img,
+  video,
+  iframe,
+  .aplayer {
+    filter: invert(1);
+  }
+
+  body {
+    background-color: white;
+  }
+}
+
+/* 公共 hover 下沉效果 */
+
+nav.navigation a:hover,
+#list-page .title a:hover,
+#single .content a:hover,
+#single .tags a:hover,
+#archive a:hover,
+#tags .tag a:hover,
+#section .content a:hover,
+#section .note-content a:hover,
+#post-nav .nav-prev a:hover,
+#post-nav .nav-next a:hover,
+#footer .copyright a:hover,
+#footer .powerby a:hover {
+  position: relative;
+  inset: 1px 0 0 1px;
+}
+
+/* Notice 信息提示框 */
+
+.notice-box {
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  margin: 1.5rem auto;
+  padding: 1rem 2rem;
+  max-width: 54rem;
+}
+
+.notice-box legend {
+  font-weight: bold;
+  font-size: 1em;
+  padding: 0 0.5em;
+}
+
+.notice-body {
+  font-family: var(--font-serif);
+  font-size: 0.92rem;
+  color: #534a46;
+}
+
+.notice-body pre {
+  max-width: 100%;
+  box-sizing: border-box;
+  overflow-x: auto;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.notice-body pre code {
+  max-width: 100%;
+  box-sizing: border-box;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.notice-body blockquote {
+  margin: 1em 0;
+  padding: 0 2em;
+  background: none;
+  border-left: 3px solid #d3d3d3;
+  color: grey;
+}
+
+.notice-body blockquote:not(:hover) {
+  border-left-color: transparent;
+}
+
+.notice-info {
+  border-color: black;
+  background-color: white;
+}
+
+.notice-content {
+  border-color: #f5f5f5;
+  background-color: #f5f5f5;
+}
+
+.notice-warning {
+  border-color: #f0ad4e;
+  background-color: #fff8e6;
+}
+
+.notice-danger {
+  border-color: #d9534f;
+  background-color: #ffecec;
+}
+
+.notice-success {
+  border-color: #5cb85c;
+  background-color: #e6f4ea;
+}
+
+/* Swiper 轮播图样式 */
+
+.swiper-container {
+  width: 100%;
+  max-width: 100%;
+  margin: 2em auto;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  max-width: 100% !important;
+  height: auto !important;
+  object-fit: contain;
+  display: block;
+}
+
+/* 高亮背景块 */
+
+.highlight-block {
+  background-color: #fff8dc;
+  padding: 1em;
+  border-radius: 4px;
+  margin: 1em 0;
+  line-height: 1.6;
+}
+
+/* 特殊符号 */
+
+kbd {
+  border: 2px solid #ccc;
+  box-shadow: 2px 2px #999;
+  display: inline-block;
+  padding: 0 5px;
+  border-radius: 0.25em;
+  min-width: 1.5em;
+  text-align: center;
+  margin-right: .15em;
+}
+
+kbd:hover {
+  position: relative;
+  top: 2px;
+  left: 2px;
+}
+
+/* Footnotes 脚注 */
+
+.side {
+  width: 200px;
+  margin: 0 auto;
+  line-height: 1.75;
+
+  p {
+    margin: 0;
+  }
+}
+
+.side-right {
+  float: right;
+  clear: right;
+  margin-right: calc(-200px - 2em);
+
+  p {
+    font-size: .9rem;
+    font-family: var(--font-serif);
+  }
+}
+
+.footnotes {
+  ol li p {
+    margin: 0;
+  }
+
+  hr {
+    border: none;
+    border-top: 1px solid var(--border);
+  }
+}
+
+.footnote-ref {
+  box-shadow: none !important;
+}
+
+.footnote-backref {
+  box-shadow: none !important;
+}
+
+.note-ref {
+  cursor: pointer;
+  border: none;
+  box-shadow: none !important;
+
+  &:hover {
+    box-shadow: none;
+    border: none;
+  }
+}
+
+.bg-number,
+.note-ref:has(+ .side:hover) {
+  font-size: .9rem;
+  line-height: 1.75;
+  background: white;
+  filter: invert(1);
+  opacity: .6;
+}
+
+@media (min-width: 1281px) {
+  .note-ref {
+    cursor: pointer;
+  }
+
+  .note-ref:hover~.side {
+    display: inline-block;
+    background-color: lightyellow;
+    position: absolute;
+    margin-left: 1rem;
+    padding: .5rem;
+    box-sizing: content-box;
+  }
+}
+
+/* 思绪界面 */
+
+.notes-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.note-card {
+  background: #fff;
+  border: 1px solid var(--color-border);
+  padding: 1rem;
+  border-radius: 6px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.note-meta {
+  font-size: 0.9rem;
+  color: #888;
+  margin-bottom: 0.5rem;
+}
+
+.note-content p {
+  margin: 0.5em 0;
+  font-size: 0.90em;
+}
+
+.load-more-wrap {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0
+}
+
+#load-more-btn.btn {
+  background: #fff;
+  color: #000;
+  border: 1px solid var(--color-border);
+  padding: .6rem 1.2rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: .9rem;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, .1)
+}
+
+#load-more-btn.btn:hover {
+  background: #f5f5f5
+}
+
+#load-more-btn.btn:disabled {
+  opacity: .6;
+  cursor: default;
+  box-shadow: none
+}
+
+/* 增加响应式，不允许表格溢出 */
+@media (max-width: 700px) {
+  table {
+    display: block;
+    width: max-content;
+    max-width: 100%;
+    margin: auto;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    border-collapse: collapse;
+  }
+
+  table th,
+  table td {
+    white-space: nowrap;
+  }
 }
