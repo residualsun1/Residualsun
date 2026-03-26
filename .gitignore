@@ -51,3 +51,8 @@ rsconnect/
 # BFG Repo-Cleaner
 bfg-*.jar
 ..bfg-report/
+
+# Hugo 生成的静态网站文件
+public/
+resources/
+.hugo_build.lock
