@@ -7,8 +7,7 @@ categories: []
 tags:
   - 想法
   - 北京
-draft:
-  - yes
+draft: true
 ---
 
 <!--more-->
