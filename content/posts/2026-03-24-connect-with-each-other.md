@@ -8,7 +8,7 @@ tags:
   - 想法
   - 北京
 draft:
-  - true
+  - yes
 ---
 
 <!--more-->
