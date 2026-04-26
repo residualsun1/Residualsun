@@ -9,6 +9,12 @@ tags:
 draft: true
 ---
 
+{{% notice content "按语" %}}
+
+这本书我也没有读完……
+
+{{% /notice %}}
+
 <!--more-->
 
 ## 作为叙事的「欲望」
