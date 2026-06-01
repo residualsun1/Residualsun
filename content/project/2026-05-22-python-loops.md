@@ -409,3 +409,107 @@ while True:
         leap_year += 1
 print(f"The next leap year after {year} is {leap_year}")
 ```
+
+### 题四：理解逻辑，再次理解 `break`
+
+{{% notice info "断字" %}}
+
+Please write a program which keeps asking the user for words. If the user types in `end`, the program should print out the story the words formed, and finish.
+
+```bash
+Please type in a word: Once
+Please type in a word: upon
+Please type in a word: a
+Please type in a word: time
+Please type in a word: there
+Please type in a word: was
+Please type in a word: a
+Please type in a word: girl
+Please type in a word: end
+Once upon a time there was a girl
+```
+
+{{% /notice %}}
+
+```python
+story = ""
+
+while True:
+    word = input("Please type in a word:")
+
+    if word == "end":
+        break
+
+    story += word + " "
+
+print(story)
+```
+
+一道题目暴露理解上的三个问题：复合赋值符、逻辑条件、`break`
+
+#### 复合赋值符 `+=`
+
+先看一对等价的式子。
+
+```python
+story += word + ""
+```
+
+等价于
+
+```python
+story = story + word + ""
+```
+
+`+=` 是一个复合赋值运算符，执行前需要给变量进行初始化，也就是赋予一个初始值。
+
+```python
+story = "" # 初始化
+```
+
+如果没有初始化，`story` 就没有被定义过，会出错。
+
+#### 逻辑条件混乱
+
+逻辑条件一般有两种情况（下列前两种），但实际情况中，我们需要考虑「条件相互影响」或「独立起作用」的情况。
+
+1. 或（OR）—— 任意一个成立就触发
+    ```python
+    if word == "end" or attempts == 8:
+        break
+    ```
+    属于布尔逻辑，只要 A 或 B 有一个为真就执行。
+
+2. 且（AND）—— 必须同时成立才触发
+
+    写法一：and
+    ```python
+    if word == "end" and attempts == 8:
+        break
+    ```
+    写法二：嵌套 if（本质相同）
+    ```python
+    if word == "end":
+        if attempts == 8:
+            break
+    ```
+    两种写法在逻辑上完全等价，都属于布尔逻辑。嵌套 if 是先检查外层，外层为真才检查内层。
+
+3. 独立触发 —— 各自独立检查，各自触发
+    ```python
+    if word == "end":
+        break
+    if attempts == 8:
+        break
+    ```
+    不属于布尔逻辑，是两条完全独立的规则，Python 逐行检查，谁先成立谁先触发。效果上与 or 相似，但本质不同。
+
+这里如果我们想要添加 `attempts` 变量来追踪次数，使用独立触发的方式更好，但实际上并不需要该变狼也可以完成练习。
+
+#### 再次理解 `break`
+
+`break` 在循环语句中主要用于立即终结其所属的整个循环，并跳过当前循环中它之后的所有代码。
+
+道理很简单，但在应用的时候总会发现理解不够。
+
+这里将 `end` 触发 `break` 的条件放在 `story += word + " "` 之前，Python 按照逻辑运行，`end` 会被截断，不参与循环，自然输入 `end` 不会出现在输出，并完成题目。
