@@ -2,6 +2,7 @@
 title: "对五道 Agent 理论题目的回答"
 date: "2026-05-20"
 slug: "agent-question"
+author: 黄国政
 tags: 
   - Agent
 ---

@@ -2,6 +2,7 @@
 title: "我在「循环语句」犯过的错误与总结"
 date: "2026-05-22"
 slug: "python-loops"
+author: 黄国政
 tags:
   - Python
 ---

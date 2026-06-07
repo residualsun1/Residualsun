@@ -2,6 +2,7 @@
 title: "成为怎样的人"
 date: "2026-06-04"
 slug: become-my-own-self
+author: 黄国政
 tag:
   - 想法
   - 北京
