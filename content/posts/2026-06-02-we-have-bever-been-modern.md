@@ -55,10 +55,7 @@ tags:
 
 在 16-17 世纪的欧洲，由于宗教战争证明基督教内部的真理无法达成一致，而哥白尼、伽利略等人的发现又挑战了神学宇宙观，传统的知识权威基础便崩塌了。
 
-<figure style="text-align: center;">
-  <img src="https://cdn.jsdelivr.net/gh/residualsun1/blog-static/images/2026/06/06-02-1.jpg" width="50%">
-  <figcaption>勒内·笛卡尔（1596 — 1650）</figcaption>
-</figure>
+![勒内·笛卡尔（1596 — 1650）](https://cdn.jsdelivr.net/gh/residualsun1/blog-static/images/2026/06/06-02-1.jpg)
 
 笛卡尔提出的「我思故我在」可以说是对此做出了回应——将一切可疑的悬置起来，重新寻找一个不可置疑的起点。过去，这种不可置疑是神学，但已经开始转变为思维主体自身。由此，这在我们认识的世界中划了一道影响深远的裂缝：
 
