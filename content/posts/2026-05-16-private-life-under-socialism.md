@@ -3,7 +3,7 @@ title: "阅读札记 | 《私人生活的变革：一个中国村庄里的爱情
 author: "黄国政"
 date: "2026-05-16"
 slug: "private-life-under-socialism"
-tag: 
+tags: 
   - 阅读札记
   - 人类学
   - 社会学

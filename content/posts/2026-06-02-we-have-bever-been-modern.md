@@ -3,7 +3,7 @@ title: "阅读札记 | 《我们从未现代过：对称性人类学论集》"
 author: "黄国政"
 date: "2026-06-02"
 slug: "we-have-never-been-modern"
-tag:
+tags:
   - 阅读札记
   - 人类学
   - 社会学
