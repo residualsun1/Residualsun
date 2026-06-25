@@ -1,5 +1,5 @@
 ---
-title: "通过 App Store 礼品卡充值 Codex Plus"
+title: "通过充值 App Store 礼品卡订阅 Codex Plus"
 date: "2026-06-23"
 slug: "appstore-codex-plus"
 author: 黄国政
