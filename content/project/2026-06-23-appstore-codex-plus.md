@@ -143,6 +143,18 @@ tags:
 
 {{< imgloop "https://cdn.jsdelivr.net/gh/residualsun1/blog-static/project/2026/06/06-23-16.png,https://cdn.jsdelivr.net/gh/residualsun1/blog-static/project/2026/06/06-23-17.png,https://cdn.jsdelivr.net/gh/residualsun1/blog-static/project/2026/06/06-23-18.png,https://cdn.jsdelivr.net/gh/residualsun1/blog-static/project/2026/06/06-23-19.png,https://cdn.jsdelivr.net/gh/residualsun1/blog-static/project/2026/06/06-23-20.png" >}} 
 
+---
+
+{{% notice info "二编" %}}
+
+2026 年 6 月 27 日，我再次在 ChatGPT 移动端中订阅 ChatGPT Plus，这一次购买成功，回到 PC 端的 Codex，登录相应账号即可正常使用。
+
+![ChatGPT 移动端](https://cdn.jsdelivr.net/gh/residualsun1/blog-static/project/2026/06/06-23-21.png)
+
+![Codex PC 端](https://cdn.jsdelivr.net/gh/residualsun1/blog-static/project/2026/06/06-23-22.png)
+
+{{% /notice %}}
+
 ## 三、感想
 
 过去时而听说我们「要研好自己的芯片，不要被别人卡脖子」，现在使用 AI，这样的体会深刻了不少。不得不承认，Claude 和 Codex 在开发中就是好用，但是在大陆想要使用和订阅都得费上老大劲，要么是无法科学上网，要么是缺少相关信用卡，要么是随时可能被封控账号——主动权显然都掌握在别人手中。
