@@ -24,6 +24,16 @@ body {
   line-height: 1.75;
   letter-spacing: 0.009em;
   background-color: white;
+  /* 字体渲染优化：macOS/iOS 上使用灰度抗锯齿，文字更清晰干净 */
+  -webkit-font-smoothing: antialiased;
+  /* 字体渲染优化：Firefox 上同理 */
+  -moz-osx-font-smoothing: grayscale;
+  /* 字体渲染优化：优化英文字距和连字，中文影响较小 */
+  text-rendering: optimizeLegibility;
+  /* 移动端优化：禁止 iOS Safari 横屏时自动放大字号 */
+  -webkit-text-size-adjust: 100%;
+  /* 中文优化：数字使用等宽排列，表格中对齐更整齐 */
+  font-variant-numeric: tabular-nums;
 }
 
 a {
