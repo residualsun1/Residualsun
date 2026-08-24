@@ -6,6 +6,7 @@ slug: "july-and-august"
 description: ""
 tags:
   - 想法
+draft: true
 ---
 
 <!--more-->
