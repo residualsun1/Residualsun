@@ -409,9 +409,15 @@ nav.navigation a.button {
 /* Single Page */
 
 #single {
-  max-width: 620px;
   margin: 60px auto 0 auto;
-  padding: 0 64px;
+  /* 加上 body 默认的 8px margin，窄屏正文两侧各留 16px。 */
+  padding: 0 8px;
+}
+
+@media (min-width: 768px) {
+  #single {
+    max-width: 620px;
+  }
 }
 
 #single .title {
@@ -444,7 +450,6 @@ nav.navigation a.button {
 
 @media (max-width: 700px) {
   #single {
-    padding: 0 18px;
     margin: 20px auto 0 auto;
   }
 
