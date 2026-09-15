@@ -9,7 +9,3 @@ $RECYCLE.BIN/
 
 # MacOS
 .DS_Store
-
-# exampleSite
-exampleSite/themes
-exampleSite/public
