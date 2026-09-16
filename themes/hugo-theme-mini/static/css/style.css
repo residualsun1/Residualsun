@@ -341,6 +341,12 @@ nav.navigation a.button {
   margin-top: 0;
 }
 
+@media (max-width: 700px) {
+  .profile h2 {
+    font-size: 18px;
+  }
+}
+
 /* Index Post List */
 
 #list-page {
