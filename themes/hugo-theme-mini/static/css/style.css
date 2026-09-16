@@ -365,6 +365,8 @@ nav.navigation a.button {
 @media (max-width: 700px) {
   #list-page .title {
     font-size: 18px;
+    padding-right: 10px;
+    box-sizing: border-box;
   }
 }
 
