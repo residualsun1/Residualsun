@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>思绪 · 发布后台</title>
+    <link href="config.yml" type="text/yaml" rel="cms-config-url" />
+    <style>
+      /* These overrides apply only to this admin page and the pinned Decap release. */
+      @media (max-width: 799px) {
+        body [class*="-EditorContainer"],
+        body [class*="-ToolbarContainer"] {
+          min-width: 0;
+        }
+        body [class*="-ToolbarSectionBackLink"] {
+          flex: 1;
+          min-width: 0;
+        }
+        body [class*="-ToolbarSectionBackLink"] a {
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+        body [class*="-ToolbarSectionMain"],
+        body [class*="-ToolbarSectionMeta"] {
+          flex: 0 0 auto;
+        }
+        body [class*="-AppHeaderSiteLink"] {
+          display: none;
+        }
+        body [class*="-TextControl"] {
+          min-height: 240px;
+          font-size: 16px;
+        }
+      }
+    </style>
+    <script>window.CMS_MANUAL_INIT = true;</script>
+  </head>
+  <body>
+    <noscript>请启用 JavaScript，才能使用思绪发布后台。</noscript>
+    <script src="https://cdn.jsdelivr.net/npm/decap-cms@3.16.3/dist/decap-cms.js"></script>
+    <script>
+      // The Hugo section settings share the notes folder but must never be edited here.
+      CMS.registerEventListener({
+        name: "preSave",
+        handler: ({ entry }) => {
+          if (entry.get("slug") === "_index" || entry.get("path") === "content/moments/_index.md") {
+            throw new Error("这是思绪页面的目录配置，请返回并新建一条思绪。");
+          }
+          if (!entry.getIn(["data", "body"], "").trim()) {
+            throw new Error("请先写下你的想法，再发布。");
+          }
+          return entry.get("data");
+        },
+      });
+      CMS.init();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,43 @@
+backend:
+  name: github
+  repo: residualsun1/Residualsun
+  branch: main
+
+locale: zh_Hans
+site_url: https://guozheng.rbind.io
+display_url: https://guozheng.rbind.io/moments/
+publish_mode: simple
+media_folder: static/images/moments
+public_folder: /images/moments
+
+collections:
+  - name: moments
+    label: 思绪
+    label_singular: 思绪
+    description: 写下此刻的想法，发布后等待网站自动构建完成。
+    folder: content/moments
+    create: true
+    delete: false
+    extension: md
+    format: yaml-frontmatter
+    identifier_field: body
+    slug: "{{year}}-{{month}}-{{day}}-{{hour}}{{minute}}{{second}}"
+    summary: "{{date | date('YYYY-MM-DD')}} · {{body | truncate(40)}}"
+    sortable_fields: [date]
+    editor:
+      preview: false
+    fields:
+      - name: body
+        label: 此刻的想法
+        widget: text
+        hint: 直接写文字即可；也支持手动输入 Markdown。段落之间留一个空行。
+      - name: date
+        label: 记录时间
+        widget: datetime
+        default: "{{now}}"
+        format: "YYYY-MM-DDTHH:mm:ssZ"
+      - name: title
+        label: 标题（可留空）
+        widget: string
+        required: false
+        default: ""
