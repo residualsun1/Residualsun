@@ -1,0 +1,408 @@
+/* Admin-only skin for Decap 3.16.3. Component labels stay readable when hashes change. */
+/* Font sources and visual values match static/css/custom.css and the site's theme. */
+@font-face {
+  font-family: 'Source Han Serif CN';
+  src: local('Source Han Serif CN'), local('Source Han Serif SC'),
+    local('Source Han Serif TC'), local('Source Han Serif TW'),
+    local('Source Han Serif'), local('Noto Serif CJK SC'), local('Songti SC'), local('SimSong'),
+    url('https://cdn.jsdelivr.net/gh/residualsun1/infont/SourceHanSerifCN-Regular-from-yihui.woff2') format('woff2');
+  font-display: swap;
+  unicode-range: U+4E00-9FFF, U+2014, U+2018-2019, U+201C-201D, U+2026, U+3001-3002, U+300A-300B, U+3010-3011, U+30FB, U+FF01, U+FF08-FF09, U+FF0C, U+FF1A-FF1B, U+FF1F;
+}
+
+:root {
+  --admin-font: 'Source Han Serif CN', Palatino, 'Palatino Linotype', 'Palatino LT STD', 'Latin Modern Roman', serif;
+  --admin-text: #000;
+  --admin-muted: #757575;
+  --admin-border: #ddd;
+  --admin-hover: #f5f5f5;
+  --admin-shadow: 2px 2px 6px rgb(0 0 0 / 10%);
+  color-scheme: light;
+}
+
+html body {
+  margin: 0;
+  background: #fff;
+  color: var(--admin-text);
+  font: normal 16px/1.75 var(--admin-font);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+}
+
+#nc-root, #nc-root * {
+  font-family: var(--admin-font);
+}
+
+#nc-root h1, #nc-root h2, #nc-root label {
+  color: var(--admin-text);
+}
+
+#nc-root a {
+  color: var(--admin-text);
+}
+
+#nc-root :is(a, button, [role='button'], input, textarea, select):focus-visible {
+  outline: 2px solid var(--admin-text);
+  outline-offset: 3px;
+}
+
+/* The welcome heading only appears on the authentication page. */
+.admin-intro {
+  display: none;
+  font-family: var(--admin-font);
+  text-align: center;
+  padding: 0 20px;
+  margin: 88px auto 0;
+}
+
+body:has([class*='-StyledAuthenticationPage']) .admin-intro {
+  display: block;
+}
+
+.admin-intro a {
+  color: var(--admin-muted);
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.admin-intro h1 {
+  font-family: var(--admin-font);
+  margin: 24px 0 12px;
+  font-size: 32px;
+  line-height: 1.5;
+}
+
+.admin-intro p {
+  margin: 0;
+  color: var(--admin-muted);
+}
+
+#nc-root [class*='-StyledAuthenticationPage'] {
+  height: auto;
+  min-height: 0;
+  padding: 36px 20px 80px;
+  gap: 20px;
+  background: #fff;
+}
+
+#nc-root [class*='-DecapLogoIcon'] {
+  display: none;
+}
+
+#nc-root :is(button[class*='-LoginButton'], [class*='-CollectionTopNewButton'], [class*='-AppHeaderQuickNewButton']),
+#nc-root [class*='-ToolbarDropdown'] [class*='-StyledDropdownButton'] {
+  background: var(--admin-text);
+  color: #fff;
+  border: 1px solid var(--admin-text);
+  border-radius: 6px;
+  box-shadow: var(--admin-shadow);
+  font-weight: normal;
+}
+
+#nc-root :is(button[class*='-LoginButton'], [class*='-CollectionTopNewButton'], [class*='-AppHeaderQuickNewButton']):hover,
+#nc-root [class*='-ToolbarDropdown'] [class*='-StyledDropdownButton']:hover {
+  background: #333;
+}
+
+#nc-root button[class*='-LoginButton'] {
+  min-height: 44px;
+  margin: 0;
+  padding: 10px 24px;
+  font-size: 16px;
+}
+
+#nc-root [class*='-GoBackButtonStyle'] {
+  margin: 0;
+  color: var(--admin-muted);
+}
+
+/* Keep the CMS navigation and account controls, using the site's restrained colors. */
+#nc-root header[class*='-AppHeader'],
+#nc-root [class*='-ToolbarContainer'] {
+  background: #fff;
+  box-shadow: none;
+  border-bottom: 1px solid var(--admin-border);
+}
+
+#nc-root [class*='-AppHeaderContent'] {
+  max-width: 1040px;
+  margin: auto;
+}
+
+#nc-root :is([class*='-AppHeaderNavLink'], [class*='-AppHeaderButton'], [class*='-AppHeaderLink']) {
+  color: var(--admin-muted);
+  font-weight: normal;
+  font-size: 14px;
+}
+
+#nc-root .header-link-active {
+  color: var(--admin-text);
+  border-bottom-color: var(--admin-text);
+}
+
+#nc-root [class*='-AppHeaderNavLink'] svg {
+  fill: currentColor;
+}
+
+#nc-root :is([class*='-AppHeaderNavLink'], [class*='-PreviewLink']) [class*='-IconWrapper'] {
+  color: inherit;
+}
+
+#nc-root [class*='-CollectionContainer'] {
+  display: grid;
+  grid-template-columns: 180px minmax(0, 580px);
+  gap: 32px;
+  max-width: 792px;
+  margin: 28px auto 64px;
+  padding: 0 20px;
+}
+
+#nc-root [class*='-SidebarContainer'] {
+  position: static;
+  align-self: start;
+  width: auto;
+  min-width: 0;
+  border: 1px solid var(--admin-border);
+  border-radius: 6px;
+  background: #fff;
+  box-shadow: none;
+}
+
+#nc-root .sidebar-active {
+  background: var(--admin-hover);
+  color: var(--admin-text);
+  border-left-color: var(--admin-text);
+}
+
+#nc-root [class*='-CollectionMain'] {
+  width: 100%;
+  min-width: 0;
+  padding: 0;
+  margin: 0;
+}
+
+#nc-root :is([class*='-CollectionTopContainer'], [class*='-CollectionControlsContainer'], [class*='-CardsGrid']) {
+  width: 100%;
+  max-width: none;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+#nc-root [class*='-CollectionTopContainer'] {
+  padding: 0 0 20px;
+  border-radius: 0;
+  box-shadow: none;
+  border-bottom: 1px solid var(--admin-border);
+}
+
+#nc-root [class*='-CollectionTopHeading'] {
+  font-size: 32px;
+  line-height: 1.5;
+}
+
+#nc-root [class*='-CollectionTopDescription'] {
+  max-width: none;
+  color: var(--admin-muted);
+  line-height: 1.75;
+  margin-top: 12px;
+}
+
+#nc-root [class*='-CardsGrid'] {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  padding: 0;
+  gap: 16px;
+}
+
+#nc-root :is([class*='-ListCard-card'], [class*='-GridCard-card']) {
+  width: 100%;
+  margin: 0;
+  border: 1px solid var(--admin-border);
+  border-radius: 6px;
+  box-shadow: var(--admin-shadow);
+  background: #fff;
+}
+
+#nc-root [class*='-ListCardLink'] {
+  padding: 16px;
+}
+
+#nc-root [class*='-ListCardTitle'] {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.75;
+  overflow-wrap: anywhere;
+}
+
+#nc-root [class*='-ViewControlsButton'] {
+  color: var(--admin-muted);
+}
+
+#nc-root [class*='-PreviewLink'] {
+  color: var(--admin-muted);
+}
+
+#nc-root [class*='-PreviewLink'] svg {
+  fill: currentColor;
+}
+
+/* A single quiet writing column, without changing field values or save behavior. */
+#nc-root [class*='-EditorContainer'],
+#nc-root [class*='-ToolbarContainer'] {
+  min-width: 0;
+}
+
+#nc-root [class*='-EditorContainer'] {
+  background: #fff;
+}
+
+#nc-root [class*='-NoPreviewContainer'] {
+  width: calc(100% - 40px);
+  height: calc(100% - 104px);
+  max-width: 620px;
+  margin: 40px auto 64px;
+  background: #fff;
+  border: 1px solid var(--admin-border);
+  border-radius: 6px;
+  box-shadow: var(--admin-shadow);
+}
+
+#nc-root [class*='-FieldLabel'] {
+  background: transparent;
+  padding-left: 0;
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 1.75;
+}
+
+#nc-root [class*='-ControlHint'] {
+  color: var(--admin-muted);
+  font-size: 13px;
+  line-height: 1.75;
+}
+
+#nc-root :is(input:not([type='checkbox']), textarea, select) {
+  box-sizing: border-box;
+  max-width: 100%;
+  border: 1px solid var(--admin-border);
+  border-radius: 6px;
+  background: #fff;
+  box-shadow: none;
+  color: var(--admin-text);
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+#nc-root textarea {
+  min-height: 320px;
+  padding: 14px;
+}
+
+#nc-root [class*='-DateTimeControl'] {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  padding: 0;
+  border: 0;
+  box-shadow: none;
+}
+
+#nc-root [class*='-ToolbarDropdown'] [class*='-PublishedToolbarButton'] {
+  background: var(--admin-hover);
+  border-color: var(--admin-border);
+  color: var(--admin-muted);
+  box-shadow: none;
+}
+
+#nc-root [class*='-ToolbarDropdown'] [class*='-PublishedToolbarButton']:hover {
+  background: #eee;
+}
+
+#nc-root :is(button, input, textarea, select):disabled {
+  opacity: .6;
+  cursor: not-allowed;
+}
+
+@media (max-width: 799px) {
+  .admin-intro {
+    margin-top: 64px;
+  }
+
+  #nc-root [class*='-CollectionContainer'] {
+    grid-template-columns: minmax(0, 1fr);
+    padding: 0 16px;
+    gap: 28px;
+    margin-top: 20px;
+  }
+
+  #nc-root [class*='-ToolbarSectionBackLink'] {
+    flex: 1;
+    min-width: 0;
+    font-size: 13px;
+  }
+
+  #nc-root [class*='-BackCollection'] {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  #nc-root [class*='-ToolbarSectionBackLink'] > div:last-child {
+    min-width: 0;
+    overflow: hidden;
+  }
+
+  #nc-root [class*='-BackArrow'] {
+    flex-shrink: 0;
+  }
+
+  #nc-root [class*='-BackStatus'] {
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  #nc-root [class*='-PreviewLink'] {
+    font-size: 0;
+  }
+
+  #nc-root [class*='-PreviewLink'] svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  #nc-root [class*='-ToolbarSectionMain'],
+  #nc-root [class*='-ToolbarSectionMeta'] {
+    flex: 0 0 auto;
+  }
+
+  #nc-root [class*='-ToolbarSectionMain'] {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  #nc-root [class*='-AppHeaderSiteLink'] {
+    display: none;
+  }
+
+  #nc-root [class*='-NoPreviewContainer'] {
+    width: calc(100% - 32px);
+    height: calc(100% - 68px);
+    margin: 28px auto 40px;
+  }
+
+  #nc-root textarea {
+    min-height: 260px;
+  }
+}
+
+/* Match the automatic dark appearance of the public site. */
+@media (prefers-color-scheme: dark) {
+  html, #nc-root img {
+    filter: invert(1);
+  }
+}

@@ -2,7 +2,7 @@
 
 后台入口：部署后打开 https://guozheng.rbind.io/admin/ 。
 
-本次只新增 `static/admin/index.html`、`static/admin/config.yml` 和本说明。
+后台文件为 `static/admin/index.html`、`static/admin/config.yml`、`static/admin/admin.css` 和本说明。
 不修改 Hugo 配置、Netlify 构建配置、主题、导航或已有内容。
 后台只配置 `content/moments` 一个内容集合，关闭删除入口，并阻止保存该目录中的 `_index.md` 页面配置。
 这限制的是后台操作范围；GitHub OAuth 授权本身不提供文件夹级别的权限隔离。
@@ -35,6 +35,12 @@ Client Secret 只填入 Netlify 后台，不写进仓库或前端文件，也不
 旧思绪仍使用原文件名；编辑时保留原有日期。正文支持 Markdown，但本版使用简单文本框，不提供富文本工具栏。
 如果列表出现没有日期、正文为空、名为「思绪」的目录条目，请勿编辑；它是 `_index.md`，保存会被阻止。
 电脑上继续写作之前，先拉取手机提交的更新，避免本地分支落后。
+
+## 后台外观
+
+`static/admin/admin.css` 是仅在 `/admin/` 加载的样式，沿用网站的思源宋体／Palatino、白底黑灰文字、6px 圆角、细边框和轻阴影。
+登录页、思绪列表和编辑表单都使用这套样式；原有网站 CSS 与后台的 GitHub 连接配置不变。
+该样式针对固定版本 Decap 3.16.3 的组件名称编写；升级 Decap 后需要重新检查这些选择器和手机布局。
 
 ## 验证与移除
 
