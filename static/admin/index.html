@@ -11,13 +11,34 @@
   </head>
   <body>
     <header class="admin-intro">
-      <a href="/">Residualsun | 黄国政</a>
+      <a href="/">Residualsun</a>
       <h1>思绪</h1>
-      <p>重要的是此时此刻</p>
     </header>
     <noscript>请启用 JavaScript，才能使用思绪发布后台。</noscript>
     <script src="https://cdn.jsdelivr.net/npm/decap-cms@3.16.3/dist/decap-cms.js"></script>
     <script>
+      const zh = CMS.getLocale("zh_Hans");
+      CMS.registerLocale("zh_Hans", {
+        ...zh,
+        app: { ...zh.app, header: { ...zh.app.header, quickAdd: "新建" } },
+        collection: {
+          ...zh.collection,
+          sidebar: { ...zh.collection.sidebar, collections: "导航", searchAll: "搜索思绪" },
+          collectionTop: { ...zh.collection.collectionTop, newButton: "＋ 新建", newButtonAriaLabel: "新建思绪" },
+        },
+        editor: {
+          ...zh.editor,
+          editorToolbar: {
+            ...zh.editor.editorToolbar,
+            backCollection: "%{collectionLabel}",
+            changesSaved: "已保存",
+            unsavedChanges: "未保存",
+            publishAndCreateNew: "发布并新建",
+            publishAndDuplicate: "发布并复制",
+            deployButtonLabel: "查看",
+          },
+        },
+      });
       // The Hugo section settings share the notes folder but must never be edited here.
       CMS.registerEventListener({
         name: "preSave",
