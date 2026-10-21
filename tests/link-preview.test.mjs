@@ -8,7 +8,8 @@ const publicDNS = async () => [{ address: "93.184.215.14", family: 4 }];
 
 test("metadata priority, entity decoding, relative image and trusted source", () => {
   const card = parseMetadata(`<title>Fallback</title><meta property='og:title' content='文学 &amp; Web'><meta name='twitter:title' content='Twitter'><meta property='og:image' content='../cover.jpg'><meta property='og:description' content='一页札记'><meta property='og:site_name' content='Fake source'><meta property='og:url' content='/canonical'>`, "https://example.com/notes/one");
-  assert.equal(card.title, "文学 & Web");
+  assert.equal(card.title, "Twitter");
+  assert.equal(parseMetadata(`<meta property='og:title' content='文学 &amp; Web'>`, "https://example.com/").title, "文学 & Web");
   assert.equal(card.image, "https://example.com/cover.jpg");
   assert.equal(card.domain, "example.com");
   assert.equal(card.siteName, "Fake source");
@@ -53,4 +54,24 @@ test("saved cards round trip with Unicode, removal, body edits and duplicate URL
   assert.equal(links.pieces(removed).filter(part => part.card).length, 0);
   assert.equal(links.read(removed).cards.get("https://example.com/").disabled, true);
   assert.equal(links.write("No URL remains", cards), "No URL remains");
+  assert.ok(!stored.startsWith(body), "active cards replace their bare URL in saved Markdown");
+  const shown = links.write(body, new Map([["https://example.com/", { ...cards.get("https://example.com/"), keepUrl: true }]]));
+  assert.ok(shown.includes("https://example.com/\n\n{{< linkcard"));
+  assert.equal(links.read(shown).text, body);
+  const legacy = `https://example.com/\n\n{{< linkcard data="${links.encode(cards.get("https://example.com/"))}" >}}`;
+  assert.equal(links.read(legacy).text, "https://example.com/");
+  assert.equal(links.pieces(legacy).find(part => part.text !== undefined).text, "");
+});
+
+test("X card declarations, image dimensions and empty metadata", async () => {
+  const image = "https://example.com/og.jpg";
+  assert.equal(links.layout({ image, cardType: "summary" }), "summary");
+  assert.equal(links.layout({ image, cardType: "summary_large_image", imageWidth: 100, imageHeight: 100 }), "large");
+  assert.equal(links.layout({ image, imageWidth: 800, imageHeight: 800 }), "summary");
+  assert.equal(links.layout({ image, imageWidth: 1200, imageHeight: 630 }), "large");
+  assert.equal(links.layout({ title: "A page" }), "summary");
+  const card = parseMetadata(`<meta name='twitter:card' content='summary'><meta name='twitter:title' content='Title'><meta name='twitter:image' content='/twitter.jpg'><meta property='og:image' content='/og.jpg'>`, "https://example.com/");
+  assert.equal(card.cardType, "summary");
+  assert.equal(card.image, "https://example.com/twitter.jpg");
+  await assert.rejects(getPreview("https://example.com", { resolver: publicDNS, read: async () => ({ html: "<p>No metadata</p>" }) }));
 });

@@ -96,11 +96,18 @@ export function parseMetadata(html, originalUrl, finalUrl = originalUrl) {
   parser.end(html);
   const source = webUrl(originalUrl);
   const absolute = value => { try { return value ? webUrl(value, base).href : ""; } catch { return ""; } };
+  const cardType = clean(meta.get("twitter:card"), 40).toLowerCase();
+  const pageTitle = clean(meta.get("twitter:title") || meta.get("og:title") || title, 200);
+  const description = clean(meta.get("twitter:description") || meta.get("og:description") || meta.get("description"), 360);
+  const image = absolute(meta.get("twitter:image") || meta.get("twitter:image:src") || meta.get("og:image") || meta.get("og:image:url"));
+  const imagePrefix = image === absolute(meta.get("og:image") || meta.get("og:image:url")) ? "og:image" : "twitter:image";
+  const dimension = name => Math.max(0, Math.min(20000, parseInt(meta.get(`${imagePrefix}:${name}`), 10) || 0));
   return {
     url: source.href,
-    title: clean(meta.get("og:title") || meta.get("twitter:title") || title || source.hostname, 200),
-    description: clean(meta.get("og:description") || meta.get("twitter:description") || meta.get("description"), 360),
-    image: absolute(meta.get("og:image") || meta.get("og:image:url") || meta.get("twitter:image") || meta.get("twitter:image:src")),
+    title: pageTitle || source.hostname,
+    description, image, cardType,
+    imageWidth: dimension("width"), imageHeight: dimension("height"),
+    hasMetadata: Boolean(pageTitle || description || image),
     siteName: clean(meta.get("og:site_name"), 100),
     canonicalUrl: absolute(meta.get("og:url")),
     domain: source.hostname,
@@ -136,6 +143,7 @@ export async function getPreview(value, { resolver = lookup, read = readPage, si
       // Persist only public image addresses; never fetch images through this endpoint.
       try { await resolveTarget(card.image); } catch { card.image = ""; }
     }
+    if (!card.hasMetadata) throw new Error("网页没有有效的预览信息");
     return card;
   }
 }

@@ -1,7 +1,8 @@
 /* Shared, dependency-free card data and rendering for the writing studio. */
 ((root) => {
+  if (root.ResidualLinkCards) return;
   const MAX_CARDS = 4;
-  const marker = () => /(?:\r?\n\r?\n)?{{<\s*linkcard\s+data="([A-Za-z0-9+/=]+)"\s*>}}/g;
+  const marker = () => /(\r?\n\r?\n)?{{<\s*linkcard\s+data="([A-Za-z0-9+/=]+)"\s*>}}/g;
   const urlKey = value => {
     try {
       const url = new URL(value);
@@ -18,11 +19,11 @@
   };
   function read(value = "") {
     const cards = new Map();
-    const text = value.replace(marker(), (source, encoded) => {
+    const text = value.replace(marker(), (source, gap, encoded) => {
       const card = decode(encoded);
       if (!card) return source;
       cards.set(card.url, card);
-      return "";
+      return card.embedded ? (gap || "") + (card.originalUrl || card.url) : "";
     });
     return { text, cards };
   }
@@ -62,7 +63,11 @@
     });
     let value = text;
     positions.reverse().forEach(item => {
-      value = value.slice(0, item.end) + `\n\n{{< linkcard data="${encode(cards.get(item.url))}" >}}` + value.slice(item.end);
+      const card = cards.get(item.url);
+      const embedded = !card.disabled && !card.keepUrl;
+      const shortcode = `{{< linkcard data="${encode({ ...card, embedded, originalUrl: item.original })}" >}}`;
+      value = embedded ? value.slice(0, item.start) + shortcode + value.slice(item.end)
+        : value.slice(0, item.end) + `\n\n${shortcode}` + value.slice(item.end);
     });
     return value;
   }
@@ -70,32 +75,78 @@
     const result = [];
     let last = 0;
     for (const match of value.matchAll(marker())) {
-      const card = decode(match[1]);
+      const card = decode(match[2]);
       if (!card) continue;
-      result.push({ text: value.slice(last, match.index) });
+      let text = value.slice(last, match.index);
+      // Legacy notes stored a naked URL immediately before their shortcode.
+      if (!card.disabled && !card.keepUrl && !card.embedded) {
+        const lines = text.split(/\r?\n/);
+        if (urlKey(lines.at(-1)) === card.url && (lines.length === 1 || !lines.at(-2).trim())) {
+          lines.pop(); text = lines.join("\n");
+        }
+      }
+      result.push({ text });
       if (!card.disabled) result.push({ card });
       last = match.index + match[0].length;
     }
     result.push({ text: value.slice(last) });
     return result;
   }
+  function layout(card) {
+    if (!urlKey(card.image) || card.cardType === "summary") return "summary";
+    if (card.cardType === "summary_large_image") return "large";
+    return card.imageWidth > 0 && card.imageHeight > 0 && card.imageWidth / card.imageHeight < 1.5 ? "summary" : "large";
+  }
+  function imageLoaded(image) {
+    const figure = image.closest(".rlc");
+    if (!figure) return;
+    if (figure.dataset.rlcAuto === "true" && image.naturalWidth / image.naturalHeight < 1.5) {
+      figure.classList.remove("rlc-large"); figure.classList.add("rlc-summary");
+    }
+  }
+  function imageFailed(image) {
+    const figure = image.closest(".rlc");
+    if (!figure) return;
+    figure.classList.remove("rlc-large");
+    figure.classList.add("rlc-summary", "rlc-image-failed");
+  }
   function render(h, card) {
     const url = urlKey(card.url);
     if (!url || card.disabled) return null;
     const image = urlKey(card.image);
-    return h("figure", { className: "rlc" },
+    const domain = new URL(url).hostname;
+    return h("figure", { key: `${url}:${image}:${card.fetchedAt || ""}`, className: `rlc rlc-${layout(card)}${image ? " rlc-has-image" : ""}`,
+      "data-rlc-auto": !["summary", "summary_large_image"].includes(card.cardType) },
       h("a", { className: "rlc-card", href: url, target: "_blank", rel: "noopener noreferrer" },
-        image ? h("img", { className: "rlc-image", src: image, alt: "", loading: "lazy", decoding: "async", referrerPolicy: "no-referrer",
-          onError: event => { event.currentTarget.hidden = true; } }) : null,
-        h("div", { className: "rlc-info" }, h("div", { className: "rlc-title" }, card.title || new URL(url).hostname),
+        h("div", { className: "rlc-media" },
+          image ? h("img", { className: "rlc-image", src: image, alt: "", loading: "lazy", decoding: "async", referrerPolicy: "no-referrer",
+            onLoad: event => imageLoaded(event.currentTarget), onError: event => imageFailed(event.currentTarget) }) : null,
+          h("img", { className: "rlc-document", src: "/images/link-card-document.svg", alt: "", "aria-hidden": true })),
+        h("div", { className: "rlc-info" }, h("div", { className: "rlc-domain" }, domain),
+          h("div", { className: "rlc-title" }, card.title || domain),
           card.description ? h("p", { className: "rlc-description" }, card.description) : null)),
-      h("figcaption", { className: "rlc-source" }, `来自 ${new URL(url).hostname}`));
+      h("figcaption", { className: "rlc-source" }, `From ${domain}`));
   }
-  root.ResidualLinkCards = { MAX_CARDS, urlKey, encode, decode, read, standalone, write, pieces, render };
-  // Capture failures for cards loaded initially or appended by the public pagination.
+  root.ResidualLinkCards = { MAX_CARDS, urlKey, encode, decode, read, standalone, write, pieces, layout, render, imageLoaded, imageFailed };
+  // Public pages use the same image behavior, including cards added by pagination.
   if (typeof document !== "undefined") {
     document.addEventListener("error", event => {
-      if (event.target?.matches?.("img.rlc-image")) event.target.hidden = true;
+      if (event.target?.matches?.("img.rlc-image")) imageFailed(event.target);
     }, true);
+    document.addEventListener("load", event => {
+      if (event.target?.matches?.("img.rlc-image")) imageLoaded(event.target);
+    }, true);
+    const enhance = () => document.querySelectorAll(".rlc[data-rlc-url]").forEach(figure => {
+      if (figure.dataset.rlcKeepUrl !== "true") {
+        let previous = figure.previousElementSibling;
+        while (previous?.matches("link,script")) previous = previous.previousElementSibling;
+        if (previous?.tagName === "P" && urlKey(previous.textContent.trim()) === figure.dataset.rlcUrl && previous.children.length <= 1) previous.hidden = true;
+      }
+      const image = figure.querySelector(".rlc-image");
+      if (image?.complete) image.naturalWidth ? imageLoaded(image) : imageFailed(image);
+    });
+    if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", enhance, { once: true });
+    else enhance();
+    new MutationObserver(enhance).observe(document.documentElement, { childList: true, subtree: true });
   }
 })(typeof window === "undefined" ? globalThis : window);

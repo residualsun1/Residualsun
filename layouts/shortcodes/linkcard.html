@@ -2,24 +2,35 @@
 {{- if not $data.disabled -}}
   {{- $url := urls.Parse $data.url -}}
   {{- if and (in (slice "http" "https") $url.Scheme) $url.Host (not $url.User) -}}
+    {{- $image := "" -}}
+    {{- with $data.image -}}
+      {{- $parsed := urls.Parse . -}}
+      {{- if and (in (slice "http" "https") $parsed.Scheme) $parsed.Host (not $parsed.User) -}}{{- $image = . -}}{{- end -}}
+    {{- end -}}
+    {{- $large := and $image (ne $data.cardType "summary") -}}
+    {{- if and $large (ne $data.cardType "summary_large_image") $data.imageWidth $data.imageHeight -}}
+      {{- $large = ge (div (float $data.imageWidth) (float $data.imageHeight)) 1.5 -}}
+    {{- end -}}
     {{- if not (.Page.Scratch.Get "linkcard-assets") -}}
       {{- .Page.Scratch.Set "linkcard-assets" true -}}
       <link rel="stylesheet" href="{{ "css/link-cards.css" | relURL }}">
+      <script src="{{ "js/link-cards.js" | relURL }}" defer></script>
     {{- end -}}
-    <figure class="rlc">
+    <figure class="rlc {{ if $large }}rlc-large{{ else }}rlc-summary{{ end }}{{ if $image }} rlc-has-image{{ end }}" data-rlc-url="{{ $data.url }}" data-rlc-keep-url="{{ $data.keepUrl | default false }}" data-rlc-auto="{{ not (in (slice "summary" "summary_large_image") $data.cardType) }}">
       <a class="rlc-card" href="{{ $data.url }}" target="_blank" rel="noopener noreferrer">
-        {{- with $data.image -}}
-          {{- $image := urls.Parse . -}}
-          {{- if and (in (slice "http" "https") $image.Scheme) $image.Host (not $image.User) -}}
-            <img class="rlc-image" src="{{ . }}" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.hidden=true">
+        <div class="rlc-media">
+          {{- with $image -}}
+            <img class="rlc-image" src="{{ . }}" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.closest('.rlc').classList.remove('rlc-large');this.closest('.rlc').classList.add('rlc-summary','rlc-image-failed')">
           {{- end -}}
-        {{- end -}}
+          <img class="rlc-document" src="{{ "images/link-card-document.svg" | relURL }}" alt="" aria-hidden="true">
+        </div>
         <div class="rlc-info">
+          <div class="rlc-domain">{{ $url.Hostname }}</div>
           <div class="rlc-title">{{ $data.title | default $url.Hostname }}</div>
           {{- with $data.description -}}<p class="rlc-description">{{ . }}</p>{{- end -}}
         </div>
       </a>
-      <figcaption class="rlc-source">来自 {{ $url.Hostname }}</figcaption>
+      <figcaption class="rlc-source">From {{ $url.Hostname }}</figcaption>
     </figure>
   {{- end -}}
 {{- end -}}

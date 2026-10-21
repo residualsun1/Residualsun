@@ -1,14 +1,33 @@
-.rlc { display: block; width: 100%; max-width: 100%; margin: 20px 0; font-family: inherit; font-style: normal; text-align: left; }
-.rlc .rlc-card { display: block; overflow: hidden; border: 1px solid #e7e7e3; border-radius: 8px; background: #fff; color: #242424; text-decoration: none; box-shadow: none; transition: border-color 160ms ease, background-color 160ms ease; }
-.rlc .rlc-card:hover { border-color: #bdbdb7; background: #fafaf8; transform: none !important; text-decoration: none; }
-:is(#section .note-content, #single .content) .rlc .rlc-card { border-bottom: 1px solid #e7e7e3; }
-:is(#section .note-content, #single .content) .rlc .rlc-card:hover { border-color: #bdbdb7; }
-.rlc .rlc-card:focus-visible { outline: 2px solid #777773; outline-offset: 4px; }
-.rlc img.rlc-image { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; margin: 0; border: 0; border-radius: 0; }
-.rlc img.rlc-image[hidden] { display: none !important; }
-.rlc .rlc-info { padding: 16px 20px; }
-.rlc .rlc-title { color: #242424; font-size: 18px; font-weight: normal; line-height: 1.6; overflow-wrap: anywhere; }
-.rlc .rlc-description { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden; margin: 6px 0 0; color: #777773; font-size: 14px; line-height: 1.75; overflow-wrap: anywhere; }
-.rlc .rlc-source { margin: 8px 0 0; color: #777773; font-size: 12px; line-height: 1.6; overflow-wrap: anywhere; }
-@media (max-width: 600px) { .rlc .rlc-info { padding: 14px 16px; } .rlc .rlc-title { font-size: 17px; } }
+/* X-style cards are a self-contained typography surface; surrounding prose is unchanged. */
+.rlc, #nc-root .rlc { display: block; width: 100%; max-width: 100%; margin: 16px 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; font-style: normal; font-weight: 400; text-align: left; color: #0f1419; }
+.rlc .rlc-card { position: relative; display: block; box-sizing: border-box; overflow: hidden; border: 1px solid #cfd9de; border-radius: 18px; background: #fff; color: #0f1419; text-decoration: none; box-shadow: none; transition: background-color 160ms ease; }
+:is(#section .note-content, #single .content) .rlc .rlc-card { border: 1px solid #cfd9de; }
+.rlc .rlc-card:hover { transform: none !important; text-decoration: none; }
+.rlc .rlc-card:focus-visible { outline: 2px solid #536471; outline-offset: 4px; }
+.rlc .rlc-media { position: relative; display: grid; place-items: center; min-width: 0; overflow: hidden; background: #f7f9f9; }
+.rlc img.rlc-image { position: absolute; inset: 0; display: block; width: 100%; height: 100%; max-width: none; margin: 0; border: 0; border-radius: 0; object-fit: cover; object-position: center; }
+.rlc img.rlc-document { display: block; width: 28px; height: 28px; margin: 0; border: 0; border-radius: 0; }
+.rlc.rlc-has-image .rlc-document, .rlc.rlc-image-failed .rlc-image { display: none; }
+.rlc.rlc-image-failed .rlc-document { display: block; }
+.rlc .rlc-info { box-sizing: border-box; min-width: 0; }
+.rlc .rlc-title { font-weight: 400; }
+.rlc .rlc-source { margin: 8px 0 0; color: #536471; font-size: 13px; line-height: 20px; overflow-wrap: anywhere; }
+.rlc.rlc-large .rlc-card { aspect-ratio: 1.91 / 1; }
+.rlc.rlc-large .rlc-media { position: absolute; inset: 0; }
+.rlc.rlc-large .rlc-info { position: absolute; left: 12px; bottom: 12px; max-width: calc(100% - 24px); padding: 0; }
+.rlc.rlc-large .rlc-title { display: block; overflow: hidden; max-width: 100%; padding: 2px 8px; border-radius: 5px; background: rgba(0, 0, 0, .8); color: #fff; font-size: 14px; line-height: 16px; letter-spacing: -.2px; white-space: nowrap; text-overflow: ellipsis; }
+.rlc.rlc-large .rlc-domain, .rlc.rlc-large .rlc-description { display: none; }
+.rlc.rlc-summary .rlc-card { display: grid; grid-template-columns: 25% minmax(0, 1fr); min-height: 130px; }
+.rlc.rlc-summary .rlc-card:hover { background: #f7f9f9; }
+.rlc.rlc-summary .rlc-media { border-right: 1px solid #cfd9de; }
+.rlc.rlc-summary .rlc-info { align-self: center; padding: 12px; }
+.rlc.rlc-summary .rlc-domain { overflow: hidden; margin: 0 0 2px; color: #536471; font-size: 13px; line-height: 20px; white-space: nowrap; text-overflow: ellipsis; }
+.rlc.rlc-summary .rlc-title { overflow: hidden; color: #0f1419; font-size: 15px; line-height: 20px; white-space: nowrap; text-overflow: ellipsis; }
+.rlc.rlc-summary .rlc-description, #nc-root .rlc.rlc-summary .rlc-description { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden; margin: 2px 0 0; color: #536471; font-size: 15px; line-height: 20px; overflow-wrap: anywhere; }
+.rlc.rlc-summary .rlc-source { display: none; }
+@media (max-width: 600px) {
+  .rlc.rlc-summary .rlc-card { min-height: 132px; }
+  .rlc.rlc-summary .rlc-info { padding: 12px; }
+  .rlc.rlc-summary .rlc-title { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; white-space: normal; overflow-wrap: anywhere; }
+}
 @media (prefers-reduced-motion: reduce) { .rlc .rlc-card { transition: none; } }

@@ -167,6 +167,8 @@
               description: String(card.description || "").slice(0, 360), image: Links.urlKey(card.image),
               siteName: String(card.siteName || "").slice(0, 100), domain: new URL(url).hostname,
               canonicalUrl: Links.urlKey(card.canonicalUrl), fetchedAt: card.fetchedAt,
+              cardType: card.cardType, imageWidth: card.imageWidth, imageHeight: card.imageHeight,
+              keepUrl: Links.read(this.currentValue).cards.get(url)?.keepUrl || false,
             });
             this.setState(state => ({ linkStates: { ...state.linkStates, [url]: {} } }));
           })
@@ -201,7 +203,10 @@
               h("button", { type: "button", disabled: Boolean(state.loading) || this.props.isDisabled,
                 onClick: () => this.requestPreview(url, true) }, card?.disabled ? "生成预览" : "重新获取"),
               !card?.disabled ? h("button", { type: "button", disabled: this.props.isDisabled,
-                onClick: () => this.removePreview(url) }, "移除预览") : null));
+                onClick: () => this.removePreview(url) }, "移除预览") : null),
+            card && !card.disabled ? h("label", { className: "studio-link-keep-url" },
+              h("input", { type: "checkbox", checked: Boolean(card.keepUrl), disabled: this.props.isDisabled,
+                onChange: event => this.updateLink(url, { ...card, keepUrl: event.target.checked }) }), "正文保留网址") : null);
         }),
         h("p", { className: "studio-link-limit" }, "每条思绪最多 4 个预览"));
     },
