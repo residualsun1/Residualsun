@@ -104,8 +104,10 @@
         if (!this.emittedValues.delete(this.props.value)) this.currentValue = this.props.value || "";
       }
       this.resize();
-      const urls = new Set(Links.standalone(Links.read(this.props.value).text).map(item => item.url));
-      this.linkRequests.forEach((controller, url) => { if (!urls.has(url)) controller.abort(); });
+      const urls = new Set(Links.standalone(Links.read(this.currentValue).text).map(item => item.url));
+      this.linkRequests.forEach((controller, url) => {
+        if (!urls.has(url)) { controller.abort(); this.linkRequests.delete(url); }
+      });
       this.linkQueue = this.linkQueue.filter(item => urls.has(item.url));
     },
     componentWillUnmount() {
@@ -124,7 +126,7 @@
       this.setState(previous => {
         const linkStates = Object.fromEntries(Object.entries(previous.linkStates).filter(([url]) => urls.has(url)));
         urls.forEach(url => {
-          if (!cards.has(url) && !this.knownLinks.has(url) && !linkStates[url]?.loading && new URL(url).origin !== location.origin) linkStates[url] = { waiting: true };
+          if (!cards.has(url) && !this.knownLinks.has(url) && !linkStates[url]?.loading) linkStates[url] = { waiting: true };
         });
         return { linkStates };
       });
@@ -138,7 +140,7 @@
         Links.standalone(current).forEach(({ url }) => {
           if (this.knownLinks.has(url)) return;
           this.knownLinks.add(url);
-          if (!saved.has(url) && new URL(url).origin !== location.origin) this.requestPreview(url);
+          if (!saved.has(url)) this.requestPreview(url);
         });
       }, 700);
     },
@@ -151,7 +153,7 @@
       const retries = [];
       // Explicit pasting may retry a historical/failed link, only at a standalone paragraph.
       Links.standalone(next).forEach(item => {
-        if (item.start >= start && item.end <= end && !cards.has(item.url) && new URL(item.url).origin !== location.origin) {
+        if (item.start >= start && item.end <= end && !cards.has(item.url)) {
           this.knownLinks.delete(item.url);
           retries.push(item.url);
         }
@@ -180,6 +182,7 @@
       this.commitBody(Links.write(text, cards));
     },
     requestPreview(url, refresh = false) {
+      if (this.linkRequests.get(url)?.signal.aborted) this.linkRequests.delete(url);
       if (this.linkRequests.has(url) || this.linkQueue.some(item => item.url === url)) return;
       const { cards } = Links.read(this.currentValue);
       const occupied = new Set([...cards].filter(([, card]) => !card.disabled).map(([key]) => key));
@@ -222,7 +225,7 @@
           })
           .finally(() => {
             clearTimeout(timeout);
-            this.linkRequests.delete(url);
+            if (this.linkRequests.get(url) === controller) this.linkRequests.delete(url);
             if (this.active) this.loadLinks();
           });
       }
@@ -235,10 +238,9 @@
     },
     renderLinkPreviews(text, cards) {
       const urls = [...new Set(Links.standalone(text).map(item => item.url))];
-      const visible = urls.filter(url => new URL(url).origin !== location.origin);
-      if (!visible.length) return null;
-      return h("section", { className: "studio-link-previews", "aria-label": "链接预览" },
-        visible.map(url => {
+      if (!urls.length) return null;
+      return h("section", { className: "studio-link-previews", "aria-label": "链接预览", ref: node => { this.previews = node; } },
+        urls.map(url => {
           const card = cards.get(url), state = this.state.linkStates[url] || {};
           return h("div", { key: url, className: "studio-link-preview", "aria-busy": Boolean(state.loading) },
             h("a", { className: "studio-link-url", href: url, target: "_blank", rel: "noopener noreferrer" }, url),
@@ -267,11 +269,17 @@
     render() {
       const value = this.props.value || "";
       const { text: body, cards } = Links.read(value);
-      const linkStates = Object.values(this.state.linkStates);
+      const urls = [...new Set(Links.standalone(body).map(item => item.url))];
+      const linkStates = urls.map(url => this.state.linkStates[url] || {});
+      const ready = urls.filter(url => cards.has(url) && !cards.get(url).disabled);
+      const retry = urls.filter((url, index) => (!cards.has(url) || cards.get(url).disabled) && !linkStates[index].loading && !linkStates[index].waiting && !linkStates[index].limited);
       const linkProgress = linkStates.some(state => state.loading) ? "正在获取预览…"
         : linkStates.some(state => state.waiting) ? "准备获取预览…"
         : linkStates.some(state => state.limited) ? "已达预览上限"
-        : linkStates.some(state => state.error) ? "预览获取失败" : "";
+        : linkStates.some(state => state.error) ? "预览获取失败"
+        : ready.length ? "预览已生成"
+        : urls.some(url => cards.get(url)?.disabled) ? "仅保留链接"
+        : urls.length ? "未生成预览" : "";
       return h("section", { className: "studio-writer", "aria-label": "思绪写作区" },
         this.state.focus ? h("div", { className: "studio-focus-reveal", "aria-hidden": true }) : null,
         h("div", { className: "studio-writing-tools" },
@@ -280,7 +288,12 @@
               onClick: () => this.setState({ preview: false }) }, "写作"),
             h("button", { type: "button", "aria-pressed": this.state.preview,
               onClick: () => this.setState({ preview: true }) }, "预览")),
-          linkProgress ? h("span", { className: "studio-link-progress", role: "status", "aria-live": "polite" }, linkProgress) : null,
+          linkProgress ? h("div", { className: "studio-link-feedback" },
+            h("span", { className: "studio-link-progress", role: "status", "aria-live": "polite" }, linkProgress),
+            retry.length ? h("button", { type: "button", className: "studio-link-shortcut", disabled: this.props.isDisabled,
+              onClick: () => retry.forEach(url => this.requestPreview(url, true)) }, "生成预览")
+              : ready.length && !this.state.preview ? h("button", { type: "button", className: "studio-link-shortcut",
+                onClick: () => this.previews?.scrollIntoView({ block: "start" }) }, "查看 ↓") : null) : null,
           h("button", { type: "button", className: "studio-focus-toggle", "aria-pressed": this.state.focus,
             onClick: () => this.setFocus(!this.state.focus) }, this.state.focus ? "退出专注" : "专注")),
         this.state.preview ? h("div", { className: "studio-preview" }, body

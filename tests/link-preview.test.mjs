@@ -1,5 +1,7 @@
 import test from "node:test";
 import assert from "node:assert/strict";
+import { readFileSync } from "node:fs";
+import { runInNewContext } from "node:vm";
 import { getPreview, publicTarget, parseMetadata } from "../netlify/lib/link-preview.mjs";
 import "../static/js/link-cards.js";
 
@@ -81,4 +83,84 @@ test("X card declarations, image dimensions and empty metadata", async () => {
   assert.equal(card.cardType, "summary");
   assert.equal(card.image, "https://example.com/twitter.jpg");
   await assert.rejects(getPreview("https://example.com", { resolver: publicDNS, read: async () => ({ html: "<p>No metadata</p>" }) }));
+});
+
+// Exercise the registered widget with Decap-style value echoes and controlled network replies.
+function editor(value = "") {
+  const widgets = new Map(), timers = new Map(), requests = [];
+  const locale = { app: { header: {} }, collection: { sidebar: {}, collectionTop: {} }, editor: { editor: {}, editorToolbar: {} } };
+  let timerID = 0;
+  const CMS = {
+    getLocale: () => locale, registerLocale() {}, getWidget: () => ({}),
+    registerWidget: (name, widget) => widgets.set(name, widget), registerEventListener() {}, init() {},
+  };
+  const h = (type, props, ...children) => ({ type, props, children });
+  runInNewContext(readFileSync(new URL("../static/admin/studio.js", import.meta.url), "utf8"), {
+    window: { CMS, h, createClass: widget => widget, ResidualLinkCards: links, addEventListener() {}, removeEventListener() {} },
+    document: { body: { classList: { remove() {} } }, addEventListener() {}, removeEventListener() {} },
+    MutationObserver: class { observe() {} }, requestAnimationFrame() {},
+    location: { origin: "https://guozheng.rbind.io", href: "https://guozheng.rbind.io/admin/" },
+    URL, AbortController, Intl,
+    setTimeout: (callback, delay) => { timers.set(++timerID, { callback, delay }); return timerID; },
+    clearTimeout: id => timers.delete(id),
+    fetch: (endpoint, options) => {
+      if (new URL(endpoint).pathname.endsWith("records.json")) return Promise.resolve({ ok: true, json: async () => ({ records: [] }) });
+      return new Promise((resolve, reject) => {
+        requests.push({ url: new URL(endpoint).searchParams.get("url"), signal: options.signal,
+          resolve: card => resolve({ ok: true, json: async () => card }) });
+        options.signal.addEventListener("abort", () => reject(new Error("Aborted")));
+      });
+    },
+  });
+  const control = { ...widgets.get("studio-body") };
+  control.props = { value, onChange(next) {
+    const previous = control.props;
+    control.props = { ...previous, value: next };
+    control.componentDidUpdate(previous);
+  } };
+  control.state = control.getInitialState();
+  control.setState = update => {
+    control.state = { ...control.state, ...(typeof update === "function" ? update(control.state) : update) };
+    control.componentDidUpdate(control.props);
+  };
+  control.componentDidMount();
+  return { control, requests, debounce() {
+    for (const [id, timer] of [...timers]) if (timer.delay === 700) { timers.delete(id); timer.callback(); }
+  } };
+}
+const settleEditor = () => new Promise(resolve => setImmediate(resolve));
+const renderedText = node => typeof node === "string" ? node : Array.isArray(node) ? node.map(renderedText).join(" ") : node?.children ? renderedText(node.children) : "";
+
+test("finishing the site's own URL starts a preview and keeps its completion visible", async () => {
+  const { control, requests, debounce } = editor();
+  control.changeBody("https://guozheng.rbind.i"); debounce();
+  control.changeBody("https://guozheng.rbind.io"); debounce();
+  assert.equal(requests.at(-1).url, "https://guozheng.rbind.io/");
+  requests.at(-1).resolve({ title: "Residualsun", fetchedAt: "2026-10-21T00:00:00Z" });
+  await settleEditor();
+  assert.ok(links.read(control.props.value).cards.has("https://guozheng.rbind.io/"));
+  assert.match(renderedText(control.render()), /预览已生成/);
+});
+
+test("typing the final letter again survives cancellation of the earlier request", async () => {
+  const { control, requests, debounce } = editor();
+  control.changeBody("https://clash-jichang.com"); debounce();
+  control.changeBody("https://clash-jichang.co");
+  control.changeBody("https://clash-jichang.com"); debounce();
+  assert.equal(requests.length, 2);
+  assert.equal(requests[0].signal.aborted, true);
+  await settleEditor();
+  assert.equal(control.linkRequests.get("https://clash-jichang.com/").signal, requests[1].signal);
+  requests[1].resolve({ title: "Clash", fetchedAt: "2026-10-21T00:00:00Z" });
+  await settleEditor();
+  assert.equal(links.read(control.props.value).text, "https://clash-jichang.com");
+  assert.match(renderedText(control.render()), /预览已生成/);
+});
+
+test("removed previews retain a visible manual generation action", () => {
+  const url = "https://clash-jichang.com/";
+  const saved = links.write(url, new Map([[url, { url, disabled: true }]]));
+  const { control, requests } = editor(saved);
+  assert.match(renderedText(control.render()), /仅保留链接.*生成预览/);
+  assert.equal(requests.length, 0, "opening a note does not automatically refetch removed previews");
 });

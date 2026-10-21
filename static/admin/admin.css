@@ -119,7 +119,7 @@ body[data-studio-view='editor'] #nc-root [class*='-AppMainContainer'] { margin-t
 #nc-root [class*='-DateTimeControl'] button { color: var(--studio-muted); background: var(--studio-soft); }
 #nc-root input.studio-title { display: block; width: 100%; padding: 0; margin: 8px 0 24px; border: 0; border-radius: 0; font-size: 28px; line-height: 1.5; }
 #nc-root .studio-add-title { margin-bottom: 16px; opacity: .65; }
-#nc-root .studio-writing-tools { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin: 0 0 24px; }
+#nc-root .studio-writing-tools { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 16px; margin: 0 0 24px; }
 #nc-root .studio-mode { display: flex; gap: 24px; }
 #nc-root :is(.studio-mode button, .studio-focus-toggle) { min-height: 36px; padding: 0; color: var(--studio-muted); background: transparent; border: 0; border-bottom: 1px solid transparent; border-radius: 0; font-size: 13px; }
 #nc-root .studio-mode [aria-pressed='true'] { color: var(--studio-ink); border-bottom-color: var(--studio-ink); }
@@ -190,7 +190,10 @@ body[data-studio-view='editor'] #nc-root [class*='-AppMainContainer'] { margin-t
 #nc-root .studio-link-actions button { min-height: 36px; padding: 4px 0; border: 0; background: transparent; cursor: pointer; font-size: 12px; }
 #nc-root .studio-link-actions button:disabled { opacity: .5; cursor: default; }
 #nc-root .studio-link-limit { margin-top: 16px; color: var(--studio-muted); font-size: 12px; }
-#nc-root .studio-link-progress { margin-left: auto; color: var(--studio-muted); font-size: 12px; }
+#nc-root .studio-link-feedback { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 12px; margin-left: auto; }
+#nc-root .studio-link-progress { color: var(--studio-muted); font-size: 12px; }
+#nc-root .studio-link-shortcut { min-height: 36px; padding: 0; border: 0; color: var(--studio-muted); background: transparent; font-size: 12px; white-space: nowrap; }
+#nc-root .studio-link-previews { scroll-margin-top: 80px; }
 #nc-root .studio-link-keep-url { display: flex; align-items: center; gap: 8px; width: fit-content; margin-top: 4px; color: var(--studio-muted); font-size: 12px; cursor: pointer; }
 #nc-root .studio-link-keep-url input { accent-color: var(--studio-ink); }
 @media (prefers-reduced-motion: reduce) { #nc-root *, .studio-focus #nc-root [class*='-ToolbarContainer'] { transition: none !important; animation: none !important; scroll-behavior: auto !important; } }
