@@ -138,7 +138,7 @@ body[data-studio-view='editor'] #nc-root [class*='-AppMainContainer'] { margin-t
 #nc-root .studio-mode { display: flex; gap: 24px; }
 #nc-root :is(.studio-mode button, .studio-focus-toggle) { min-height: 36px; padding: 0; color: var(--studio-muted); background: transparent; border: 0; border-bottom: 1px solid transparent; border-radius: 0; font-size: 13px; }
 #nc-root .studio-mode [aria-pressed='true'] { color: var(--studio-ink); border-bottom-color: var(--studio-ink); }
-#nc-root textarea.studio-body { display: block; width: 100%; min-height: 280px; height: auto; padding: 0; margin: 0; overflow: hidden; resize: none; border: 0; border-radius: 0; background: transparent; box-shadow: none; font-size: 19px; line-height: 1.85; font-weight: normal; overflow-wrap: anywhere; }
+#nc-root textarea.studio-body { display: block; width: 100%; min-height: 280px; height: auto; padding: 0; margin: 0; overflow: hidden; resize: none; border: 0; border-radius: 0; background: transparent; box-shadow: none; font-size: 15px; line-height: 1.85; font-weight: normal; overflow-wrap: anywhere; }
 #nc-root textarea.studio-body:focus-visible { outline: none; }
 #nc-root .studio-writer:has(textarea:focus-visible) .studio-writing-tools { border-color: #aaa; }
 #nc-root .studio-preview { min-height: 280px; font-size: 19px; line-height: 1.85; overflow-wrap: anywhere; }
@@ -193,7 +193,7 @@ body[data-studio-view='editor'] #nc-root [class*='-AppMainContainer'] { margin-t
   #nc-root [class*='-ToolbarDropdown'] [class*='-StyledDropdownButton'] { padding: 0 12px; }
   #nc-root [class*='-PreviewLink'] { display: none; }
   #nc-root [class*='-NoPreviewContainer'] { width: calc(100% - 40px); margin: 32px auto 64px; }
-  #nc-root textarea.studio-body, #nc-root .studio-preview { font-size: 19px; }
+  #nc-root .studio-preview { font-size: 19px; }
   #nc-root .studio-date-panel { width: min(360px, calc(100vw - 40px)); }
 }
 #nc-root .studio-link-previews { margin: 24px 0; }
