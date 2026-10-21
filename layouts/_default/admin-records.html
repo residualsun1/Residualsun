@@ -1,0 +1,6 @@
+{{- $notes := (site.GetPage "/moments").Pages.ByDate.Reverse -}}
+{{- $records := slice -}}
+{{- range $i, $note := $notes -}}
+  {{- $records = $records | append (dict "slug" $note.File.ContentBaseName "number" (sub (len $notes) $i) "url" $note.RelPermalink "date" ($note.Date.Format "2006-01-02T15:04:05-07:00")) -}}
+{{- end -}}
+{{- dict "records" $records | jsonify | safeHTML -}}

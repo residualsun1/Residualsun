@@ -21,14 +21,12 @@ collections:
     format: yaml-frontmatter
     identifier_field: body
     slug: "{{year}}-{{month}}-{{day}}-{{hour}}{{minute}}{{second}}"
-    summary: "{{date | date('YYYY-MM-DD')}} · {{body | truncate(40)}}"
+    # Display-only separators; stored Markdown/front matter remain unchanged.
+    summary: "{{date | date('YYYY-MM-DDTHH:mm:ssZ')}}\u001f{{title}}\u001f{{draft}}\u001f{{body}}"
     sortable_fields: [date]
     editor:
       preview: false
     fields:
-      - name: body
-        label: 正文
-        widget: text
       - name: date
         label: 时间
         widget: datetime
@@ -36,6 +34,14 @@ collections:
         format: "YYYY-MM-DDTHH:mm:ssZ"
       - name: title
         label: 标题
-        widget: string
+        widget: studio-title
         required: false
         default: ""
+      - name: body
+        label: 正文
+        widget: studio-body
+      - name: draft
+        label: 发布设置
+        widget: studio-draft
+        required: false
+        default: false
