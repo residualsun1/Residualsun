@@ -40,6 +40,13 @@ test("revalidate every redirect before opening a socket", async () => {
 test("standalone URLs exclude prose, links, fenced/indented code and HTML", () => {
   const body = "https://one.example/\n\n文字 https://two.example/\n\n[link](https://three.example/)\n\n```md\n\nhttps://four.example/\n\n```\n\n    https://five.example/\n\n<div>\n\nhttps://six.example/\n\n</div>\n\nhttps://seven.example/";
   assert.deepEqual(links.standalone(body).map(item => item.url), ["https://one.example/", "https://seven.example/"]);
+  assert.equal(links.standalone("https://clash-jichang.com")[0].url, "https://clash-jichang.com/");
+  assert.equal(links.standalone("  https://clash-jichang.com  ")[0].original, "https://clash-jichang.com");
+  assert.equal(links.standalone("    https://clash-jichang.com").length, 0, "indented code remains excluded");
+  assert.equal(links.standalone("普通段落 https://clash-jichang.com").length, 0);
+  const spaced = "文字。\n\n  https://clash-jichang.com  \n\n后文。";
+  const saved = links.write(spaced, new Map([["https://clash-jichang.com/", { url: "https://clash-jichang.com/", title: "Preview" }]]));
+  assert.equal(links.read(saved).text, spaced, "preview round trip preserves surrounding spaces");
 });
 
 test("saved cards round trip with Unicode, removal, body edits and duplicate URLs", () => {

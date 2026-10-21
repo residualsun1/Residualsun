@@ -188,6 +188,7 @@ body[data-studio-view='editor'] #nc-root [class*='-AppMainContainer'] { margin-t
 #nc-root .studio-link-actions button { min-height: 36px; padding: 4px 0; border: 0; background: transparent; cursor: pointer; font-size: 12px; }
 #nc-root .studio-link-actions button:disabled { opacity: .5; cursor: default; }
 #nc-root .studio-link-limit { margin-top: 16px; color: var(--studio-muted); font-size: 12px; }
+#nc-root .studio-link-progress { margin-left: auto; color: var(--studio-muted); font-size: 12px; }
 #nc-root .studio-link-keep-url { display: flex; align-items: center; gap: 8px; width: fit-content; margin-top: 4px; color: var(--studio-muted); font-size: 12px; cursor: pointer; }
 #nc-root .studio-link-keep-url input { accent-color: var(--studio-ink); }
 @media (prefers-reduced-motion: reduce) { #nc-root *, .studio-focus #nc-root [class*='-ToolbarContainer'] { transition: none !important; animation: none !important; scroll-behavior: auto !important; } }

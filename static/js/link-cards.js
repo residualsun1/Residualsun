@@ -48,10 +48,12 @@
       if (/^\s*<!--/.test(line)) { if (!line.includes("-->")) html = "comment"; return; }
       const tag = /^\s*<(script|style|pre|textarea|div|table|details|section|article|iframe)\b/i.exec(line)?.[1];
       if (tag) { if (!new RegExp(`</${tag}\\s*>`, "i").test(line)) html = tag; return; }
-      if (line !== line.trim() || !/^https?:\/\/\S+$/i.test(line)) return;
+      const match = /^ {0,3}(https?:\/\/\S+?)[ \t]*$/i.exec(line);
+      if (!match) return;
       if ((index && lines[index - 1].trim()) || (index < lines.length - 1 && lines[index + 1].trim())) return;
-      const key = urlKey(line);
-      if (key) found.push({ url: key, original: line, start, end: start + line.length });
+      const key = urlKey(match[1]);
+      const urlStart = start + line.indexOf(match[1]);
+      if (key) found.push({ url: key, original: match[1], start: urlStart, end: urlStart + match[1].length });
     });
     return found;
   }

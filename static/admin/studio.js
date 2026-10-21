@@ -112,16 +112,52 @@
     },
     changeBody(text) {
       const { cards } = Links.read(this.currentValue);
+      const urls = new Set(Links.standalone(text).map(item => item.url));
+      // Removing a URL also clears its attempt marker, so entering it again can retry.
+      this.knownLinks = new Set([...this.knownLinks].filter(url => urls.has(url)));
+      this.setState(previous => {
+        const linkStates = Object.fromEntries(Object.entries(previous.linkStates).filter(([url]) => urls.has(url)));
+        urls.forEach(url => {
+          if (!cards.has(url) && !this.knownLinks.has(url) && !linkStates[url]?.loading && new URL(url).origin !== location.origin) linkStates[url] = { waiting: true };
+        });
+        return { linkStates };
+      });
       this.commitBody(Links.write(text, cards));
+      this.scheduleLinkPreviews();
+    },
+    scheduleLinkPreviews() {
       clearTimeout(this.linkTimer);
       this.linkTimer = setTimeout(() => {
-        const { text: current, cards: saved } = Links.read(this.props.value);
+        const { text: current, cards: saved } = Links.read(this.currentValue);
         Links.standalone(current).forEach(({ url }) => {
           if (this.knownLinks.has(url)) return;
           this.knownLinks.add(url);
           if (!saved.has(url) && new URL(url).origin !== location.origin) this.requestPreview(url);
         });
       }, 700);
+    },
+    pastedBody(event) {
+      const input = event.currentTarget;
+      const pasted = event.clipboardData.getData("text/plain");
+      const start = input.selectionStart, end = start + pasted.length;
+      const next = input.value.slice(0, start) + pasted + input.value.slice(input.selectionEnd);
+      const { cards } = Links.read(this.currentValue);
+      const retries = [];
+      // Explicit pasting may retry a historical/failed link, only at a standalone paragraph.
+      Links.standalone(next).forEach(item => {
+        if (item.start >= start && item.end <= end && !cards.has(item.url) && new URL(item.url).origin !== location.origin) {
+          this.knownLinks.delete(item.url);
+          retries.push(item.url);
+        }
+      });
+      if (retries.length) {
+        this.setState(previous => {
+          const linkStates = { ...previous.linkStates };
+          retries.forEach(url => { if (!linkStates[url]?.loading) linkStates[url] = { waiting: true }; });
+          return { linkStates };
+        });
+        this.scheduleLinkPreviews();
+      }
     },
     commitBody(value) {
       // Metadata responses can finish together before Decap echoes the new props.
@@ -139,11 +175,14 @@
     },
     requestPreview(url, refresh = false) {
       if (this.linkRequests.has(url) || this.linkQueue.some(item => item.url === url)) return;
-      const { cards } = Links.read(this.props.value);
+      const { cards } = Links.read(this.currentValue);
       const occupied = new Set([...cards].filter(([, card]) => !card.disabled).map(([key]) => key));
       [...this.linkRequests.keys(), ...this.linkQueue.map(item => item.url)].forEach(key => occupied.add(key));
       occupied.delete(url);
-      if (occupied.size >= Links.MAX_CARDS) return;
+      if (occupied.size >= Links.MAX_CARDS) {
+        this.setState(state => ({ linkStates: { ...state.linkStates, [url]: { limited: true } } }));
+        return;
+      }
       this.setState(state => ({ linkStates: { ...state.linkStates, [url]: { loading: true } } }));
       this.linkQueue.push({ url, refresh });
       this.loadLinks();
@@ -190,7 +229,7 @@
     },
     renderLinkPreviews(text, cards) {
       const urls = [...new Set(Links.standalone(text).map(item => item.url))];
-      const visible = urls.filter(url => cards.has(url) || this.state.linkStates[url]);
+      const visible = urls.filter(url => new URL(url).origin !== location.origin);
       if (!visible.length) return null;
       return h("section", { className: "studio-link-previews", "aria-label": "链接预览" },
         visible.map(url => {
@@ -199,10 +238,10 @@
             h("a", { className: "studio-link-url", href: url, target: "_blank", rel: "noopener noreferrer" }, url),
             card && !card.disabled ? Links.render(h, card) : null,
             h("div", { className: "studio-link-actions" },
-              h("span", { role: "status", "aria-live": "polite" }, state.loading ? "正在获取预览…" : state.error ? "获取失败，原始链接仍可保存" : card?.disabled ? "仅保留链接" : ""),
+              h("span", { role: "status", "aria-live": "polite" }, state.loading ? "正在获取预览…" : state.waiting ? "准备获取预览…" : state.limited ? "已达 4 个预览上限" : state.error ? "获取失败，原始链接仍可保存" : card?.disabled ? "仅保留链接" : !card ? "未生成预览" : ""),
               h("button", { type: "button", disabled: Boolean(state.loading) || this.props.isDisabled,
-                onClick: () => this.requestPreview(url, true) }, card?.disabled ? "生成预览" : "重新获取"),
-              !card?.disabled ? h("button", { type: "button", disabled: this.props.isDisabled,
+                onClick: () => this.requestPreview(url, true) }, card?.disabled || !card ? "生成预览" : "重新获取"),
+              (card && !card.disabled) || state.loading || state.waiting || state.error ? h("button", { type: "button", disabled: this.props.isDisabled,
                 onClick: () => this.removePreview(url) }, "移除预览") : null),
             card && !card.disabled ? h("label", { className: "studio-link-keep-url" },
               h("input", { type: "checkbox", checked: Boolean(card.keepUrl), disabled: this.props.isDisabled,
@@ -222,6 +261,11 @@
     render() {
       const value = this.props.value || "";
       const { text: body, cards } = Links.read(value);
+      const linkStates = Object.values(this.state.linkStates);
+      const linkProgress = linkStates.some(state => state.loading) ? "正在获取预览…"
+        : linkStates.some(state => state.waiting) ? "准备获取预览…"
+        : linkStates.some(state => state.limited) ? "已达预览上限"
+        : linkStates.some(state => state.error) ? "预览获取失败" : "";
       return h("section", { className: "studio-writer", "aria-label": "思绪写作区" },
         this.state.focus ? h("div", { className: "studio-focus-reveal", "aria-hidden": true }) : null,
         h("div", { className: "studio-writing-tools" },
@@ -230,6 +274,7 @@
               onClick: () => this.setState({ preview: false }) }, "写作"),
             h("button", { type: "button", "aria-pressed": this.state.preview,
               onClick: () => this.setState({ preview: true }) }, "预览")),
+          linkProgress ? h("span", { className: "studio-link-progress", role: "status", "aria-live": "polite" }, linkProgress) : null,
           h("button", { type: "button", className: "studio-focus-toggle", "aria-pressed": this.state.focus,
             onClick: () => this.setFocus(!this.state.focus) }, this.state.focus ? "退出专注" : "专注")),
         this.state.preview ? h("div", { className: "studio-preview" }, body
@@ -240,6 +285,7 @@
           hidden: this.state.preview, placeholder: "写下此刻的想法…", value: body, spellCheck: false,
           disabled: this.props.isDisabled,
           ref: node => { this.input = node; },
+          onPaste: event => this.pastedBody(event),
           onChange: event => this.changeBody(event.target.value) }),
         !this.state.preview ? this.renderLinkPreviews(body, cards) : null,
         h("footer", { className: "studio-writing-footer" }, h("span", null, "Markdown"),
