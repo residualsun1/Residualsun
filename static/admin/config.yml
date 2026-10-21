@@ -16,7 +16,7 @@ collections:
     label_singular: 思绪
     folder: content/moments
     create: true
-    delete: false
+    delete: true
     extension: md
     format: yaml-frontmatter
     identifier_field: body

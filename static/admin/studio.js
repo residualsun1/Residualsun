@@ -30,12 +30,18 @@
       sidebar: { ...zh.collection.sidebar, searchAll: "搜索正文或标题" },
       collectionTop: { ...zh.collection.collectionTop, newButton: "＋ 新建思绪", newButtonAriaLabel: "新建思绪" },
     },
-    editor: { ...zh.editor, editorToolbar: { ...zh.editor.editorToolbar,
-      backCollection: "%{collectionLabel}", unsavedChanges: "未保存", changesSaved: "已保存到仓库",
-      saving: "保存中…", publishing: "发布中…", updating: "更新中…", published: "已提交",
-      publishNow: "确认提交",
-      publishAndCreateNew: "发布并新建", publishAndDuplicate: "发布并复制", deployButtonLabel: "公开页面",
-    } },
+    editor: { ...zh.editor,
+      editor: { ...zh.editor.editor,
+        onDeletePublishedEntry: "删除这条思绪？将提交到仓库，网站构建完成后公开页面才会移除。",
+        onDeleteWithUnsavedChanges: "删除这条思绪？未保存的修改也会丢弃。网站构建完成后公开页面才会移除。",
+      },
+      editorToolbar: { ...zh.editor.editorToolbar,
+        backCollection: "%{collectionLabel}", unsavedChanges: "未保存", changesSaved: "已保存到仓库",
+        saving: "保存中…", publishing: "发布中…", updating: "更新中…", published: "已提交",
+        publishNow: "确认提交", deleteEntry: "删除",
+        publishAndCreateNew: "发布并新建", publishAndDuplicate: "发布并复制", deployButtonLabel: "公开页面",
+      },
+    },
   });
 
   const DateWidget = CMS.getWidget("datetime");
@@ -303,13 +309,17 @@
   function editing() { feedback = ""; schedule(); }
   let lastSubmission = null;
   const pendingSlugs = new Set();
-  CMS.registerEventListener({ name: "preSave", handler: ({ entry }) => {
+  function protectIndex(entry) {
     if (entry.get("slug") === "_index" || entry.get("path") === "content/moments/_index.md") {
-      throw new Error("这是思绪页面的目录配置，请返回并新建一条思绪。");
+      throw new Error("这是思绪页面的目录配置，不能在后台修改或删除。");
     }
+  }
+  CMS.registerEventListener({ name: "preSave", handler: ({ entry }) => {
+    protectIndex(entry);
     if (!entry.getIn(["data", "body"], "").trim()) throw new Error("请先写下你的想法，再发布。");
     return entry.get("data");
   } });
+  CMS.registerEventListener({ name: "preUnpublish", handler: ({ entry }) => protectIndex(entry) });
   CMS.registerEventListener({ name: "postSave", handler: ({ entry }) => {
     feedback = entry.getIn(["data", "draft"]) ? "草稿已保存到仓库。" : "已提交到仓库，等待网站构建。";
     lastSubmission = entry.get("slug") || "new";
@@ -461,6 +471,11 @@
     if (collection) enhanceList(collection);
     if (editor) {
       const slug = decodeURIComponent(location.hash.split("/entries/")[1] || "");
+      const deleteButton = query("DeleteButton", editor);
+      if (deleteButton) {
+        deleteButton.hidden = slug === "_index";
+        deleteButton.title = "删除这条思绪";
+      }
       if (lastSubmission && slug) {
         pendingSlugs.add(lastSubmission === "new" ? slug : lastSubmission);
         lastSubmission = null;

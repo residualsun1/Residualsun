@@ -93,6 +93,8 @@ body[data-studio-view='editor'] #nc-root [class*='-AppMainContainer'] { margin-t
 #nc-root [class*='-BackStatusChanged'] { color: var(--studio-ink); }
 #nc-root :is([class*='-ToolbarSectionMain'], [class*='-ToolbarSectionMeta']) { min-width: 0; height: auto; flex: none; padding: 0; border: 0; }
 #nc-root [class*='-ToolbarSectionMain'] { gap: 16px; }
+#nc-root [class*='-ToolbarSectionMain'] [class*='-DeleteButton'] { height: 38px; min-height: 38px; margin: 0; padding: 0 12px; border: 1px solid var(--studio-line); border-radius: 6px; color: var(--studio-muted); background: #fff; box-shadow: none; font-size: 13px; font-weight: normal; white-space: nowrap; }
+#nc-root [class*='-ToolbarSectionMain'] [class*='-DeleteButton']:hover { color: var(--studio-ink); background: var(--studio-soft); }
 #nc-root [class*='-ToolbarDropdown'] { margin: 0; }
 #nc-root [class*='-ToolbarDropdown'] [class*='-StyledDropdownButton'] { display: inline-flex; align-items: center; justify-content: center; gap: 8px; height: 38px; min-height: 38px; padding: 0 16px; background: var(--studio-ink); border: 1px solid var(--studio-ink); border-radius: 6px; color: #fff; box-shadow: none; font-size: 14px; font-weight: normal; line-height: 1; white-space: nowrap; }
 /* Keep Decap's caret in the same layout flow as the button label. */

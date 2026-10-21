@@ -5,7 +5,7 @@
 后台文件位于 `static/admin/`。`studio.js` 扩展界面，认证、仓库读取和提交仍由固定版本 Decap 3.16.3 完成。
 `content/admin-records.md` 和 `layouts/_default/admin-records.html` 仅生成 `/admin/records.json`，提供公开思绪原有编号及链接，不进入主页、搜索索引或站点地图。
 不修改 Hugo 配置、Netlify 构建配置、主题、导航或已有内容。
-后台只配置 `content/moments` 一个内容集合，关闭删除入口，并阻止保存该目录中的 `_index.md` 页面配置。
+后台只配置 `content/moments` 一个内容集合。打开已保存的思绪，点击顶部「删除」，确认后由 Decap 提交删除到仓库；公开页面在网站构建完成后移除。未保存的编辑也会在删除时丢弃。`_index.md` 页面配置仍禁止保存和删除。
 这限制的是后台操作范围；GitHub OAuth 授权本身不提供文件夹级别的权限隔离。
 
 ## 首次接入 GitHub 登录
