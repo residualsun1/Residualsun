@@ -120,7 +120,6 @@ body[data-studio-view='editor'] #nc-root [class*='-AppMainContainer'] { margin-t
 #nc-root [class*='-NoPreviewContainer'] { width: calc(100% - 48px); max-width: 720px; height: auto; margin: 48px auto 96px; padding: 0; border: 0; border-radius: 0; background: transparent; box-shadow: none; overflow: visible; }
 #nc-root :is([class*='-PreviewPaneContainer'], [class*='-ControlPaneContainer']) { position: static; height: auto; padding: 0; overflow: visible; }
 #nc-root [class*='-ControlContainer'] { margin: 0; }
-#nc-root [class*='-ControlContainer']:first-of-type { margin-top: 0; }
 #nc-root [class*='-ControlTopbar'] { display: flex; min-height: 0; }
 #nc-root [class*='-FieldLabel'] { display: none; }
 #nc-root [class*='-ControlHint'] { color: var(--studio-muted); font-size: 13px; }
@@ -193,10 +192,9 @@ body[data-studio-view='editor'] #nc-root [class*='-AppMainContainer'] { margin-t
   #nc-root [class*='-ToolbarDropdown'] [class*='-StyledDropdownButton'] { padding: 0 12px; }
   #nc-root [class*='-PreviewLink'] { display: none; }
   #nc-root [class*='-NoPreviewContainer'] { width: calc(100% - 40px); margin: 32px auto 64px; }
-  #nc-root .studio-preview { font-size: 19px; }
   #nc-root .studio-date-panel { width: min(360px, calc(100vw - 40px)); }
 }
-#nc-root .studio-link-previews { margin: 24px 0; }
+#nc-root .studio-link-previews { margin: 24px 0; scroll-margin-top: 80px; }
 #nc-root .studio-link-preview + .studio-link-preview { margin-top: 28px; }
 #nc-root .studio-link-url { display: block; color: var(--studio-muted); font-size: 13px; overflow-wrap: anywhere; }
 #nc-root .studio-link-preview .rlc { margin: 12px 0; }
@@ -208,7 +206,6 @@ body[data-studio-view='editor'] #nc-root [class*='-AppMainContainer'] { margin-t
 #nc-root .studio-link-feedback { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 12px; margin-left: auto; }
 #nc-root .studio-link-progress { color: var(--studio-muted); font-size: 12px; }
 #nc-root .studio-link-shortcut { min-height: 36px; padding: 0; border: 0; color: var(--studio-muted); background: transparent; font-size: 12px; white-space: nowrap; }
-#nc-root .studio-link-previews { scroll-margin-top: 80px; }
 #nc-root .studio-link-keep-url { display: flex; align-items: center; gap: 8px; width: fit-content; margin-top: 4px; color: var(--studio-muted); font-size: 12px; cursor: pointer; }
 #nc-root .studio-link-keep-url input { accent-color: var(--studio-ink); }
 @media (prefers-reduced-motion: reduce) { #nc-root *, .studio-focus #nc-root [class*='-ToolbarContainer'] { transition: none !important; animation: none !important; scroll-behavior: auto !important; } }

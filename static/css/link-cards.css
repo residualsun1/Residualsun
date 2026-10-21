@@ -27,7 +27,6 @@
 .rlc.rlc-summary .rlc-source { display: none; }
 @media (max-width: 600px) {
   .rlc.rlc-summary .rlc-card { min-height: 132px; }
-  .rlc.rlc-summary .rlc-info { padding: 12px; }
   .rlc.rlc-summary .rlc-title { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; white-space: normal; overflow-wrap: anywhere; }
 }
 @media (prefers-reduced-motion: reduce) { .rlc .rlc-card { transition: none; } }

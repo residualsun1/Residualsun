@@ -22,11 +22,6 @@
       document.head.appendChild(s);
     }
 
-    function unloadSidenotes() {
-      // 可选：如果你还想在从桌面切回手机时移除侧注 DOM，写卸载逻辑
-      // 但一般页面刷新后就不会再触发
-    }
-
     // 初始判断
     if (desktopMQ.matches) {
       loadSidenotes();
@@ -36,8 +31,6 @@
     desktopMQ.addListener(e => {
       if (e.matches) {
         loadSidenotes();
-      } else {
-        unloadSidenotes();
       }
     });
   })();

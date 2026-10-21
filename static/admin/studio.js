@@ -378,7 +378,6 @@
     if (link.getAttribute("aria-label") !== label) link.setAttribute("aria-label", label);
     card.dataset.studioDate = String(Date.parse(date) || 0);
     card.dataset.studioSlug = slug;
-    card.dataset.studioDraft = String(draft);
     const matches = `${title}\n${parts.join("\u001f")}`.toLocaleLowerCase().includes(searchTerm.toLocaleLowerCase().trim());
     card.hidden = !matches || (filter === "draft" ? !draft : filter === "published" ? draft : false);
     let row = card.querySelector(".studio-entry");
