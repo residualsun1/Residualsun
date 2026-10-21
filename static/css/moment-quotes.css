@@ -1,0 +1,14 @@
+.moment-quote { position: relative; box-sizing: border-box; width: 100%; min-width: 0; margin: 16px 0 0; padding: 18px 20px; border: 1px solid var(--color-border, #d9d9d5); border-radius: 16px; background: #fff; font-family: inherit; font-weight: normal; line-height: 1.75; text-align: left; transition: background-color 160ms; }
+.moment-quote:has(.moment-quote-link):hover { background: #fafaf8; }
+.moment-quote:has(.moment-quote-link:focus-visible) { outline: 1px solid currentColor; outline-offset: 3px; }
+.moment-quote .moment-quote-link, #section .note-content .moment-quote-link, #single .content .moment-quote-link { display: block; color: inherit; border: 0; text-decoration: none; }
+.moment-quote-link::after { position: absolute; inset: 0; z-index: 1; content: ""; border-radius: inherit; }
+.moment-quote .note-meta { margin-bottom: 10px; }
+.moment-quote-text { display: -webkit-box; -webkit-line-clamp: 6; -webkit-box-orient: vertical; overflow: hidden; white-space: pre-line; overflow-wrap: anywhere; font-size: .9em; line-height: 1.75; }
+.moment-quote-media { margin-top: 14px; }
+.moment-quote-media :is(img, video) { display: block; width: auto; max-width: 100%; height: auto; max-height: 440px; margin: 0 auto; border: 0; border-radius: 8px; object-fit: contain; }
+.moment-quote-media video { position: relative; z-index: 2; }
+.moment-quote-media[hidden] { display: none !important; }
+.moment-quote-unavailable { color: #888; font-size: .9em; }
+@media (max-width: 600px) { .moment-quote { padding: 14px 16px; border-radius: 14px; } }
+@media (prefers-reduced-motion: reduce) { .moment-quote { transition: none; } }

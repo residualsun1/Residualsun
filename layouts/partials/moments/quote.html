@@ -1,0 +1,39 @@
+{{- with .Params.quoted_moment -}}
+  {{- $slug := printf "%s" . -}}
+  {{- $source := $.File.ContentBaseName -}}
+  {{- $records := partialCached "moments/records.html" $ -}}
+  {{- $index := dict -}}
+  {{- range $records -}}{{- $index = merge $index (dict .slug .) -}}{{- end -}}
+  {{- $record := index $index $slug -}}
+  {{- $seen := slice $source -}}
+  {{- $cursor := $slug -}}
+  {{- $cycle := false -}}
+  {{- range seq (add (len $records) 1) -}}
+    {{- if $cursor -}}
+      {{- if in $seen $cursor -}}{{- $cycle = true -}}{{- $cursor = "" -}}
+      {{- else -}}
+        {{- $seen = $seen | append $cursor -}}
+        {{- $cursor = (index $index $cursor).quoted | default "" -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+  {{- if and $record (not $cycle) -}}
+    <aside class="moment-quote">
+      <a class="moment-quote-link" href="{{ $record.url }}" aria-label="查看原思绪：{{ $record.meta }}">
+        <div class="note-meta">{{ $record.meta }}</div>
+        {{ with $record.text }}<div class="moment-quote-text">{{ . }}</div>{{ end }}
+      </a>
+      {{- with $record.media -}}
+        <div class="moment-quote-media">
+          {{ if eq .kind "video" }}
+            <video src="{{ .src }}" {{ with .poster }}poster="{{ . }}"{{ end }} controls playsinline preload="metadata"></video>
+          {{ else }}
+            <img src="{{ .src }}" alt="" loading="lazy" decoding="async">
+          {{ end }}
+        </div>
+      {{- end -}}
+    </aside>
+  {{- else -}}
+    <aside class="moment-quote moment-quote-unavailable">引用的思绪暂不可用。</aside>
+  {{- end -}}
+{{- end -}}

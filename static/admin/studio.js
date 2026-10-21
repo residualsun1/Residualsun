@@ -48,6 +48,7 @@
   const NativeDate = DateWidget.control;
   const MarkdownPreview = CMS.getWidget("markdown").preview;
   const Links = window.ResidualLinkCards;
+  const isMomentURL = url => Boolean(window.ResidualQuoteIndex?.momentSlug(url));
   const DateControl = createClass({
     render() {
       return h("details", { className: "studio-date" },
@@ -126,7 +127,7 @@
       this.setState(previous => {
         const linkStates = Object.fromEntries(Object.entries(previous.linkStates).filter(([url]) => urls.has(url)));
         urls.forEach(url => {
-          if (!cards.has(url) && !this.knownLinks.has(url) && !linkStates[url]?.loading) linkStates[url] = { waiting: true };
+          if (!cards.has(url) && !this.knownLinks.has(url) && !linkStates[url]?.loading && !isMomentURL(url)) linkStates[url] = { waiting: true };
         });
         return { linkStates };
       });
@@ -140,7 +141,7 @@
         Links.standalone(current).forEach(({ url }) => {
           if (this.knownLinks.has(url)) return;
           this.knownLinks.add(url);
-          if (!saved.has(url)) this.requestPreview(url);
+          if (!saved.has(url) && !isMomentURL(url)) this.requestPreview(url);
         });
       }, 700);
     },
@@ -153,7 +154,7 @@
       const retries = [];
       // Explicit pasting may retry a historical/failed link, only at a standalone paragraph.
       Links.standalone(next).forEach(item => {
-        if (item.start >= start && item.end <= end && !cards.has(item.url)) {
+        if (item.start >= start && item.end <= end && !cards.has(item.url) && !isMomentURL(item.url)) {
           this.knownLinks.delete(item.url);
           retries.push(item.url);
         }
@@ -237,7 +238,7 @@
       this.setState(state => ({ linkStates: { ...state.linkStates, [url]: {} } }));
     },
     renderLinkPreviews(text, cards) {
-      const urls = [...new Set(Links.standalone(text).map(item => item.url))];
+      const urls = [...new Set(Links.standalone(text).map(item => item.url))].filter(url => !isMomentURL(url));
       if (!urls.length) return null;
       return h("section", { className: "studio-link-previews", "aria-label": "链接预览", ref: node => { this.previews = node; } },
         urls.map(url => {
@@ -269,7 +270,7 @@
     render() {
       const value = this.props.value || "";
       const { text: body, cards } = Links.read(value);
-      const urls = [...new Set(Links.standalone(body).map(item => item.url))];
+      const urls = [...new Set(Links.standalone(body).map(item => item.url))].filter(url => !isMomentURL(url));
       const linkStates = urls.map(url => this.state.linkStates[url] || {});
       const ready = urls.filter(url => cards.has(url) && !cards.get(url).disabled);
       const retry = urls.filter((url, index) => (!cards.has(url) || cards.get(url).disabled) && !linkStates[index].loading && !linkStates[index].waiting && !linkStates[index].limited);
@@ -327,9 +328,15 @@
       throw new Error("这是思绪页面的目录配置，不能在后台修改或删除。");
     }
   }
-  CMS.registerEventListener({ name: "preSave", handler: ({ entry }) => {
+  CMS.registerEventListener({ name: "preSave", handler: async ({ entry }) => {
     protectIndex(entry);
     if (!entry.getIn(["data", "body"], "").trim()) throw new Error("请先写下你的想法，再发布。");
+    const quoted = entry.getIn(["data", "quoted_moment"]);
+    if (quoted) {
+      if (quoted === entry.get("slug")) throw new Error("不能引用这条思绪自身。");
+      try { await window.ResidualQuoteIndex.ready; } catch { throw new Error("无法核对引用，请稍后重试或移除引用。"); }
+      if (window.ResidualMomentQuotes.cyclic(records, quoted, entry.get("slug"))) throw new Error("不能建立循环引用。");
+    }
     return entry.get("data");
   } });
   CMS.registerEventListener({ name: "preUnpublish", handler: ({ entry }) => protectIndex(entry) });
@@ -340,12 +347,9 @@
   } });
 
   // The public template supplies its existing numbers and links; the UI never reassigns them.
-  const records = new Map();
+  const records = window.ResidualQuoteIndex?.records || new Map();
   let indexLoaded = false;
-  fetch(new URL("records.json", location.href)).then(response => {
-    if (!response.ok) throw new Error("Index unavailable");
-    return response.json();
-  }).then(data => { data.records.forEach(record => records.set(record.slug, record)); indexLoaded = true; schedule(); })
+  (window.ResidualQuoteIndex?.ready || Promise.reject()).then(() => { indexLoaded = true; schedule(); })
     .catch(() => { /* Editing remains available while a new deployment has no index yet. */ });
 
   let filter = "all";
@@ -403,6 +407,15 @@
     }
     const publicLink = card.querySelector(".studio-public-link");
     if (publicLink) publicLink.hidden = draft;
+    let quoteButton = card.querySelector(".studio-quote-link");
+    if (record && !quoteButton) {
+      quoteButton = element("button", "studio-quote-link", "引用此思绪");
+      quoteButton.type = "button";
+      quoteButton.setAttribute("aria-label", `引用第 ${record.number} 道思绪`);
+      quoteButton.onclick = () => window.ResidualQuoteIndex.begin(slug);
+      card.append(quoteButton);
+    }
+    if (quoteButton) quoteButton.hidden = draft || !record;
   }
   function enhanceList(collection) {
     if (!collection.querySelector(".studio-search")) {
@@ -523,5 +536,6 @@
   }
   new MutationObserver(schedule).observe(document.body, { childList: true, subtree: true, characterData: true });
   window.addEventListener("hashchange", schedule);
+  window.addEventListener("studio:editing", editing);
   CMS.init();
 })();

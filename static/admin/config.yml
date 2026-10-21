@@ -40,6 +40,11 @@ collections:
       - name: body
         label: 正文
         widget: studio-body
+      - name: quoted_moment
+        label: 引用思绪
+        widget: studio-quote
+        required: false
+        default: ""
       - name: draft
         label: 发布设置
         widget: studio-draft

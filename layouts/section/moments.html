@@ -1,10 +1,12 @@
 {{ define "main" }}
 <link rel="stylesheet" href="{{ "css/link-cards.css" | relURL }}">
 <script src="{{ "js/link-cards.js" | relURL }}" defer></script>
+<link rel="stylesheet" href="{{ "css/moment-quotes.css" | relURL }}">
+<script src="{{ "js/moment-quotes.js" | relURL }}" defer></script>
 <section id="section">
   <h1>{{ .Title }}</h1>
 
-  {{ $notes := .Pages.ByDate.Reverse }}
+  {{ $notes := where .Pages.ByDate.Reverse "Draft" false }}
   {{ $perPage := 9 }}
   {{ $p := .Paginate $notes $perPage }}
   {{ $total := len $notes }}
@@ -15,9 +17,9 @@
     {{ range $p.Pages }}
       {{ $i = add $i 1 }}
       <article class="note-card">
-        <div class="note-meta">第 {{ sub $total (sub $i 1) }} 道 ｜ {{ .Date.Format "2006 年 1 月 2 日" }}</div>
+        <div class="note-meta">{{ partial "moments/meta.html" (dict "page" . "number" (sub $total (sub $i 1))) }}</div>
         {{ if ne .Params.title "" }}<h3>{{ .Title }}</h3>{{ end }}
-        <div class="note-content">{{ .Content }}</div>
+        <div class="note-content">{{ .Content }}{{ partial "moments/quote.html" . }}</div>
       </article>
     {{ end }}
   </div>

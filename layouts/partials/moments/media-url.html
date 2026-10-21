@@ -1,0 +1,10 @@
+{{- $src := .src | default "" | htmlUnescape -}}
+{{- $parsed := urls.Parse $src -}}
+{{- $value := "" -}}
+{{- if and $src (not $parsed.User) (in (slice "" "http" "https") $parsed.Scheme) -}}
+  {{- if $parsed.Scheme -}}{{- $value = $src -}}
+  {{- else if hasPrefix $src "//" -}}{{- $value = printf "%s:%s" (urls.Parse .page.Permalink).Scheme $src -}}
+  {{- else if hasPrefix $src "/" -}}{{- $value = $src | absURL -}}
+  {{- else -}}{{- $value = printf "%s%s" .page.Permalink $src -}}{{- end -}}
+{{- end -}}
+{{- return $value -}}

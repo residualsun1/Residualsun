@@ -4,6 +4,7 @@ import { readFileSync } from "node:fs";
 import { runInNewContext } from "node:vm";
 import { getPreview, publicTarget, parseMetadata } from "../netlify/lib/link-preview.mjs";
 import "../static/js/link-cards.js";
+import "../static/js/moment-quotes.js";
 
 const links = globalThis.ResidualLinkCards;
 const publicDNS = async () => [{ address: "93.184.215.14", family: 4 }];
@@ -86,7 +87,7 @@ test("X card declarations, image dimensions and empty metadata", async () => {
 });
 
 // Exercise the registered widget with Decap-style value echoes and controlled network replies.
-function editor(value = "") {
+function editor(value = "", quoteIndex) {
   const widgets = new Map(), timers = new Map(), requests = [];
   const locale = { app: { header: {} }, collection: { sidebar: {}, collectionTop: {} }, editor: { editor: {}, editorToolbar: {} } };
   let timerID = 0;
@@ -96,7 +97,7 @@ function editor(value = "") {
   };
   const h = (type, props, ...children) => ({ type, props, children });
   runInNewContext(readFileSync(new URL("../static/admin/studio.js", import.meta.url), "utf8"), {
-    window: { CMS, h, createClass: widget => widget, ResidualLinkCards: links, addEventListener() {}, removeEventListener() {} },
+    window: { CMS, h, createClass: widget => widget, ResidualLinkCards: links, ResidualQuoteIndex: quoteIndex, addEventListener() {}, removeEventListener() {} },
     document: { body: { classList: { remove() {} } }, addEventListener() {}, removeEventListener() {} },
     MutationObserver: class { observe() {} }, requestAnimationFrame() {},
     location: { origin: "https://guozheng.rbind.io", href: "https://guozheng.rbind.io/admin/" },
@@ -163,4 +164,26 @@ test("removed previews retain a visible manual generation action", () => {
   const { control, requests } = editor(saved);
   assert.match(renderedText(control.render()), /仅保留链接.*生成预览/);
   assert.equal(requests.length, 0, "opening a note does not automatically refetch removed previews");
+});
+
+test("internal moment permalinks do not trigger webpage previews", () => {
+  const quotes = globalThis.ResidualMomentQuotes;
+  const { control, requests, debounce } = editor("", { records: new Map(), ready: Promise.resolve(),
+    momentSlug: url => quotes.momentSlug(url, "https://guozheng.rbind.io/", "http://localhost:1324") });
+  control.changeBody("https://guozheng.rbind.io/moments/my-nft/"); debounce();
+  assert.equal(requests.length, 0);
+  assert.doesNotMatch(renderedText(control.render()), /生成预览/);
+  assert.equal(quotes.momentSlug("https://guozheng.rbind.io/", "https://guozheng.rbind.io/"), "");
+  assert.equal(quotes.momentSlug("https://example.com/moments/my-nft/", "https://guozheng.rbind.io/"), "");
+});
+
+test("quote relations reject self references and cycles without recursive rendering", () => {
+  const quotes = globalThis.ResidualMomentQuotes;
+  const records = new Map([["a", { quoted: "b" }], ["b", { quoted: "c" }], ["c", { quoted: "" }]]);
+  assert.equal(quotes.cyclic(records, "a", "a"), true);
+  assert.equal(quotes.cyclic(records, "a", "c"), true);
+  assert.equal(quotes.cyclic(records, "a", "new"), false);
+  records.set("c", { quoted: "a" });
+  assert.equal(quotes.cyclic(records, "a", "new"), true);
+  assert.equal(quotes.cyclic(records, "deleted", "new"), false);
 });

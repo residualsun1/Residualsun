@@ -1,0 +1,29 @@
+{{- $note := .page -}}
+{{- /* Strip embedded cards before extracting the note's own text and first media. */ -}}
+{{- $raw := replaceRE `(?s)\{\{[<%].*?[>%]\}\}` "" $note.RawContent -}}
+{{- $html := $note.RenderString (dict "display" "block") $raw -}}
+{{- $text := replaceRE `(?is)<(video|audio|iframe|script|style)\b[^>]*>.*?</(video|audio|iframe|script|style)>` "" $html -}}
+{{- $text = replaceRE `(?i)</p>|<br\s*/?>|</li>|</h[1-6]>` "\n\n" $text -}}
+{{- $paragraphs := slice -}}
+{{- range split $text "\n\n" -}}
+  {{- with trim (. | plainify | htmlUnescape) " \t\r\n" -}}{{- $paragraphs = $paragraphs | append . -}}{{- end -}}
+{{- end -}}
+{{- $text = delimit $paragraphs "\n\n" -}}
+{{- $media := dict -}}
+{{- range first 1 (findRE `(?is)<video\b[^>]*>.*?</video>|<img\b[^>]*>` $html) -}}
+  {{- $tag := . -}}
+  {{- $kind := cond (hasPrefix (lower $tag) "<video") "video" "image" -}}
+  {{- $src := "" -}}
+  {{- with findRE `(?i)\bsrc\s*=\s*["'][^"']+["']` $tag 1 -}}
+    {{- $src = replaceRE `(?i)^src\s*=\s*["']|["']$` "" (index . 0) | htmlUnescape -}}
+  {{- end -}}
+  {{- $poster := "" -}}
+  {{- with findRE `(?i)\bposter\s*=\s*["'][^"']+["']` $tag 1 -}}
+    {{- $poster = replaceRE `(?i)^poster\s*=\s*["']|["']$` "" (index . 0) | htmlUnescape -}}
+  {{- end -}}
+  {{- $src = partial "moments/media-url.html" (dict "page" $note "src" $src) -}}
+  {{- if $src -}}
+    {{- $media = dict "kind" $kind "src" $src "poster" (partial "moments/media-url.html" (dict "page" $note "src" $poster)) -}}
+  {{- end -}}
+{{- end -}}
+{{- return (dict "slug" $note.File.ContentBaseName "number" .number "url" $note.RelPermalink "date" ($note.Date.Format "2006-01-02T15:04:05-07:00") "meta" (partial "moments/meta.html" .) "text" $text "media" $media "quoted" ($note.Params.quoted_moment | default "")) -}}

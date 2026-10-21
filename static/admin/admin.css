@@ -78,6 +78,21 @@ body:has([class*='-StyledAuthenticationPage']) .admin-intro { display: block; }
 #nc-root .studio-entry-ready:is(:hover, :focus-within) .studio-entry-edit { opacity: 1; }
 #nc-root .studio-public-link { position: absolute; right: 0; bottom: 28px; padding: 4px 0 4px 12px; color: var(--studio-muted); font-size: 12px; text-decoration: none; }
 #nc-root .studio-filter-empty { grid-area: empty; padding: 40px 0; color: var(--studio-muted); font-size: 14px; }
+#nc-root .studio-entry-ready:has(.studio-quote-link:not([hidden])) :is([class*='-ListCardLink'], [class*='-GridCardLink']) { padding-bottom: 64px; }
+#nc-root .studio-quote-link { position: absolute; right: 100px; bottom: 18px; min-height: 36px; padding: 0 4px; border: 0; background: transparent; color: var(--studio-muted); font-size: 12px; }
+#nc-root .studio-quote-control { margin: 24px 0 0; font-size: 19px; line-height: 1.75; }
+#nc-root .studio-quote-tools { display: flex; gap: 20px; }
+#nc-root .studio-quote-control button { min-height: 36px; padding: 0; border: 0; color: var(--studio-muted); background: transparent; font-size: 13px; }
+#nc-root .studio-quote-picker { margin-top: 12px; padding: 16px; border: 1px solid var(--studio-line); border-radius: 8px; font-size: 14px; }
+#nc-root .studio-quote-picker input { width: 100%; height: 40px; padding: 8px 12px; }
+#nc-root .studio-quote-picker ul { max-height: 320px; overflow-y: auto; margin: 12px 0 0; padding: 0; list-style: none; }
+#nc-root .studio-quote-picker li + li { border-top: 1px solid var(--studio-line); }
+#nc-root .studio-quote-picker li button { display: block; width: 100%; padding: 12px 4px; text-align: left; }
+#nc-root .studio-quote-picker li button:hover { background: var(--studio-soft); }
+#nc-root .studio-quote-picker .note-meta { display: block; margin: 0 0 6px; font-size: 12px; }
+#nc-root .studio-quote-result { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; overflow-wrap: anywhere; font-size: 14px; line-height: 1.75; }
+#nc-root .studio-quote-picker p { margin: 12px 0 0; color: var(--studio-muted); }
+@media (max-width: 700px) { #nc-root .studio-quote-link { bottom: 10px; right: 96px; } }
 
 /* The document is the only editor scroll container. */
 body[data-studio-view='editor'] #nc-root [class*='-AppMainContainer'] { margin-top: 0; padding-top: 0; }

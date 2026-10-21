@@ -1,0 +1,6 @@
+{{- $notes := where (site.GetPage "/moments").Pages.ByDate.Reverse "Draft" false -}}
+{{- $records := slice -}}
+{{- range $i, $note := $notes -}}
+  {{- $records = $records | append (partial "moments/record.html" (dict "page" $note "number" (sub (len $notes) $i))) -}}
+{{- end -}}
+{{- return $records -}}
