@@ -179,4 +179,13 @@ body[data-studio-view='editor'] #nc-root [class*='-AppMainContainer'] { margin-t
   #nc-root textarea.studio-body, #nc-root .studio-preview { font-size: 19px; }
   #nc-root .studio-date-panel { width: min(360px, calc(100vw - 40px)); }
 }
+#nc-root .studio-link-previews { margin: 24px 0; }
+#nc-root .studio-link-preview + .studio-link-preview { margin-top: 28px; }
+#nc-root .studio-link-url { display: block; color: var(--studio-muted); font-size: 13px; overflow-wrap: anywhere; }
+#nc-root .studio-link-preview .rlc { margin: 12px 0; }
+#nc-root .studio-link-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px; font-size: 12px; color: var(--studio-muted); }
+#nc-root .studio-link-actions > span { flex: 1 1 160px; }
+#nc-root .studio-link-actions button { min-height: 36px; padding: 4px 0; border: 0; background: transparent; cursor: pointer; font-size: 12px; }
+#nc-root .studio-link-actions button:disabled { opacity: .5; cursor: default; }
+#nc-root .studio-link-limit { margin-top: 16px; color: var(--studio-muted); font-size: 12px; }
 @media (prefers-reduced-motion: reduce) { #nc-root *, .studio-focus #nc-root [class*='-ToolbarContainer'] { transition: none !important; animation: none !important; scroll-behavior: auto !important; } }

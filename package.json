@@ -1,0 +1,10 @@
+{
+  "name": "residualsun-link-preview",
+  "private": true,
+  "engines": { "node": ">=22" },
+  "scripts": { "test:link-preview": "node --test tests/link-preview.test.mjs" },
+  "dependencies": {
+    "htmlparser2": "12.0.0",
+    "ipaddr.js": "2.5.0"
+  }
+}

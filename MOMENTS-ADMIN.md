@@ -56,3 +56,17 @@ GitHub 登录、仓库写入和 Netlify 发布需在正式域名上验证。
 
 如不再使用，移除 `static/admin/`、上述后台索引页面和模板，再按原方式部署即可。
 通过后台发布的思绪仍是普通 Markdown 文件，会保留在 `content/moments/` 中。
+
+## 外链预览
+
+在正文中粘贴独占一段的 HTTP / HTTPS 外部网址，停顿后自动获取预览。写作区下方显示卡片及「重新获取」「移除预览」；切到「预览」可查看卡片在正文中的位置。每条思绪最多 4 张卡片，同时最多抓取 2 个网址。普通段落、Markdown 链接、代码块和历史普通外链不会自动转换。
+
+移除预览会保留原始 URL，并记住「仅保留链接」；可点击「生成预览」恢复。获取失败不影响草稿、发布或原始链接。抓取尚未完成时也可保存，之后生成的卡片会作为新的未保存修改。
+
+卡片元数据以 `linkcard` Shortcode 随 Markdown 正文保存，包含原 URL、标题、简介、封面、网站名称、来源域名和获取时间。后台隐藏编码并显示可视卡片；公开页面仅渲染已保存数据，构建和阅读不抓取网页。移除记录也保存在正文中，以免重开后又自动生成。已有无卡片思绪不会被批量修改。
+
+元数据接口为 `netlify/functions/link-preview.mjs`，使用 Netlify 默认函数路径 `/.netlify/functions/link-preview`，现有 Hugo 命令、认证和 `netlify.toml` 不变。新增 `.nvmrc` 选择 Node.js 24，两个 Node 依赖由 `package-lock.json` 固定；本地执行 `npm ci` 安装，Netlify 部署时会自动安装并打包函数。纯 Hugo 本地服务器不运行 Serverless 接口，完整抓取应使用 Netlify Dev 或部署预览。运行时依据：[Netlify Node.js 版本配置](https://docs.netlify.com/build/configure-builds/manage-dependencies/)。
+
+接口只接收标准端口的 HTTP / HTTPS 链接，校验全部 DNS 地址并固定连接目标，逐次检查重定向，拒绝本机、私网及保留地址。单次总超时 8 秒，HTML 上限 1 MiB（压缩传输上限 2 MiB），最多 4 次重定向；实例缓存 30 分钟、最多 100 条，平台按 IP 限制每分钟 30 次。第三方 HTML 仅解析为文本，不执行脚本、不返回原始 HTML。封面使用外站图片 URL，加载失败自动隐藏。
+
+针对性测试：`npm run test:link-preview`。上线需将函数、依赖锁文件、Shortcode、共享卡片样式与后台变更一起部署。

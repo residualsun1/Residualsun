@@ -1,0 +1,25 @@
+{{- $data := .Get "data" | base64Decode | transform.Unmarshal -}}
+{{- if not $data.disabled -}}
+  {{- $url := urls.Parse $data.url -}}
+  {{- if and (in (slice "http" "https") $url.Scheme) $url.Host (not $url.User) -}}
+    {{- if not (.Page.Scratch.Get "linkcard-assets") -}}
+      {{- .Page.Scratch.Set "linkcard-assets" true -}}
+      <link rel="stylesheet" href="{{ "css/link-cards.css" | relURL }}">
+    {{- end -}}
+    <figure class="rlc">
+      <a class="rlc-card" href="{{ $data.url }}" target="_blank" rel="noopener noreferrer">
+        {{- with $data.image -}}
+          {{- $image := urls.Parse . -}}
+          {{- if and (in (slice "http" "https") $image.Scheme) $image.Host (not $image.User) -}}
+            <img class="rlc-image" src="{{ . }}" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.hidden=true">
+          {{- end -}}
+        {{- end -}}
+        <div class="rlc-info">
+          <div class="rlc-title">{{ $data.title | default $url.Hostname }}</div>
+          {{- with $data.description -}}<p class="rlc-description">{{ . }}</p>{{- end -}}
+        </div>
+      </a>
+      <figcaption class="rlc-source">来自 {{ $url.Hostname }}</figcaption>
+    </figure>
+  {{- end -}}
+{{- end -}}

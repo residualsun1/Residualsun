@@ -17,7 +17,7 @@
     if (value) node.textContent = value;
     return node;
   };
-  const plainText = value => value.replace(/!\[([^\]]*)\]\([^)]*\)/g, "$1")
+  const plainText = value => window.ResidualLinkCards.read(value).text.replace(/!\[([^\]]*)\]\([^)]*\)/g, "$1")
     .replace(/\[([^\]]+)\]\([^)]*\)/g, "$1").replace(/<[^>]+>/g, "")
     .replace(/(^|\n)\s*(?:#{1,6}\s|>\s?|[-*+]\s|\d+\.\s)/g, " ")
     .replace(/[`*_~]/g, "").replace(/\s+/g, " ").trim();
@@ -41,6 +41,7 @@
   const DateWidget = CMS.getWidget("datetime");
   const NativeDate = DateWidget.control;
   const MarkdownPreview = CMS.getWidget("markdown").preview;
+  const Links = window.ResidualLinkCards;
   const DateControl = createClass({
     render() {
       return h("details", { className: "studio-date" },
@@ -78,19 +79,131 @@
     },
   });
   const BodyControl = createClass({
-    getInitialState() { return { preview: false, focus: false }; },
+    getInitialState() { return { preview: false, focus: false, linkStates: {} }; },
     componentDidMount() {
+      this.active = true;
+      this.linkQueue = [];
+      this.linkRequests = new Map();
+      this.currentValue = this.props.value || "";
+      this.emittedValues = new Set();
+      this.knownLinks = new Set(Links.standalone(Links.read(this.props.value).text).map(item => item.url));
       this.resize();
       this.onResize = () => this.resize();
       this.onEscape = event => { if (event.key === "Escape" && this.state.focus) this.setFocus(false); };
       window.addEventListener("resize", this.onResize);
       document.addEventListener("keydown", this.onEscape);
     },
-    componentDidUpdate() { this.resize(); },
+    componentDidUpdate(previous) {
+      if (previous.value !== this.props.value) {
+        if (!this.emittedValues.delete(this.props.value)) this.currentValue = this.props.value || "";
+      }
+      this.resize();
+      const urls = new Set(Links.standalone(Links.read(this.props.value).text).map(item => item.url));
+      this.linkRequests.forEach((controller, url) => { if (!urls.has(url)) controller.abort(); });
+      this.linkQueue = this.linkQueue.filter(item => urls.has(item.url));
+    },
     componentWillUnmount() {
+      this.active = false;
+      clearTimeout(this.linkTimer);
+      this.linkRequests.forEach(controller => controller.abort());
       window.removeEventListener("resize", this.onResize);
       document.removeEventListener("keydown", this.onEscape);
       document.body.classList.remove("studio-focus");
+    },
+    changeBody(text) {
+      const { cards } = Links.read(this.currentValue);
+      this.commitBody(Links.write(text, cards));
+      clearTimeout(this.linkTimer);
+      this.linkTimer = setTimeout(() => {
+        const { text: current, cards: saved } = Links.read(this.props.value);
+        Links.standalone(current).forEach(({ url }) => {
+          if (this.knownLinks.has(url)) return;
+          this.knownLinks.add(url);
+          if (!saved.has(url) && new URL(url).origin !== location.origin) this.requestPreview(url);
+        });
+      }, 700);
+    },
+    commitBody(value) {
+      // Metadata responses can finish together before Decap echoes the new props.
+      this.currentValue = value;
+      this.emittedValues.add(value);
+      if (this.emittedValues.size > 16) this.emittedValues.delete(this.emittedValues.values().next().value);
+      editing();
+      this.props.onChange(value);
+    },
+    updateLink(url, card) {
+      const { text, cards } = Links.read(this.currentValue);
+      if (!Links.standalone(text).some(item => item.url === url)) return;
+      cards.set(url, card);
+      this.commitBody(Links.write(text, cards));
+    },
+    requestPreview(url, refresh = false) {
+      if (this.linkRequests.has(url) || this.linkQueue.some(item => item.url === url)) return;
+      const { cards } = Links.read(this.props.value);
+      const occupied = new Set([...cards].filter(([, card]) => !card.disabled).map(([key]) => key));
+      [...this.linkRequests.keys(), ...this.linkQueue.map(item => item.url)].forEach(key => occupied.add(key));
+      occupied.delete(url);
+      if (occupied.size >= Links.MAX_CARDS) return;
+      this.setState(state => ({ linkStates: { ...state.linkStates, [url]: { loading: true } } }));
+      this.linkQueue.push({ url, refresh });
+      this.loadLinks();
+    },
+    loadLinks() {
+      while (this.active && this.linkRequests.size < 2 && this.linkQueue.length) {
+        const { url, refresh } = this.linkQueue.shift();
+        const controller = new AbortController();
+        this.linkRequests.set(url, controller);
+        let timedOut = false;
+        const timeout = setTimeout(() => { timedOut = true; controller.abort(); }, 10000);
+        const endpoint = new URL("/.netlify/functions/link-preview", location.origin);
+        endpoint.searchParams.set("url", url);
+        if (refresh) endpoint.searchParams.set("refresh", "1");
+        fetch(endpoint, { signal: controller.signal, credentials: "same-origin" })
+          .then(response => { if (!response.ok) throw new Error("Preview unavailable"); return response.json(); })
+          .then(card => {
+            if (!this.active || controller.signal.aborted) return;
+            this.updateLink(url, {
+              url, title: String(card.title || new URL(url).hostname).slice(0, 200),
+              description: String(card.description || "").slice(0, 360), image: Links.urlKey(card.image),
+              siteName: String(card.siteName || "").slice(0, 100), domain: new URL(url).hostname,
+              canonicalUrl: Links.urlKey(card.canonicalUrl), fetchedAt: card.fetchedAt,
+            });
+            this.setState(state => ({ linkStates: { ...state.linkStates, [url]: {} } }));
+          })
+          .catch(() => {
+            if (this.active && (!controller.signal.aborted || timedOut)) this.setState(state => ({ linkStates: { ...state.linkStates, [url]: { error: true } } }));
+          })
+          .finally(() => {
+            clearTimeout(timeout);
+            this.linkRequests.delete(url);
+            if (this.active) this.loadLinks();
+          });
+      }
+    },
+    removePreview(url) {
+      this.linkQueue = this.linkQueue.filter(item => item.url !== url);
+      this.linkRequests.get(url)?.abort();
+      this.updateLink(url, { url, disabled: true });
+      this.setState(state => ({ linkStates: { ...state.linkStates, [url]: {} } }));
+    },
+    renderLinkPreviews(text, cards) {
+      const urls = [...new Set(Links.standalone(text).map(item => item.url))];
+      const visible = urls.filter(url => cards.has(url) || this.state.linkStates[url]);
+      if (!visible.length) return null;
+      return h("section", { className: "studio-link-previews", "aria-label": "链接预览" },
+        visible.map(url => {
+          const card = cards.get(url), state = this.state.linkStates[url] || {};
+          return h("div", { key: url, className: "studio-link-preview", "aria-busy": Boolean(state.loading) },
+            h("a", { className: "studio-link-url", href: url, target: "_blank", rel: "noopener noreferrer" }, url),
+            card && !card.disabled ? Links.render(h, card) : null,
+            h("div", { className: "studio-link-actions" },
+              h("span", { role: "status", "aria-live": "polite" }, state.loading ? "正在获取预览…" : state.error ? "获取失败，原始链接仍可保存" : card?.disabled ? "仅保留链接" : ""),
+              h("button", { type: "button", disabled: Boolean(state.loading) || this.props.isDisabled,
+                onClick: () => this.requestPreview(url, true) }, card?.disabled ? "生成预览" : "重新获取"),
+              !card?.disabled ? h("button", { type: "button", disabled: this.props.isDisabled,
+                onClick: () => this.removePreview(url) }, "移除预览") : null));
+        }),
+        h("p", { className: "studio-link-limit" }, "每条思绪最多 4 个预览"));
     },
     resize() {
       if (!this.input) return;
@@ -103,6 +216,7 @@
     },
     render() {
       const value = this.props.value || "";
+      const { text: body, cards } = Links.read(value);
       return h("section", { className: "studio-writer", "aria-label": "思绪写作区" },
         this.state.focus ? h("div", { className: "studio-focus-reveal", "aria-hidden": true }) : null,
         h("div", { className: "studio-writing-tools" },
@@ -113,16 +227,18 @@
               onClick: () => this.setState({ preview: true }) }, "预览")),
           h("button", { type: "button", className: "studio-focus-toggle", "aria-pressed": this.state.focus,
             onClick: () => this.setFocus(!this.state.focus) }, this.state.focus ? "退出专注" : "专注")),
-        this.state.preview ? h("div", { className: "studio-preview" }, value
-          ? h(MarkdownPreview, { ...this.props, value, getAsset: this.props.getAsset || (url => url) })
+        this.state.preview ? h("div", { className: "studio-preview" }, body
+          ? Links.pieces(value).map((part, index) => part.card ? h("div", { key: index }, Links.render(h, part.card))
+            : part.text.trim() ? h(MarkdownPreview, { ...this.props, key: index, value: part.text, getAsset: this.props.getAsset || (url => url) }) : null)
           : h("p", { className: "studio-empty-preview" }, "写下此刻的想法…")) : null,
         h("textarea", { id: this.props.forID, className: "studio-body", "aria-label": "正文",
-          hidden: this.state.preview, placeholder: "写下此刻的想法…", value, spellCheck: false,
+          hidden: this.state.preview, placeholder: "写下此刻的想法…", value: body, spellCheck: false,
           disabled: this.props.isDisabled,
           ref: node => { this.input = node; },
-          onChange: event => { editing(); this.props.onChange(event.target.value); } }),
+          onChange: event => this.changeBody(event.target.value) }),
+        !this.state.preview ? this.renderLinkPreviews(body, cards) : null,
         h("footer", { className: "studio-writing-footer" }, h("span", null, "Markdown"),
-          h("span", null, `${Array.from(value.replace(/\s/g, "")).length} 字符`)),
+          h("span", null, `${Array.from(body.replace(/\s/g, "")).length} 字符`)),
         h("p", { className: "studio-feedback", role: "status", "aria-live": "polite" }));
     },
   });
