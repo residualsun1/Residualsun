@@ -65,6 +65,8 @@ Client Secret 仅存于 Netlify 后台，不写入仓库。这里使用 GitHub O
 
 ## 验证与停用
 
+Windows 本地预览运行 `npm run dev`，使用项目固定的 Hugo 0.111.3（需已通过 blogdown 安装），包含草稿并使用内存预览；保存文件后自动更新，按 `Ctrl+C` 停止。
+
 执行 `npm ci`、`npm run test:link-preview` 和 Hugo 0.111.3 构建。界面改动后针对性检查桌面／手机、保存重开、日期、引用与预览即可。纯 Hugo 不运行元数据接口，完整抓取需用 Netlify Dev 或部署预览。
 
 Decap 的 `test-repo` 仅在浏览器模拟保存，刷新后消失，不能证明 GitHub 上传成功。真实登录、仓库提交和 Netlify 发布应在正式域名验证。
