@@ -19,7 +19,7 @@
   {{- end -}}
   {{- if and $record (not $cycle) -}}
     <aside class="moment-quote">
-      <a class="moment-quote-link" href="{{ $record.url }}" aria-label="查看原思绪：{{ $record.meta }}">
+      <a class="moment-quote-link" href="{{ $record.listURL }}" aria-label="定位原思绪：{{ $record.meta }}">
         <div class="note-meta">{{ $record.meta }}</div>
         {{ with $record.text }}<div class="moment-quote-text">{{ . }}</div>{{ end }}
       </a>

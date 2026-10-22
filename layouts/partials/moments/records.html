@@ -1,6 +1,13 @@
-{{- $notes := where (site.GetPage "/moments").Pages.ByDate.Reverse "Draft" false -}}
+{{- $section := site.GetPage "/moments" -}}
+{{- $notes := where $section.Pages.ByDate.Reverse "Draft" false -}}
 {{- $records := slice -}}
 {{- range $i, $note := $notes -}}
-  {{- $records = $records | append (partial "moments/record.html" (dict "page" $note "number" (sub (len $notes) $i))) -}}
+  {{- /* Match the section template's nine-note pagination; rebuild links when dates change. */ -}}
+  {{- $pageNumber := add 1 (div $i 9) -}}
+  {{- $listURL := $section.RelPermalink -}}
+  {{- if gt $pageNumber 1 -}}{{- $listURL = printf "%spage/%d/" $listURL $pageNumber -}}{{- end -}}
+  {{- $listURL = printf "%s#moment-%s" $listURL $note.File.ContentBaseName -}}
+  {{- $record := partial "moments/record.html" (dict "page" $note "number" (sub (len $notes) $i)) -}}
+  {{- $records = $records | append (merge $record (dict "listURL" $listURL)) -}}
 {{- end -}}
 {{- return $records -}}
