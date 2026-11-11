@@ -309,6 +309,29 @@ kbd:hover {
 }
 
 @media (min-width: 1281px) {
+  #single > .content > .footnotes-in-margin {
+    position: relative;
+    padding-bottom: var(--sidenote-space, 0px);
+  }
+
+  .footnotes-in-margin > hr { display: none; }
+  .footnotes-in-margin > ol { margin: 0; padding: 0; }
+
+  .footnotes-in-margin > ol > li {
+    position: absolute;
+    top: var(--sidenote-top, 0px);
+    left: calc(100% + 2em);
+    width: 200px;
+    margin: 0;
+    font-size: .9rem;
+    line-height: 1.75;
+    overflow-wrap: anywhere;
+  }
+
+  .footnotes-in-margin > ol > li::marker {
+    content: "[" counter(list-item) "] ";
+  }
+
   .note-ref {
     cursor: pointer;
   }
