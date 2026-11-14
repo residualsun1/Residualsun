@@ -9,6 +9,8 @@ tags:
   - 黑客松
 ---
 
+<!--more-->
+
 本项目是由 [LXDAO](https://lxdao.io/) 和 [ETHPanda](https://ethpanda.org/) 主办的 [SPARK AI Hackathon](https://github.com/CasualHackathon/SPARK-AI-Hackathon) 比赛的团队成果，在 AI Agent 赛道中获得了[亚军](https://x.com/LXDAO_Official/status/2019009266594861098)，已成功部署上线，可点击链接体验 [Demo](https://adhd-block-chain.vercel.app/)，也可以查看 GitHub 仓库[源代码](https://github.com/0x-IHRR/ADHD_BlockChain)。
 
 ![](https://cdn.jsdelivr.net/gh/residualsun1/blog-static/project/2026/02/02-01-1.png)

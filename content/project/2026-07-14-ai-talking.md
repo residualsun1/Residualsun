@@ -9,6 +9,8 @@ tags:
   - 语音交互
 ---
 
+<!--more-->
+
 本项目目前已完成 Demo 开发并已部署上线，可以点击链接体验 [Demo](https://memoryhere.live)，也可前往 GitHub 仓库查看[源代码](https://github.com/residualsun1/Her)。
 
 ## 一、项目简介
